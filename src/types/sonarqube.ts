@@ -5,6 +5,26 @@ export interface Project {
   metrics?: Record<string, string>
 }
 
+export interface CodeLine {
+  line: number
+  code: string
+}
+
+export interface IssueComment {
+  key: string
+  login: string
+  htmlText: string
+  createdAt: string
+}
+
+export interface IssueFlow {
+  locations: Array<{
+    component: string
+    msg?: string
+    textRange?: { startLine: number; endLine: number }
+  }>
+}
+
 export interface Issue {
   key: string
   rule: string
@@ -14,7 +34,11 @@ export interface Issue {
   line?: number
   type: string
   effort?: string
-  textRange?: { startLine: number; endLine: number }
+  textRange?: { startLine: number; endLine: number; startOffset: number; endOffset: number }
+  tags?: string[]
+  flows?: IssueFlow[]
+  comments?: IssueComment[]
+  codeSnippet?: CodeLine[]
 }
 
 export interface Rule {
