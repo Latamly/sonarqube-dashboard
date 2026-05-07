@@ -1,1 +1,52 @@
-[]
+[
+  {
+    "key": "redragon-lineup",
+    "name": "redragon-lineup",
+    "qualifier": "TRK",
+    "isFavorite": false,
+    "tags": [],
+    "visibility": "public",
+    "isAiCodeFixEnabled": false,
+    "aiCodeAssurance": "NONE",
+    "containsAiCode": false,
+    "uuid": "e093a61d-31c8-4e3d-a33f-327fe6813eaa",
+    "metrics": {
+      "coverage": "0.0",
+      "bugs": "1",
+      "reliability_rating": "4.0",
+      "duplicated_lines_density": "34.0",
+      "code_smells": "40",
+      "security_rating": "1.0",
+      "vulnerabilities": "0",
+      "security_hotspots": "2",
+      "quality_gate_details": "{\"level\":\"OK\",\"conditions\":[],\"ignoredConditions\":false}",
+      "sqale_rating": "1.0"
+    },
+    "quality_gate": "OK"
+  },
+  {
+    "key": "sonarqube-demo",
+    "name": "sonarqube-demo",
+    "qualifier": "TRK",
+    "isFavorite": false,
+    "tags": [],
+    "visibility": "public",
+    "isAiCodeFixEnabled": false,
+    "aiCodeAssurance": "NONE",
+    "containsAiCode": false,
+    "uuid": "a6b793f5-7aa6-462c-8451-5428b7e3a0bf",
+    "metrics": {
+      "coverage": "0.0",
+      "bugs": "0",
+      "reliability_rating": "1.0",
+      "duplicated_lines_density": "0.0",
+      "code_smells": "1",
+      "security_rating": "1.0",
+      "vulnerabilities": "0",
+      "security_hotspots": "0",
+      "quality_gate_details": "{\"level\":\"OK\",\"conditions\":[{\"metric\":\"new_violations\",\"op\":\"GT\",\"period\":1,\"error\":\"0\",\"actual\":\"0\",\"level\":\"OK\"}],\"ignoredConditions\":false}",
+      "sqale_rating": "1.0"
+    },
+    "quality_gate": "OK"
+  }
+]
