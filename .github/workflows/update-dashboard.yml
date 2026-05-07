@@ -38,7 +38,7 @@ jobs:
           # 1. Projects (all pages)
           page, projects = 1, []
           while True:
-              r = get(f"/api/projects/search?ps=500&p={page}")
+              r = get(f"/api/components/search_projects?ps=500&p={page}")
               projects += r['components']
               if len(projects) >= r['paging']['total']:
                   break
