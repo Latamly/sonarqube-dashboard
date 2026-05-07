@@ -1,0 +1,2196 @@
+[
+  {
+    "key": "f9616567-95ad-4dbf-802d-b049f5cfa65c",
+    "rule": "Web:S6847",
+    "severity": "MAJOR",
+    "component": "redragon-lineup:admin.html",
+    "project": "redragon-lineup",
+    "line": 18,
+    "hash": "a572890f99741daeccea476d465c6683",
+    "textRange": {
+      "startLine": 18,
+      "endLine": 18,
+      "startOffset": 0,
+      "endOffset": 71
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Non-interactive elements should not be assigned mouse or keyboard event listeners.",
+    "effort": "5min",
+    "debt": "5min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [
+      "accessibility"
+    ],
+    "creationDate": "2026-04-16T15:40:04+0000",
+    "updateDate": "2026-04-22T16:22:05+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CONVENTIONAL",
+    "cleanCodeAttributeCategory": "CONSISTENT",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "MEDIUM"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  },
+  {
+    "key": "0de1f566-30d6-49fd-bb6e-7a66d1ff6e4d",
+    "rule": "Web:S6853",
+    "severity": "MAJOR",
+    "component": "redragon-lineup:admin.html",
+    "project": "redragon-lineup",
+    "line": 66,
+    "hash": "4f8db58f3e50bdb8b7a2d89a8cb9d129",
+    "textRange": {
+      "startLine": 66,
+      "endLine": 66,
+      "startOffset": 8,
+      "endOffset": 108
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "A form label must be associated with a control and have accessible text.",
+    "effort": "5min",
+    "debt": "5min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [
+      "accessibility"
+    ],
+    "creationDate": "2026-04-16T15:40:04+0000",
+    "updateDate": "2026-04-22T16:22:05+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "LOGICAL",
+    "cleanCodeAttributeCategory": "INTENTIONAL",
+    "impacts": [
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "MEDIUM"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  },
+  {
+    "key": "bae71a69-2d7c-4ff1-9afa-1fe8d18dc9f7",
+    "rule": "javascript:S3358",
+    "severity": "MAJOR",
+    "component": "redragon-lineup:admin.html",
+    "project": "redragon-lineup",
+    "line": 323,
+    "hash": "abef8ee69149918392e4f7290297d682",
+    "textRange": {
+      "startLine": 323,
+      "endLine": 323,
+      "startOffset": 68,
+      "endOffset": 112
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Extract this nested ternary operation into an independent statement.",
+    "effort": "5min",
+    "debt": "5min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [
+      "confusing"
+    ],
+    "creationDate": "2026-04-16T15:40:04+0000",
+    "updateDate": "2026-04-22T16:22:05+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CLEAR",
+    "cleanCodeAttributeCategory": "INTENTIONAL",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "MEDIUM"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  },
+  {
+    "key": "a43427cb-49ac-486d-aeb5-6c03c752a29a",
+    "rule": "javascript:S7735",
+    "severity": "MINOR",
+    "component": "redragon-lineup:admin.html",
+    "project": "redragon-lineup",
+    "line": 333,
+    "hash": "3ee79d864fac41e82bb03438b8a3c872",
+    "textRange": {
+      "startLine": 333,
+      "endLine": 333,
+      "startOffset": 10,
+      "endOffset": 19
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Unexpected negated condition.",
+    "effort": "2min",
+    "debt": "2min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [
+      "readability"
+    ],
+    "creationDate": "2026-04-16T15:40:04+0000",
+    "updateDate": "2026-04-22T16:22:05+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": true,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CLEAR",
+    "cleanCodeAttributeCategory": "INTENTIONAL",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  },
+  {
+    "key": "9ce345f2-6e66-4af5-8c47-b02dfbd2d026",
+    "rule": "javascript:S7722",
+    "severity": "MINOR",
+    "component": "redragon-lineup:admin.html",
+    "project": "redragon-lineup",
+    "line": 410,
+    "hash": "45f8381ce46736205ac665696fdecbda",
+    "textRange": {
+      "startLine": 410,
+      "endLine": 410,
+      "startOffset": 27,
+      "endOffset": 38
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Pass a message to the `Error` constructor.",
+    "effort": "5min",
+    "debt": "5min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [
+      "error-handling"
+    ],
+    "creationDate": "2026-04-16T15:40:04+0000",
+    "updateDate": "2026-04-22T16:22:05+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CLEAR",
+    "cleanCodeAttributeCategory": "INTENTIONAL",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  },
+  {
+    "key": "b6c643b1-d59f-442b-b970-8b76274444ec",
+    "rule": "javascript:S7722",
+    "severity": "MINOR",
+    "component": "redragon-lineup:admin.html",
+    "project": "redragon-lineup",
+    "line": 460,
+    "hash": "45f8381ce46736205ac665696fdecbda",
+    "textRange": {
+      "startLine": 460,
+      "endLine": 460,
+      "startOffset": 25,
+      "endOffset": 36
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Pass a message to the `Error` constructor.",
+    "effort": "5min",
+    "debt": "5min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [
+      "error-handling"
+    ],
+    "creationDate": "2026-04-16T15:40:04+0000",
+    "updateDate": "2026-04-22T16:22:05+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CLEAR",
+    "cleanCodeAttributeCategory": "INTENTIONAL",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  },
+  {
+    "key": "59bf9a46-48a7-426e-bdd8-802870bf034c",
+    "rule": "javascript:S4624",
+    "severity": "MAJOR",
+    "component": "redragon-lineup:admin.html",
+    "project": "redragon-lineup",
+    "line": 481,
+    "hash": "97d0a26dcaba2057ba9c6ba533b3dee9",
+    "textRange": {
+      "startLine": 481,
+      "endLine": 481,
+      "startOffset": 63,
+      "endOffset": 77
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Refactor this code to not use nested template literals.",
+    "effort": "10min",
+    "debt": "10min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [
+      "es2015",
+      "brain-overload",
+      "confusing"
+    ],
+    "creationDate": "2026-04-16T15:40:04+0000",
+    "updateDate": "2026-04-22T16:22:05+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CLEAR",
+    "cleanCodeAttributeCategory": "INTENTIONAL",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "MEDIUM"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  },
+  {
+    "key": "48a1a516-fc35-49dc-ae8d-baab1f65a0a0",
+    "rule": "javascript:S3358",
+    "severity": "MAJOR",
+    "component": "redragon-lineup:admin.html",
+    "project": "redragon-lineup",
+    "line": 521,
+    "hash": "1e2b13753637cf06c3fba612cb9de0e3",
+    "textRange": {
+      "startLine": 521,
+      "endLine": 521,
+      "startOffset": 51,
+      "endOffset": 72
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Extract this nested ternary operation into an independent statement.",
+    "effort": "5min",
+    "debt": "5min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [
+      "confusing"
+    ],
+    "creationDate": "2026-04-16T15:40:04+0000",
+    "updateDate": "2026-04-22T16:22:05+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CLEAR",
+    "cleanCodeAttributeCategory": "INTENTIONAL",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "MEDIUM"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  },
+  {
+    "key": "658881b0-4a28-49fd-8bac-65684c6f1c78",
+    "rule": "javascript:S7781",
+    "severity": "MINOR",
+    "component": "redragon-lineup:admin.html",
+    "project": "redragon-lineup",
+    "line": 533,
+    "hash": "a2d790edff877302cdd52c7748b0592a",
+    "textRange": {
+      "startLine": 533,
+      "endLine": 533,
+      "startOffset": 66,
+      "endOffset": 73
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Prefer `String#replaceAll()` over `String#replace()`.",
+    "effort": "5min",
+    "debt": "5min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [
+      "readability",
+      "es2021"
+    ],
+    "creationDate": "2026-04-16T15:40:04+0000",
+    "updateDate": "2026-04-22T16:22:05+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": true,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CLEAR",
+    "cleanCodeAttributeCategory": "INTENTIONAL",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "LOW"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  },
+  {
+    "key": "87f79aa1-9654-4846-a7bc-eba90299ae00",
+    "rule": "javascript:S7781",
+    "severity": "MINOR",
+    "component": "redragon-lineup:admin.html",
+    "project": "redragon-lineup",
+    "line": 533,
+    "hash": "a2d790edff877302cdd52c7748b0592a",
+    "textRange": {
+      "startLine": 533,
+      "endLine": 533,
+      "startOffset": 23,
+      "endOffset": 30
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Prefer `String#replaceAll()` over `String#replace()`.",
+    "effort": "5min",
+    "debt": "5min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [
+      "readability",
+      "es2021"
+    ],
+    "creationDate": "2026-04-16T15:40:04+0000",
+    "updateDate": "2026-04-22T16:22:05+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": true,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CLEAR",
+    "cleanCodeAttributeCategory": "INTENTIONAL",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "LOW"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  },
+  {
+    "key": "9584d431-0534-428f-abf1-e910658c38ea",
+    "rule": "javascript:S7781",
+    "severity": "MINOR",
+    "component": "redragon-lineup:admin.html",
+    "project": "redragon-lineup",
+    "line": 533,
+    "hash": "a2d790edff877302cdd52c7748b0592a",
+    "textRange": {
+      "startLine": 533,
+      "endLine": 533,
+      "startOffset": 45,
+      "endOffset": 52
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Prefer `String#replaceAll()` over `String#replace()`.",
+    "effort": "5min",
+    "debt": "5min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [
+      "readability",
+      "es2021"
+    ],
+    "creationDate": "2026-04-16T15:40:04+0000",
+    "updateDate": "2026-04-22T16:22:05+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": true,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CLEAR",
+    "cleanCodeAttributeCategory": "INTENTIONAL",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "LOW"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  },
+  {
+    "key": "d8f6b869-4f18-4d8a-befa-3a19e4ddaa14",
+    "rule": "javascript:S7781",
+    "severity": "MINOR",
+    "component": "redragon-lineup:admin.html",
+    "project": "redragon-lineup",
+    "line": 533,
+    "hash": "a2d790edff877302cdd52c7748b0592a",
+    "textRange": {
+      "startLine": 533,
+      "endLine": 533,
+      "startOffset": 87,
+      "endOffset": 94
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Prefer `String#replaceAll()` over `String#replace()`.",
+    "effort": "5min",
+    "debt": "5min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [
+      "readability",
+      "es2021"
+    ],
+    "creationDate": "2026-04-16T15:40:04+0000",
+    "updateDate": "2026-04-22T16:22:05+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": true,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CLEAR",
+    "cleanCodeAttributeCategory": "INTENTIONAL",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "LOW"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  },
+  {
+    "key": "63544c85-be4b-4446-8f67-c9d1f8a660c1",
+    "rule": "css:S7924",
+    "severity": "MAJOR",
+    "component": "redragon-lineup:assets/css/styles.css",
+    "project": "redragon-lineup",
+    "line": 242,
+    "hash": "4c5c6e2a9c79704ac0dc7012281691dc",
+    "textRange": {
+      "startLine": 242,
+      "endLine": 242,
+      "startOffset": 2,
+      "endOffset": 17
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Text does not meet the minimal contrast requirement with its background.",
+    "effort": "5min",
+    "debt": "5min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [
+      "css",
+      "accessibility",
+      "wcag",
+      "contrast"
+    ],
+    "creationDate": "2026-04-16T15:40:04+0000",
+    "updateDate": "2026-04-22T16:22:05+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CONVENTIONAL",
+    "cleanCodeAttributeCategory": "CONSISTENT",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "MEDIUM"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  },
+  {
+    "key": "bf86d15d-f8bf-4200-9475-10013cf19023",
+    "rule": "css:S4658",
+    "severity": "MAJOR",
+    "component": "redragon-lineup:assets/css/styles.css",
+    "project": "redragon-lineup",
+    "line": 1192,
+    "hash": "cad37903a7d677fa6c2caa978a506809",
+    "textRange": {
+      "startLine": 1192,
+      "endLine": 1192,
+      "startOffset": 21,
+      "endOffset": 24
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Unexpected empty block",
+    "effort": "1min",
+    "debt": "1min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [],
+    "creationDate": "2026-04-16T15:40:04+0000",
+    "updateDate": "2026-04-22T16:22:05+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CLEAR",
+    "cleanCodeAttributeCategory": "INTENTIONAL",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "MEDIUM"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  },
+  {
+    "key": "c62cab3d-d4ae-4359-ac23-74e9a64110b5",
+    "rule": "javascript:S7722",
+    "severity": "MINOR",
+    "component": "redragon-lineup:assets/js/app.js",
+    "project": "redragon-lineup",
+    "line": 33,
+    "hash": "45f8381ce46736205ac665696fdecbda",
+    "textRange": {
+      "startLine": 33,
+      "endLine": 33,
+      "startOffset": 23,
+      "endOffset": 34
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Pass a message to the `Error` constructor.",
+    "effort": "5min",
+    "debt": "5min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [
+      "error-handling"
+    ],
+    "creationDate": "2026-04-16T15:40:04+0000",
+    "updateDate": "2026-04-22T16:22:05+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CLEAR",
+    "cleanCodeAttributeCategory": "INTENTIONAL",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  },
+  {
+    "key": "9cf32ad9-04f6-4a58-b25a-c4de02c12a48",
+    "rule": "javascript:S7764",
+    "severity": "MINOR",
+    "component": "redragon-lineup:assets/js/app.js",
+    "project": "redragon-lineup",
+    "line": 58,
+    "hash": "c0ea0fba604de846377d50d195c8631a",
+    "textRange": {
+      "startLine": 58,
+      "endLine": 58,
+      "startOffset": 9,
+      "endOffset": 15
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Prefer `globalThis` over `window`.",
+    "effort": "2min",
+    "debt": "2min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [
+      "portability",
+      "es2020"
+    ],
+    "creationDate": "2026-04-16T15:40:04+0000",
+    "updateDate": "2026-04-22T16:22:05+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": true,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CONVENTIONAL",
+    "cleanCodeAttributeCategory": "CONSISTENT",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  },
+  {
+    "key": "95c36221-a8bc-4e90-b78e-869b2b75c536",
+    "rule": "javascript:S7735",
+    "severity": "MINOR",
+    "component": "redragon-lineup:assets/js/app.js",
+    "project": "redragon-lineup",
+    "line": 125,
+    "hash": "03b386ca17b46fe8fa368c37607509ae",
+    "textRange": {
+      "startLine": 125,
+      "endLine": 125,
+      "startOffset": 62,
+      "endOffset": 83
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Unexpected negated condition.",
+    "effort": "2min",
+    "debt": "2min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [
+      "readability"
+    ],
+    "creationDate": "2026-04-16T15:40:04+0000",
+    "updateDate": "2026-04-22T16:22:05+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": true,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CLEAR",
+    "cleanCodeAttributeCategory": "INTENTIONAL",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  },
+  {
+    "key": "dca2010c-13c7-4446-8150-d937eacf7990",
+    "rule": "javascript:S2871",
+    "severity": "CRITICAL",
+    "component": "redragon-lineup:assets/js/app.js",
+    "project": "redragon-lineup",
+    "line": 227,
+    "hash": "a7a4054f690177794d6225b9174a13ad",
+    "textRange": {
+      "startLine": 227,
+      "endLine": 227,
+      "startOffset": 43,
+      "endOffset": 47
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Provide a compare function that depends on \"String.localeCompare\", to reliably sort elements alphabetically.",
+    "effort": "10min",
+    "debt": "10min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [
+      "type-dependent",
+      "bad-practice"
+    ],
+    "creationDate": "2026-04-16T15:40:04+0000",
+    "updateDate": "2026-04-22T16:22:05+0000",
+    "type": "BUG",
+    "scope": "MAIN",
+    "quickFixAvailable": true,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CLEAR",
+    "cleanCodeAttributeCategory": "INTENTIONAL",
+    "impacts": [
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "HIGH"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  },
+  {
+    "key": "c2ee4b5a-38f1-49d9-be0d-8e8d98e5e8ec",
+    "rule": "javascript:S7781",
+    "severity": "MINOR",
+    "component": "redragon-lineup:assets/js/app.js",
+    "project": "redragon-lineup",
+    "line": 319,
+    "hash": "c3c54920a12eca16db7bedd66e904458",
+    "textRange": {
+      "startLine": 319,
+      "endLine": 319,
+      "startOffset": 5,
+      "endOffset": 12
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Prefer `String#replaceAll()` over `String#replace()`.",
+    "effort": "5min",
+    "debt": "5min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [
+      "readability",
+      "es2021"
+    ],
+    "creationDate": "2026-04-16T15:40:04+0000",
+    "updateDate": "2026-04-22T16:22:05+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": true,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CLEAR",
+    "cleanCodeAttributeCategory": "INTENTIONAL",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "LOW"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  },
+  {
+    "key": "4f569884-9ed3-4877-9095-26d96c88ca44",
+    "rule": "javascript:S7781",
+    "severity": "MINOR",
+    "component": "redragon-lineup:assets/js/app.js",
+    "project": "redragon-lineup",
+    "line": 320,
+    "hash": "a50cd80ec91f70f636b2b7cf7e74a868",
+    "textRange": {
+      "startLine": 320,
+      "endLine": 320,
+      "startOffset": 5,
+      "endOffset": 12
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Prefer `String#replaceAll()` over `String#replace()`.",
+    "effort": "5min",
+    "debt": "5min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [
+      "readability",
+      "es2021"
+    ],
+    "creationDate": "2026-04-16T15:40:04+0000",
+    "updateDate": "2026-04-22T16:22:05+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": true,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CLEAR",
+    "cleanCodeAttributeCategory": "INTENTIONAL",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "LOW"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  },
+  {
+    "key": "3fbf5ecd-37a7-4e4c-bfad-d66e3c0c9202",
+    "rule": "javascript:S7781",
+    "severity": "MINOR",
+    "component": "redragon-lineup:assets/js/app.js",
+    "project": "redragon-lineup",
+    "line": 321,
+    "hash": "32c170795e3a286b3f83620a3dc6b55f",
+    "textRange": {
+      "startLine": 321,
+      "endLine": 321,
+      "startOffset": 5,
+      "endOffset": 12
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Prefer `String#replaceAll()` over `String#replace()`.",
+    "effort": "5min",
+    "debt": "5min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [
+      "readability",
+      "es2021"
+    ],
+    "creationDate": "2026-04-16T15:40:04+0000",
+    "updateDate": "2026-04-22T16:22:05+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": true,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CLEAR",
+    "cleanCodeAttributeCategory": "INTENTIONAL",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "LOW"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  },
+  {
+    "key": "fdfa68e2-15ff-4c71-b1e8-173269df5c3e",
+    "rule": "javascript:S7781",
+    "severity": "MINOR",
+    "component": "redragon-lineup:assets/js/app.js",
+    "project": "redragon-lineup",
+    "line": 322,
+    "hash": "9c40a63195aae8f3504a018bd98c8abc",
+    "textRange": {
+      "startLine": 322,
+      "endLine": 322,
+      "startOffset": 5,
+      "endOffset": 12
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Prefer `String#replaceAll()` over `String#replace()`.",
+    "effort": "5min",
+    "debt": "5min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [
+      "readability",
+      "es2021"
+    ],
+    "creationDate": "2026-04-16T15:40:04+0000",
+    "updateDate": "2026-04-22T16:22:05+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": true,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CLEAR",
+    "cleanCodeAttributeCategory": "INTENTIONAL",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "LOW"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  },
+  {
+    "key": "d3564cdf-87b7-43b7-9611-07dc4ab40ee6",
+    "rule": "javascript:S7764",
+    "severity": "MINOR",
+    "component": "redragon-lineup:assets/js/app.js",
+    "project": "redragon-lineup",
+    "line": 346,
+    "hash": "280f6ac4a48cd10e2c8d5ba04edbe0a6",
+    "textRange": {
+      "startLine": 346,
+      "endLine": 346,
+      "startOffset": 8,
+      "endOffset": 14
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Prefer `globalThis` over `window`.",
+    "effort": "2min",
+    "debt": "2min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [
+      "portability",
+      "es2020"
+    ],
+    "creationDate": "2026-04-16T15:40:04+0000",
+    "updateDate": "2026-04-22T16:22:05+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": true,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CONVENTIONAL",
+    "cleanCodeAttributeCategory": "CONSISTENT",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  },
+  {
+    "key": "268361a3-4a4a-4ac7-95eb-265c74753e64",
+    "rule": "javascript:S1481",
+    "severity": "MINOR",
+    "component": "redragon-lineup:assets/js/auth.js",
+    "project": "redragon-lineup",
+    "line": 28,
+    "hash": "ff75ffecf90f6ee048b7d970e1972231",
+    "textRange": {
+      "startLine": 28,
+      "endLine": 28,
+      "startOffset": 11,
+      "endOffset": 23
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Remove unused function 'getAdminHash'.",
+    "effort": "5min",
+    "debt": "5min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [
+      "unused"
+    ],
+    "creationDate": "2026-04-16T15:40:04+0000",
+    "updateDate": "2026-04-22T16:22:05+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CLEAR",
+    "cleanCodeAttributeCategory": "INTENTIONAL",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  },
+  {
+    "key": "2442a18a-3ae2-4bab-b898-07d6b8ace1a0",
+    "rule": "javascript:S7722",
+    "severity": "MINOR",
+    "component": "redragon-lineup:assets/js/auth.js",
+    "project": "redragon-lineup",
+    "line": 37,
+    "hash": "45f8381ce46736205ac665696fdecbda",
+    "textRange": {
+      "startLine": 37,
+      "endLine": 37,
+      "startOffset": 25,
+      "endOffset": 36
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Pass a message to the `Error` constructor.",
+    "effort": "5min",
+    "debt": "5min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [
+      "error-handling"
+    ],
+    "creationDate": "2026-04-16T15:40:04+0000",
+    "updateDate": "2026-04-22T16:22:05+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CLEAR",
+    "cleanCodeAttributeCategory": "INTENTIONAL",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  },
+  {
+    "key": "280ad137-643a-4de6-8518-957c5bb74ae9",
+    "rule": "javascript:S7764",
+    "severity": "MINOR",
+    "component": "redragon-lineup:assets/js/auth.js",
+    "project": "redragon-lineup",
+    "line": 122,
+    "hash": "89cf466d3c84b586a8dea83e51852d17",
+    "textRange": {
+      "startLine": 122,
+      "endLine": 122,
+      "startOffset": 6,
+      "endOffset": 12
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Prefer `globalThis` over `window`.",
+    "effort": "2min",
+    "debt": "2min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [
+      "portability",
+      "es2020"
+    ],
+    "creationDate": "2026-04-16T15:40:04+0000",
+    "updateDate": "2026-04-22T16:22:05+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": true,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CONVENTIONAL",
+    "cleanCodeAttributeCategory": "CONSISTENT",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  },
+  {
+    "key": "b6944f92-80db-4a83-ac44-cc363808ac98",
+    "rule": "javascript:S7764",
+    "severity": "MINOR",
+    "component": "redragon-lineup:assets/js/auth.js",
+    "project": "redragon-lineup",
+    "line": 135,
+    "hash": "89cf466d3c84b586a8dea83e51852d17",
+    "textRange": {
+      "startLine": 135,
+      "endLine": 135,
+      "startOffset": 4,
+      "endOffset": 10
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Prefer `globalThis` over `window`.",
+    "effort": "2min",
+    "debt": "2min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [
+      "portability",
+      "es2020"
+    ],
+    "creationDate": "2026-04-16T15:40:04+0000",
+    "updateDate": "2026-04-22T16:22:05+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": true,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CONVENTIONAL",
+    "cleanCodeAttributeCategory": "CONSISTENT",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  },
+  {
+    "key": "16d5fa8d-634f-4585-8762-5271a70eab3a",
+    "rule": "javascript:S7764",
+    "severity": "MINOR",
+    "component": "redragon-lineup:assets/js/auth.js",
+    "project": "redragon-lineup",
+    "line": 140,
+    "hash": "89cf466d3c84b586a8dea83e51852d17",
+    "textRange": {
+      "startLine": 140,
+      "endLine": 140,
+      "startOffset": 4,
+      "endOffset": 10
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Prefer `globalThis` over `window`.",
+    "effort": "2min",
+    "debt": "2min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [
+      "portability",
+      "es2020"
+    ],
+    "creationDate": "2026-04-16T15:40:04+0000",
+    "updateDate": "2026-04-22T16:22:05+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": true,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CONVENTIONAL",
+    "cleanCodeAttributeCategory": "CONSISTENT",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  },
+  {
+    "key": "7afc1579-6d43-47b0-b100-d768091f7fa9",
+    "rule": "javascript:S7764",
+    "severity": "MINOR",
+    "component": "redragon-lineup:assets/js/data.js",
+    "project": "redragon-lineup",
+    "line": 3,
+    "hash": "eb344db1a82fc18f7189f78d41c4a489",
+    "textRange": {
+      "startLine": 3,
+      "endLine": 3,
+      "startOffset": 0,
+      "endOffset": 6
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Prefer `globalThis` over `window`.",
+    "effort": "2min",
+    "debt": "2min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [
+      "portability",
+      "es2020"
+    ],
+    "creationDate": "2026-04-16T15:40:04+0000",
+    "updateDate": "2026-04-22T16:22:05+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": true,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CONVENTIONAL",
+    "cleanCodeAttributeCategory": "CONSISTENT",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  },
+  {
+    "key": "6d91ec3b-4f1b-47f6-bd2e-a73496c3a8ab",
+    "rule": "Web:S6847",
+    "severity": "MAJOR",
+    "component": "redragon-lineup:index.html",
+    "project": "redragon-lineup",
+    "line": 16,
+    "hash": "a572890f99741daeccea476d465c6683",
+    "textRange": {
+      "startLine": 16,
+      "endLine": 16,
+      "startOffset": 0,
+      "endOffset": 69
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Non-interactive elements should not be assigned mouse or keyboard event listeners.",
+    "effort": "5min",
+    "debt": "5min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [
+      "accessibility"
+    ],
+    "creationDate": "2026-04-16T15:40:04+0000",
+    "updateDate": "2026-04-22T16:22:05+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CONVENTIONAL",
+    "cleanCodeAttributeCategory": "CONSISTENT",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "MEDIUM"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  },
+  {
+    "key": "9baca79f-c1bd-4f4b-a289-b3f59c9989bb",
+    "rule": "javascript:S7764",
+    "severity": "MINOR",
+    "component": "redragon-lineup:index.html",
+    "project": "redragon-lineup",
+    "line": 75,
+    "hash": "06ed3e6524c823a0fe9df383ba3f6f89",
+    "textRange": {
+      "startLine": 75,
+      "endLine": 75,
+      "startOffset": 8,
+      "endOffset": 14
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Prefer `globalThis` over `window`.",
+    "effort": "2min",
+    "debt": "2min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [
+      "portability",
+      "es2020"
+    ],
+    "creationDate": "2026-04-16T15:40:04+0000",
+    "updateDate": "2026-04-22T16:22:05+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": true,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CONVENTIONAL",
+    "cleanCodeAttributeCategory": "CONSISTENT",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  },
+  {
+    "key": "3a261482-fa05-410c-8649-68534de88c4b",
+    "rule": "javascript:S7764",
+    "severity": "MINOR",
+    "component": "redragon-lineup:index.html",
+    "project": "redragon-lineup",
+    "line": 148,
+    "hash": "06ed3e6524c823a0fe9df383ba3f6f89",
+    "textRange": {
+      "startLine": 148,
+      "endLine": 148,
+      "startOffset": 10,
+      "endOffset": 16
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Prefer `globalThis` over `window`.",
+    "effort": "2min",
+    "debt": "2min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [
+      "portability",
+      "es2020"
+    ],
+    "creationDate": "2026-04-16T15:40:04+0000",
+    "updateDate": "2026-04-22T16:22:05+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": true,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CONVENTIONAL",
+    "cleanCodeAttributeCategory": "CONSISTENT",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  },
+  {
+    "key": "acc0c382-c32a-4f52-804b-44ef93d35154",
+    "rule": "Web:S6847",
+    "severity": "MAJOR",
+    "component": "redragon-lineup:lineup.html",
+    "project": "redragon-lineup",
+    "line": 17,
+    "hash": "a572890f99741daeccea476d465c6683",
+    "textRange": {
+      "startLine": 17,
+      "endLine": 17,
+      "startOffset": 0,
+      "endOffset": 69
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Non-interactive elements should not be assigned mouse or keyboard event listeners.",
+    "effort": "5min",
+    "debt": "5min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [
+      "accessibility"
+    ],
+    "creationDate": "2026-04-16T15:40:04+0000",
+    "updateDate": "2026-04-22T16:22:05+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CONVENTIONAL",
+    "cleanCodeAttributeCategory": "CONSISTENT",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "MEDIUM"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  },
+  {
+    "key": "588e2db2-741d-4fe3-bdc3-f580bcde6a59",
+    "rule": "javascript:S7772",
+    "severity": "MINOR",
+    "component": "redragon-lineup:server.js",
+    "project": "redragon-lineup",
+    "line": 3,
+    "hash": "85968f5b9f570a82c65709eacc211a09",
+    "textRange": {
+      "startLine": 3,
+      "endLine": 3,
+      "startOffset": 21,
+      "endOffset": 27
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Prefer `node:path` over `path`.",
+    "effort": "5min",
+    "debt": "5min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [
+      "convention",
+      "import",
+      "nodejs"
+    ],
+    "creationDate": "2026-04-16T15:40:04+0000",
+    "updateDate": "2026-04-22T16:22:05+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": true,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CONVENTIONAL",
+    "cleanCodeAttributeCategory": "CONSISTENT",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "MEDIUM"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  },
+  {
+    "key": "72cb6de2-8c6d-41b3-b821-3140d76e089f",
+    "rule": "javascript:S7772",
+    "severity": "MINOR",
+    "component": "redragon-lineup:server.js",
+    "project": "redragon-lineup",
+    "line": 4,
+    "hash": "44f9b15d3b1641faca5561b190d8261a",
+    "textRange": {
+      "startLine": 4,
+      "endLine": 4,
+      "startOffset": 19,
+      "endOffset": 23
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Prefer `node:fs` over `fs`.",
+    "effort": "5min",
+    "debt": "5min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [
+      "convention",
+      "import",
+      "nodejs"
+    ],
+    "creationDate": "2026-04-16T15:40:04+0000",
+    "updateDate": "2026-04-22T16:22:05+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": true,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CONVENTIONAL",
+    "cleanCodeAttributeCategory": "CONSISTENT",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "MEDIUM"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  },
+  {
+    "key": "15492b49-6256-4a8d-b032-5ebd07e5d1e0",
+    "rule": "javascript:S7781",
+    "severity": "MINOR",
+    "component": "redragon-lineup:server.js",
+    "project": "redragon-lineup",
+    "line": 47,
+    "hash": "8ee8df34dfdd75703cd6beb0ab790799",
+    "textRange": {
+      "startLine": 47,
+      "endLine": 47,
+      "startOffset": 22,
+      "endOffset": 29
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Prefer `String#replaceAll()` over `String#replace()`.",
+    "effort": "5min",
+    "debt": "5min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [
+      "readability",
+      "es2021"
+    ],
+    "creationDate": "2026-04-16T15:40:04+0000",
+    "updateDate": "2026-04-22T16:22:05+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": true,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CLEAR",
+    "cleanCodeAttributeCategory": "INTENTIONAL",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "LOW"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  },
+  {
+    "key": "5b8d5421-c263-463d-af7e-4ac21c57d71c",
+    "rule": "javascript:S7781",
+    "severity": "MINOR",
+    "component": "redragon-lineup:server.js",
+    "project": "redragon-lineup",
+    "line": 48,
+    "hash": "fd1be15fa717512890e8260235e0a6ca",
+    "textRange": {
+      "startLine": 48,
+      "endLine": 48,
+      "startOffset": 5,
+      "endOffset": 12
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Prefer `String#replaceAll()` over `String#replace()`.",
+    "effort": "5min",
+    "debt": "5min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [
+      "readability",
+      "es2021"
+    ],
+    "creationDate": "2026-04-16T15:40:04+0000",
+    "updateDate": "2026-04-22T16:22:05+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": true,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CLEAR",
+    "cleanCodeAttributeCategory": "INTENTIONAL",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "LOW"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  },
+  {
+    "key": "e08d743f-6c09-43b0-8460-4941c84bb5dc",
+    "rule": "javascript:S7781",
+    "severity": "MINOR",
+    "component": "redragon-lineup:server.js",
+    "project": "redragon-lineup",
+    "line": 49,
+    "hash": "ea959dc41e12587237e3c287d2d894e9",
+    "textRange": {
+      "startLine": 49,
+      "endLine": 49,
+      "startOffset": 5,
+      "endOffset": 12
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Prefer `String#replaceAll()` over `String#replace()`.",
+    "effort": "5min",
+    "debt": "5min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [
+      "readability",
+      "es2021"
+    ],
+    "creationDate": "2026-04-16T15:40:04+0000",
+    "updateDate": "2026-04-22T16:22:05+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": true,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CLEAR",
+    "cleanCodeAttributeCategory": "INTENTIONAL",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "LOW"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  },
+  {
+    "key": "6cfe03ac-ebee-4568-8182-c295557a3c15",
+    "rule": "javascript:S7781",
+    "severity": "MINOR",
+    "component": "redragon-lineup:server.js",
+    "project": "redragon-lineup",
+    "line": 63,
+    "hash": "9a64f54baf40b3ad8acb2c75283c7e50",
+    "textRange": {
+      "startLine": 63,
+      "endLine": 63,
+      "startOffset": 53,
+      "endOffset": 60
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Prefer `String#replaceAll()` over `String#replace()`.",
+    "effort": "5min",
+    "debt": "5min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [
+      "readability",
+      "es2021"
+    ],
+    "creationDate": "2026-04-16T15:40:04+0000",
+    "updateDate": "2026-04-22T16:22:05+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": true,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CLEAR",
+    "cleanCodeAttributeCategory": "INTENTIONAL",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "LOW"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  },
+  {
+    "key": "96abf444-276a-400a-beaa-eb5f7e9516e7",
+    "rule": "javascript:S3776",
+    "severity": "CRITICAL",
+    "component": "redragon-lineup:server.js",
+    "project": "redragon-lineup",
+    "line": 71,
+    "hash": "09f1c1732254dbb3054ecec497301a91",
+    "textRange": {
+      "startLine": 71,
+      "endLine": 71,
+      "startOffset": 9,
+      "endOffset": 32
+    },
+    "flows": [
+      {
+        "locations": [
+          {
+            "component": "redragon-lineup:server.js",
+            "textRange": {
+              "startLine": 92,
+              "endLine": 92,
+              "startOffset": 2,
+              "endOffset": 5
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "redragon-lineup:server.js",
+            "textRange": {
+              "startLine": 94,
+              "endLine": 94,
+              "startOffset": 4,
+              "endOffset": 7
+            },
+            "msg": "+2 (incl. 1 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "redragon-lineup:server.js",
+            "textRange": {
+              "startLine": 95,
+              "endLine": 95,
+              "startOffset": 6,
+              "endOffset": 8
+            },
+            "msg": "+3 (incl. 2 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "redragon-lineup:server.js",
+            "textRange": {
+              "startLine": 95,
+              "endLine": 95,
+              "startOffset": 21,
+              "endOffset": 23
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "redragon-lineup:server.js",
+            "textRange": {
+              "startLine": 100,
+              "endLine": 100,
+              "startOffset": 4,
+              "endOffset": 6
+            },
+            "msg": "+2 (incl. 1 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "redragon-lineup:server.js",
+            "textRange": {
+              "startLine": 102,
+              "endLine": 102,
+              "startOffset": 6,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "redragon-lineup:server.js",
+            "textRange": {
+              "startLine": 109,
+              "endLine": 109,
+              "startOffset": 2,
+              "endOffset": 5
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "redragon-lineup:server.js",
+            "textRange": {
+              "startLine": 111,
+              "endLine": 111,
+              "startOffset": 4,
+              "endOffset": 6
+            },
+            "msg": "+2 (incl. 1 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "redragon-lineup:server.js",
+            "textRange": {
+              "startLine": 116,
+              "endLine": 116,
+              "startOffset": 33,
+              "endOffset": 34
+            },
+            "msg": "+3 (incl. 2 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "redragon-lineup:server.js",
+            "textRange": {
+              "startLine": 122,
+              "endLine": 122,
+              "startOffset": 2,
+              "endOffset": 4
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      }
+    ],
+    "status": "OPEN",
+    "message": "Refactor this function to reduce its Cognitive Complexity from 17 to the 15 allowed.",
+    "effort": "7min",
+    "debt": "7min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [
+      "brain-overload"
+    ],
+    "creationDate": "2026-04-16T15:40:04+0000",
+    "updateDate": "2026-04-22T16:22:05+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "FOCUSED",
+    "cleanCodeAttributeCategory": "ADAPTABLE",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "HIGH"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  },
+  {
+    "key": "d8a709a8-bfb2-461a-a736-0397f2a5c8f2",
+    "rule": "javascript:S3776",
+    "severity": "CRITICAL",
+    "component": "redragon-lineup:server.js",
+    "project": "redragon-lineup",
+    "line": 127,
+    "hash": "70bd7c8922ef6e6112ec54685bef6d47",
+    "textRange": {
+      "startLine": 127,
+      "endLine": 127,
+      "startOffset": 15,
+      "endOffset": 30
+    },
+    "flows": [
+      {
+        "locations": [
+          {
+            "component": "redragon-lineup:server.js",
+            "textRange": {
+              "startLine": 129,
+              "endLine": 129,
+              "startOffset": 2,
+              "endOffset": 4
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "redragon-lineup:server.js",
+            "textRange": {
+              "startLine": 134,
+              "endLine": 134,
+              "startOffset": 2,
+              "endOffset": 4
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "redragon-lineup:server.js",
+            "textRange": {
+              "startLine": 138,
+              "endLine": 138,
+              "startOffset": 4,
+              "endOffset": 6
+            },
+            "msg": "+2 (incl. 1 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "redragon-lineup:server.js",
+            "textRange": {
+              "startLine": 149,
+              "endLine": 149,
+              "startOffset": 4,
+              "endOffset": 6
+            },
+            "msg": "+2 (incl. 1 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "redragon-lineup:server.js",
+            "textRange": {
+              "startLine": 156,
+              "endLine": 156,
+              "startOffset": 4,
+              "endOffset": 7
+            },
+            "msg": "+2 (incl. 1 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "redragon-lineup:server.js",
+            "textRange": {
+              "startLine": 160,
+              "endLine": 160,
+              "startOffset": 6,
+              "endOffset": 8
+            },
+            "msg": "+3 (incl. 2 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "redragon-lineup:server.js",
+            "textRange": {
+              "startLine": 160,
+              "endLine": 160,
+              "startOffset": 44,
+              "endOffset": 46
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "redragon-lineup:server.js",
+            "textRange": {
+              "startLine": 165,
+              "endLine": 165,
+              "startOffset": 6,
+              "endOffset": 8
+            },
+            "msg": "+3 (incl. 2 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "redragon-lineup:server.js",
+            "textRange": {
+              "startLine": 167,
+              "endLine": 167,
+              "startOffset": 8,
+              "endOffset": 12
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "redragon-lineup:server.js",
+            "textRange": {
+              "startLine": 171,
+              "endLine": 171,
+              "startOffset": 37,
+              "endOffset": 38
+            },
+            "msg": "+3 (incl. 2 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      }
+    ],
+    "status": "OPEN",
+    "message": "Refactor this function to reduce its Cognitive Complexity from 19 to the 15 allowed.",
+    "effort": "9min",
+    "debt": "9min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [
+      "brain-overload"
+    ],
+    "creationDate": "2026-04-16T15:40:04+0000",
+    "updateDate": "2026-04-22T16:22:05+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "FOCUSED",
+    "cleanCodeAttributeCategory": "ADAPTABLE",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "HIGH"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  }
+]

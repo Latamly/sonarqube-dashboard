@@ -1,0 +1,100 @@
+{
+  "Web:S6847": {
+    "name": "Non-interactive elements shouldn't have event handlers",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "Web:S6853": {
+    "name": "Label elements should have a text label and an associated control",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "javascript:S3358": {
+    "name": "Ternary operators should not be nested",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "javascript:S7735": {
+    "name": "Negated conditions should be avoided when an else clause is present",
+    "htmlDesc": "",
+    "remFnBaseEffort": "2min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
+  "javascript:S7722": {
+    "name": "Built-in error objects should have meaningful messages",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
+  "javascript:S4624": {
+    "name": "Template literals should not be nested",
+    "htmlDesc": "",
+    "remFnBaseEffort": "10min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "javascript:S7781": {
+    "name": "Strings should use \"replaceAll()\" instead of \"replace()\" with global regex",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
+  "css:S7924": {
+    "name": "Text and background colors should have sufficient contrast",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "css:S4658": {
+    "name": "Empty blocks should be removed",
+    "htmlDesc": "",
+    "remFnBaseEffort": "1min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "javascript:S7764": {
+    "name": "Use \"globalThis\" instead of \"window\", \"self\", or \"global\"",
+    "htmlDesc": "",
+    "remFnBaseEffort": "2min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
+  "javascript:S2871": {
+    "name": "\"Array.prototype.sort()\" and \"Array.prototype.toSorted()\" should use a compare function",
+    "htmlDesc": "",
+    "remFnBaseEffort": "10min",
+    "severity": "CRITICAL",
+    "type": "BUG"
+  },
+  "javascript:S1481": {
+    "name": "Unused local variables and functions should be removed",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
+  "javascript:S7772": {
+    "name": "Node.js built-in modules should be imported using the \"node:\" protocol",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
+  "javascript:S3776": {
+    "name": "Cognitive Complexity of functions should not be too high",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "CRITICAL",
+    "type": "CODE_SMELL"
+  }
+}
