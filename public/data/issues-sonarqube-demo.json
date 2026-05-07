@@ -1,0 +1,48 @@
+[
+  {
+    "key": "84a55fdc-907a-476f-a6db-2b3c933c5fc3",
+    "rule": "javascript:S7772",
+    "severity": "MINOR",
+    "component": "sonarqube-demo:src/index.js",
+    "project": "sonarqube-demo",
+    "line": 1,
+    "hash": "477809141bc20e64ba59192d26570082",
+    "textRange": {
+      "startLine": 1,
+      "endLine": 1,
+      "startOffset": 21,
+      "endOffset": 27
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Prefer `node:http` over `http`.",
+    "effort": "5min",
+    "debt": "5min",
+    "author": "nelsoncampos@latamly.com",
+    "tags": [
+      "convention",
+      "import",
+      "nodejs"
+    ],
+    "creationDate": "2026-04-21T19:36:30+0000",
+    "updateDate": "2026-04-21T19:59:15+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": true,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CONVENTIONAL",
+    "cleanCodeAttributeCategory": "CONSISTENT",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "MEDIUM"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  }
+]
