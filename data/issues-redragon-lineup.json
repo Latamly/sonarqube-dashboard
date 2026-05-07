@@ -22,6 +22,7 @@
     "tags": [
       "accessibility"
     ],
+    "comments": [],
     "creationDate": "2026-04-16T15:40:04+0000",
     "updateDate": "2026-04-22T16:22:05+0000",
     "type": "CODE_SMELL",
@@ -70,6 +71,7 @@
     "tags": [
       "accessibility"
     ],
+    "comments": [],
     "creationDate": "2026-04-16T15:40:04+0000",
     "updateDate": "2026-04-22T16:22:05+0000",
     "type": "CODE_SMELL",
@@ -114,6 +116,7 @@
     "tags": [
       "confusing"
     ],
+    "comments": [],
     "creationDate": "2026-04-16T15:40:04+0000",
     "updateDate": "2026-04-22T16:22:05+0000",
     "type": "CODE_SMELL",
@@ -158,6 +161,7 @@
     "tags": [
       "readability"
     ],
+    "comments": [],
     "creationDate": "2026-04-16T15:40:04+0000",
     "updateDate": "2026-04-22T16:22:05+0000",
     "type": "CODE_SMELL",
@@ -202,6 +206,7 @@
     "tags": [
       "error-handling"
     ],
+    "comments": [],
     "creationDate": "2026-04-16T15:40:04+0000",
     "updateDate": "2026-04-22T16:22:05+0000",
     "type": "CODE_SMELL",
@@ -246,6 +251,7 @@
     "tags": [
       "error-handling"
     ],
+    "comments": [],
     "creationDate": "2026-04-16T15:40:04+0000",
     "updateDate": "2026-04-22T16:22:05+0000",
     "type": "CODE_SMELL",
@@ -292,6 +298,7 @@
       "brain-overload",
       "confusing"
     ],
+    "comments": [],
     "creationDate": "2026-04-16T15:40:04+0000",
     "updateDate": "2026-04-22T16:22:05+0000",
     "type": "CODE_SMELL",
@@ -336,6 +343,7 @@
     "tags": [
       "confusing"
     ],
+    "comments": [],
     "creationDate": "2026-04-16T15:40:04+0000",
     "updateDate": "2026-04-22T16:22:05+0000",
     "type": "CODE_SMELL",
@@ -381,6 +389,7 @@
       "readability",
       "es2021"
     ],
+    "comments": [],
     "creationDate": "2026-04-16T15:40:04+0000",
     "updateDate": "2026-04-22T16:22:05+0000",
     "type": "CODE_SMELL",
@@ -430,6 +439,7 @@
       "readability",
       "es2021"
     ],
+    "comments": [],
     "creationDate": "2026-04-16T15:40:04+0000",
     "updateDate": "2026-04-22T16:22:05+0000",
     "type": "CODE_SMELL",
@@ -479,6 +489,7 @@
       "readability",
       "es2021"
     ],
+    "comments": [],
     "creationDate": "2026-04-16T15:40:04+0000",
     "updateDate": "2026-04-22T16:22:05+0000",
     "type": "CODE_SMELL",
@@ -528,6 +539,7 @@
       "readability",
       "es2021"
     ],
+    "comments": [],
     "creationDate": "2026-04-16T15:40:04+0000",
     "updateDate": "2026-04-22T16:22:05+0000",
     "type": "CODE_SMELL",
@@ -579,6 +591,7 @@
       "wcag",
       "contrast"
     ],
+    "comments": [],
     "creationDate": "2026-04-16T15:40:04+0000",
     "updateDate": "2026-04-22T16:22:05+0000",
     "type": "CODE_SMELL",
@@ -621,6 +634,7 @@
     "debt": "1min",
     "author": "nelsoncampos@latamly.com",
     "tags": [],
+    "comments": [],
     "creationDate": "2026-04-16T15:40:04+0000",
     "updateDate": "2026-04-22T16:22:05+0000",
     "type": "CODE_SMELL",
@@ -665,6 +679,7 @@
     "tags": [
       "error-handling"
     ],
+    "comments": [],
     "creationDate": "2026-04-16T15:40:04+0000",
     "updateDate": "2026-04-22T16:22:05+0000",
     "type": "CODE_SMELL",
@@ -710,6 +725,7 @@
       "portability",
       "es2020"
     ],
+    "comments": [],
     "creationDate": "2026-04-16T15:40:04+0000",
     "updateDate": "2026-04-22T16:22:05+0000",
     "type": "CODE_SMELL",
@@ -754,6 +770,7 @@
     "tags": [
       "readability"
     ],
+    "comments": [],
     "creationDate": "2026-04-16T15:40:04+0000",
     "updateDate": "2026-04-22T16:22:05+0000",
     "type": "CODE_SMELL",
@@ -799,6 +816,7 @@
       "type-dependent",
       "bad-practice"
     ],
+    "comments": [],
     "creationDate": "2026-04-16T15:40:04+0000",
     "updateDate": "2026-04-22T16:22:05+0000",
     "type": "BUG",
@@ -844,6 +862,7 @@
       "readability",
       "es2021"
     ],
+    "comments": [],
     "creationDate": "2026-04-16T15:40:04+0000",
     "updateDate": "2026-04-22T16:22:05+0000",
     "type": "CODE_SMELL",
@@ -893,6 +912,7 @@
       "readability",
       "es2021"
     ],
+    "comments": [],
     "creationDate": "2026-04-16T15:40:04+0000",
     "updateDate": "2026-04-22T16:22:05+0000",
     "type": "CODE_SMELL",
@@ -942,6 +962,7 @@
       "readability",
       "es2021"
     ],
+    "comments": [],
     "creationDate": "2026-04-16T15:40:04+0000",
     "updateDate": "2026-04-22T16:22:05+0000",
     "type": "CODE_SMELL",
@@ -991,6 +1012,7 @@
       "readability",
       "es2021"
     ],
+    "comments": [],
     "creationDate": "2026-04-16T15:40:04+0000",
     "updateDate": "2026-04-22T16:22:05+0000",
     "type": "CODE_SMELL",
@@ -1040,6 +1062,7 @@
       "portability",
       "es2020"
     ],
+    "comments": [],
     "creationDate": "2026-04-16T15:40:04+0000",
     "updateDate": "2026-04-22T16:22:05+0000",
     "type": "CODE_SMELL",
@@ -1084,6 +1107,7 @@
     "tags": [
       "unused"
     ],
+    "comments": [],
     "creationDate": "2026-04-16T15:40:04+0000",
     "updateDate": "2026-04-22T16:22:05+0000",
     "type": "CODE_SMELL",
@@ -1128,6 +1152,7 @@
     "tags": [
       "error-handling"
     ],
+    "comments": [],
     "creationDate": "2026-04-16T15:40:04+0000",
     "updateDate": "2026-04-22T16:22:05+0000",
     "type": "CODE_SMELL",
@@ -1173,6 +1198,7 @@
       "portability",
       "es2020"
     ],
+    "comments": [],
     "creationDate": "2026-04-16T15:40:04+0000",
     "updateDate": "2026-04-22T16:22:05+0000",
     "type": "CODE_SMELL",
@@ -1218,6 +1244,7 @@
       "portability",
       "es2020"
     ],
+    "comments": [],
     "creationDate": "2026-04-16T15:40:04+0000",
     "updateDate": "2026-04-22T16:22:05+0000",
     "type": "CODE_SMELL",
@@ -1263,6 +1290,7 @@
       "portability",
       "es2020"
     ],
+    "comments": [],
     "creationDate": "2026-04-16T15:40:04+0000",
     "updateDate": "2026-04-22T16:22:05+0000",
     "type": "CODE_SMELL",
@@ -1308,6 +1336,7 @@
       "portability",
       "es2020"
     ],
+    "comments": [],
     "creationDate": "2026-04-16T15:40:04+0000",
     "updateDate": "2026-04-22T16:22:05+0000",
     "type": "CODE_SMELL",
@@ -1352,6 +1381,7 @@
     "tags": [
       "accessibility"
     ],
+    "comments": [],
     "creationDate": "2026-04-16T15:40:04+0000",
     "updateDate": "2026-04-22T16:22:05+0000",
     "type": "CODE_SMELL",
@@ -1401,6 +1431,7 @@
       "portability",
       "es2020"
     ],
+    "comments": [],
     "creationDate": "2026-04-16T15:40:04+0000",
     "updateDate": "2026-04-22T16:22:05+0000",
     "type": "CODE_SMELL",
@@ -1446,6 +1477,7 @@
       "portability",
       "es2020"
     ],
+    "comments": [],
     "creationDate": "2026-04-16T15:40:04+0000",
     "updateDate": "2026-04-22T16:22:05+0000",
     "type": "CODE_SMELL",
@@ -1490,6 +1522,7 @@
     "tags": [
       "accessibility"
     ],
+    "comments": [],
     "creationDate": "2026-04-16T15:40:04+0000",
     "updateDate": "2026-04-22T16:22:05+0000",
     "type": "CODE_SMELL",
@@ -1540,6 +1573,7 @@
       "import",
       "nodejs"
     ],
+    "comments": [],
     "creationDate": "2026-04-16T15:40:04+0000",
     "updateDate": "2026-04-22T16:22:05+0000",
     "type": "CODE_SMELL",
@@ -1586,6 +1620,7 @@
       "import",
       "nodejs"
     ],
+    "comments": [],
     "creationDate": "2026-04-16T15:40:04+0000",
     "updateDate": "2026-04-22T16:22:05+0000",
     "type": "CODE_SMELL",
@@ -1631,6 +1666,7 @@
       "readability",
       "es2021"
     ],
+    "comments": [],
     "creationDate": "2026-04-16T15:40:04+0000",
     "updateDate": "2026-04-22T16:22:05+0000",
     "type": "CODE_SMELL",
@@ -1680,6 +1716,7 @@
       "readability",
       "es2021"
     ],
+    "comments": [],
     "creationDate": "2026-04-16T15:40:04+0000",
     "updateDate": "2026-04-22T16:22:05+0000",
     "type": "CODE_SMELL",
@@ -1729,6 +1766,7 @@
       "readability",
       "es2021"
     ],
+    "comments": [],
     "creationDate": "2026-04-16T15:40:04+0000",
     "updateDate": "2026-04-22T16:22:05+0000",
     "type": "CODE_SMELL",
@@ -1778,6 +1816,7 @@
       "readability",
       "es2021"
     ],
+    "comments": [],
     "creationDate": "2026-04-16T15:40:04+0000",
     "updateDate": "2026-04-22T16:22:05+0000",
     "type": "CODE_SMELL",
@@ -1977,6 +2016,7 @@
     "tags": [
       "brain-overload"
     ],
+    "comments": [],
     "creationDate": "2026-04-16T15:40:04+0000",
     "updateDate": "2026-04-22T16:22:05+0000",
     "type": "CODE_SMELL",
@@ -2172,6 +2212,7 @@
     "tags": [
       "brain-overload"
     ],
+    "comments": [],
     "creationDate": "2026-04-16T15:40:04+0000",
     "updateDate": "2026-04-22T16:22:05+0000",
     "type": "CODE_SMELL",

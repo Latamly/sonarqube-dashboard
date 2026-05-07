@@ -24,6 +24,7 @@
       "import",
       "nodejs"
     ],
+    "comments": [],
     "creationDate": "2026-04-21T19:36:30+0000",
     "updateDate": "2026-04-21T19:59:15+0000",
     "type": "CODE_SMELL",
