@@ -1,0 +1,131 @@
+name: Update SonarQube Dashboard
+
+on:
+  schedule:
+    - cron: '0 * * * *'   # cada hora
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ["self-hosted", "linux", "x64"]
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch SonarQube data
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+        run: |
+          python3 - << 'PYEOF'
+          import json, os, sys
+          import urllib.request, urllib.parse, base64, datetime
+
+          host = os.environ['SONAR_HOST_URL'].rstrip('/')
+          token = os.environ['SONAR_TOKEN']
+          auth = base64.b64encode(f"{token}:".encode()).decode()
+          headers = {"Authorization": f"Basic {auth}"}
+
+          def get(path):
+              req = urllib.request.Request(f"{host}{path}", headers=headers)
+              with urllib.request.urlopen(req) as r:
+                  return json.loads(r.read())
+
+          os.makedirs('public/data', exist_ok=True)
+
+          # 1. Projects (all pages)
+          page, projects = 1, []
+          while True:
+              r = get(f"/api/projects/search?ps=500&p={page}")
+              projects += r['components']
+              if len(projects) >= r['paging']['total']:
+                  break
+              page += 1
+
+          # 2. Metrics + Issues per project
+          METRICS = "bugs,vulnerabilities,security_hotspots,code_smells,coverage,duplicated_lines_density,reliability_rating,security_rating,sqale_rating,quality_gate_details"
+          rules_cache = {}
+
+          for proj in projects:
+              key = proj['key']
+              print(f"Processing {key}…")
+
+              # metrics
+              mr = get(f"/api/measures/component?component={urllib.parse.quote(key)}&metricKeys={METRICS}")
+              measures = {m['metric']: m.get('value', 'N/A') for m in mr['component']['measures']}
+              qg_raw = json.loads(measures.get('quality_gate_details', '{}'))
+              proj['metrics'] = measures
+              proj['quality_gate'] = qg_raw.get('level', 'NONE')
+              with open(f"public/data/metrics-{key}.json", 'w') as f:
+                  json.dump(measures, f, indent=2)
+
+              # issues (all pages)
+              p2, issues = 1, []
+              while True:
+                  ir = get(f"/api/issues/search?componentKeys={urllib.parse.quote(key)}&ps=500&p={p2}&resolved=false")
+                  issues += ir['issues']
+                  if len(issues) >= ir['paging']['total']:
+                      break
+                  p2 += 1
+              with open(f"public/data/issues-{key}.json", 'w') as f:
+                  json.dump(issues, f, indent=2)
+
+              for issue in issues:
+                  rules_cache[issue['rule']] = None
+
+          # 3. Rules
+          for rule_key in rules_cache:
+              try:
+                  rr = get(f"/api/rules/show?key={urllib.parse.quote(rule_key)}")
+                  rules_cache[rule_key] = {
+                      "name": rr['rule'].get('name', ''),
+                      "htmlDesc": rr['rule'].get('htmlDesc', ''),
+                      "remFnBaseEffort": rr['rule'].get('remFnBaseEffort', ''),
+                      "severity": rr['rule'].get('severity', ''),
+                      "type": rr['rule'].get('type', ''),
+                  }
+              except Exception as e:
+                  print(f"Warning: could not fetch rule {rule_key}: {e}")
+                  rules_cache[rule_key] = {"name": rule_key, "htmlDesc": "", "severity": "", "type": ""}
+
+          with open('public/data/rules.json', 'w') as f:
+              json.dump(rules_cache, f, indent=2)
+
+          with open('public/data/projects.json', 'w') as f:
+              json.dump(projects, f, indent=2)
+
+          with open('public/data/meta.json', 'w') as f:
+              json.dump({"lastUpdated": datetime.datetime.utcnow().isoformat() + "Z"}, f)
+
+          print(f"Done: {len(projects)} projects, {len(rules_cache)} rules")
+          PYEOF
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data/
+          git diff --staged --quiet && echo "No changes" || git commit -m "chore: update sonarqube data [skip ci]"
+          git push
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
