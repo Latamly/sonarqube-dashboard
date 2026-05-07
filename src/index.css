@@ -10,3 +10,6 @@ body {
 
 h1 { font-size: 1.6rem; }
 h2 { font-size: 1.2rem; }
+
+.issue-row { transition: background 0.1s; }
+.issue-row:hover { background: #fafbfc; }
