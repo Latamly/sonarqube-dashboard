@@ -8,14 +8,11 @@ on:
 jobs:
   update:
     runs-on: ["self-hosted", "linux", "x64"]
-    permissions:
-      contents: write
-      pages: write
-      id-token: write
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAGES_TOKEN }}
 
       - name: Fetch SonarQube data
         env:
@@ -127,5 +124,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          personal_token: ${{ secrets.PAGES_TOKEN }}
           publish_dir: ./dist
