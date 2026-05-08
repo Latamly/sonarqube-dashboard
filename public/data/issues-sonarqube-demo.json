@@ -44,6 +44,24 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 1,
+        "code": "const http = require('http');"
+      },
+      {
+        "line": 2,
+        "code": "const { sum } = require('./math');"
+      },
+      {
+        "line": 3,
+        "code": ""
+      },
+      {
+        "line": 4,
+        "code": "const server = http.createServer((req, res) =&gt; {"
+      }
+    ]
   }
 ]

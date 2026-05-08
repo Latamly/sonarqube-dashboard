@@ -46,7 +46,37 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 15,
+        "code": "  &lt;div class=\"admin-login-overlay\" id=\"adminLoginOverlay\"&gt;"
+      },
+      {
+        "line": 16,
+        "code": "    &lt;div class=\"admin-login-card\"&gt;"
+      },
+      {
+        "line": 17,
+        "code": "      &lt;div class=\"login-logo\" style=\"margin-bottom:24px\"&gt;"
+      },
+      {
+        "line": 18,
+        "code": "        &lt;img src=\"https://redragon.es/content/uploads/2021/04/logo.svg\""
+      },
+      {
+        "line": 19,
+        "code": "             alt=\"Redragon\" style=\"height:32px;filter:brightness(0) invert(1)\""
+      },
+      {
+        "line": 20,
+        "code": "             onerror=\"this.style.display='none'\"&gt;"
+      },
+      {
+        "line": 21,
+        "code": "        &lt;span class=\"login-logo-text\"&gt;Admin&lt;/span&gt;"
+      }
+    ]
   },
   {
     "key": "0de1f566-30d6-49fd-bb6e-7a66d1ff6e4d",
@@ -91,7 +121,37 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 63,
+        "code": "        Identifica qu\u00e9 familias de producto existen en Airtable y cu\u00e1les son visibles por regi\u00f3n."
+      },
+      {
+        "line": 64,
+        "code": "      &lt;/p&gt;"
+      },
+      {
+        "line": 65,
+        "code": "      &lt;div style=\"margin-bottom:16px\"&gt;"
+      },
+      {
+        "line": 66,
+        "code": "        &lt;label style=\"font-size:0.82rem;color:var(--text-secondary);margin-right:12px;display:inline-block\"&gt;Filtrar por regi\u00f3n:&lt;/label&gt;"
+      },
+      {
+        "line": 67,
+        "code": "        &lt;select id=\"familyRegionFilter\" style=\"padding:6px 10px;border:1px solid var(--border);border-radius:4px;background:var(--bg-secondary);color:var(--text-primary);font-size:0.85rem\"&gt;"
+      },
+      {
+        "line": 68,
+        "code": "          &lt;option value=\"\"&gt;Todas las regiones&lt;/option&gt;"
+      },
+      {
+        "line": 69,
+        "code": "        &lt;/select&gt;"
+      }
+    ]
   },
   {
     "key": "bae71a69-2d7c-4ff1-9afa-1fe8d18dc9f7",
@@ -136,7 +196,37 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 320,
+        "code": "        .sort((a, b) =&gt; b[1].total - a[1].total)"
+      },
+      {
+        "line": 321,
+        "code": "        .map(([fam, counts]) =&gt; {"
+      },
+      {
+        "line": 322,
+        "code": "          const coverage = counts.total &gt; 0 ? Math.round((counts.visible / counts.total) * 100) : 0;"
+      },
+      {
+        "line": 323,
+        "code": "          const coverageColor = coverage === 100 ? 'var(--green)' : coverage &gt;= 50 ? 'var(--orange)' : '#FCA5A5';"
+      },
+      {
+        "line": 324,
+        "code": "          return `"
+      },
+      {
+        "line": 325,
+        "code": "            &lt;tr&gt;"
+      },
+      {
+        "line": 326,
+        "code": "              &lt;td style=\"font-weight:600\"&gt;${esc(fam)}&lt;/td&gt;"
+      }
+    ]
   },
   {
     "key": "a43427cb-49ac-486d-aeb5-6c03c752a29a",
@@ -181,7 +271,37 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 330,
+        "code": "            &lt;/tr&gt;`;"
+      },
+      {
+        "line": 331,
+        "code": "        }).join('');"
+      },
+      {
+        "line": 332,
+        "code": ""
+      },
+      {
+        "line": 333,
+        "code": "      if (!families) {"
+      },
+      {
+        "line": 334,
+        "code": "        tbody.innerHTML = '&lt;tr&gt;&lt;td colspan=\"4\" style=\"text-align:center;color:var(--text-muted);padding:32px\"&gt;Sin datos&lt;/td&gt;&lt;/tr&gt;';"
+      },
+      {
+        "line": 335,
+        "code": "      } else {"
+      },
+      {
+        "line": 336,
+        "code": "        tbody.innerHTML = families;"
+      }
+    ]
   },
   {
     "key": "9ce345f2-6e66-4af5-8c47-b02dfbd2d026",
@@ -226,7 +346,37 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 407,
+        "code": "          headers: { 'Content-Type': 'application/json' },"
+      },
+      {
+        "line": 408,
+        "code": "          body: JSON.stringify(updated),"
+      },
+      {
+        "line": 409,
+        "code": "        });"
+      },
+      {
+        "line": 410,
+        "code": "        if (!res.ok) throw new Error();"
+      },
+      {
+        "line": 411,
+        "code": "        showToast('Configuraci\u00f3n de regiones guardada');"
+      },
+      {
+        "line": 412,
+        "code": "      } catch {"
+      },
+      {
+        "line": 413,
+        "code": "        showToast('Error al guardar regiones', 'error');"
+      }
+    ]
   },
   {
     "key": "b6c643b1-d59f-442b-b970-8b76274444ec",
@@ -271,7 +421,37 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 457,
+        "code": "  async function fetchFromAPI() {"
+      },
+      {
+        "line": 458,
+        "code": "    try {"
+      },
+      {
+        "line": 459,
+        "code": "      const res = await fetch('/api/productos');"
+      },
+      {
+        "line": 460,
+        "code": "      if (!res.ok) throw new Error();"
+      },
+      {
+        "line": 461,
+        "code": "      return await res.json();"
+      },
+      {
+        "line": 462,
+        "code": "    } catch {"
+      },
+      {
+        "line": 463,
+        "code": "      showToast('No se pudo conectar con la API', 'error');"
+      }
+    ]
   },
   {
     "key": "59bf9a46-48a7-426e-bdd8-802870bf034c",
@@ -318,7 +498,37 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 478,
+        "code": "  function renderTable(products, total) {"
+      },
+      {
+        "line": 479,
+        "code": "    const tbody = document.getElementById('adminTableBody');"
+      },
+      {
+        "line": 480,
+        "code": "    const count = document.getElementById('tableCount');"
+      },
+      {
+        "line": 481,
+        "code": "    count.textContent = `Mostrando ${products.length}${total ? ` de ${total}` : ''} productos`;"
+      },
+      {
+        "line": 482,
+        "code": ""
+      },
+      {
+        "line": 483,
+        "code": "    if (!products.length) {"
+      },
+      {
+        "line": 484,
+        "code": "      tbody.innerHTML = '&lt;tr&gt;&lt;td colspan=\"6\" style=\"text-align:center;color:var(--text-muted);padding:32px\"&gt;Sin resultados&lt;/td&gt;&lt;/tr&gt;';"
+      }
+    ]
   },
   {
     "key": "48a1a516-fc35-49dc-ae8d-baab1f65a0a0",
@@ -363,7 +573,37 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 518,
+        "code": "        const { sku, field } = el.dataset;"
+      },
+      {
+        "line": 519,
+        "code": "        const ov = getOverrides();"
+      },
+      {
+        "line": 520,
+        "code": "        if (!ov[sku]) ov[sku] = {};"
+      },
+      {
+        "line": 521,
+        "code": "        ov[sku][field] = el.type === 'checkbox' ? (el.checked ? '1' : '') : el.value;"
+      },
+      {
+        "line": 522,
+        "code": "        saveOverrides(ov);"
+      },
+      {
+        "line": 523,
+        "code": "        const skuCell = el.closest('tr').querySelector('.sku-cell');"
+      },
+      {
+        "line": 524,
+        "code": "        if (!skuCell.querySelector('.modified-indicator')) {"
+      }
+    ]
   },
   {
     "key": "658881b0-4a28-49fd-8bac-65684c6f1c78",
@@ -413,7 +653,37 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 530,
+        "code": ""
+      },
+      {
+        "line": 531,
+        "code": "  function esc(str) {"
+      },
+      {
+        "line": 532,
+        "code": "    if (!str) return '';"
+      },
+      {
+        "line": 533,
+        "code": "    return String(str).replace(/&amp;/g,'&amp;amp;').replace(/&lt;/g,'&amp;lt;').replace(/&gt;/g,'&amp;gt;').replace(/\"/g,'&amp;quot;');"
+      },
+      {
+        "line": 534,
+        "code": "  }"
+      },
+      {
+        "line": 535,
+        "code": "  &lt;/script&gt;"
+      },
+      {
+        "line": 536,
+        "code": "&lt;/body&gt;"
+      }
+    ]
   },
   {
     "key": "87f79aa1-9654-4846-a7bc-eba90299ae00",
@@ -463,7 +733,37 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 530,
+        "code": ""
+      },
+      {
+        "line": 531,
+        "code": "  function esc(str) {"
+      },
+      {
+        "line": 532,
+        "code": "    if (!str) return '';"
+      },
+      {
+        "line": 533,
+        "code": "    return String(str).replace(/&amp;/g,'&amp;amp;').replace(/&lt;/g,'&amp;lt;').replace(/&gt;/g,'&amp;gt;').replace(/\"/g,'&amp;quot;');"
+      },
+      {
+        "line": 534,
+        "code": "  }"
+      },
+      {
+        "line": 535,
+        "code": "  &lt;/script&gt;"
+      },
+      {
+        "line": 536,
+        "code": "&lt;/body&gt;"
+      }
+    ]
   },
   {
     "key": "9584d431-0534-428f-abf1-e910658c38ea",
@@ -513,7 +813,37 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 530,
+        "code": ""
+      },
+      {
+        "line": 531,
+        "code": "  function esc(str) {"
+      },
+      {
+        "line": 532,
+        "code": "    if (!str) return '';"
+      },
+      {
+        "line": 533,
+        "code": "    return String(str).replace(/&amp;/g,'&amp;amp;').replace(/&lt;/g,'&amp;lt;').replace(/&gt;/g,'&amp;gt;').replace(/\"/g,'&amp;quot;');"
+      },
+      {
+        "line": 534,
+        "code": "  }"
+      },
+      {
+        "line": 535,
+        "code": "  &lt;/script&gt;"
+      },
+      {
+        "line": 536,
+        "code": "&lt;/body&gt;"
+      }
+    ]
   },
   {
     "key": "d8f6b869-4f18-4d8a-befa-3a19e4ddaa14",
@@ -563,7 +893,37 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 530,
+        "code": ""
+      },
+      {
+        "line": 531,
+        "code": "  function esc(str) {"
+      },
+      {
+        "line": 532,
+        "code": "    if (!str) return '';"
+      },
+      {
+        "line": 533,
+        "code": "    return String(str).replace(/&amp;/g,'&amp;amp;').replace(/&lt;/g,'&amp;lt;').replace(/&gt;/g,'&amp;gt;').replace(/\"/g,'&amp;quot;');"
+      },
+      {
+        "line": 534,
+        "code": "  }"
+      },
+      {
+        "line": 535,
+        "code": "  &lt;/script&gt;"
+      },
+      {
+        "line": 536,
+        "code": "&lt;/body&gt;"
+      }
+    ]
   },
   {
     "key": "63544c85-be4b-4446-8f67-c9d1f8a660c1",
@@ -611,7 +971,37 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 239,
+        "code": "  display: none;"
+      },
+      {
+        "line": 240,
+        "code": "  background: rgba(153,27,27,0.2);"
+      },
+      {
+        "line": 241,
+        "code": "  border: 1px solid var(--red-dark);"
+      },
+      {
+        "line": 242,
+        "code": "  color: #FCA5A5;"
+      },
+      {
+        "line": 243,
+        "code": "  font-size: 0.85rem;"
+      },
+      {
+        "line": 244,
+        "code": "  padding: 10px 14px;"
+      },
+      {
+        "line": 245,
+        "code": "  border-radius: var(--radius-sm);"
+      }
+    ]
   },
   {
     "key": "bf86d15d-f8bf-4200-9475-10013cf19023",
@@ -654,7 +1044,37 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 1189,
+        "code": "  border: none;"
+      },
+      {
+        "line": 1190,
+        "code": "}"
+      },
+      {
+        "line": 1191,
+        "code": ""
+      },
+      {
+        "line": 1192,
+        "code": ".modal-specs-section { }"
+      },
+      {
+        "line": 1193,
+        "code": ".modal-specs-label {"
+      },
+      {
+        "line": 1194,
+        "code": "  font-size: 0.72rem;"
+      },
+      {
+        "line": 1195,
+        "code": "  font-weight: 700;"
+      }
+    ]
   },
   {
     "key": "c62cab3d-d4ae-4359-ac23-74e9a64110b5",
@@ -699,7 +1119,37 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 30,
+        "code": "async function loadRegionConfig() {"
+      },
+      {
+        "line": 31,
+        "code": "  try {"
+      },
+      {
+        "line": 32,
+        "code": "    const res = await fetch('/api/regiones');"
+      },
+      {
+        "line": 33,
+        "code": "    if (!res.ok) throw new Error();"
+      },
+      {
+        "line": 34,
+        "code": "    REGION_CONFIG = await res.json();"
+      },
+      {
+        "line": 35,
+        "code": "  } catch {"
+      },
+      {
+        "line": 36,
+        "code": "    REGION_CONFIG = {};"
+      }
+    ]
   },
   {
     "key": "9cf32ad9-04f6-4a58-b25a-c4de02c12a48",
@@ -745,7 +1195,37 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 55,
+        "code": ""
+      },
+      {
+        "line": 56,
+        "code": "function getData(region) {"
+      },
+      {
+        "line": 57,
+        "code": "  const overrides = getOverrides();"
+      },
+      {
+        "line": 58,
+        "code": "  return window.LINEUP_DATA"
+      },
+      {
+        "line": 59,
+        "code": "    .map(p =&gt; {"
+      },
+      {
+        "line": 60,
+        "code": "      const ov = overrides[p.sku];"
+      },
+      {
+        "line": 61,
+        "code": "      return ov ? { ...p, ...ov } : p;"
+      }
+    ]
   },
   {
     "key": "95c36221-a8bc-4e90-b78e-869b2b75c536",
@@ -790,7 +1270,37 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 122,
+        "code": "        &lt;span class=\"tier-dot ${css}\"&gt;&lt;/span&gt;"
+      },
+      {
+        "line": 123,
+        "code": "        &lt;span class=\"tier-label ${css}\"&gt;${label}&lt;/span&gt;"
+      },
+      {
+        "line": 124,
+        "code": "        &lt;span class=\"badge-help\" data-tip=\"${tip}\" style=\"margin-left:2px\"&gt;?&lt;/span&gt;"
+      },
+      {
+        "line": 125,
+        "code": "        &lt;span class=\"tier-count\"&gt;${products.length} producto${products.length !== 1 ? 's' : ''}&lt;/span&gt;"
+      },
+      {
+        "line": 126,
+        "code": "      &lt;/div&gt;"
+      },
+      {
+        "line": 127,
+        "code": "      &lt;div class=\"product-grid\"&gt;${cards}&lt;/div&gt;"
+      },
+      {
+        "line": 128,
+        "code": "    &lt;/div&gt;`;"
+      }
+    ]
   },
   {
     "key": "dca2010c-13c7-4446-8150-d937eacf7990",
@@ -836,7 +1346,37 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 224,
+        "code": "  };"
+      },
+      {
+        "line": 225,
+        "code": ""
+      },
+      {
+        "line": 226,
+        "code": "  // Timeline chart"
+      },
+      {
+        "line": 227,
+        "code": "  const tlLabels = Object.keys(byTimeline).sort();"
+      },
+      {
+        "line": 228,
+        "code": "  const tlData   = tlLabels.map(k =&gt; byTimeline[k]);"
+      },
+      {
+        "line": 229,
+        "code": "  new Chart(document.getElementById('chartTimeline'), {"
+      },
+      {
+        "line": 230,
+        "code": "    type: 'bar',"
+      }
+    ]
   },
   {
     "key": "c2ee4b5a-38f1-49d9-be0d-8e8d98e5e8ec",
@@ -886,7 +1426,37 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 316,
+        "code": "function escHtml(str) {"
+      },
+      {
+        "line": 317,
+        "code": "  if (!str) return '';"
+      },
+      {
+        "line": 318,
+        "code": "  return String(str)"
+      },
+      {
+        "line": 319,
+        "code": "    .replace(/&amp;/g, '&amp;amp;')"
+      },
+      {
+        "line": 320,
+        "code": "    .replace(/&lt;/g, '&amp;lt;')"
+      },
+      {
+        "line": 321,
+        "code": "    .replace(/&gt;/g, '&amp;gt;')"
+      },
+      {
+        "line": 322,
+        "code": "    .replace(/\"/g, '&amp;quot;');"
+      }
+    ]
   },
   {
     "key": "4f569884-9ed3-4877-9095-26d96c88ca44",
@@ -936,7 +1506,37 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 317,
+        "code": "  if (!str) return '';"
+      },
+      {
+        "line": 318,
+        "code": "  return String(str)"
+      },
+      {
+        "line": 319,
+        "code": "    .replace(/&amp;/g, '&amp;amp;')"
+      },
+      {
+        "line": 320,
+        "code": "    .replace(/&lt;/g, '&amp;lt;')"
+      },
+      {
+        "line": 321,
+        "code": "    .replace(/&gt;/g, '&amp;gt;')"
+      },
+      {
+        "line": 322,
+        "code": "    .replace(/\"/g, '&amp;quot;');"
+      },
+      {
+        "line": 323,
+        "code": "}"
+      }
+    ]
   },
   {
     "key": "3fbf5ecd-37a7-4e4c-bfad-d66e3c0c9202",
@@ -986,7 +1586,37 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 318,
+        "code": "  return String(str)"
+      },
+      {
+        "line": 319,
+        "code": "    .replace(/&amp;/g, '&amp;amp;')"
+      },
+      {
+        "line": 320,
+        "code": "    .replace(/&lt;/g, '&amp;lt;')"
+      },
+      {
+        "line": 321,
+        "code": "    .replace(/&gt;/g, '&amp;gt;')"
+      },
+      {
+        "line": 322,
+        "code": "    .replace(/\"/g, '&amp;quot;');"
+      },
+      {
+        "line": 323,
+        "code": "}"
+      },
+      {
+        "line": 324,
+        "code": ""
+      }
+    ]
   },
   {
     "key": "fdfa68e2-15ff-4c71-b1e8-173269df5c3e",
@@ -1036,7 +1666,37 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 319,
+        "code": "    .replace(/&amp;/g, '&amp;amp;')"
+      },
+      {
+        "line": 320,
+        "code": "    .replace(/&lt;/g, '&amp;lt;')"
+      },
+      {
+        "line": 321,
+        "code": "    .replace(/&gt;/g, '&amp;gt;')"
+      },
+      {
+        "line": 322,
+        "code": "    .replace(/\"/g, '&amp;quot;');"
+      },
+      {
+        "line": 323,
+        "code": "}"
+      },
+      {
+        "line": 324,
+        "code": ""
+      },
+      {
+        "line": 325,
+        "code": "// ---- Fetch from backend API ----"
+      }
+    ]
   },
   {
     "key": "d3564cdf-87b7-43b7-9611-07dc4ab40ee6",
@@ -1082,7 +1742,37 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 343,
+        "code": "  } catch (err) {"
+      },
+      {
+        "line": 344,
+        "code": "    console.warn('API unavailable, falling back to local data.js:', err.message);"
+      },
+      {
+        "line": 345,
+        "code": "    // Fallback to static data.js if available"
+      },
+      {
+        "line": 346,
+        "code": "    if (window.LINEUP_DATA) return getData(region);"
+      },
+      {
+        "line": 347,
+        "code": "    return [];"
+      },
+      {
+        "line": 348,
+        "code": "  }"
+      },
+      {
+        "line": 349,
+        "code": "}"
+      }
+    ]
   },
   {
     "key": "268361a3-4a4a-4ac7-95eb-265c74753e64",
@@ -1127,7 +1817,37 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 25,
+        "code": "    return stored[region] || null;"
+      },
+      {
+        "line": 26,
+        "code": "  }"
+      },
+      {
+        "line": 27,
+        "code": ""
+      },
+      {
+        "line": 28,
+        "code": "  function getAdminHash() {"
+      },
+      {
+        "line": 29,
+        "code": "    try {"
+      },
+      {
+        "line": 30,
+        "code": "      return localStorage.getItem('rd_admin_password') || null;"
+      },
+      {
+        "line": 31,
+        "code": "    } catch { return null; }"
+      }
+    ]
   },
   {
     "key": "2442a18a-3ae2-4bab-b898-07d6b8ace1a0",
@@ -1172,7 +1892,37 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 34,
+        "code": "  async function fetchRegions() {"
+      },
+      {
+        "line": 35,
+        "code": "    try {"
+      },
+      {
+        "line": 36,
+        "code": "      const res = await fetch('/api/regiones');"
+      },
+      {
+        "line": 37,
+        "code": "      if (!res.ok) throw new Error();"
+      },
+      {
+        "line": 38,
+        "code": "      _regions = await res.json();"
+      },
+      {
+        "line": 39,
+        "code": "      return _regions;"
+      },
+      {
+        "line": 40,
+        "code": "    } catch {"
+      }
+    ]
   },
   {
     "key": "280ad137-643a-4de6-8518-957c5bb74ae9",
@@ -1218,7 +1968,37 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 119,
+        "code": "  function checkAuth() {"
+      },
+      {
+        "line": 120,
+        "code": "    const region = sessionStorage.getItem('rd_auth_region');"
+      },
+      {
+        "line": 121,
+        "code": "    if (!region) {"
+      },
+      {
+        "line": 122,
+        "code": "      window.location.href = 'index.html';"
+      },
+      {
+        "line": 123,
+        "code": "      return null;"
+      },
+      {
+        "line": 124,
+        "code": "    }"
+      },
+      {
+        "line": 125,
+        "code": "    return region;"
+      }
+    ]
   },
   {
     "key": "b6944f92-80db-4a83-ac44-cc363808ac98",
@@ -1264,7 +2044,37 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 132,
+        "code": "  function logout() {"
+      },
+      {
+        "line": 133,
+        "code": "    sessionStorage.removeItem('rd_auth_region');"
+      },
+      {
+        "line": 134,
+        "code": "    sessionStorage.removeItem('rd_auth_ts');"
+      },
+      {
+        "line": 135,
+        "code": "    window.location.href = 'index.html';"
+      },
+      {
+        "line": 136,
+        "code": "  }"
+      },
+      {
+        "line": 137,
+        "code": ""
+      },
+      {
+        "line": 138,
+        "code": "  function logoutAdmin() {"
+      }
+    ]
   },
   {
     "key": "16d5fa8d-634f-4585-8762-5271a70eab3a",
@@ -1310,7 +2120,37 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 137,
+        "code": ""
+      },
+      {
+        "line": 138,
+        "code": "  function logoutAdmin() {"
+      },
+      {
+        "line": 139,
+        "code": "    sessionStorage.removeItem('rd_admin_auth');"
+      },
+      {
+        "line": 140,
+        "code": "    window.location.href = 'index.html';"
+      },
+      {
+        "line": 141,
+        "code": "  }"
+      },
+      {
+        "line": 142,
+        "code": ""
+      },
+      {
+        "line": 143,
+        "code": "  function getRegion() {"
+      }
+    ]
   },
   {
     "key": "7afc1579-6d43-47b0-b100-d768091f7fa9",
@@ -1356,7 +2196,33 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 1,
+        "code": "// Auto-generated from Products-Grid view.tsv \u2014 do not edit manually"
+      },
+      {
+        "line": 2,
+        "code": "// Use admin panel or re-run parse script to update"
+      },
+      {
+        "line": 3,
+        "code": "window.LINEUP_DATA = ["
+      },
+      {
+        "line": 4,
+        "code": "  {"
+      },
+      {
+        "line": 5,
+        "code": "    \"sku\": \"K509RGB-SP\","
+      },
+      {
+        "line": 6,
+        "code": "    \"productFamily\": \"Teclados de membrana\","
+      }
+    ]
   },
   {
     "key": "6d91ec3b-4f1b-47f6-bd2e-a73496c3a8ab",
@@ -1405,7 +2271,37 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 13,
+        "code": ""
+      },
+      {
+        "line": 14,
+        "code": "  &lt;div class=\"login-card\"&gt;"
+      },
+      {
+        "line": 15,
+        "code": "    &lt;div class=\"login-logo\"&gt;"
+      },
+      {
+        "line": 16,
+        "code": "      &lt;img src=\"https://redragon.es/content/uploads/2021/04/logo.svg\""
+      },
+      {
+        "line": 17,
+        "code": "           alt=\"Redragon\" class=\"login-logo-img\""
+      },
+      {
+        "line": 18,
+        "code": "           onerror=\"this.onerror=null;this.style.display='none';this.nextElementSibling.style.display='flex'\"&gt;"
+      },
+      {
+        "line": 19,
+        "code": "      &lt;!-- Fallback inline SVG --&gt;"
+      }
+    ]
   },
   {
     "key": "9baca79f-c1bd-4f4b-a289-b3f59c9989bb",
@@ -1451,7 +2347,37 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 72,
+        "code": ""
+      },
+      {
+        "line": 73,
+        "code": "      // If already logged in, go straight to lineup"
+      },
+      {
+        "line": 74,
+        "code": "      if (sessionStorage.getItem('rd_auth_region')) {"
+      },
+      {
+        "line": 75,
+        "code": "        window.location.href = 'lineup.html';"
+      },
+      {
+        "line": 76,
+        "code": "        return;"
+      },
+      {
+        "line": 77,
+        "code": "      }"
+      },
+      {
+        "line": 78,
+        "code": ""
+      }
+    ]
   },
   {
     "key": "3a261482-fa05-410c-8649-68534de88c4b",
@@ -1497,7 +2423,37 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 145,
+        "code": ""
+      },
+      {
+        "line": 146,
+        "code": "        const ok = await AUTH.login(selectedRegion, password);"
+      },
+      {
+        "line": 147,
+        "code": "        if (ok) {"
+      },
+      {
+        "line": 148,
+        "code": "          window.location.href = 'lineup.html';"
+      },
+      {
+        "line": 149,
+        "code": "        } else {"
+      },
+      {
+        "line": 150,
+        "code": "          errorEl.classList.add('visible');"
+      },
+      {
+        "line": 151,
+        "code": "          errorEl.textContent = 'Contrase\u00f1a o regi\u00f3n incorrecta. Verific\u00e1 tus datos.';"
+      }
+    ]
   },
   {
     "key": "acc0c382-c32a-4f52-804b-44ef93d35154",
@@ -1546,7 +2502,37 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 14,
+        "code": "  &lt;!-- Hero Header --&gt;"
+      },
+      {
+        "line": 15,
+        "code": "  &lt;section class=\"hero-header\"&gt;"
+      },
+      {
+        "line": 16,
+        "code": "    &lt;div class=\"hero-header-inner\"&gt;"
+      },
+      {
+        "line": 17,
+        "code": "      &lt;img src=\"https://redragon.es/content/uploads/2021/04/logo.svg\""
+      },
+      {
+        "line": 18,
+        "code": "           alt=\"Redragon\" class=\"hero-logo\""
+      },
+      {
+        "line": 19,
+        "code": "           onerror=\"this.onerror=null;this.src='';this.style.display='none'\"&gt;"
+      },
+      {
+        "line": 20,
+        "code": "      &lt;div class=\"hero-text\"&gt;"
+      }
+    ]
   },
   {
     "key": "588e2db2-741d-4fe3-bdc3-f580bcde6a59",
@@ -1593,7 +2579,33 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 1,
+        "code": "require('dotenv').config();"
+      },
+      {
+        "line": 2,
+        "code": "const express = require('express');"
+      },
+      {
+        "line": 3,
+        "code": "const path = require('path');"
+      },
+      {
+        "line": 4,
+        "code": "const fs = require('fs');"
+      },
+      {
+        "line": 5,
+        "code": ""
+      },
+      {
+        "line": 6,
+        "code": "const app = express();"
+      }
+    ]
   },
   {
     "key": "72cb6de2-8c6d-41b3-b821-3140d76e089f",
@@ -1640,7 +2652,37 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 1,
+        "code": "require('dotenv').config();"
+      },
+      {
+        "line": 2,
+        "code": "const express = require('express');"
+      },
+      {
+        "line": 3,
+        "code": "const path = require('path');"
+      },
+      {
+        "line": 4,
+        "code": "const fs = require('fs');"
+      },
+      {
+        "line": 5,
+        "code": ""
+      },
+      {
+        "line": 6,
+        "code": "const app = express();"
+      },
+      {
+        "line": 7,
+        "code": "const PORT = process.env.PORT || 3000;"
+      }
+    ]
   },
   {
     "key": "15492b49-6256-4a8d-b032-5ebd07e5d1e0",
@@ -1690,7 +2732,37 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 44,
+        "code": ""
+      },
+      {
+        "line": 45,
+        "code": "function toSlug(label) {"
+      },
+      {
+        "line": 46,
+        "code": "  return label.toLowerCase()"
+      },
+      {
+        "line": 47,
+        "code": "    .normalize('NFD').replace(/[\\u0300-\\u036f]/g, '')"
+      },
+      {
+        "line": 48,
+        "code": "    .replace(/[^a-z0-9]+/g, '-')"
+      },
+      {
+        "line": 49,
+        "code": "    .replace(/^-|-$/g, '');"
+      },
+      {
+        "line": 50,
+        "code": "}"
+      }
+    ]
   },
   {
     "key": "5b8d5421-c263-463d-af7e-4ac21c57d71c",
@@ -1740,7 +2812,37 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 45,
+        "code": "function toSlug(label) {"
+      },
+      {
+        "line": 46,
+        "code": "  return label.toLowerCase()"
+      },
+      {
+        "line": 47,
+        "code": "    .normalize('NFD').replace(/[\\u0300-\\u036f]/g, '')"
+      },
+      {
+        "line": 48,
+        "code": "    .replace(/[^a-z0-9]+/g, '-')"
+      },
+      {
+        "line": 49,
+        "code": "    .replace(/^-|-$/g, '');"
+      },
+      {
+        "line": 50,
+        "code": "}"
+      },
+      {
+        "line": 51,
+        "code": ""
+      }
+    ]
   },
   {
     "key": "e08d743f-6c09-43b0-8460-4941c84bb5dc",
@@ -1790,7 +2892,37 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 46,
+        "code": "  return label.toLowerCase()"
+      },
+      {
+        "line": 47,
+        "code": "    .normalize('NFD').replace(/[\\u0300-\\u036f]/g, '')"
+      },
+      {
+        "line": 48,
+        "code": "    .replace(/[^a-z0-9]+/g, '-')"
+      },
+      {
+        "line": 49,
+        "code": "    .replace(/^-|-$/g, '');"
+      },
+      {
+        "line": 50,
+        "code": "}"
+      },
+      {
+        "line": 51,
+        "code": ""
+      },
+      {
+        "line": 52,
+        "code": "function readRegionsConfig() {"
+      }
+    ]
   },
   {
     "key": "6cfe03ac-ebee-4568-8182-c295557a3c15",
@@ -1840,7 +2972,37 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 60,
+        "code": "}"
+      },
+      {
+        "line": 61,
+        "code": ""
+      },
+      {
+        "line": 62,
+        "code": "function detectFlagCode(label) {"
+      },
+      {
+        "line": 63,
+        "code": "  const lower = label.toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, '');"
+      },
+      {
+        "line": 64,
+        "code": "  if (KNOWN_FLAGS[lower]) return KNOWN_FLAGS[lower];"
+      },
+      {
+        "line": 65,
+        "code": "  for (const [country, code] of Object.entries(KNOWN_FLAGS)) {"
+      },
+      {
+        "line": 66,
+        "code": "    if (lower.endsWith(country)) return code;"
+      }
+    ]
   },
   {
     "key": "96abf444-276a-400a-beaa-eb5f7e9516e7",
@@ -2036,7 +3198,37 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 68,
+        "code": "  return '';"
+      },
+      {
+        "line": 69,
+        "code": "}"
+      },
+      {
+        "line": 70,
+        "code": ""
+      },
+      {
+        "line": 71,
+        "code": "function syncRegionsFromProducts(products) {"
+      },
+      {
+        "line": 72,
+        "code": "  const config = readRegionsConfig();"
+      },
+      {
+        "line": 73,
+        "code": ""
+      },
+      {
+        "line": 74,
+        "code": "  // Extract unique region values from all products"
+      }
+    ]
   },
   {
     "key": "d8a709a8-bfb2-461a-a736-0397f2a5c8f2",
@@ -2232,6 +3424,36 @@
     "prioritizedRule": false,
     "fromSonarQubeUpdate": false,
     "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED"
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 124,
+        "code": "}"
+      },
+      {
+        "line": 125,
+        "code": ""
+      },
+      {
+        "line": 126,
+        "code": "// ---- Airtable fetcher ----"
+      },
+      {
+        "line": 127,
+        "code": "async function fetchAllRecords() {"
+      },
+      {
+        "line": 128,
+        "code": "  const apiKey = process.env.AIRTABLE_API_KEY;"
+      },
+      {
+        "line": 129,
+        "code": "  if (!apiKey) throw new Error('AIRTABLE_API_KEY is not set');"
+      },
+      {
+        "line": 130,
+        "code": ""
+      }
+    ]
   }
 ]
