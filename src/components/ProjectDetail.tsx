@@ -5,6 +5,7 @@ import type { Issue, Rule, Project } from '../types/sonarqube'
 import RatingBadge from './RatingBadge'
 import QualityGateBadge from './QualityGateBadge'
 import IssueRow from './IssueRow'
+import IssueDrawer from './IssueDrawer'
 
 function ratingLabel(raw?: string): string {
   const n = parseInt(raw ?? '0')
@@ -25,6 +26,7 @@ export default function ProjectDetail() {
 
   const [severityFilter, setSeverityFilter] = useState<string>('ALL')
   const [typeFilter, setTypeFilter] = useState<string>('ALL')
+  const [selectedIssue, setSelectedIssue] = useState<Issue | null>(null)
 
   const project = projects?.find(p => p.key === decoded)
 
@@ -111,11 +113,19 @@ export default function ProjectDetail() {
             </thead>
             <tbody>
               {filteredIssues.map(issue => (
-                <IssueRow key={issue.key} issue={issue} rule={rules?.[issue.rule]} />
+                <IssueRow key={issue.key} issue={issue} rule={rules?.[issue.rule]} onClick={() => setSelectedIssue(issue)} />
               ))}
             </tbody>
           </table>
         </div>
+      )}
+
+      {selectedIssue && (
+        <IssueDrawer
+          issue={selectedIssue}
+          rule={rules?.[selectedIssue.rule]}
+          onClose={() => setSelectedIssue(null)}
+        />
       )}
     </div>
   )
