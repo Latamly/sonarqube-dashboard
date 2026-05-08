@@ -6,13 +6,53 @@ import RatingBadge from './RatingBadge'
 import QualityGateBadge from './QualityGateBadge'
 import IssueRow from './IssueRow'
 import IssueDrawer from './IssueDrawer'
+import IssuesBySeverityChart from './charts/IssuesBySeverityChart'
+import IssuesByTypeChart from './charts/IssuesByTypeChart'
+import IssuesByFileChart from './charts/IssuesByFileChart'
 
 function ratingLabel(raw?: string): string {
   const n = parseInt(raw ?? '0')
   return ['', 'A', 'B', 'C', 'D', 'E'][n] ?? '—'
 }
 
+function parseNum(v?: string) { return parseFloat(v ?? '0') || 0 }
+
 const SEVERITIES = ['BLOCKER', 'CRITICAL', 'MAJOR', 'MINOR', 'INFO']
+
+function CoverageBar({ label, value, goodAbove }: { label: string; value: number; goodAbove: boolean }) {
+  const good = goodAbove ? value >= 80 : value <= 3
+  const warn = goodAbove ? value >= 50 : value <= 10
+  const color = good ? 'var(--color-success)' : warn ? 'var(--color-warning)' : 'var(--color-danger)'
+  const fill = goodAbove ? value : Math.min(value * 5, 100)
+  return (
+    <div>
+      <div className="flex-between mb-2" style={{ marginBottom: 6 }}>
+        <span className="text-sm text-secondary">{label}</span>
+        <span className="font-bold" style={{ color, fontSize: 14 }}>{value.toFixed(1)}%</span>
+      </div>
+      <div className="progress-bar-track">
+        <div className="progress-bar-fill" style={{ width: `${Math.min(fill, 100)}%`, background: color }} />
+      </div>
+    </div>
+  )
+}
+
+interface MetricCardProps {
+  label: string
+  value: string | number
+  accent?: string
+  badge?: string
+}
+
+function MetricCard({ label, value, accent, badge }: MetricCardProps) {
+  return (
+    <div className="card" style={{ textAlign: 'center', borderTop: accent ? `3px solid ${accent}` : undefined, minWidth: 110 }}>
+      <div style={{ fontSize: 26, fontWeight: 800, lineHeight: 1 }}>{value}</div>
+      {badge && <div style={{ marginTop: 6 }}><RatingBadge value={badge} /></div>}
+      <div className="text-xs text-secondary" style={{ marginTop: 6 }}>{label}</div>
+    </div>
+  )
+}
 
 export default function ProjectDetail() {
   const { key } = useParams<{ key: string }>()
@@ -38,87 +78,122 @@ export default function ProjectDetail() {
 
   const issueTypes = [...new Set((issues ?? []).map(i => i.type))]
 
-  if (ml || il) return <p style={{ padding: 32 }}>Cargando…</p>
+  if (ml || il) return (
+    <div className="empty-state">
+      <div className="empty-state-icon">⏳</div>
+      <p>Cargando…</p>
+    </div>
+  )
+
+  const m = metrics ?? {}
+  const coverage = parseNum(m.coverage)
+  const duplication = parseNum(m.duplicated_lines_density)
 
   return (
-    <div style={{ padding: 32 }}>
-      <button
-        onClick={() => navigate('/')}
-        style={{ marginBottom: 20, padding: '6px 16px', cursor: 'pointer', fontSize: 14 }}
-      >
-        ← Volver
-      </button>
+    <div className="page">
+      {/* Header */}
+      <div className="flex-between mb-6" style={{ flexWrap: 'wrap', gap: 12 }}>
+        <button className="btn-ghost" onClick={() => navigate('/')} style={{ paddingLeft: 0 }}>
+          ← Volver
+        </button>
+      </div>
 
-      <h1 style={{ margin: '0 0 4px' }}>{project?.name ?? decoded}</h1>
-      <p style={{ margin: '0 0 24px', color: '#888', fontFamily: 'monospace', fontSize: 13 }}>{decoded}</p>
+      <div className="flex-between mb-6" style={{ flexWrap: 'wrap', gap: 16 }}>
+        <div>
+          <h1>{project?.name ?? decoded}</h1>
+          <code className="font-mono text-sm text-muted" style={{ display: 'block', marginTop: 4 }}>{decoded}</code>
+        </div>
+        <QualityGateBadge value={project?.quality_gate} />
+      </div>
 
       {metrics && (
         <>
-          <div style={{ marginBottom: 8 }}>
-            <QualityGateBadge value={project?.quality_gate} />
+          {/* Metric cards */}
+          <div className="metrics-grid mb-6">
+            <MetricCard label="Bugs" value={m.bugs ?? '—'} accent={parseInt(m.bugs ?? '0') > 0 ? 'var(--color-blocker)' : 'var(--color-success)'} badge={ratingLabel(m.reliability_rating)} />
+            <MetricCard label="Vulnerabilidades" value={m.vulnerabilities ?? '—'} accent={parseInt(m.vulnerabilities ?? '0') > 0 ? 'var(--color-critical)' : 'var(--color-success)'} badge={ratingLabel(m.security_rating)} />
+            <MetricCard label="Hotspots" value={m.security_hotspots ?? '—'} accent="var(--color-minor)" />
+            <MetricCard label="Code Smells" value={m.code_smells ?? '—'} accent="var(--color-major)" badge={ratingLabel(m.sqale_rating)} />
           </div>
 
-          <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginBottom: 32 }}>
-            {[
-              { label: 'Bugs', value: metrics.bugs },
-              { label: 'Vulnerabilidades', value: metrics.vulnerabilities },
-              { label: 'Hotspots', value: metrics.security_hotspots },
-              { label: 'Code Smells', value: metrics.code_smells },
-              { label: 'Cobertura', value: metrics.coverage ? `${parseFloat(metrics.coverage).toFixed(1)}%` : '—' },
-              { label: 'Duplicación', value: metrics.duplicated_lines_density ? `${parseFloat(metrics.duplicated_lines_density).toFixed(1)}%` : '—' },
-            ].map(c => (
-              <div key={c.label} style={{ background: '#f4f4f4', borderRadius: 6, padding: '12px 20px', minWidth: 110, textAlign: 'center' }}>
-                <div style={{ fontSize: 24, fontWeight: 700 }}>{c.value ?? '—'}</div>
-                <div style={{ fontSize: 12, color: '#666', marginTop: 4 }}>{c.label}</div>
-              </div>
-            ))}
-            {[
-              { label: 'Reliability', value: ratingLabel(metrics.reliability_rating) },
-              { label: 'Security', value: ratingLabel(metrics.security_rating) },
-              { label: 'Maintainability', value: ratingLabel(metrics.sqale_rating) },
-            ].map(c => (
-              <div key={c.label} style={{ background: '#f4f4f4', borderRadius: 6, padding: '12px 20px', minWidth: 110, textAlign: 'center' }}>
-                <div style={{ marginTop: 2 }}><RatingBadge value={c.value} /></div>
-                <div style={{ fontSize: 12, color: '#666', marginTop: 6 }}>{c.label}</div>
-              </div>
-            ))}
+          {/* Coverage + duplication bars */}
+          <div className="card mb-6" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24 }}>
+            <CoverageBar label="Cobertura" value={coverage} goodAbove={true} />
+            <CoverageBar label="Duplicación" value={duplication} goodAbove={false} />
           </div>
         </>
       )}
 
-      <h2 style={{ marginBottom: 16 }}>Issues ({filteredIssues.length}{issues && filteredIssues.length !== issues.length ? ` de ${issues.length}` : ''})</h2>
-
-      <div style={{ display: 'flex', gap: 12, marginBottom: 16, flexWrap: 'wrap' }}>
-        <select value={severityFilter} onChange={e => setSeverityFilter(e.target.value)} style={{ padding: '6px 10px', fontSize: 13 }}>
-          <option value="ALL">Todas las severidades</option>
-          {SEVERITIES.map(s => <option key={s} value={s}>{s}</option>)}
-        </select>
-        <select value={typeFilter} onChange={e => setTypeFilter(e.target.value)} style={{ padding: '6px 10px', fontSize: 13 }}>
-          <option value="ALL">Todos los tipos</option>
-          {issueTypes.map(t => <option key={t} value={t}>{t.replace(/_/g, ' ')}</option>)}
-        </select>
-      </div>
-
-      {filteredIssues.length === 0 ? (
-        <p style={{ color: '#888' }}>No hay issues con los filtros seleccionados.</p>
-      ) : (
-        <div style={{ overflowX: 'auto' }}>
-          <table style={{ borderCollapse: 'collapse', width: '100%', fontSize: 14 }}>
-            <thead>
-              <tr style={{ background: '#f4f4f4', textAlign: 'left' }}>
-                {['Severidad', 'Tipo', 'Mensaje', 'Archivo', 'Esfuerzo', ''].map(h => (
-                  <th key={h} style={{ padding: '8px 12px', borderBottom: '2px solid #ddd', whiteSpace: 'nowrap' }}>{h}</th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {filteredIssues.map(issue => (
-                <IssueRow key={issue.key} issue={issue} rule={rules?.[issue.rule]} onClick={() => setSelectedIssue(issue)} />
-              ))}
-            </tbody>
-          </table>
-        </div>
+      {/* Issue analytics */}
+      {issues && issues.length > 0 && (
+        <>
+          <h2>Análisis de issues</h2>
+          <div className="charts-grid mb-6">
+            <IssuesBySeverityChart issues={issues} />
+            <IssuesByTypeChart issues={issues} />
+            <IssuesByFileChart issues={issues} />
+          </div>
+        </>
       )}
+
+      {/* Issues list */}
+      <div className="card">
+        <div className="flex-between mb-4" style={{ flexWrap: 'wrap', gap: 8 }}>
+          <h3>
+            Issues{' '}
+            <span className="text-muted text-sm font-mono">
+              ({filteredIssues.length}{issues && filteredIssues.length !== issues.length ? ` / ${issues.length}` : ''})
+            </span>
+          </h3>
+          <div className="flex gap-3 wrap">
+            <select
+              className="filter-select"
+              value={severityFilter}
+              onChange={e => setSeverityFilter(e.target.value)}
+            >
+              <option value="ALL">Todas las severidades</option>
+              {SEVERITIES.map(s => <option key={s} value={s}>{s}</option>)}
+            </select>
+            <select
+              className="filter-select"
+              value={typeFilter}
+              onChange={e => setTypeFilter(e.target.value)}
+            >
+              <option value="ALL">Todos los tipos</option>
+              {issueTypes.map(t => <option key={t} value={t}>{t.replace(/_/g, ' ')}</option>)}
+            </select>
+          </div>
+        </div>
+
+        {filteredIssues.length === 0 ? (
+          <div className="empty-state">
+            <div className="empty-state-icon">🎉</div>
+            <p>No hay issues con los filtros seleccionados.</p>
+          </div>
+        ) : (
+          <div style={{ overflowX: 'auto' }}>
+            <table className="data-table">
+              <thead>
+                <tr>
+                  {['Severidad', 'Tipo', 'Mensaje', 'Archivo', 'Esfuerzo', ''].map(h => (
+                    <th key={h} style={{ cursor: 'default' }}>{h}</th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {filteredIssues.map(issue => (
+                  <IssueRow
+                    key={issue.key}
+                    issue={issue}
+                    rule={rules?.[issue.rule]}
+                    onClick={() => setSelectedIssue(issue)}
+                  />
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+      </div>
 
       {selectedIssue && (
         <IssueDrawer

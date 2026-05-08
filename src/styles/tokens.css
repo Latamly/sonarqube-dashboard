@@ -1,0 +1,50 @@
+:root {
+  --color-primary: #4f6ef7;
+  --color-primary-light: #eef0ff;
+
+  --color-bg: #f7f8fc;
+  --color-surface: #ffffff;
+  --color-border: #e5e7eb;
+  --color-border-light: #f0f0f0;
+
+  --color-text: #111827;
+  --color-text-secondary: #6b7280;
+  --color-text-muted: #9ca3af;
+
+  --color-blocker: #d4333f;
+  --color-critical: #f06600;
+  --color-major: #e6a817;
+  --color-minor: #4c9be8;
+  --color-info: #9ca3af;
+
+  --color-rating-a: #1ea64b;
+  --color-rating-b: #78c25e;
+  --color-rating-c: #f3a94b;
+  --color-rating-d: #e07b4e;
+  --color-rating-e: #d4333f;
+
+  --color-gate-ok: #1ea64b;
+  --color-gate-error: #d4333f;
+  --color-gate-unknown: #9ca3af;
+
+  --color-success: #1ea64b;
+  --color-warning: #e6a817;
+  --color-danger: #d4333f;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.07);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+  --shadow-lg: 0 8px 24px rgba(0,0,0,0.12);
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+}
