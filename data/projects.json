@@ -1,5 +1,55 @@
 [
   {
+    "key": "levo-backend",
+    "name": "Levo Backend",
+    "qualifier": "TRK",
+    "isFavorite": false,
+    "tags": [],
+    "visibility": "public",
+    "isAiCodeFixEnabled": false,
+    "aiCodeAssurance": "NONE",
+    "containsAiCode": false,
+    "uuid": "4a88bde6-7644-4355-b13d-1fa259e67376",
+    "metrics": {
+      "coverage": "0.0",
+      "bugs": "2",
+      "reliability_rating": "3.0",
+      "duplicated_lines_density": "10.6",
+      "code_smells": "256",
+      "security_rating": "1.0",
+      "vulnerabilities": "0",
+      "security_hotspots": "8",
+      "quality_gate_details": "{\"level\":\"OK\",\"conditions\":[],\"ignoredConditions\":false}",
+      "sqale_rating": "1.0"
+    },
+    "quality_gate": "OK"
+  },
+  {
+    "key": "levo-frontend",
+    "name": "Levo Frontend",
+    "qualifier": "TRK",
+    "isFavorite": false,
+    "tags": [],
+    "visibility": "public",
+    "isAiCodeFixEnabled": false,
+    "aiCodeAssurance": "NONE",
+    "containsAiCode": false,
+    "uuid": "5e1f6b06-0e84-44d7-ad83-c273b24a9997",
+    "metrics": {
+      "coverage": "0.0",
+      "bugs": "17",
+      "reliability_rating": "3.0",
+      "duplicated_lines_density": "13.8",
+      "code_smells": "347",
+      "security_rating": "3.0",
+      "vulnerabilities": "1",
+      "security_hotspots": "10",
+      "quality_gate_details": "{\"level\":\"OK\",\"conditions\":[{\"metric\":\"new_violations\",\"op\":\"GT\",\"period\":1,\"error\":\"0\",\"actual\":\"0\",\"level\":\"OK\"}],\"ignoredConditions\":false}",
+      "sqale_rating": "1.0"
+    },
+    "quality_gate": "OK"
+  },
+  {
     "key": "redragon-lineup",
     "name": "redragon-lineup",
     "qualifier": "TRK",

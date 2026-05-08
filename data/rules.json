@@ -1,4 +1,466 @@
 {
+  "java:S3776": {
+    "name": "Cognitive Complexity of methods should not be too high",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "CRITICAL",
+    "type": "CODE_SMELL"
+  },
+  "java:S1192": {
+    "name": "String literals should not be duplicated",
+    "htmlDesc": "",
+    "remFnBaseEffort": "2min",
+    "severity": "CRITICAL",
+    "type": "CODE_SMELL"
+  },
+  "java:S116": {
+    "name": "Field names should comply with a naming convention",
+    "htmlDesc": "",
+    "remFnBaseEffort": "2min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
+  "java:S112": {
+    "name": "Generic exceptions should never be thrown",
+    "htmlDesc": "",
+    "remFnBaseEffort": "20min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "java:S1488": {
+    "name": "Local variables should not be declared and then immediately returned or thrown",
+    "htmlDesc": "",
+    "remFnBaseEffort": "2min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
+  "java:S1611": {
+    "name": "Parentheses should be removed from a single lambda parameter when its type is inferred",
+    "htmlDesc": "",
+    "remFnBaseEffort": "2min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
+  "java:S6541": {
+    "name": "Methods should not perform too many tasks (aka Brain method)",
+    "htmlDesc": "",
+    "remFnBaseEffort": "0min",
+    "severity": "INFO",
+    "type": "CODE_SMELL"
+  },
+  "java:S106": {
+    "name": "Standard outputs should not be used directly to log anything",
+    "htmlDesc": "",
+    "remFnBaseEffort": "10min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "java:S2140": {
+    "name": "Methods of \"Random\" that return floating point values should not be used in random integer generation",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
+  "java:S3358": {
+    "name": "Ternary operators should not be nested",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "java:S107": {
+    "name": "Methods should not have too many parameters",
+    "htmlDesc": "",
+    "remFnBaseEffort": "20min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "java:S6353": {
+    "name": "Regular expression quantifiers and character classes should be used concisely",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
+  "java:S3740": {
+    "name": "Raw types should not be used",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "java:S1119": {
+    "name": "Labels should not be used",
+    "htmlDesc": "",
+    "remFnBaseEffort": "30min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "java:S135": {
+    "name": "Loops should not contain more than a single \"break\" or \"continue\" statement",
+    "htmlDesc": "",
+    "remFnBaseEffort": "",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
+  "java:S125": {
+    "name": "Sections of code should not be commented out",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "java:S1700": {
+    "name": "A field should not duplicate the name of its containing class",
+    "htmlDesc": "",
+    "remFnBaseEffort": "10min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "java:S1172": {
+    "name": "Unused method parameters should be removed",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "java:S1118": {
+    "name": "Utility classes should not have public constructors",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "java:S2142": {
+    "name": "\"InterruptedException\" and \"ThreadDeath\" should not be ignored",
+    "htmlDesc": "",
+    "remFnBaseEffort": "15min",
+    "severity": "MAJOR",
+    "type": "BUG"
+  },
+  "java:S2201": {
+    "name": "Return values from functions without side effects should not be ignored",
+    "htmlDesc": "",
+    "remFnBaseEffort": "10min",
+    "severity": "MAJOR",
+    "type": "BUG"
+  },
+  "java:S1135": {
+    "name": "Track uses of \"TODO\" tags",
+    "htmlDesc": "",
+    "remFnBaseEffort": "0min",
+    "severity": "INFO",
+    "type": "CODE_SMELL"
+  },
+  "java:S1126": {
+    "name": "Return of boolean expressions should not be wrapped into an \"if-then-else\" statement",
+    "htmlDesc": "",
+    "remFnBaseEffort": "2min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
+  "java:S1186": {
+    "name": "Methods should not be empty",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "CRITICAL",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S3776": {
+    "name": "Cognitive Complexity of functions should not be too high",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "CRITICAL",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S4624": {
+    "name": "Template literals should not be nested",
+    "htmlDesc": "",
+    "remFnBaseEffort": "10min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S3358": {
+    "name": "Ternary operators should not be nested",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S6848": {
+    "name": "Non-interactive DOM elements should not have an interactive handler",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S1082": {
+    "name": "Mouse events should have corresponding keyboard events",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MINOR",
+    "type": "BUG"
+  },
+  "typescript:S7735": {
+    "name": "Negated conditions should be avoided when an else clause is present",
+    "htmlDesc": "",
+    "remFnBaseEffort": "2min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S6759": {
+    "name": "React props should be read-only",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S4084": {
+    "name": "Media elements should have captions",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S7764": {
+    "name": "Use \"globalThis\" instead of \"window\", \"self\", or \"global\"",
+    "htmlDesc": "",
+    "remFnBaseEffort": "2min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S3923": {
+    "name": "All branches in a conditional structure should not have exactly the same implementation",
+    "htmlDesc": "",
+    "remFnBaseEffort": "15min",
+    "severity": "MAJOR",
+    "type": "BUG"
+  },
+  "typescript:S4138": {
+    "name": "\"for of\" should be used with Iterables",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S6847": {
+    "name": "Non-interactive elements shouldn't have event handlers",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S7781": {
+    "name": "Strings should use \"replaceAll()\" instead of \"replace()\" with global regex",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S6853": {
+    "name": "Label elements should have a text label and an associated control",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S7773": {
+    "name": "Number static methods and properties should be preferred over global equivalents",
+    "htmlDesc": "",
+    "remFnBaseEffort": "2min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S1128": {
+    "name": "Unnecessary imports should be removed",
+    "htmlDesc": "",
+    "remFnBaseEffort": "1min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S6582": {
+    "name": "Optional chaining should be preferred",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S1854": {
+    "name": "Unused assignments should be removed",
+    "htmlDesc": "",
+    "remFnBaseEffort": "1min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S4165": {
+    "name": "Assignments should not be redundant",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S6772": {
+    "name": "Spacing between inline elements should be explicit",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S2004": {
+    "name": "Functions should not be nested too deeply",
+    "htmlDesc": "",
+    "remFnBaseEffort": "20min",
+    "severity": "CRITICAL",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S125": {
+    "name": "Sections of code should not be commented out",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S2486": {
+    "name": "Exceptions should not be ignored",
+    "htmlDesc": "",
+    "remFnBaseEffort": "1h",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S6479": {
+    "name": "JSX list components should not use array indexes as key",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S2068": {
+    "name": "Credentials should not be hard-coded",
+    "htmlDesc": "",
+    "remFnBaseEffort": "30min",
+    "severity": "MAJOR",
+    "type": "VULNERABILITY"
+  },
+  "typescript:S6478": {
+    "name": "React components should not be nested",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S1871": {
+    "name": "Two branches in a conditional structure should not have exactly the same implementation",
+    "htmlDesc": "",
+    "remFnBaseEffort": "10min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S6644": {
+    "name": "Ternary operator should not be used instead of simpler alternatives",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S7744": {
+    "name": "Unnecessary fallback objects should not be used when spreading in object literals",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S6535": {
+    "name": "Unnecessary character escapes should be removed",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S6749": {
+    "name": "Redundant JSX fragments should be removed",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S7723": {
+    "name": "Built-in constructors should be called consistently with or without \"new\"",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S2301": {
+    "name": "Methods should not contain selector parameters",
+    "htmlDesc": "",
+    "remFnBaseEffort": "15min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S7721": {
+    "name": "Functions should be moved to the highest possible scope",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S1135": {
+    "name": "Track uses of \"TODO\" tags",
+    "htmlDesc": "",
+    "remFnBaseEffort": "0min",
+    "severity": "INFO",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S6819": {
+    "name": "Prefer tag over ARIA role",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S6481": {
+    "name": "React Context Provider values should have stable identities",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "css:S4666": {
+    "name": "Selectors should not be duplicated",
+    "htmlDesc": "",
+    "remFnBaseEffort": "1min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S4325": {
+    "name": "Redundant casts and non-null assertions should be avoided",
+    "htmlDesc": "",
+    "remFnBaseEffort": "1min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S6606": {
+    "name": "Nullish coalescing should be preferred",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S6844": {
+    "name": "Anchor tags should not be used as buttons",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S7755": {
+    "name": "Complex index access patterns should be replaced with \".at()\" method",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
   "Web:S6847": {
     "name": "Non-interactive elements shouldn't have event handlers",
     "htmlDesc": "",

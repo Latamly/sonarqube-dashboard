@@ -1,0 +1,12 @@
+{
+  "coverage": "0.0",
+  "bugs": "17",
+  "reliability_rating": "3.0",
+  "duplicated_lines_density": "13.8",
+  "code_smells": "347",
+  "security_rating": "3.0",
+  "vulnerabilities": "1",
+  "security_hotspots": "10",
+  "quality_gate_details": "{\"level\":\"OK\",\"conditions\":[{\"metric\":\"new_violations\",\"op\":\"GT\",\"period\":1,\"error\":\"0\",\"actual\":\"0\",\"level\":\"OK\"}],\"ignoredConditions\":false}",
+  "sqale_rating": "1.0"
+}
