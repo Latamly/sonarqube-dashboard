@@ -12,4 +12,11 @@ h1 { font-size: 1.6rem; }
 h2 { font-size: 1.2rem; }
 
 .issue-row { transition: background 0.1s; }
-.issue-row:hover { background: #fafbfc; }
+.issue-row:hover { background: #f0f4ff; }
+
+.rule-desc h2, .rule-desc h3 { font-size: 13px; margin: 14px 0 6px; color: #111; }
+.rule-desc p { margin: 0 0 10px; }
+.rule-desc pre, .rule-desc code { background: #f0f0f0; border-radius: 3px; font-size: 12px; padding: 2px 5px; }
+.rule-desc pre { display: block; padding: 10px 14px; overflow-x: auto; margin-bottom: 10px; }
+.rule-desc ul, .rule-desc ol { padding-left: 20px; margin: 0 0 10px; }
+.rule-desc li { margin-bottom: 4px; }
