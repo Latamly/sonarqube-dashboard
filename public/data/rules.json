@@ -1,15 +1,15 @@
 {
-  "java:S3776": {
-    "name": "Cognitive Complexity of methods should not be too high",
-    "htmlDesc": "",
-    "remFnBaseEffort": "5min",
-    "severity": "CRITICAL",
-    "type": "CODE_SMELL"
-  },
   "java:S1192": {
     "name": "String literals should not be duplicated",
     "htmlDesc": "",
     "remFnBaseEffort": "2min",
+    "severity": "CRITICAL",
+    "type": "CODE_SMELL"
+  },
+  "java:S3776": {
+    "name": "Cognitive Complexity of methods should not be too high",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
     "severity": "CRITICAL",
     "type": "CODE_SMELL"
   },
@@ -167,6 +167,13 @@
     "severity": "CRITICAL",
     "type": "CODE_SMELL"
   },
+  "typescript:S4325": {
+    "name": "Redundant casts and non-null assertions should be avoided",
+    "htmlDesc": "",
+    "remFnBaseEffort": "1min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
   "typescript:S6571": {
     "name": "Type constituents of unions and intersections should not be redundant",
     "htmlDesc": "",
@@ -193,13 +200,6 @@
     "htmlDesc": "",
     "remFnBaseEffort": "5min",
     "severity": "MAJOR",
-    "type": "CODE_SMELL"
-  },
-  "typescript:S4325": {
-    "name": "Redundant casts and non-null assertions should be avoided",
-    "htmlDesc": "",
-    "remFnBaseEffort": "1min",
-    "severity": "MINOR",
     "type": "CODE_SMELL"
   },
   "typescript:S6848": {
