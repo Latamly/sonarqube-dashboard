@@ -1,5 +1,126 @@
 [
   {
+    "key": "5db9fc0f-6f49-451c-ae43-0ad5fe8ed834",
+    "rule": "java:S1192",
+    "severity": "CRITICAL",
+    "component": "levo-backend:src/main/java/com/levo/security/controller/N8nJsonController.java",
+    "project": "levo-backend",
+    "line": 61,
+    "hash": "3e726fb0bf3e0356732937d4d948f4f3",
+    "textRange": {
+      "startLine": 61,
+      "endLine": 61,
+      "startOffset": 68,
+      "endOffset": 75
+    },
+    "flows": [
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/controller/N8nJsonController.java",
+            "textRange": {
+              "startLine": 61,
+              "endLine": 61,
+              "startOffset": 68,
+              "endOffset": 75
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/controller/N8nJsonController.java",
+            "textRange": {
+              "startLine": 100,
+              "endLine": 100,
+              "startOffset": 24,
+              "endOffset": 31
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/controller/N8nJsonController.java",
+            "textRange": {
+              "startLine": 108,
+              "endLine": 108,
+              "startOffset": 68,
+              "endOffset": 75
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      }
+    ],
+    "status": "OPEN",
+    "message": "Define a constant instead of duplicating this literal \"error\" 3 times.",
+    "effort": "8min",
+    "debt": "8min",
+    "author": "emmanuelbotta007@gmail.com",
+    "tags": [
+      "design"
+    ],
+    "comments": [],
+    "creationDate": "2026-05-18T18:03:24+0000",
+    "updateDate": "2026-05-18T18:03:24+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "DISTINCT",
+    "cleanCodeAttributeCategory": "ADAPTABLE",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "HIGH"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 58,
+        "code": "            return ResponseEntity.ok(Map.of(\"message\", \"Webhook processed successfully\"));"
+      },
+      {
+        "line": 59,
+        "code": "        } catch (Exception e) {"
+      },
+      {
+        "line": 60,
+        "code": "            e.printStackTrace(); // Print to boot.log"
+      },
+      {
+        "line": 61,
+        "code": "            return ResponseEntity.internalServerError().body(Map.of(\"error\", \"Error processing JSON\", \"details\", e.getMessage()));"
+      },
+      {
+        "line": 62,
+        "code": "        }"
+      },
+      {
+        "line": 63,
+        "code": "    }"
+      },
+      {
+        "line": 64,
+        "code": ""
+      }
+    ]
+  },
+  {
     "key": "976c7f4f-256c-40a5-9775-6370faff45cf",
     "rule": "java:S3776",
     "severity": "CRITICAL",
@@ -7623,11 +7744,11 @@
     "severity": "CRITICAL",
     "component": "levo-backend:src/main/java/com/levo/security/controller/N8nJsonController.java",
     "project": "levo-backend",
-    "line": 41,
+    "line": 46,
     "hash": "c964fd9124f1409a9af05931ce519d2e",
     "textRange": {
-      "startLine": 41,
-      "endLine": 41,
+      "startLine": 46,
+      "endLine": 46,
       "startOffset": 36,
       "endOffset": 47
     },
@@ -7637,8 +7758,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/controller/N8nJsonController.java",
             "textRange": {
-              "startLine": 41,
-              "endLine": 41,
+              "startLine": 46,
+              "endLine": 46,
               "startOffset": 36,
               "endOffset": 47
             },
@@ -7652,8 +7773,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/controller/N8nJsonController.java",
             "textRange": {
-              "startLine": 41,
-              "endLine": 41,
+              "startLine": 46,
+              "endLine": 46,
               "startOffset": 64,
               "endOffset": 75
             },
@@ -7667,10 +7788,40 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/controller/N8nJsonController.java",
             "textRange": {
-              "startLine": 43,
-              "endLine": 43,
+              "startLine": 48,
+              "endLine": 48,
               "startOffset": 53,
               "endOffset": 64
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/controller/N8nJsonController.java",
+            "textRange": {
+              "startLine": 80,
+              "endLine": 80,
+              "startOffset": 37,
+              "endOffset": 48
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/controller/N8nJsonController.java",
+            "textRange": {
+              "startLine": 101,
+              "endLine": 101,
+              "startOffset": 24,
+              "endOffset": 35
             },
             "msg": "Duplication",
             "msgFormattings": []
@@ -7679,16 +7830,16 @@
       }
     ],
     "status": "OPEN",
-    "message": "Define a constant instead of duplicating this literal \"productId\" 3 times.",
-    "effort": "8min",
-    "debt": "8min",
+    "message": "Define a constant instead of duplicating this literal \"productId\" 5 times.",
+    "effort": "12min",
+    "debt": "12min",
     "author": "pablitto18@gmail.com",
     "tags": [
       "design"
     ],
     "comments": [],
     "creationDate": "2026-02-21T21:49:08+0000",
-    "updateDate": "2026-05-08T14:21:16+0000",
+    "updateDate": "2026-05-18T18:03:24+0000",
     "type": "CODE_SMELL",
     "scope": "MAIN",
     "quickFixAvailable": false,
@@ -7709,31 +7860,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 38,
+        "line": 43,
         "code": "            n8nJsonRepository.save(n8nJsonEntity);"
       },
       {
-        "line": 39,
+        "line": 44,
         "code": ""
       },
       {
-        "line": 40,
+        "line": 45,
         "code": "            Long productId = null;"
       },
       {
-        "line": 41,
+        "line": 46,
         "code": "            if (payload.containsKey(\"productId\") &amp;&amp; payload.get(\"productId\") != null) {"
       },
       {
-        "line": 42,
+        "line": 47,
         "code": "                // Safely convert integer or string to Long"
       },
       {
-        "line": 43,
+        "line": 48,
         "code": "                productId = Long.valueOf(payload.get(\"productId\").toString());"
       },
       {
-        "line": 44,
+        "line": 49,
         "code": "            }"
       }
     ]
@@ -7744,11 +7895,11 @@
     "severity": "MAJOR",
     "component": "levo-backend:src/main/java/com/levo/security/controller/N8nJsonController.java",
     "project": "levo-backend",
-    "line": 50,
+    "line": 55,
     "hash": "c16b3884b6dba8726dd93b5234ef8533",
     "textRange": {
-      "startLine": 50,
-      "endLine": 50,
+      "startLine": 55,
+      "endLine": 55,
       "startOffset": 16,
       "endOffset": 26
     },
@@ -7785,31 +7936,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 47,
+        "line": 52,
         "code": "                idolService.processN8nWebhook(jsonContent, productId);"
       },
       {
-        "line": 48,
+        "line": 53,
         "code": "                idolQueueService.markAsCompleted(productId);"
       },
       {
-        "line": 49,
+        "line": 54,
         "code": "            } else {"
       },
       {
-        "line": 50,
+        "line": 55,
         "code": "                System.err.println(\"Webhook received but no productId found in payload.\");"
       },
       {
-        "line": 51,
+        "line": 56,
         "code": "            }"
       },
       {
-        "line": 52,
+        "line": 57,
         "code": "            "
       },
       {
-        "line": 53,
+        "line": 58,
         "code": "            return ResponseEntity.ok(Map.of(\"message\", \"Webhook processed successfully\"));"
       }
     ]
