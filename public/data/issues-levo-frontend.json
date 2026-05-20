@@ -187,11 +187,11 @@
     "cleanCodeAttributeCategory": "INTENTIONAL",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
+        "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
       },
       {
-        "softwareQuality": "MAINTAINABILITY",
+        "softwareQuality": "RELIABILITY",
         "severity": "LOW"
       }
     ],
@@ -267,11 +267,11 @@
     "cleanCodeAttributeCategory": "INTENTIONAL",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
+        "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
       },
       {
-        "softwareQuality": "MAINTAINABILITY",
+        "softwareQuality": "RELIABILITY",
         "severity": "LOW"
       }
     ],
@@ -347,11 +347,11 @@
     "cleanCodeAttributeCategory": "INTENTIONAL",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
+        "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
       },
       {
-        "softwareQuality": "MAINTAINABILITY",
+        "softwareQuality": "RELIABILITY",
         "severity": "LOW"
       }
     ],
@@ -427,11 +427,11 @@
     "cleanCodeAttributeCategory": "INTENTIONAL",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
+        "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
       },
       {
-        "softwareQuality": "MAINTAINABILITY",
+        "softwareQuality": "RELIABILITY",
         "severity": "LOW"
       }
     ],
@@ -964,12 +964,12 @@
     "cleanCodeAttributeCategory": "CONSISTENT",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
-        "severity": "MEDIUM"
-      },
-      {
         "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "MEDIUM"
       }
     ],
     "issueStatus": "OPEN",
@@ -1196,12 +1196,12 @@
     "cleanCodeAttributeCategory": "CONSISTENT",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
-        "severity": "MEDIUM"
-      },
-      {
         "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "MEDIUM"
       }
     ],
     "issueStatus": "OPEN",
@@ -3426,12 +3426,12 @@
     "cleanCodeAttributeCategory": "CONSISTENT",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
-        "severity": "MEDIUM"
-      },
-      {
         "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "MEDIUM"
       }
     ],
     "issueStatus": "OPEN",
@@ -4471,12 +4471,12 @@
     "cleanCodeAttributeCategory": "CONSISTENT",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
-        "severity": "MEDIUM"
-      },
-      {
         "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "MEDIUM"
       }
     ],
     "issueStatus": "OPEN",
@@ -4627,12 +4627,12 @@
     "cleanCodeAttributeCategory": "CONSISTENT",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
-        "severity": "MEDIUM"
-      },
-      {
         "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "MEDIUM"
       }
     ],
     "issueStatus": "OPEN",
@@ -4707,12 +4707,12 @@
     "cleanCodeAttributeCategory": "CONSISTENT",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
-        "severity": "MEDIUM"
-      },
-      {
         "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "MEDIUM"
       }
     ],
     "issueStatus": "OPEN",
@@ -5164,12 +5164,12 @@
     "cleanCodeAttributeCategory": "CONSISTENT",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
-        "severity": "LOW"
-      },
-      {
         "softwareQuality": "MAINTAINABILITY",
         "severity": "MEDIUM"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "LOW"
       }
     ],
     "issueStatus": "OPEN",
@@ -5472,11 +5472,11 @@
     "cleanCodeAttributeCategory": "INTENTIONAL",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
+        "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
       },
       {
-        "softwareQuality": "MAINTAINABILITY",
+        "softwareQuality": "RELIABILITY",
         "severity": "LOW"
       }
     ],
@@ -5552,11 +5552,11 @@
     "cleanCodeAttributeCategory": "INTENTIONAL",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
+        "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
       },
       {
-        "softwareQuality": "MAINTAINABILITY",
+        "softwareQuality": "RELIABILITY",
         "severity": "LOW"
       }
     ],
@@ -5708,11 +5708,11 @@
     "cleanCodeAttributeCategory": "INTENTIONAL",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
+        "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
       },
       {
-        "softwareQuality": "MAINTAINABILITY",
+        "softwareQuality": "RELIABILITY",
         "severity": "LOW"
       }
     ],
@@ -5788,12 +5788,12 @@
     "cleanCodeAttributeCategory": "CONSISTENT",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
-        "severity": "MEDIUM"
-      },
-      {
         "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "MEDIUM"
       }
     ],
     "issueStatus": "OPEN",
@@ -5868,11 +5868,11 @@
     "cleanCodeAttributeCategory": "INTENTIONAL",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
+        "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
       },
       {
-        "softwareQuality": "MAINTAINABILITY",
+        "softwareQuality": "RELIABILITY",
         "severity": "LOW"
       }
     ],
@@ -5948,12 +5948,12 @@
     "cleanCodeAttributeCategory": "CONSISTENT",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
-        "severity": "MEDIUM"
-      },
-      {
         "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "MEDIUM"
       }
     ],
     "issueStatus": "OPEN",
@@ -7345,12 +7345,12 @@
     "cleanCodeAttributeCategory": "CONSISTENT",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
-        "severity": "LOW"
-      },
-      {
         "softwareQuality": "MAINTAINABILITY",
         "severity": "MEDIUM"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "LOW"
       }
     ],
     "issueStatus": "OPEN",
@@ -7501,12 +7501,12 @@
     "cleanCodeAttributeCategory": "CONSISTENT",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
-        "severity": "MEDIUM"
-      },
-      {
         "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "MEDIUM"
       }
     ],
     "issueStatus": "OPEN",
@@ -7657,12 +7657,12 @@
     "cleanCodeAttributeCategory": "CONSISTENT",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
-        "severity": "MEDIUM"
-      },
-      {
         "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "MEDIUM"
       }
     ],
     "issueStatus": "OPEN",
@@ -9950,12 +9950,12 @@
     "cleanCodeAttributeCategory": "CONSISTENT",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
-        "severity": "MEDIUM"
-      },
-      {
         "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "MEDIUM"
       }
     ],
     "issueStatus": "OPEN",
@@ -12711,11 +12711,11 @@
     "cleanCodeAttributeCategory": "INTENTIONAL",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
+        "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
       },
       {
-        "softwareQuality": "MAINTAINABILITY",
+        "softwareQuality": "RELIABILITY",
         "severity": "LOW"
       }
     ],
@@ -12867,11 +12867,11 @@
     "cleanCodeAttributeCategory": "INTENTIONAL",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
+        "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
       },
       {
-        "softwareQuality": "MAINTAINABILITY",
+        "softwareQuality": "RELIABILITY",
         "severity": "LOW"
       }
     ],
@@ -14637,11 +14637,11 @@
     "cleanCodeAttributeCategory": "INTENTIONAL",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
+        "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
       },
       {
-        "softwareQuality": "MAINTAINABILITY",
+        "softwareQuality": "RELIABILITY",
         "severity": "LOW"
       }
     ],
@@ -14717,11 +14717,11 @@
     "cleanCodeAttributeCategory": "INTENTIONAL",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
+        "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
       },
       {
-        "softwareQuality": "MAINTAINABILITY",
+        "softwareQuality": "RELIABILITY",
         "severity": "LOW"
       }
     ],
@@ -14797,11 +14797,11 @@
     "cleanCodeAttributeCategory": "INTENTIONAL",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
+        "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
       },
       {
-        "softwareQuality": "MAINTAINABILITY",
+        "softwareQuality": "RELIABILITY",
         "severity": "LOW"
       }
     ],
@@ -16490,12 +16490,12 @@
     "cleanCodeAttributeCategory": "CONSISTENT",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
-        "severity": "LOW"
-      },
-      {
         "softwareQuality": "MAINTAINABILITY",
         "severity": "MEDIUM"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "LOW"
       }
     ],
     "issueStatus": "OPEN",
@@ -17423,12 +17423,12 @@
     "cleanCodeAttributeCategory": "CONSISTENT",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
-        "severity": "MEDIUM"
-      },
-      {
         "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "MEDIUM"
       }
     ],
     "issueStatus": "OPEN",
@@ -17503,12 +17503,12 @@
     "cleanCodeAttributeCategory": "CONSISTENT",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
-        "severity": "MEDIUM"
-      },
-      {
         "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "MEDIUM"
       }
     ],
     "issueStatus": "OPEN",
@@ -18712,11 +18712,11 @@
     "cleanCodeAttributeCategory": "INTENTIONAL",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
+        "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
       },
       {
-        "softwareQuality": "MAINTAINABILITY",
+        "softwareQuality": "RELIABILITY",
         "severity": "LOW"
       }
     ],
@@ -18792,11 +18792,11 @@
     "cleanCodeAttributeCategory": "INTENTIONAL",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
+        "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
       },
       {
-        "softwareQuality": "MAINTAINABILITY",
+        "softwareQuality": "RELIABILITY",
         "severity": "LOW"
       }
     ],
@@ -18872,11 +18872,11 @@
     "cleanCodeAttributeCategory": "INTENTIONAL",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
+        "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
       },
       {
-        "softwareQuality": "MAINTAINABILITY",
+        "softwareQuality": "RELIABILITY",
         "severity": "LOW"
       }
     ],
@@ -19935,12 +19935,12 @@
     "cleanCodeAttributeCategory": "CONSISTENT",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
-        "severity": "MEDIUM"
-      },
-      {
         "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "MEDIUM"
       }
     ],
     "issueStatus": "OPEN",
@@ -20483,12 +20483,12 @@
     "cleanCodeAttributeCategory": "CONSISTENT",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
-        "severity": "LOW"
-      },
-      {
         "softwareQuality": "MAINTAINABILITY",
         "severity": "MEDIUM"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "LOW"
       }
     ],
     "issueStatus": "OPEN",
@@ -22417,11 +22417,11 @@
     "cleanCodeAttributeCategory": "CONSISTENT",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
+        "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
       },
       {
-        "softwareQuality": "MAINTAINABILITY",
+        "softwareQuality": "RELIABILITY",
         "severity": "LOW"
       }
     ],
@@ -23257,12 +23257,12 @@
     "cleanCodeAttributeCategory": "CONSISTENT",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
-        "severity": "MEDIUM"
-      },
-      {
         "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "MEDIUM"
       }
     ],
     "issueStatus": "OPEN",
@@ -23488,12 +23488,12 @@
     "cleanCodeAttributeCategory": "CONSISTENT",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
-        "severity": "LOW"
-      },
-      {
         "softwareQuality": "MAINTAINABILITY",
         "severity": "MEDIUM"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "LOW"
       }
     ],
     "issueStatus": "OPEN",
@@ -23717,11 +23717,11 @@
     "cleanCodeAttributeCategory": "INTENTIONAL",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
+        "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
       },
       {
-        "softwareQuality": "MAINTAINABILITY",
+        "softwareQuality": "RELIABILITY",
         "severity": "LOW"
       }
     ],
@@ -24738,11 +24738,11 @@
     "cleanCodeAttributeCategory": "INTENTIONAL",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
+        "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
       },
       {
-        "softwareQuality": "MAINTAINABILITY",
+        "softwareQuality": "RELIABILITY",
         "severity": "LOW"
       }
     ],
@@ -27002,12 +27002,12 @@
     "cleanCodeAttributeCategory": "CONSISTENT",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
-        "severity": "MEDIUM"
-      },
-      {
         "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "MEDIUM"
       }
     ],
     "issueStatus": "OPEN",
@@ -27907,12 +27907,12 @@
     "cleanCodeAttributeCategory": "CONSISTENT",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
-        "severity": "MEDIUM"
-      },
-      {
         "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "MEDIUM"
       }
     ],
     "issueStatus": "OPEN",
@@ -27987,12 +27987,12 @@
     "cleanCodeAttributeCategory": "CONSISTENT",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
-        "severity": "MEDIUM"
-      },
-      {
         "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "MEDIUM"
       }
     ],
     "issueStatus": "OPEN",
@@ -28143,12 +28143,12 @@
     "cleanCodeAttributeCategory": "CONSISTENT",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
-        "severity": "MEDIUM"
-      },
-      {
         "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "MEDIUM"
       }
     ],
     "issueStatus": "OPEN",
@@ -28376,12 +28376,12 @@
     "cleanCodeAttributeCategory": "CONSISTENT",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
-        "severity": "MEDIUM"
-      },
-      {
         "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "MEDIUM"
       }
     ],
     "issueStatus": "OPEN",
@@ -29516,12 +29516,12 @@
     "cleanCodeAttributeCategory": "CONSISTENT",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
-        "severity": "LOW"
-      },
-      {
         "softwareQuality": "MAINTAINABILITY",
         "severity": "MEDIUM"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "LOW"
       }
     ],
     "issueStatus": "OPEN",
@@ -30492,12 +30492,12 @@
     "cleanCodeAttributeCategory": "CONSISTENT",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
-        "severity": "MEDIUM"
-      },
-      {
         "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "MEDIUM"
       }
     ],
     "issueStatus": "OPEN",
@@ -30723,12 +30723,12 @@
     "cleanCodeAttributeCategory": "CONSISTENT",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
-        "severity": "LOW"
-      },
-      {
         "softwareQuality": "MAINTAINABILITY",
         "severity": "MEDIUM"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "LOW"
       }
     ],
     "issueStatus": "OPEN",
@@ -31770,12 +31770,12 @@
     "cleanCodeAttributeCategory": "CONSISTENT",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
-        "severity": "MEDIUM"
-      },
-      {
         "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "MEDIUM"
       }
     ],
     "issueStatus": "OPEN",
@@ -31850,12 +31850,12 @@
     "cleanCodeAttributeCategory": "CONSISTENT",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
-        "severity": "MEDIUM"
-      },
-      {
         "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "MEDIUM"
       }
     ],
     "issueStatus": "OPEN",
@@ -32310,12 +32310,12 @@
     "cleanCodeAttributeCategory": "CONSISTENT",
     "impacts": [
       {
-        "softwareQuality": "RELIABILITY",
-        "severity": "MEDIUM"
-      },
-      {
         "softwareQuality": "MAINTAINABILITY",
         "severity": "LOW"
+      },
+      {
+        "softwareQuality": "RELIABILITY",
+        "severity": "MEDIUM"
       }
     ],
     "issueStatus": "OPEN",
