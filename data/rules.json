@@ -1,4 +1,11 @@
 {
+  "java:S125": {
+    "name": "Sections of code should not be commented out",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
   "java:S1192": {
     "name": "String literals should not be duplicated",
     "htmlDesc": "",
@@ -108,13 +115,6 @@
     "name": "Labels should not be used",
     "htmlDesc": "",
     "remFnBaseEffort": "30min",
-    "severity": "MAJOR",
-    "type": "CODE_SMELL"
-  },
-  "java:S125": {
-    "name": "Sections of code should not be commented out",
-    "htmlDesc": "",
-    "remFnBaseEffort": "5min",
     "severity": "MAJOR",
     "type": "CODE_SMELL"
   },
