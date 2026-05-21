@@ -14,12 +14,12 @@
       "coverage": "0.0",
       "bugs": "2",
       "reliability_rating": "3.0",
-      "duplicated_lines_density": "10.1",
-      "code_smells": "257",
+      "duplicated_lines_density": "9.6",
+      "code_smells": "273",
       "security_rating": "1.0",
       "vulnerabilities": "0",
-      "security_hotspots": "9",
-      "quality_gate_details": "{\"level\":\"ERROR\",\"conditions\":[{\"metric\":\"new_coverage\",\"op\":\"LT\",\"period\":1,\"error\":\"80\",\"actual\":\"0.0\",\"level\":\"ERROR\"},{\"metric\":\"new_duplicated_lines_density\",\"op\":\"GT\",\"period\":1,\"error\":\"3\",\"actual\":\"0.0\",\"level\":\"OK\"},{\"metric\":\"new_security_hotspots_reviewed\",\"op\":\"LT\",\"period\":1,\"error\":\"100\",\"actual\":\"0.0\",\"level\":\"ERROR\"},{\"metric\":\"new_violations\",\"op\":\"GT\",\"period\":1,\"error\":\"0\",\"actual\":\"1\",\"level\":\"ERROR\"}],\"ignoredConditions\":false}",
+      "security_hotspots": "10",
+      "quality_gate_details": "{\"level\":\"ERROR\",\"conditions\":[{\"metric\":\"new_coverage\",\"op\":\"LT\",\"period\":1,\"error\":\"80\",\"actual\":\"0.0\",\"level\":\"ERROR\"},{\"metric\":\"new_duplicated_lines_density\",\"op\":\"GT\",\"period\":1,\"error\":\"3\",\"actual\":\"0.0\",\"level\":\"OK\"},{\"metric\":\"new_security_hotspots_reviewed\",\"op\":\"LT\",\"period\":1,\"error\":\"100\",\"actual\":\"0.0\",\"level\":\"ERROR\"},{\"metric\":\"new_violations\",\"op\":\"GT\",\"period\":1,\"error\":\"0\",\"actual\":\"18\",\"level\":\"ERROR\"}],\"ignoredConditions\":false}",
       "sqale_rating": "1.0"
     },
     "quality_gate": "ERROR"
@@ -39,12 +39,12 @@
       "coverage": "0.0",
       "bugs": "19",
       "reliability_rating": "3.0",
-      "duplicated_lines_density": "13.6",
-      "code_smells": "361",
+      "duplicated_lines_density": "13.0",
+      "code_smells": "385",
       "security_rating": "3.0",
       "vulnerabilities": "1",
       "security_hotspots": "10",
-      "quality_gate_details": "{\"level\":\"ERROR\",\"conditions\":[{\"metric\":\"new_coverage\",\"op\":\"LT\",\"period\":1,\"error\":\"80\",\"actual\":\"0.0\",\"level\":\"ERROR\"},{\"metric\":\"new_duplicated_lines_density\",\"op\":\"GT\",\"period\":1,\"error\":\"3\",\"actual\":\"7.14286\",\"level\":\"ERROR\"},{\"metric\":\"new_violations\",\"op\":\"GT\",\"period\":1,\"error\":\"0\",\"actual\":\"16\",\"level\":\"ERROR\"}],\"ignoredConditions\":false}",
+      "quality_gate_details": "{\"level\":\"ERROR\",\"conditions\":[{\"metric\":\"new_coverage\",\"op\":\"LT\",\"period\":1,\"error\":\"80\",\"actual\":\"0.0\",\"level\":\"ERROR\"},{\"metric\":\"new_duplicated_lines_density\",\"op\":\"GT\",\"period\":1,\"error\":\"3\",\"actual\":\"3.27625\",\"level\":\"ERROR\"},{\"metric\":\"new_violations\",\"op\":\"GT\",\"period\":1,\"error\":\"0\",\"actual\":\"40\",\"level\":\"ERROR\"}],\"ignoredConditions\":false}",
       "sqale_rating": "1.0"
     },
     "quality_gate": "ERROR"
