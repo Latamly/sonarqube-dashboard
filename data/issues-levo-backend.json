@@ -1,6 +1,127 @@
 [
   {
-    "key": "5db9fc0f-6f49-451c-ae43-0ad5fe8ed834",
+    "key": "402a365d-c3b6-4096-99b1-46158f2a5397",
+    "rule": "java:S1192",
+    "severity": "CRITICAL",
+    "component": "levo-backend:src/main/java/com/levo/security/controller/N8nJsonController.java",
+    "project": "levo-backend",
+    "line": 58,
+    "hash": "768049bf16116d9e8b2bd8549b81b352",
+    "textRange": {
+      "startLine": 58,
+      "endLine": 58,
+      "startOffset": 44,
+      "endOffset": 53
+    },
+    "flows": [
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/controller/N8nJsonController.java",
+            "textRange": {
+              "startLine": 58,
+              "endLine": 58,
+              "startOffset": 44,
+              "endOffset": 53
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/controller/N8nJsonController.java",
+            "textRange": {
+              "startLine": 105,
+              "endLine": 105,
+              "startOffset": 44,
+              "endOffset": 53
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/controller/N8nJsonController.java",
+            "textRange": {
+              "startLine": 152,
+              "endLine": 152,
+              "startOffset": 20,
+              "endOffset": 29
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      }
+    ],
+    "status": "OPEN",
+    "message": "Define a constant instead of duplicating this literal \"message\" 3 times.",
+    "effort": "8min",
+    "debt": "8min",
+    "author": "emmanuelbotta007@gmail.com",
+    "tags": [
+      "design"
+    ],
+    "comments": [],
+    "creationDate": "2026-05-21T20:01:18+0000",
+    "updateDate": "2026-05-21T20:01:18+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "DISTINCT",
+    "cleanCodeAttributeCategory": "ADAPTABLE",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "HIGH"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 55,
+        "code": "                System.err.println(\"Webhook received but no productId found in payload.\");"
+      },
+      {
+        "line": 56,
+        "code": "            }"
+      },
+      {
+        "line": 57,
+        "code": "            "
+      },
+      {
+        "line": 58,
+        "code": "            return ResponseEntity.ok(Map.of(\"message\", \"Webhook processed successfully\"));"
+      },
+      {
+        "line": 59,
+        "code": "        } catch (Exception e) {"
+      },
+      {
+        "line": 60,
+        "code": "            e.printStackTrace(); // Print to boot.log"
+      },
+      {
+        "line": 61,
+        "code": "            return ResponseEntity.internalServerError().body(Map.of(\"error\", \"Error processing JSON\", \"details\", e.getMessage()));"
+      }
+    ]
+  },
+  {
+    "key": "8a3d6991-1bd8-481d-9fc6-68bee09548c6",
     "rule": "java:S1192",
     "severity": "CRITICAL",
     "component": "levo-backend:src/main/java/com/levo/security/controller/N8nJsonController.java",
@@ -58,10 +179,2423 @@
             "msgFormattings": []
           }
         ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/controller/N8nJsonController.java",
+            "textRange": {
+              "startLine": 135,
+              "endLine": 135,
+              "startOffset": 24,
+              "endOffset": 31
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/controller/N8nJsonController.java",
+            "textRange": {
+              "startLine": 144,
+              "endLine": 144,
+              "startOffset": 24,
+              "endOffset": 31
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/controller/N8nJsonController.java",
+            "textRange": {
+              "startLine": 158,
+              "endLine": 158,
+              "startOffset": 20,
+              "endOffset": 27
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
       }
     ],
     "status": "OPEN",
-    "message": "Define a constant instead of duplicating this literal \"error\" 3 times.",
+    "message": "Define a constant instead of duplicating this literal \"error\" 6 times.",
+    "effort": "14min",
+    "debt": "14min",
+    "author": "emmanuelbotta007@gmail.com",
+    "tags": [
+      "design"
+    ],
+    "comments": [],
+    "creationDate": "2026-05-21T20:01:18+0000",
+    "updateDate": "2026-05-21T20:01:18+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "DISTINCT",
+    "cleanCodeAttributeCategory": "ADAPTABLE",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "HIGH"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 58,
+        "code": "            return ResponseEntity.ok(Map.of(\"message\", \"Webhook processed successfully\"));"
+      },
+      {
+        "line": 59,
+        "code": "        } catch (Exception e) {"
+      },
+      {
+        "line": 60,
+        "code": "            e.printStackTrace(); // Print to boot.log"
+      },
+      {
+        "line": 61,
+        "code": "            return ResponseEntity.internalServerError().body(Map.of(\"error\", \"Error processing JSON\", \"details\", e.getMessage()));"
+      },
+      {
+        "line": 62,
+        "code": "        }"
+      },
+      {
+        "line": 63,
+        "code": "    }"
+      },
+      {
+        "line": 64,
+        "code": ""
+      }
+    ]
+  },
+  {
+    "key": "168ab55a-f805-4c91-96cb-2cb0f51181f3",
+    "rule": "java:S1192",
+    "severity": "CRITICAL",
+    "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolMasterDataService.java",
+    "project": "levo-backend",
+    "line": 41,
+    "hash": "a5ceedcb669e17fa1ccf30083f878c18",
+    "textRange": {
+      "startLine": 41,
+      "endLine": 41,
+      "startOffset": 30,
+      "endOffset": 37
+    },
+    "flows": [
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolMasterDataService.java",
+            "textRange": {
+              "startLine": 41,
+              "endLine": 41,
+              "startOffset": 30,
+              "endOffset": 37
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolMasterDataService.java",
+            "textRange": {
+              "startLine": 42,
+              "endLine": 42,
+              "startOffset": 33,
+              "endOffset": 40
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolMasterDataService.java",
+            "textRange": {
+              "startLine": 43,
+              "endLine": 43,
+              "startOffset": 32,
+              "endOffset": 39
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolMasterDataService.java",
+            "textRange": {
+              "startLine": 44,
+              "endLine": 44,
+              "startOffset": 38,
+              "endOffset": 45
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      }
+    ],
+    "status": "OPEN",
+    "message": "Define a constant instead of duplicating this literal \"25.00\" 4 times.",
+    "effort": "10min",
+    "debt": "10min",
+    "author": "emmanuelbotta007@gmail.com",
+    "tags": [
+      "design"
+    ],
+    "comments": [],
+    "creationDate": "2026-05-21T20:01:18+0000",
+    "updateDate": "2026-05-21T20:01:18+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "DISTINCT",
+    "cleanCodeAttributeCategory": "ADAPTABLE",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "HIGH"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 38,
+        "code": "        try {"
+      },
+      {
+        "line": 39,
+        "code": "            // Pillares \u2014 code, name, weight, displayOrder"
+      },
+      {
+        "line": 40,
+        "code": "            Object[][] pillarsSpec = {"
+      },
+      {
+        "line": 41,
+        "code": "                {\"I\", \"Idea\", \"25.00\", 1, \"Necesidad emergente, ventaja competitiva, potencial de desarrollo del negocio.\"},"
+      },
+      {
+        "line": 42,
+        "code": "                {\"D\", \"Demanda\", \"25.00\", 2, \"P\u00fablico objetivo, tama\u00f1o de mercado, crecimiento, proyecci\u00f3n, estacionalidad, aceptaci\u00f3n.\"},"
+      },
+      {
+        "line": 43,
+        "code": "                {\"O\", \"Oferta\", \"25.00\", 3, \"Presencia competitiva, concentraci\u00f3n, viabilidad multi-pa\u00eds, precio/margen, canal, regulaci\u00f3n.\"},"
+      },
+      {
+        "line": 44,
+        "code": "                {\"L\", \"Lanzabilidad\", \"25.00\", 4, \"Encaje estrat\u00e9gico, degradaci\u00f3n, obsolescencia, complejidad operativa y postventa.\"}"
+      }
+    ]
+  },
+  {
+    "key": "f2cee827-ef86-465d-91bd-85a27330ded1",
+    "rule": "java:S1192",
+    "severity": "CRITICAL",
+    "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolMasterDataService.java",
+    "project": "levo-backend",
+    "line": 84,
+    "hash": "f9b1871368b0f860e3da16932a75e3c4",
+    "textRange": {
+      "startLine": 84,
+      "endLine": 84,
+      "startOffset": 49,
+      "endOffset": 56
+    },
+    "flows": [
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolMasterDataService.java",
+            "textRange": {
+              "startLine": 84,
+              "endLine": 84,
+              "startOffset": 49,
+              "endOffset": 56
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolMasterDataService.java",
+            "textRange": {
+              "startLine": 85,
+              "endLine": 85,
+              "startOffset": 50,
+              "endOffset": 57
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolMasterDataService.java",
+            "textRange": {
+              "startLine": 86,
+              "endLine": 86,
+              "startOffset": 55,
+              "endOffset": 62
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolMasterDataService.java",
+            "textRange": {
+              "startLine": 87,
+              "endLine": 87,
+              "startOffset": 59,
+              "endOffset": 66
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolMasterDataService.java",
+            "textRange": {
+              "startLine": 91,
+              "endLine": 91,
+              "startOffset": 60,
+              "endOffset": 67
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolMasterDataService.java",
+            "textRange": {
+              "startLine": 92,
+              "endLine": 92,
+              "startOffset": 73,
+              "endOffset": 80
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolMasterDataService.java",
+            "textRange": {
+              "startLine": 93,
+              "endLine": 93,
+              "startOffset": 54,
+              "endOffset": 61
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolMasterDataService.java",
+            "textRange": {
+              "startLine": 94,
+              "endLine": 94,
+              "startOffset": 57,
+              "endOffset": 64
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      }
+    ],
+    "status": "OPEN",
+    "message": "Define a constant instead of duplicating this literal \"16.67\" 8 times.",
+    "effort": "18min",
+    "debt": "18min",
+    "author": "emmanuelbotta007@gmail.com",
+    "tags": [
+      "design"
+    ],
+    "comments": [],
+    "creationDate": "2026-05-21T20:01:18+0000",
+    "updateDate": "2026-05-21T20:01:18+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "DISTINCT",
+    "cleanCodeAttributeCategory": "ADAPTABLE",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "HIGH"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 81,
+        "code": "                {\"I\", \"I.2\", \"Ventaja competitiva\", \"33.33\", 2},"
+      },
+      {
+        "line": 82,
+        "code": "                {\"I\", \"I.3\", \"Potencial de desarrollo del negocio\", \"33.34\", 3},"
+      },
+      {
+        "line": 83,
+        "code": "                // D (demanda)"
+      },
+      {
+        "line": 84,
+        "code": "                {\"D\", \"D.1\", \"P\u00fablico objetivo\", \"16.67\", 1},"
+      },
+      {
+        "line": 85,
+        "code": "                {\"D\", \"D.2\", \"Tama\u00f1o de mercado\", \"16.67\", 2},"
+      },
+      {
+        "line": 86,
+        "code": "                {\"D\", \"D.3\", \"Crecimiento \u00faltimo a\u00f1o\", \"16.67\", 3},"
+      },
+      {
+        "line": 87,
+        "code": "                {\"D\", \"D.4\", \"Proyecci\u00f3n pr\u00f3ximos 3 a\u00f1os\", \"16.67\", 4},"
+      }
+    ]
+  },
+  {
+    "key": "83e9aaa9-7728-4ef0-aaa2-c4da876736b9",
+    "rule": "java:S1192",
+    "severity": "CRITICAL",
+    "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolMasterDataService.java",
+    "project": "levo-backend",
+    "line": 88,
+    "hash": "ecc7eaddf567e13f0800719b6b3a81fb",
+    "textRange": {
+      "startLine": 88,
+      "endLine": 88,
+      "startOffset": 47,
+      "endOffset": 54
+    },
+    "flows": [
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolMasterDataService.java",
+            "textRange": {
+              "startLine": 88,
+              "endLine": 88,
+              "startOffset": 47,
+              "endOffset": 54
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolMasterDataService.java",
+            "textRange": {
+              "startLine": 89,
+              "endLine": 89,
+              "startOffset": 56,
+              "endOffset": 63
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolMasterDataService.java",
+            "textRange": {
+              "startLine": 95,
+              "endLine": 95,
+              "startOffset": 56,
+              "endOffset": 63
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolMasterDataService.java",
+            "textRange": {
+              "startLine": 96,
+              "endLine": 96,
+              "startOffset": 69,
+              "endOffset": 76
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      }
+    ],
+    "status": "OPEN",
+    "message": "Define a constant instead of duplicating this literal \"16.66\" 4 times.",
+    "effort": "10min",
+    "debt": "10min",
+    "author": "emmanuelbotta007@gmail.com",
+    "tags": [
+      "design"
+    ],
+    "comments": [],
+    "creationDate": "2026-05-21T20:01:18+0000",
+    "updateDate": "2026-05-21T20:01:18+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "DISTINCT",
+    "cleanCodeAttributeCategory": "ADAPTABLE",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "HIGH"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 85,
+        "code": "                {\"D\", \"D.2\", \"Tama\u00f1o de mercado\", \"16.67\", 2},"
+      },
+      {
+        "line": 86,
+        "code": "                {\"D\", \"D.3\", \"Crecimiento \u00faltimo a\u00f1o\", \"16.67\", 3},"
+      },
+      {
+        "line": 87,
+        "code": "                {\"D\", \"D.4\", \"Proyecci\u00f3n pr\u00f3ximos 3 a\u00f1os\", \"16.67\", 4},"
+      },
+      {
+        "line": 88,
+        "code": "                {\"D\", \"D.5\", \"Estacionalidad\", \"16.66\", 5},"
+      },
+      {
+        "line": 89,
+        "code": "                {\"D\", \"D.6\", \"Aceptaci\u00f3n del producto\", \"16.66\", 6},"
+      },
+      {
+        "line": 90,
+        "code": "                // O (oferta)"
+      },
+      {
+        "line": 91,
+        "code": "                {\"O\", \"O.1\", \"Presencia competitiva (IPC)\", \"16.67\", 1},"
+      }
+    ]
+  },
+  {
+    "key": "f21987ba-cc12-4d89-92a5-df954310f709",
+    "rule": "java:S1192",
+    "severity": "CRITICAL",
+    "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolMasterDataService.java",
+    "project": "levo-backend",
+    "line": 98,
+    "hash": "8556054e967692949af5f921b6f67289",
+    "textRange": {
+      "startLine": 98,
+      "endLine": 98,
+      "startOffset": 77,
+      "endOffset": 84
+    },
+    "flows": [
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolMasterDataService.java",
+            "textRange": {
+              "startLine": 98,
+              "endLine": 98,
+              "startOffset": 77,
+              "endOffset": 84
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolMasterDataService.java",
+            "textRange": {
+              "startLine": 99,
+              "endLine": 99,
+              "startOffset": 83,
+              "endOffset": 90
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolMasterDataService.java",
+            "textRange": {
+              "startLine": 100,
+              "endLine": 100,
+              "startOffset": 79,
+              "endOffset": 86
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolMasterDataService.java",
+            "textRange": {
+              "startLine": 101,
+              "endLine": 101,
+              "startOffset": 85,
+              "endOffset": 92
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolMasterDataService.java",
+            "textRange": {
+              "startLine": 102,
+              "endLine": 102,
+              "startOffset": 69,
+              "endOffset": 76
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      }
+    ],
+    "status": "OPEN",
+    "message": "Define a constant instead of duplicating this literal \"20.00\" 5 times.",
+    "effort": "12min",
+    "debt": "12min",
+    "author": "emmanuelbotta007@gmail.com",
+    "tags": [
+      "design"
+    ],
+    "comments": [],
+    "creationDate": "2026-05-21T20:01:18+0000",
+    "updateDate": "2026-05-21T20:01:18+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "DISTINCT",
+    "cleanCodeAttributeCategory": "ADAPTABLE",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "HIGH"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 95,
+        "code": "                {\"O\", \"O.5\", \"Canal online vs offline\", \"16.66\", 5},"
+      },
+      {
+        "line": 96,
+        "code": "                {\"O\", \"O.6\", \"Complejidad regulatoria / tributaria\", \"16.66\", 6},"
+      },
+      {
+        "line": 97,
+        "code": "                // L (lanzabilidad)"
+      },
+      {
+        "line": 98,
+        "code": "                {\"L\", \"L.1\", \"Encaje estrat\u00e9gico y capacidades comerciales\", \"20.00\", 1},"
+      },
+      {
+        "line": 99,
+        "code": "                {\"L\", \"L.2\", \"Riesgo de degradaci\u00f3n f\u00edsica y vida \u00fatil comercial\", \"20.00\", 2},"
+      },
+      {
+        "line": 100,
+        "code": "                {\"L\", \"L.3\", \"Riesgo de obsolescencia y vigencia de producto\", \"20.00\", 3},"
+      },
+      {
+        "line": 101,
+        "code": "                {\"L\", \"L.4\", \"Complejidad operativa, log\u00edstica y alertas de manejo\", \"20.00\", 4},"
+      }
+    ]
+  },
+  {
+    "key": "533c06dd-0ad1-4a02-a368-a06c8713d03b",
+    "rule": "java:S135",
+    "severity": "MINOR",
+    "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolMasterDataService.java",
+    "project": "levo-backend",
+    "line": 106,
+    "hash": "70b2bff5b021aadafa45d7fac706281e",
+    "textRange": {
+      "startLine": 106,
+      "endLine": 106,
+      "startOffset": 12,
+      "endOffset": 15
+    },
+    "flows": [
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolMasterDataService.java",
+            "textRange": {
+              "startLine": 117,
+              "endLine": 117,
+              "startOffset": 36,
+              "endOffset": 45
+            },
+            "msg": "\"continue\" statement.",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolMasterDataService.java",
+            "textRange": {
+              "startLine": 122,
+              "endLine": 122,
+              "startOffset": 28,
+              "endOffset": 37
+            },
+            "msg": "\"continue\" statement.",
+            "msgFormattings": []
+          }
+        ]
+      }
+    ],
+    "status": "OPEN",
+    "message": "Reduce the total number of break and continue statements in this loop to use at most one.",
+    "effort": "20min",
+    "debt": "20min",
+    "author": "emmanuelbotta007@gmail.com",
+    "tags": [
+      "brain-overload"
+    ],
+    "comments": [],
+    "creationDate": "2026-05-21T20:01:18+0000",
+    "updateDate": "2026-05-21T20:01:18+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "FOCUSED",
+    "cleanCodeAttributeCategory": "ADAPTABLE",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 103,
+        "code": "            };"
+      },
+      {
+        "line": 104,
+        "code": ""
+      },
+      {
+        "line": 105,
+        "code": "            List&lt;IdolPillars&gt; allPillars = pillarsRepository.findAll();"
+      },
+      {
+        "line": 106,
+        "code": "            for (Object[] vd : variablesSpec) {"
+      },
+      {
+        "line": 107,
+        "code": "                String pillarCode = (String) vd[0];"
+      },
+      {
+        "line": 108,
+        "code": "                String code = (String) vd[1];"
+      },
+      {
+        "line": 109,
+        "code": "                String name = (String) vd[2];"
+      }
+    ]
+  },
+  {
+    "key": "0a87e113-49d0-4384-ad75-1a9b983c97ff",
+    "rule": "java:S106",
+    "severity": "MAJOR",
+    "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolMasterDataService.java",
+    "project": "levo-backend",
+    "line": 135,
+    "hash": "980d388452d7c89660e4e90efeeec979",
+    "textRange": {
+      "startLine": 135,
+      "endLine": 135,
+      "startOffset": 12,
+      "endOffset": 22
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Replace this use of System.err by a logger.",
+    "effort": "10min",
+    "debt": "10min",
+    "author": "emmanuelbotta007@gmail.com",
+    "tags": [
+      "bad-practice",
+      "cert"
+    ],
+    "comments": [],
+    "creationDate": "2026-05-21T20:01:18+0000",
+    "updateDate": "2026-05-21T20:01:18+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "MODULAR",
+    "cleanCodeAttributeCategory": "ADAPTABLE",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "MEDIUM"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 132,
+        "code": "            }"
+      },
+      {
+        "line": 133,
+        "code": "        } catch (Exception e) {"
+      },
+      {
+        "line": 134,
+        "code": "            // No bloqueamos boot por seed; solo logueamos."
+      },
+      {
+        "line": 135,
+        "code": "            System.err.println(\"[IdolMasterDataService] seed IDOL fall\u00f3: \" + e.getMessage());"
+      },
+      {
+        "line": 136,
+        "code": "        }"
+      },
+      {
+        "line": 137,
+        "code": "    }"
+      },
+      {
+        "line": 138,
+        "code": ""
+      }
+    ]
+  },
+  {
+    "key": "85e57f8a-fd47-4156-969d-c75bcada742b",
+    "rule": "java:S106",
+    "severity": "MAJOR",
+    "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolQueueService.java",
+    "project": "levo-backend",
+    "line": 142,
+    "hash": "5df45ac0195fc20ddb0bebbe2425b909",
+    "textRange": {
+      "startLine": 142,
+      "endLine": 142,
+      "startOffset": 20,
+      "endOffset": 30
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Replace this use of System.err by a logger.",
+    "effort": "10min",
+    "debt": "10min",
+    "author": "emmanuelbotta007@gmail.com",
+    "tags": [
+      "bad-practice",
+      "cert"
+    ],
+    "comments": [],
+    "creationDate": "2026-05-21T20:01:18+0000",
+    "updateDate": "2026-05-21T20:01:18+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "MODULAR",
+    "cleanCodeAttributeCategory": "ADAPTABLE",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "MEDIUM"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 139,
+        "code": "                    idolService.processIdolReportV1_1(mockJson, next.getProduct().getId());"
+      },
+      {
+        "line": 140,
+        "code": "                    markAsCompleted(next.getProduct().getId());"
+      },
+      {
+        "line": 141,
+        "code": "                } catch (Exception e) {"
+      },
+      {
+        "line": 142,
+        "code": "                    System.err.println(\"Error procesando mock IDOL: \" + e.getMessage());"
+      },
+      {
+        "line": 143,
+        "code": "                    next.setStatus(IdolAnalysisRequest.Status.ERROR);"
+      },
+      {
+        "line": 144,
+        "code": "                    next.setErrorMessage(\"Error mock IDOL: \" + e.getMessage());"
+      },
+      {
+        "line": 145,
+        "code": "                    requestRepository.save(next);"
+      }
+    ]
+  },
+  {
+    "key": "27996bf4-2e83-49f9-9a72-23b495cd143b",
+    "rule": "java:S3776",
+    "severity": "CRITICAL",
+    "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+    "project": "levo-backend",
+    "line": 567,
+    "hash": "86a273316cf94893f66bd360153f3858",
+    "textRange": {
+      "startLine": 567,
+      "endLine": 567,
+      "startOffset": 16,
+      "endOffset": 37
+    },
+    "flows": [
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 572,
+              "endLine": 572,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 572,
+              "endLine": 572,
+              "startOffset": 27,
+              "endOffset": 29
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 575,
+              "endLine": 575,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 594,
+              "endLine": 594,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 602,
+              "endLine": 602,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 603,
+              "endLine": 603,
+              "startOffset": 12,
+              "endOffset": 15
+            },
+            "msg": "+2 (incl 1 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 605,
+              "endLine": 605,
+              "startOffset": 16,
+              "endOffset": 18
+            },
+            "msg": "+3 (incl 2 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 608,
+              "endLine": 608,
+              "startOffset": 16,
+              "endOffset": 22
+            },
+            "msg": "+3 (incl 2 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 623,
+              "endLine": 623,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 637,
+              "endLine": 637,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 638,
+              "endLine": 638,
+              "startOffset": 12,
+              "endOffset": 15
+            },
+            "msg": "+2 (incl 1 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 646,
+              "endLine": 646,
+              "startOffset": 16,
+              "endOffset": 18
+            },
+            "msg": "+3 (incl 2 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 648,
+              "endLine": 648,
+              "startOffset": 16,
+              "endOffset": 19
+            },
+            "msg": "+3 (incl 2 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      }
+    ],
+    "status": "OPEN",
+    "message": "Refactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.",
+    "effort": "13min",
+    "debt": "13min",
+    "author": "emmanuelbotta007@gmail.com",
+    "tags": [
+      "brain-overload"
+    ],
+    "comments": [],
+    "creationDate": "2026-05-21T20:01:18+0000",
+    "updateDate": "2026-05-21T20:01:18+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "FOCUSED",
+    "cleanCodeAttributeCategory": "ADAPTABLE",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "HIGH"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 564,
+        "code": "     * evidence/analysis/conclusion/sources/flags)."
+      },
+      {
+        "line": 565,
+        "code": "     */"
+      },
+      {
+        "line": 566,
+        "code": "    @Transactional"
+      },
+      {
+        "line": 567,
+        "code": "    public Idol processIdolReportV1_1(String reportJsonRaw, Long productId) throws Exception {"
+      },
+      {
+        "line": 568,
+        "code": "        Products product = productsRepository.findById(productId)"
+      },
+      {
+        "line": 569,
+        "code": "                .orElseThrow(() -&gt; new IllegalArgumentException(\"Product not found with ID: \" + productId));"
+      },
+      {
+        "line": 570,
+        "code": ""
+      }
+    ]
+  },
+  {
+    "key": "28dc24c5-b2b6-46d9-9461-d29a506952c9",
+    "rule": "java:S100",
+    "severity": "MINOR",
+    "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+    "project": "levo-backend",
+    "line": 567,
+    "hash": "86a273316cf94893f66bd360153f3858",
+    "textRange": {
+      "startLine": 567,
+      "endLine": 567,
+      "startOffset": 16,
+      "endOffset": 37
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+    "effort": "5min",
+    "debt": "5min",
+    "author": "emmanuelbotta007@gmail.com",
+    "tags": [
+      "convention"
+    ],
+    "comments": [],
+    "creationDate": "2026-05-21T20:01:18+0000",
+    "updateDate": "2026-05-21T20:01:18+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "IDENTIFIABLE",
+    "cleanCodeAttributeCategory": "CONSISTENT",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 564,
+        "code": "     * evidence/analysis/conclusion/sources/flags)."
+      },
+      {
+        "line": 565,
+        "code": "     */"
+      },
+      {
+        "line": 566,
+        "code": "    @Transactional"
+      },
+      {
+        "line": 567,
+        "code": "    public Idol processIdolReportV1_1(String reportJsonRaw, Long productId) throws Exception {"
+      },
+      {
+        "line": 568,
+        "code": "        Products product = productsRepository.findById(productId)"
+      },
+      {
+        "line": 569,
+        "code": "                .orElseThrow(() -&gt; new IllegalArgumentException(\"Product not found with ID: \" + productId));"
+      },
+      {
+        "line": 570,
+        "code": ""
+      }
+    ]
+  },
+  {
+    "key": "3c943a97-f650-408a-8e99-c56eae4e2c8d",
+    "rule": "java:S6541",
+    "severity": "INFO",
+    "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+    "project": "levo-backend",
+    "line": 567,
+    "hash": "86a273316cf94893f66bd360153f3858",
+    "textRange": {
+      "startLine": 567,
+      "endLine": 567,
+      "startOffset": 16,
+      "endOffset": 37
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "A \"Brain Method\" was detected. Refactor it to reduce at least one of the following metrics: LOC from 70 to 64, Complexity from 17 to 14, Nesting Level from 3 to 2, Number of Variables from 21 to 6.",
+    "effort": "0min",
+    "debt": "0min",
+    "author": "emmanuelbotta007@gmail.com",
+    "tags": [
+      "design"
+    ],
+    "comments": [],
+    "creationDate": "2026-05-21T20:01:18+0000",
+    "updateDate": "2026-05-21T20:01:18+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "FOCUSED",
+    "cleanCodeAttributeCategory": "ADAPTABLE",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "INFO"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 564,
+        "code": "     * evidence/analysis/conclusion/sources/flags)."
+      },
+      {
+        "line": 565,
+        "code": "     */"
+      },
+      {
+        "line": 566,
+        "code": "    @Transactional"
+      },
+      {
+        "line": 567,
+        "code": "    public Idol processIdolReportV1_1(String reportJsonRaw, Long productId) throws Exception {"
+      },
+      {
+        "line": 568,
+        "code": "        Products product = productsRepository.findById(productId)"
+      },
+      {
+        "line": 569,
+        "code": "                .orElseThrow(() -&gt; new IllegalArgumentException(\"Product not found with ID: \" + productId));"
+      },
+      {
+        "line": 570,
+        "code": ""
+      }
+    ]
+  },
+  {
+    "key": "8d34b747-54c6-45a7-8090-da1b5e18df3e",
+    "rule": "java:S1192",
+    "severity": "CRITICAL",
+    "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+    "project": "levo-backend",
+    "line": 594,
+    "hash": "a7b3e378de4a09af330bdf9c74b1369c",
+    "textRange": {
+      "startLine": 594,
+      "endLine": 594,
+      "startOffset": 31,
+      "endOffset": 41
+    },
+    "flows": [
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 594,
+              "endLine": 594,
+              "startOffset": 31,
+              "endOffset": 41
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 595,
+              "endLine": 595,
+              "startOffset": 62,
+              "endOffset": 72
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 599,
+              "endLine": 599,
+              "startOffset": 70,
+              "endOffset": 80
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 605,
+              "endLine": 605,
+              "startOffset": 35,
+              "endOffset": 45
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 606,
+              "endLine": 606,
+              "startOffset": 57,
+              "endOffset": 67
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      }
+    ],
+    "status": "OPEN",
+    "message": "Define a constant instead of duplicating this literal \"score100\" 5 times.",
+    "effort": "12min",
+    "debt": "12min",
+    "author": "emmanuelbotta007@gmail.com",
+    "tags": [
+      "design"
+    ],
+    "comments": [],
+    "creationDate": "2026-05-21T20:01:18+0000",
+    "updateDate": "2026-05-21T20:01:18+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "DISTINCT",
+    "cleanCodeAttributeCategory": "ADAPTABLE",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "HIGH"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 591,
+        "code": "        // --- Scorecard (general + pillars) ---"
+      },
+      {
+        "line": 592,
+        "code": "        JsonNode scorecard = root.path(\"scorecard\");"
+      },
+      {
+        "line": 593,
+        "code": "        JsonNode general = scorecard.path(\"general\");"
+      },
+      {
+        "line": 594,
+        "code": "        if (general.hasNonNull(\"score100\")) {"
+      },
+      {
+        "line": 595,
+        "code": "            idol.setFinalScore(BigDecimal.valueOf(general.get(\"score100\").asDouble())"
+      },
+      {
+        "line": 596,
+        "code": "                    .setScale(2, RoundingMode.HALF_UP));"
+      },
+      {
+        "line": 597,
+        "code": "        }"
+      }
+    ]
+  },
+  {
+    "key": "906c35e3-6331-48e4-a8be-9b1fd498d5da",
+    "rule": "java:S1192",
+    "severity": "CRITICAL",
+    "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+    "project": "levo-backend",
+    "line": 598,
+    "hash": "a31d205ded15e5af6072e588b6286047",
+    "textRange": {
+      "startLine": 598,
+      "endLine": 598,
+      "startOffset": 41,
+      "endOffset": 53
+    },
+    "flows": [
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 598,
+              "endLine": 598,
+              "startOffset": 41,
+              "endOffset": 53
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 693,
+              "endLine": 693,
+              "startOffset": 25,
+              "endOffset": 37
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 693,
+              "endLine": 693,
+              "startOffset": 67,
+              "endOffset": 79
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      }
+    ],
+    "status": "OPEN",
+    "message": "Define a constant instead of duplicating this literal \"evaluation\" 3 times.",
+    "effort": "8min",
+    "debt": "8min",
+    "author": "emmanuelbotta007@gmail.com",
+    "tags": [
+      "design"
+    ],
+    "comments": [],
+    "creationDate": "2026-05-21T20:01:18+0000",
+    "updateDate": "2026-05-21T20:01:18+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "DISTINCT",
+    "cleanCodeAttributeCategory": "ADAPTABLE",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "HIGH"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 595,
+        "code": "            idol.setFinalScore(BigDecimal.valueOf(general.get(\"score100\").asDouble())"
+      },
+      {
+        "line": 596,
+        "code": "                    .setScale(2, RoundingMode.HALF_UP));"
+      },
+      {
+        "line": 597,
+        "code": "        }"
+      },
+      {
+        "line": 598,
+        "code": "        String evaluation = general.path(\"evaluation\").asText(\"\");"
+      },
+      {
+        "line": 599,
+        "code": "        idol.setStatus(mapEvaluationToStatus(evaluation, general.path(\"score100\").asDouble(0)));"
+      },
+      {
+        "line": 600,
+        "code": ""
+      },
+      {
+        "line": 601,
+        "code": "        // Pillars del scorecard"
+      }
+    ]
+  },
+  {
+    "key": "968b3ec2-a752-4e21-bc07-ea4c1de6ee3d",
+    "rule": "java:S1192",
+    "severity": "CRITICAL",
+    "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+    "project": "levo-backend",
+    "line": 602,
+    "hash": "670a1755bb8185e4ab8267a454051181",
+    "textRange": {
+      "startLine": 602,
+      "endLine": 602,
+      "startOffset": 27,
+      "endOffset": 36
+    },
+    "flows": [
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 602,
+              "endLine": 602,
+              "startOffset": 27,
+              "endOffset": 36
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 603,
+              "endLine": 603,
+              "startOffset": 46,
+              "endOffset": 55
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 637,
+              "endLine": 637,
+              "startOffset": 22,
+              "endOffset": 31
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 638,
+              "endLine": 638,
+              "startOffset": 49,
+              "endOffset": 58
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      }
+    ],
+    "status": "OPEN",
+    "message": "Define a constant instead of duplicating this literal \"pillars\" 4 times.",
+    "effort": "10min",
+    "debt": "10min",
+    "author": "emmanuelbotta007@gmail.com",
+    "tags": [
+      "design"
+    ],
+    "comments": [],
+    "creationDate": "2026-05-21T20:01:18+0000",
+    "updateDate": "2026-05-21T20:01:18+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "DISTINCT",
+    "cleanCodeAttributeCategory": "ADAPTABLE",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "HIGH"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 599,
+        "code": "        idol.setStatus(mapEvaluationToStatus(evaluation, general.path(\"score100\").asDouble(0)));"
+      },
+      {
+        "line": 600,
+        "code": ""
+      },
+      {
+        "line": 601,
+        "code": "        // Pillars del scorecard"
+      },
+      {
+        "line": 602,
+        "code": "        if (scorecard.path(\"pillars\").isArray()) {"
+      },
+      {
+        "line": 603,
+        "code": "            for (JsonNode sp : scorecard.path(\"pillars\")) {"
+      },
+      {
+        "line": 604,
+        "code": "                String code = sp.path(\"code\").asText(\"\");"
+      },
+      {
+        "line": 605,
+        "code": "                if (!sp.hasNonNull(\"score100\")) continue;"
+      }
+    ]
+  },
+  {
+    "key": "e763824d-d13e-4442-a786-51a711a9416c",
+    "rule": "java:S100",
+    "severity": "MINOR",
+    "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+    "project": "levo-backend",
+    "line": 658,
+    "hash": "14925d7ece288d1bc8c04dd99f5ea37f",
+    "textRange": {
+      "startLine": 658,
+      "endLine": 658,
+      "startOffset": 17,
+      "endOffset": 34
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+    "effort": "5min",
+    "debt": "5min",
+    "author": "emmanuelbotta007@gmail.com",
+    "tags": [
+      "convention"
+    ],
+    "comments": [],
+    "creationDate": "2026-05-21T20:01:18+0000",
+    "updateDate": "2026-05-21T20:01:18+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "IDENTIFIABLE",
+    "cleanCodeAttributeCategory": "CONSISTENT",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 655,
+        "code": "        return idol;"
+      },
+      {
+        "line": 656,
+        "code": "    }"
+      },
+      {
+        "line": 657,
+        "code": ""
+      },
+      {
+        "line": 658,
+        "code": "    private void persistDetailV1_1(Idol idol, IdolPillars pillarRow, JsonNode v,"
+      },
+      {
+        "line": 659,
+        "code": "                                    List&lt;IdolVariables&gt; allVariables,"
+      },
+      {
+        "line": 660,
+        "code": "                                    List&lt;IdolCertaintyLevels&gt; allCertainties,"
+      },
+      {
+        "line": 661,
+        "code": "                                    List&lt;IdolDetail&gt; existingDetails) {"
+      }
+    ]
+  },
+  {
+    "key": "fff179e4-de38-4fe0-854a-e5fdc470736a",
+    "rule": "java:S3776",
+    "severity": "CRITICAL",
+    "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+    "project": "levo-backend",
+    "line": 658,
+    "hash": "14925d7ece288d1bc8c04dd99f5ea37f",
+    "textRange": {
+      "startLine": 658,
+      "endLine": 658,
+      "startOffset": 17,
+      "endOffset": 34
+    },
+    "flows": [
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 663,
+              "endLine": 663,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 672,
+              "endLine": 672,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 674,
+              "endLine": 674,
+              "startOffset": 57,
+              "endOffset": 59
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 678,
+              "endLine": 678,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 684,
+              "endLine": 684,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 691,
+              "endLine": 691,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 692,
+              "endLine": 692,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 693,
+              "endLine": 693,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 694,
+              "endLine": 694,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 695,
+              "endLine": 695,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 696,
+              "endLine": 696,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 699,
+              "endLine": 699,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 702,
+              "endLine": 702,
+              "startOffset": 61,
+              "endOffset": 63
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 710,
+              "endLine": 710,
+              "startOffset": 12,
+              "endOffset": 14
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 713,
+              "endLine": 713,
+              "startOffset": 12,
+              "endOffset": 14
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 716,
+              "endLine": 716,
+              "startOffset": 10,
+              "endOffset": 15
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 720,
+              "endLine": 720,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 721,
+              "endLine": 721,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 722,
+              "endLine": 722,
+              "startOffset": 12,
+              "endOffset": 14
+            },
+            "msg": "+2 (incl 1 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 725,
+              "endLine": 725,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 726,
+              "endLine": 726,
+              "startOffset": 12,
+              "endOffset": 14
+            },
+            "msg": "+2 (incl 1 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 729,
+              "endLine": 729,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 732,
+              "endLine": 732,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 735,
+              "endLine": 735,
+              "startOffset": 15,
+              "endOffset": 17
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 738,
+              "endLine": 738,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 741,
+              "endLine": 741,
+              "startOffset": 10,
+              "endOffset": 14
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      }
+    ],
+    "status": "OPEN",
+    "message": "Refactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.",
+    "effort": "18min",
+    "debt": "18min",
+    "author": "emmanuelbotta007@gmail.com",
+    "tags": [
+      "brain-overload"
+    ],
+    "comments": [],
+    "creationDate": "2026-05-21T20:01:18+0000",
+    "updateDate": "2026-05-21T20:01:18+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "FOCUSED",
+    "cleanCodeAttributeCategory": "ADAPTABLE",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "HIGH"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 655,
+        "code": "        return idol;"
+      },
+      {
+        "line": 656,
+        "code": "    }"
+      },
+      {
+        "line": 657,
+        "code": ""
+      },
+      {
+        "line": 658,
+        "code": "    private void persistDetailV1_1(Idol idol, IdolPillars pillarRow, JsonNode v,"
+      },
+      {
+        "line": 659,
+        "code": "                                    List&lt;IdolVariables&gt; allVariables,"
+      },
+      {
+        "line": 660,
+        "code": "                                    List&lt;IdolCertaintyLevels&gt; allCertainties,"
+      },
+      {
+        "line": 661,
+        "code": "                                    List&lt;IdolDetail&gt; existingDetails) {"
+      }
+    ]
+  },
+  {
+    "key": "5db9fc0f-6f49-451c-ae43-0ad5fe8ed834",
+    "rule": "java:S1192",
+    "severity": "CRITICAL",
+    "component": "levo-backend:src/main/java/com/levo/security/controller/N8nJsonController.java",
+    "project": "levo-backend",
+    "line": 61,
+    "hash": "3e726fb0bf3e0356732937d4d948f4f3",
+    "textRange": {
+      "startLine": 61,
+      "endLine": 61,
+      "startOffset": 102,
+      "endOffset": 111
+    },
+    "flows": [
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/controller/N8nJsonController.java",
+            "textRange": {
+              "startLine": 61,
+              "endLine": 61,
+              "startOffset": 102,
+              "endOffset": 111
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/controller/N8nJsonController.java",
+            "textRange": {
+              "startLine": 108,
+              "endLine": 108,
+              "startOffset": 106,
+              "endOffset": 115
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/controller/N8nJsonController.java",
+            "textRange": {
+              "startLine": 159,
+              "endLine": 159,
+              "startOffset": 20,
+              "endOffset": 29
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      }
+    ],
+    "status": "OPEN",
+    "message": "Define a constant instead of duplicating this literal \"details\" 3 times.",
     "effort": "8min",
     "debt": "8min",
     "author": "emmanuelbotta007@gmail.com",
@@ -70,7 +2604,7 @@
     ],
     "comments": [],
     "creationDate": "2026-05-18T18:03:24+0000",
-    "updateDate": "2026-05-18T18:03:24+0000",
+    "updateDate": "2026-05-21T20:01:18+0000",
     "type": "CODE_SMELL",
     "scope": "MAIN",
     "quickFixAvailable": false,
@@ -2579,11 +5113,11 @@
     "severity": "CRITICAL",
     "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolQueueService.java",
     "project": "levo-backend",
-    "line": 61,
+    "line": 88,
     "hash": "0fd1e1a351fe58f6bc26d9b31b3d3b1c",
     "textRange": {
-      "startLine": 61,
-      "endLine": 61,
+      "startLine": 88,
+      "endLine": 88,
       "startOffset": 16,
       "endOffset": 28
     },
@@ -2593,8 +5127,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolQueueService.java",
             "textRange": {
-              "startLine": 68,
-              "endLine": 68,
+              "startLine": 95,
+              "endLine": 95,
               "startOffset": 8,
               "endOffset": 11
             },
@@ -2608,8 +5142,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolQueueService.java",
             "textRange": {
-              "startLine": 74,
-              "endLine": 74,
+              "startLine": 101,
+              "endLine": 101,
               "startOffset": 12,
               "endOffset": 14
             },
@@ -2623,8 +5157,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolQueueService.java",
             "textRange": {
-              "startLine": 85,
-              "endLine": 85,
+              "startLine": 112,
+              "endLine": 112,
               "startOffset": 8,
               "endOffset": 10
             },
@@ -2638,8 +5172,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolQueueService.java",
             "textRange": {
-              "startLine": 91,
-              "endLine": 91,
+              "startLine": 118,
+              "endLine": 118,
               "startOffset": 8,
               "endOffset": 10
             },
@@ -2653,8 +5187,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolQueueService.java",
             "textRange": {
-              "startLine": 97,
-              "endLine": 97,
+              "startLine": 124,
+              "endLine": 124,
               "startOffset": 12,
               "endOffset": 14
             },
@@ -2668,25 +5202,10 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolQueueService.java",
             "textRange": {
-              "startLine": 116,
-              "endLine": 116,
-              "startOffset": 16,
-              "endOffset": 18
-            },
-            "msg": "+2 (incl 1 for nesting)",
-            "msgFormattings": []
-          }
-        ]
-      },
-      {
-        "locations": [
-          {
-            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolQueueService.java",
-            "textRange": {
-              "startLine": 116,
-              "endLine": 116,
-              "startOffset": 41,
-              "endOffset": 43
+              "startLine": 135,
+              "endLine": 135,
+              "startOffset": 55,
+              "endOffset": 57
             },
             "msg": "+1",
             "msgFormattings": []
@@ -2698,40 +5217,10 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolQueueService.java",
             "textRange": {
-              "startLine": 138,
-              "endLine": 138,
-              "startOffset": 44,
-              "endOffset": 45
-            },
-            "msg": "+2 (incl 1 for nesting)",
-            "msgFormattings": []
-          }
-        ]
-      },
-      {
-        "locations": [
-          {
-            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolQueueService.java",
-            "textRange": {
-              "startLine": 139,
-              "endLine": 139,
-              "startOffset": 45,
-              "endOffset": 46
-            },
-            "msg": "+2 (incl 1 for nesting)",
-            "msgFormattings": []
-          }
-        ]
-      },
-      {
-        "locations": [
-          {
-            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolQueueService.java",
-            "textRange": {
-              "startLine": 140,
-              "endLine": 140,
-              "startOffset": 51,
-              "endOffset": 52
+              "startLine": 136,
+              "endLine": 136,
+              "startOffset": 12,
+              "endOffset": 14
             },
             "msg": "+2 (incl 1 for nesting)",
             "msgFormattings": []
@@ -2745,8 +5234,23 @@
             "textRange": {
               "startLine": 141,
               "endLine": 141,
-              "startOffset": 62,
-              "endOffset": 63
+              "startOffset": 18,
+              "endOffset": 23
+            },
+            "msg": "+3 (incl 2 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolQueueService.java",
+            "textRange": {
+              "startLine": 156,
+              "endLine": 156,
+              "startOffset": 16,
+              "endOffset": 18
             },
             "msg": "+2 (incl 1 for nesting)",
             "msgFormattings": []
@@ -2758,12 +5262,12 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolQueueService.java",
             "textRange": {
-              "startLine": 142,
-              "endLine": 142,
-              "startOffset": 52,
-              "endOffset": 53
+              "startLine": 156,
+              "endLine": 156,
+              "startOffset": 47,
+              "endOffset": 49
             },
-            "msg": "+2 (incl 1 for nesting)",
+            "msg": "+1",
             "msgFormattings": []
           }
         ]
@@ -2773,128 +5277,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolQueueService.java",
             "textRange": {
-              "startLine": 143,
-              "endLine": 143,
-              "startOffset": 53,
-              "endOffset": 54
-            },
-            "msg": "+2 (incl 1 for nesting)",
-            "msgFormattings": []
-          }
-        ]
-      },
-      {
-        "locations": [
-          {
-            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolQueueService.java",
-            "textRange": {
-              "startLine": 144,
-              "endLine": 144,
-              "startOffset": 57,
-              "endOffset": 58
-            },
-            "msg": "+2 (incl 1 for nesting)",
-            "msgFormattings": []
-          }
-        ]
-      },
-      {
-        "locations": [
-          {
-            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolQueueService.java",
-            "textRange": {
-              "startLine": 145,
-              "endLine": 145,
-              "startOffset": 63,
-              "endOffset": 64
-            },
-            "msg": "+2 (incl 1 for nesting)",
-            "msgFormattings": []
-          }
-        ]
-      },
-      {
-        "locations": [
-          {
-            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolQueueService.java",
-            "textRange": {
-              "startLine": 146,
-              "endLine": 146,
-              "startOffset": 51,
-              "endOffset": 52
-            },
-            "msg": "+2 (incl 1 for nesting)",
-            "msgFormattings": []
-          }
-        ]
-      },
-      {
-        "locations": [
-          {
-            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolQueueService.java",
-            "textRange": {
-              "startLine": 147,
-              "endLine": 147,
-              "startOffset": 53,
-              "endOffset": 54
-            },
-            "msg": "+2 (incl 1 for nesting)",
-            "msgFormattings": []
-          }
-        ]
-      },
-      {
-        "locations": [
-          {
-            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolQueueService.java",
-            "textRange": {
-              "startLine": 148,
-              "endLine": 148,
-              "startOffset": 56,
-              "endOffset": 57
-            },
-            "msg": "+2 (incl 1 for nesting)",
-            "msgFormattings": []
-          }
-        ]
-      },
-      {
-        "locations": [
-          {
-            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolQueueService.java",
-            "textRange": {
-              "startLine": 149,
-              "endLine": 149,
-              "startOffset": 45,
-              "endOffset": 46
-            },
-            "msg": "+2 (incl 1 for nesting)",
-            "msgFormattings": []
-          }
-        ]
-      },
-      {
-        "locations": [
-          {
-            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolQueueService.java",
-            "textRange": {
-              "startLine": 150,
-              "endLine": 150,
-              "startOffset": 68,
-              "endOffset": 69
-            },
-            "msg": "+2 (incl 1 for nesting)",
-            "msgFormattings": []
-          }
-        ]
-      },
-      {
-        "locations": [
-          {
-            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolQueueService.java",
-            "textRange": {
-              "startLine": 157,
-              "endLine": 157,
+              "startLine": 166,
+              "endLine": 166,
               "startOffset": 14,
               "endOffset": 19
             },
@@ -2905,16 +5289,16 @@
       }
     ],
     "status": "OPEN",
-    "message": "Refactor this method to reduce its Cognitive Complexity from 38 to the 15 allowed.",
-    "effort": "28min",
-    "debt": "28min",
+    "message": "Refactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.",
+    "effort": "8min",
+    "debt": "8min",
     "author": "pablitto18@gmail.com",
     "tags": [
       "brain-overload"
     ],
     "comments": [],
     "creationDate": "2026-03-27T17:59:29+0000",
-    "updateDate": "2026-05-08T14:21:16+0000",
+    "updateDate": "2026-05-21T20:01:18+0000",
     "type": "CODE_SMELL",
     "scope": "MAIN",
     "quickFixAvailable": false,
@@ -2935,31 +5319,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 58,
+        "line": 85,
         "code": ""
       },
       {
-        "line": 59,
+        "line": 86,
         "code": "    @Scheduled(fixedDelay = 5000) // Runs every 5 seconds"
       },
       {
-        "line": 60,
+        "line": 87,
         "code": "    @Transactional"
       },
       {
-        "line": 61,
+        "line": 88,
         "code": "    public void processQueue() {"
       },
       {
-        "line": 62,
+        "line": 89,
         "code": "        // Find stuck requests (25+ minutes in PROCESSING)"
       },
       {
-        "line": 63,
+        "line": 90,
         "code": "        List&lt;IdolAnalysisRequest&gt; stuck = requestRepository.findByStatusAndUpdatedAtBefore("
       },
       {
-        "line": 64,
+        "line": 91,
         "code": "                IdolAnalysisRequest.Status.PROCESSING,"
       }
     ]
@@ -4734,91 +7118,16 @@
     ]
   },
   {
-    "key": "81b10e29-00c9-4285-87cf-7f6cd6386ba1",
-    "rule": "java:S6541",
-    "severity": "INFO",
-    "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolQueueService.java",
-    "project": "levo-backend",
-    "line": 61,
-    "hash": "0fd1e1a351fe58f6bc26d9b31b3d3b1c",
-    "textRange": {
-      "startLine": 61,
-      "endLine": 61,
-      "startOffset": 16,
-      "endOffset": 28
-    },
-    "flows": [],
-    "status": "OPEN",
-    "message": "A \"Brain Method\" was detected. Refactor it to reduce at least one of the following metrics: LOC from 89 to 64, Complexity from 21 to 14, Nesting Level from 3 to 2, Number of Variables from 15 to 6.",
-    "effort": "0min",
-    "debt": "0min",
-    "author": "pablitto18@gmail.com",
-    "tags": [
-      "design"
-    ],
-    "comments": [],
-    "creationDate": "2026-03-03T16:02:28+0000",
-    "updateDate": "2026-05-08T14:21:16+0000",
-    "type": "CODE_SMELL",
-    "scope": "MAIN",
-    "quickFixAvailable": false,
-    "messageFormattings": [],
-    "codeVariants": [],
-    "cleanCodeAttribute": "FOCUSED",
-    "cleanCodeAttributeCategory": "ADAPTABLE",
-    "impacts": [
-      {
-        "softwareQuality": "MAINTAINABILITY",
-        "severity": "INFO"
-      }
-    ],
-    "issueStatus": "OPEN",
-    "prioritizedRule": false,
-    "fromSonarQubeUpdate": false,
-    "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED",
-    "codeSnippet": [
-      {
-        "line": 58,
-        "code": ""
-      },
-      {
-        "line": 59,
-        "code": "    @Scheduled(fixedDelay = 5000) // Runs every 5 seconds"
-      },
-      {
-        "line": 60,
-        "code": "    @Transactional"
-      },
-      {
-        "line": 61,
-        "code": "    public void processQueue() {"
-      },
-      {
-        "line": 62,
-        "code": "        // Find stuck requests (25+ minutes in PROCESSING)"
-      },
-      {
-        "line": 63,
-        "code": "        List&lt;IdolAnalysisRequest&gt; stuck = requestRepository.findByStatusAndUpdatedAtBefore("
-      },
-      {
-        "line": 64,
-        "code": "                IdolAnalysisRequest.Status.PROCESSING,"
-      }
-    ]
-  },
-  {
     "key": "ee705fa6-8061-4570-bd1a-0deea983bcd2",
     "rule": "java:S106",
     "severity": "MAJOR",
     "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolQueueService.java",
     "project": "levo-backend",
-    "line": 158,
+    "line": 167,
     "hash": "99bec48fe545aabca8c8e8a9836a148d",
     "textRange": {
-      "startLine": 158,
-      "endLine": 158,
+      "startLine": 167,
+      "endLine": 167,
       "startOffset": 16,
       "endOffset": 26
     },
@@ -4855,31 +7164,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 155,
+        "line": 164,
         "code": "                HttpEntity&lt;String&gt; requestEntity = new HttpEntity&lt;&gt;(jsonBody, headers);"
       },
       {
-        "line": 156,
+        "line": 165,
         "code": "                restTemplate.postForEntity(n8nWebhookUrl, requestEntity, String.class);"
       },
       {
-        "line": 157,
+        "line": 166,
         "code": "            } catch (Exception e) {"
       },
       {
-        "line": 158,
+        "line": 167,
         "code": "                System.err.println(\"Error triggering N8N: \" + e.getMessage());"
       },
       {
-        "line": 159,
+        "line": 168,
         "code": "                next.setStatus(IdolAnalysisRequest.Status.ERROR);"
       },
       {
-        "line": 160,
+        "line": 169,
         "code": "                next.setErrorMessage(\"Error de conexi\u00f3n con n8n: \" + e.getMessage());"
       },
       {
-        "line": 161,
+        "line": 170,
         "code": "                requestRepository.save(next);"
       }
     ]
@@ -6603,19 +8912,49 @@
             "msgFormattings": []
           }
         ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 691,
+              "endLine": 691,
+              "startOffset": 25,
+              "endOffset": 32
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 691,
+              "endLine": 691,
+              "startOffset": 57,
+              "endOffset": 64
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
       }
     ],
     "status": "OPEN",
-    "message": "Define a constant instead of duplicating this literal \"score\" 4 times.",
-    "effort": "10min",
-    "debt": "10min",
+    "message": "Define a constant instead of duplicating this literal \"score\" 6 times.",
+    "effort": "14min",
+    "debt": "14min",
     "author": "pablitto18@gmail.com",
     "tags": [
       "design"
     ],
     "comments": [],
     "creationDate": "2026-02-27T16:56:08+0000",
-    "updateDate": "2026-05-08T14:21:16+0000",
+    "updateDate": "2026-05-21T20:01:18+0000",
     "type": "CODE_SMELL",
     "scope": "MAIN",
     "quickFixAvailable": false,
@@ -7601,19 +9940,34 @@
             "msgFormattings": []
           }
         ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 645,
+              "endLine": 645,
+              "startOffset": 53,
+              "endOffset": 64
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
       }
     ],
     "status": "OPEN",
-    "message": "Define a constant instead of duplicating this literal \"variables\" 3 times.",
-    "effort": "8min",
-    "debt": "8min",
+    "message": "Define a constant instead of duplicating this literal \"variables\" 4 times.",
+    "effort": "10min",
+    "debt": "10min",
     "author": "pablitto18@gmail.com",
     "tags": [
       "design"
     ],
     "comments": [],
     "creationDate": "2026-02-21T22:52:44+0000",
-    "updateDate": "2026-05-08T14:21:16+0000",
+    "updateDate": "2026-05-21T20:01:18+0000",
     "type": "CODE_SMELL",
     "scope": "MAIN",
     "quickFixAvailable": false,
@@ -7827,19 +10181,64 @@
             "msgFormattings": []
           }
         ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/controller/N8nJsonController.java",
+            "textRange": {
+              "startLine": 139,
+              "endLine": 139,
+              "startOffset": 32,
+              "endOffset": 43
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/controller/N8nJsonController.java",
+            "textRange": {
+              "startLine": 140,
+              "endLine": 140,
+              "startOffset": 37,
+              "endOffset": 48
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/controller/N8nJsonController.java",
+            "textRange": {
+              "startLine": 153,
+              "endLine": 153,
+              "startOffset": 20,
+              "endOffset": 31
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
       }
     ],
     "status": "OPEN",
-    "message": "Define a constant instead of duplicating this literal \"productId\" 5 times.",
-    "effort": "12min",
-    "debt": "12min",
+    "message": "Define a constant instead of duplicating this literal \"productId\" 8 times.",
+    "effort": "18min",
+    "debt": "18min",
     "author": "pablitto18@gmail.com",
     "tags": [
       "design"
     ],
     "comments": [],
     "creationDate": "2026-02-21T21:49:08+0000",
-    "updateDate": "2026-05-18T18:03:24+0000",
+    "updateDate": "2026-05-21T20:01:18+0000",
     "type": "CODE_SMELL",
     "scope": "MAIN",
     "quickFixAvailable": false,

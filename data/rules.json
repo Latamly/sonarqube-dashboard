@@ -6,11 +6,39 @@
     "severity": "CRITICAL",
     "type": "CODE_SMELL"
   },
+  "java:S135": {
+    "name": "Loops should not contain more than a single \"break\" or \"continue\" statement",
+    "htmlDesc": "",
+    "remFnBaseEffort": "",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
+  "java:S106": {
+    "name": "Standard outputs should not be used directly to log anything",
+    "htmlDesc": "",
+    "remFnBaseEffort": "10min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
   "java:S3776": {
     "name": "Cognitive Complexity of methods should not be too high",
     "htmlDesc": "",
     "remFnBaseEffort": "5min",
     "severity": "CRITICAL",
+    "type": "CODE_SMELL"
+  },
+  "java:S100": {
+    "name": "Method names should comply with a naming convention",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
+  "java:S6541": {
+    "name": "Methods should not perform too many tasks (aka Brain method)",
+    "htmlDesc": "",
+    "remFnBaseEffort": "0min",
+    "severity": "INFO",
     "type": "CODE_SMELL"
   },
   "java:S116": {
@@ -39,20 +67,6 @@
     "htmlDesc": "",
     "remFnBaseEffort": "2min",
     "severity": "MINOR",
-    "type": "CODE_SMELL"
-  },
-  "java:S6541": {
-    "name": "Methods should not perform too many tasks (aka Brain method)",
-    "htmlDesc": "",
-    "remFnBaseEffort": "0min",
-    "severity": "INFO",
-    "type": "CODE_SMELL"
-  },
-  "java:S106": {
-    "name": "Standard outputs should not be used directly to log anything",
-    "htmlDesc": "",
-    "remFnBaseEffort": "10min",
-    "severity": "MAJOR",
     "type": "CODE_SMELL"
   },
   "java:S2140": {
@@ -95,13 +109,6 @@
     "htmlDesc": "",
     "remFnBaseEffort": "30min",
     "severity": "MAJOR",
-    "type": "CODE_SMELL"
-  },
-  "java:S135": {
-    "name": "Loops should not contain more than a single \"break\" or \"continue\" statement",
-    "htmlDesc": "",
-    "remFnBaseEffort": "",
-    "severity": "MINOR",
     "type": "CODE_SMELL"
   },
   "java:S125": {
@@ -167,27 +174,6 @@
     "severity": "CRITICAL",
     "type": "CODE_SMELL"
   },
-  "typescript:S4325": {
-    "name": "Redundant casts and non-null assertions should be avoided",
-    "htmlDesc": "",
-    "remFnBaseEffort": "1min",
-    "severity": "MINOR",
-    "type": "CODE_SMELL"
-  },
-  "typescript:S6571": {
-    "name": "Type constituents of unions and intersections should not be redundant",
-    "htmlDesc": "",
-    "remFnBaseEffort": "5min",
-    "severity": "MINOR",
-    "type": "CODE_SMELL"
-  },
-  "typescript:S7781": {
-    "name": "Strings should use \"replaceAll()\" instead of \"replace()\" with global regex",
-    "htmlDesc": "",
-    "remFnBaseEffort": "5min",
-    "severity": "MINOR",
-    "type": "CODE_SMELL"
-  },
   "typescript:S6759": {
     "name": "React props should be read-only",
     "htmlDesc": "",
@@ -200,6 +186,27 @@
     "htmlDesc": "",
     "remFnBaseEffort": "5min",
     "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S6571": {
+    "name": "Type constituents of unions and intersections should not be redundant",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S4325": {
+    "name": "Redundant casts and non-null assertions should be avoided",
+    "htmlDesc": "",
+    "remFnBaseEffort": "1min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S7781": {
+    "name": "Strings should use \"replaceAll()\" instead of \"replace()\" with global regex",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MINOR",
     "type": "CODE_SMELL"
   },
   "typescript:S6848": {
