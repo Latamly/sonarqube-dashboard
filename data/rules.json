@@ -1,4 +1,18 @@
 {
+  "java:S1135": {
+    "name": "Track uses of \"TODO\" tags",
+    "htmlDesc": "",
+    "remFnBaseEffort": "0min",
+    "severity": "INFO",
+    "type": "CODE_SMELL"
+  },
+  "java:S106": {
+    "name": "Standard outputs should not be used directly to log anything",
+    "htmlDesc": "",
+    "remFnBaseEffort": "10min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
   "java:S6541": {
     "name": "Methods should not perform too many tasks (aka Brain method)",
     "htmlDesc": "",
@@ -38,13 +52,6 @@
     "name": "Sections of code should not be commented out",
     "htmlDesc": "",
     "remFnBaseEffort": "5min",
-    "severity": "MAJOR",
-    "type": "CODE_SMELL"
-  },
-  "java:S106": {
-    "name": "Standard outputs should not be used directly to log anything",
-    "htmlDesc": "",
-    "remFnBaseEffort": "10min",
     "severity": "MAJOR",
     "type": "CODE_SMELL"
   },
@@ -152,13 +159,6 @@
     "remFnBaseEffort": "10min",
     "severity": "MAJOR",
     "type": "BUG"
-  },
-  "java:S1135": {
-    "name": "Track uses of \"TODO\" tags",
-    "htmlDesc": "",
-    "remFnBaseEffort": "0min",
-    "severity": "INFO",
-    "type": "CODE_SMELL"
   },
   "java:S1126": {
     "name": "Return of boolean expressions should not be wrapped into an \"if-then-else\" statement",
