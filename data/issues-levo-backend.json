@@ -1,15 +1,693 @@
 [
   {
+    "key": "e16f332b-98ba-41e6-97ae-5aebcfdd3c3d",
+    "rule": "java:S3776",
+    "severity": "CRITICAL",
+    "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
+    "project": "levo-backend",
+    "line": 71,
+    "hash": "cae4e7da5e7121a3dd616011e1349e5e",
+    "textRange": {
+      "startLine": 71,
+      "endLine": 71,
+      "startOffset": 31,
+      "endOffset": 42
+    },
+    "flows": [
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
+            "textRange": {
+              "startLine": 72,
+              "endLine": 72,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
+            "textRange": {
+              "startLine": 80,
+              "endLine": 80,
+              "startOffset": 48,
+              "endOffset": 50
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
+            "textRange": {
+              "startLine": 83,
+              "endLine": 83,
+              "startOffset": 33,
+              "endOffset": 34
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
+            "textRange": {
+              "startLine": 87,
+              "endLine": 87,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
+            "textRange": {
+              "startLine": 89,
+              "endLine": 89,
+              "startOffset": 15,
+              "endOffset": 17
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
+            "textRange": {
+              "startLine": 89,
+              "endLine": 89,
+              "startOffset": 39,
+              "endOffset": 41
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
+            "textRange": {
+              "startLine": 91,
+              "endLine": 91,
+              "startOffset": 10,
+              "endOffset": 14
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
+            "textRange": {
+              "startLine": 106,
+              "endLine": 106,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
+            "textRange": {
+              "startLine": 106,
+              "endLine": 106,
+              "startOffset": 32,
+              "endOffset": 34
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
+            "textRange": {
+              "startLine": 110,
+              "endLine": 110,
+              "startOffset": 14,
+              "endOffset": 19
+            },
+            "msg": "+2 (incl 1 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
+            "textRange": {
+              "startLine": 117,
+              "endLine": 117,
+              "startOffset": 12,
+              "endOffset": 14
+            },
+            "msg": "+2 (incl 1 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
+            "textRange": {
+              "startLine": 124,
+              "endLine": 124,
+              "startOffset": 39,
+              "endOffset": 40
+            },
+            "msg": "+3 (incl 2 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
+            "textRange": {
+              "startLine": 125,
+              "endLine": 125,
+              "startOffset": 44,
+              "endOffset": 45
+            },
+            "msg": "+3 (incl 2 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
+            "textRange": {
+              "startLine": 126,
+              "endLine": 126,
+              "startOffset": 48,
+              "endOffset": 49
+            },
+            "msg": "+3 (incl 2 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      }
+    ],
+    "status": "OPEN",
+    "message": "Refactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.",
+    "effort": "12min",
+    "debt": "12min",
+    "author": "emmanuelbotta007@gmail.com",
+    "tags": [
+      "brain-overload"
+    ],
+    "comments": [],
+    "creationDate": "2026-05-31T02:19:39+0000",
+    "updateDate": "2026-05-31T02:19:39+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "FOCUSED",
+    "cleanCodeAttributeCategory": "ADAPTABLE",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "HIGH"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 68,
+        "code": "     *                        Null/blank si es el primer turn (en ese caso se manda contexto inicial)."
+      },
+      {
+        "line": 69,
+        "code": "     * @return ScopingTurnResponse con la siguiente pregunta del agente o el scoping final"
+      },
+      {
+        "line": 70,
+        "code": "     */"
+      },
+      {
+        "line": 71,
+        "code": "    public ScopingTurnResponse processTurn(Long productId, String threadId, String userMessage) {"
+      },
+      {
+        "line": 72,
+        "code": "        if (!isEnabled()) {"
+      },
+      {
+        "line": 73,
+        "code": "            throw new IllegalStateException("
+      },
+      {
+        "line": 74,
+        "code": "                    \"Scoping conversacional no configurado. Setear AZUREIA_IDOL_SCOPING_AGENT_NAME.\");"
+      }
+    ]
+  },
+  {
+    "key": "de210669-442c-468f-aedb-8fba74306344",
+    "rule": "java:S3776",
+    "severity": "CRITICAL",
+    "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
+    "project": "levo-backend",
+    "line": 139,
+    "hash": "479332ebe28b8ef7ac3d6dd4dbcb7f72",
+    "textRange": {
+      "startLine": 139,
+      "endLine": 139,
+      "startOffset": 19,
+      "endOffset": 38
+    },
+    "flows": [
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
+            "textRange": {
+              "startLine": 147,
+              "endLine": 147,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
+            "textRange": {
+              "startLine": 150,
+              "endLine": 150,
+              "startOffset": 12,
+              "endOffset": 14
+            },
+            "msg": "+2 (incl 1 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
+            "textRange": {
+              "startLine": 150,
+              "endLine": 150,
+              "startOffset": 43,
+              "endOffset": 45
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
+            "textRange": {
+              "startLine": 153,
+              "endLine": 153,
+              "startOffset": 12,
+              "endOffset": 14
+            },
+            "msg": "+2 (incl 1 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
+            "textRange": {
+              "startLine": 156,
+              "endLine": 156,
+              "startOffset": 14,
+              "endOffset": 19
+            },
+            "msg": "+2 (incl 1 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
+            "textRange": {
+              "startLine": 163,
+              "endLine": 163,
+              "startOffset": 60,
+              "endOffset": 61
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
+            "textRange": {
+              "startLine": 164,
+              "endLine": 164,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
+            "textRange": {
+              "startLine": 165,
+              "endLine": 165,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
+            "textRange": {
+              "startLine": 165,
+              "endLine": 165,
+              "startOffset": 39,
+              "endOffset": 41
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
+            "textRange": {
+              "startLine": 168,
+              "endLine": 168,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
+            "textRange": {
+              "startLine": 168,
+              "endLine": 168,
+              "startOffset": 42,
+              "endOffset": 44
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
+            "textRange": {
+              "startLine": 171,
+              "endLine": 171,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
+            "textRange": {
+              "startLine": 175,
+              "endLine": 175,
+              "startOffset": 10,
+              "endOffset": 15
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      }
+    ],
+    "status": "OPEN",
+    "message": "Refactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.",
+    "effort": "6min",
+    "debt": "6min",
+    "author": "emmanuelbotta007@gmail.com",
+    "tags": [
+      "brain-overload"
+    ],
+    "comments": [],
+    "creationDate": "2026-05-31T02:19:39+0000",
+    "updateDate": "2026-05-31T02:19:39+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "FOCUSED",
+    "cleanCodeAttributeCategory": "ADAPTABLE",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "HIGH"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 136,
+        "code": "     * Mensaje inicial enviado al agente con el contexto m\u00ednimo del producto."
+      },
+      {
+        "line": 137,
+        "code": "     * El agente, configurado con su system prompt, decide la primera pregunta."
+      },
+      {
+        "line": 138,
+        "code": "     */"
+      },
+      {
+        "line": 139,
+        "code": "    private String buildInitialContext(Products product) {"
+      },
+      {
+        "line": 140,
+        "code": "        ObjectNode ctx = mapper.createObjectNode();"
+      },
+      {
+        "line": 141,
+        "code": "        ctx.put(\"action\", \"INICIAR_SCOPING\");"
+      },
+      {
+        "line": 142,
+        "code": ""
+      }
+    ]
+  },
+  {
+    "key": "b78f0796-3404-4e73-892e-594b7efe4949",
+    "rule": "java:S1192",
+    "severity": "CRITICAL",
+    "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+    "project": "levo-backend",
+    "line": 325,
+    "hash": "f54b50755ed473b5865f6d79e479f0d6",
+    "textRange": {
+      "startLine": 325,
+      "endLine": 325,
+      "startOffset": 12,
+      "endOffset": 20
+    },
+    "flows": [
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 325,
+              "endLine": 325,
+              "startOffset": 12,
+              "endOffset": 20
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 560,
+              "endLine": 560,
+              "startOffset": 20,
+              "endOffset": 28
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 571,
+              "endLine": 571,
+              "startOffset": 26,
+              "endOffset": 34
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      }
+    ],
+    "status": "OPEN",
+    "message": "Define a constant instead of duplicating this literal \"MANUAL\" 3 times.",
+    "effort": "8min",
+    "debt": "8min",
+    "author": "emmanuelbotta007@gmail.com",
+    "tags": [
+      "design"
+    ],
+    "comments": [],
+    "creationDate": "2026-05-31T02:19:39+0000",
+    "updateDate": "2026-05-31T02:19:39+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "DISTINCT",
+    "cleanCodeAttributeCategory": "ADAPTABLE",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "HIGH"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 322,
+        "code": "     * source null o \"KEEPA\" \u2192 solo productos Keepa (default del cat\u00e1logo analizado)."
+      },
+      {
+        "line": 323,
+        "code": "     */"
+      },
+      {
+        "line": 324,
+        "code": "    public List&lt;Idol&gt; getAllIdols(String source) {"
+      },
+      {
+        "line": 325,
+        "code": "        if (\"MANUAL\".equalsIgnoreCase(source)) {"
+      },
+      {
+        "line": 326,
+        "code": "            return idolRepository.findManualWithProduct();"
+      },
+      {
+        "line": 327,
+        "code": "        }"
+      },
+      {
+        "line": 328,
+        "code": "        return idolRepository.findKeepaWithProduct();"
+      }
+    ]
+  },
+  {
     "key": "ab7f1490-249e-431f-90a0-964021f55eb4",
     "rule": "java:S1135",
     "severity": "INFO",
     "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
     "project": "levo-backend",
-    "line": 717,
+    "line": 758,
     "hash": "c876538e5d7f8c6898f84e2f8d49c732",
     "textRange": {
-      "startLine": 717,
-      "endLine": 717,
+      "startLine": 758,
+      "endLine": 758,
       "startOffset": 0,
       "endOffset": 72
     },
@@ -45,31 +723,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 714,
+        "line": 755,
         "code": "        // Si el code del JSON no matchea ninguna IdolVariables en la DB, skipear"
       },
       {
-        "line": 715,
+        "line": 756,
         "code": "        // este detail con warning en logs. IdolDetail.variable es NOT NULL en el"
       },
       {
-        "line": 716,
+        "line": 757,
         "code": "        // modelo \u2014 guardar con varRow=null hace que Hibernate explote y rompe"
       },
       {
-        "line": 717,
+        "line": 758,
         "code": "        // todo el report. Mejor saltarse 1 detail y persistir el resto."
       },
       {
-        "line": 718,
+        "line": 759,
         "code": "        if (varRow == null) {"
       },
       {
-        "line": 719,
+        "line": 760,
         "code": "            System.err.println(\"[IDOL] WARN: variable code '\" + varCode +"
       },
       {
-        "line": 720,
+        "line": 761,
         "code": "                    \"' no matchea ninguna IdolVariables en la DB. \" +"
       }
     ]
@@ -80,11 +758,11 @@
     "severity": "MAJOR",
     "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
     "project": "levo-backend",
-    "line": 719,
+    "line": 760,
     "hash": "51b42cb1559249333c586c9a196032f8",
     "textRange": {
-      "startLine": 719,
-      "endLine": 719,
+      "startLine": 760,
+      "endLine": 760,
       "startOffset": 12,
       "endOffset": 22
     },
@@ -121,31 +799,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 716,
+        "line": 757,
         "code": "        // modelo \u2014 guardar con varRow=null hace que Hibernate explote y rompe"
       },
       {
-        "line": 717,
+        "line": 758,
         "code": "        // todo el report. Mejor saltarse 1 detail y persistir el resto."
       },
       {
-        "line": 718,
+        "line": 759,
         "code": "        if (varRow == null) {"
       },
       {
-        "line": 719,
+        "line": 760,
         "code": "            System.err.println(\"[IDOL] WARN: variable code '\" + varCode +"
       },
       {
-        "line": 720,
+        "line": 761,
         "code": "                    \"' no matchea ninguna IdolVariables en la DB. \" +"
       },
       {
-        "line": 721,
+        "line": 762,
         "code": "                    \"Pilar=\" + (pillarRow != null ? pillarRow.getCode() : \"?\") +"
       },
       {
-        "line": 722,
+        "line": 763,
         "code": "                    \". Detail skipeado. Codes v\u00e1lidos t\u00edpicos: I.1-3, D.1-6, O.1-6, L.1-5.\");"
       }
     ]
@@ -562,11 +1240,11 @@
     "severity": "CRITICAL",
     "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
     "project": "levo-backend",
-    "line": 333,
+    "line": 345,
     "hash": "d14d7f37618787e6b4ff73a26ab5ad31",
     "textRange": {
-      "startLine": 333,
-      "endLine": 333,
+      "startLine": 345,
+      "endLine": 345,
       "startOffset": 56,
       "endOffset": 75
     },
@@ -576,8 +1254,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 333,
-              "endLine": 333,
+              "startLine": 345,
+              "endLine": 345,
               "startOffset": 56,
               "endOffset": 75
             },
@@ -591,8 +1269,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 500,
-              "endLine": 500,
+              "startLine": 512,
+              "endLine": 512,
               "startOffset": 56,
               "endOffset": 75
             },
@@ -606,8 +1284,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 547,
-              "endLine": 547,
+              "startLine": 588,
+              "endLine": 588,
               "startOffset": 56,
               "endOffset": 75
             },
@@ -648,31 +1326,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 330,
+        "line": 342,
         "code": ""
       },
       {
-        "line": 331,
+        "line": 343,
         "code": "    public Idol createIdol(Long productId, Idol idol) {"
       },
       {
-        "line": 332,
+        "line": 344,
         "code": "        Products product = productsRepository.findById(productId)"
       },
       {
-        "line": 333,
+        "line": 345,
         "code": "                .orElseThrow(() -&gt; new RuntimeException(\"Product not found\"));"
       },
       {
-        "line": 334,
+        "line": 346,
         "code": "        idol.setProduct(product);"
       },
       {
-        "line": 335,
+        "line": 347,
         "code": "        return idolRepository.save(idol);"
       },
       {
-        "line": 336,
+        "line": 348,
         "code": "    }"
       }
     ]
@@ -882,11 +1560,11 @@
       },
       {
         "line": 113,
-        "code": "            idolService.saveScoping(productId, scopingJsonString);"
+        "code": ""
       },
       {
         "line": 114,
-        "code": "        }"
+        "code": "            // Para oportunidades MANUALES, el scoping captur\u00f3 los datos del producto"
       }
     ]
   },
@@ -896,11 +1574,11 @@
     "severity": "MINOR",
     "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
     "project": "levo-backend",
-    "line": 150,
+    "line": 187,
     "hash": "964f9a46249f8ef2d8b83e6e6ffda68f",
     "textRange": {
-      "startLine": 150,
-      "endLine": 150,
+      "startLine": 187,
+      "endLine": 187,
       "startOffset": 8,
       "endOffset": 11
     },
@@ -910,8 +1588,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 151,
-              "endLine": 151,
+              "startLine": 188,
+              "endLine": 188,
               "startOffset": 70,
               "endOffset": 79
             },
@@ -925,8 +1603,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 153,
-              "endLine": 153,
+              "startLine": 190,
+              "endLine": 190,
               "startOffset": 35,
               "endOffset": 44
             },
@@ -940,8 +1618,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 156,
-              "endLine": 156,
+              "startLine": 193,
+              "endLine": 193,
               "startOffset": 30,
               "endOffset": 39
             },
@@ -982,31 +1660,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 147,
+        "line": 184,
         "code": "        List&lt;Map&lt;String, Object&gt;&gt; data = (List&lt;Map&lt;String, Object&gt;&gt;) listed.getOrDefault(\"data\", List.of());"
       },
       {
-        "line": 148,
+        "line": 185,
         "code": ""
       },
       {
-        "line": 149,
+        "line": 186,
         "code": "        // listMessages devuelve en orden desc (m\u00e1s reciente primero) \u2192 buscar primero assistant"
       },
       {
-        "line": 150,
+        "line": 187,
         "code": "        for (Map&lt;String, Object&gt; msg : data) {"
       },
       {
-        "line": 151,
+        "line": 188,
         "code": "            if (!\"assistant\".equals(String.valueOf(msg.get(\"role\")))) continue;"
       },
       {
-        "line": 152,
+        "line": 189,
         "code": "            List&lt;Map&lt;String, Object&gt;&gt; content = (List&lt;Map&lt;String, Object&gt;&gt;) msg.getOrDefault(\"content\", List.of());"
       },
       {
-        "line": 153,
+        "line": 190,
         "code": "            if (content.isEmpty()) continue;"
       }
     ]
@@ -1017,11 +1695,11 @@
     "severity": "MAJOR",
     "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
     "project": "levo-backend",
-    "line": 160,
+    "line": 197,
     "hash": "29e6da3fba55c8d588f72ce5b00ac235",
     "textRange": {
-      "startLine": 160,
-      "endLine": 160,
+      "startLine": 197,
+      "endLine": 197,
       "startOffset": 18,
       "endOffset": 34
     },
@@ -1059,31 +1737,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 157,
+        "line": 194,
         "code": "            Object value = text.get(\"value\");"
       },
       {
-        "line": 158,
+        "line": 195,
         "code": "            if (value != null) return value.toString();"
       },
       {
-        "line": 159,
+        "line": 196,
         "code": "        }"
       },
       {
-        "line": 160,
+        "line": 197,
         "code": "        throw new RuntimeException(\"El agente de scoping no devolvi\u00f3 ning\u00fan mensaje en el thread \" + threadId);"
       },
       {
-        "line": 161,
+        "line": 198,
         "code": "    }"
       },
       {
-        "line": 162,
+        "line": 199,
         "code": ""
       },
       {
-        "line": 163,
+        "line": 200,
         "code": "    private ScopingTurnResponse parseAssistantResponse(String assistantText, String threadId) {"
       }
     ]
@@ -1094,11 +1772,11 @@
     "severity": "CRITICAL",
     "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
     "project": "levo-backend",
-    "line": 163,
+    "line": 200,
     "hash": "52c8d8497c5c0c4af666652660b45595",
     "textRange": {
-      "startLine": 163,
-      "endLine": 163,
+      "startLine": 200,
+      "endLine": 200,
       "startOffset": 32,
       "endOffset": 54
     },
@@ -1108,8 +1786,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 166,
-              "endLine": 166,
+              "startLine": 203,
+              "endLine": 203,
               "startOffset": 8,
               "endOffset": 10
             },
@@ -1123,8 +1801,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 168,
-              "endLine": 168,
+              "startLine": 205,
+              "endLine": 205,
               "startOffset": 12,
               "endOffset": 14
             },
@@ -1138,8 +1816,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 169,
-              "endLine": 169,
+              "startLine": 206,
+              "endLine": 206,
               "startOffset": 12,
               "endOffset": 14
             },
@@ -1153,8 +1831,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 178,
-              "endLine": 178,
+              "startLine": 215,
+              "endLine": 215,
               "startOffset": 8,
               "endOffset": 10
             },
@@ -1168,8 +1846,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 192,
-              "endLine": 192,
+              "startLine": 229,
+              "endLine": 229,
               "startOffset": 8,
               "endOffset": 11
             },
@@ -1183,8 +1861,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 193,
-              "endLine": 193,
+              "startLine": 230,
+              "endLine": 230,
               "startOffset": 12,
               "endOffset": 14
             },
@@ -1198,8 +1876,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 198,
-              "endLine": 198,
+              "startLine": 235,
+              "endLine": 235,
               "startOffset": 8,
               "endOffset": 10
             },
@@ -1213,8 +1891,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 200,
-              "endLine": 200,
+              "startLine": 237,
+              "endLine": 237,
               "startOffset": 12,
               "endOffset": 15
             },
@@ -1228,8 +1906,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 202,
-              "endLine": 202,
+              "startLine": 239,
+              "endLine": 239,
               "startOffset": 16,
               "endOffset": 18
             },
@@ -1243,8 +1921,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 202,
-              "endLine": 202,
+              "startLine": 239,
+              "endLine": 239,
               "startOffset": 44,
               "endOffset": 46
             },
@@ -1258,8 +1936,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 208,
-              "endLine": 208,
+              "startLine": 245,
+              "endLine": 245,
               "startOffset": 12,
               "endOffset": 14
             },
@@ -1273,8 +1951,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 216,
-              "endLine": 216,
+              "startLine": 253,
+              "endLine": 253,
               "startOffset": 8,
               "endOffset": 10
             },
@@ -1288,8 +1966,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 221,
-              "endLine": 221,
+              "startLine": 258,
+              "endLine": 258,
               "startOffset": 8,
               "endOffset": 10
             },
@@ -1303,8 +1981,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 231,
-              "endLine": 231,
+              "startLine": 268,
+              "endLine": 268,
               "startOffset": 8,
               "endOffset": 10
             },
@@ -1318,8 +1996,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 231,
-              "endLine": 231,
+              "startLine": 268,
+              "endLine": 268,
               "startOffset": 34,
               "endOffset": 36
             },
@@ -1333,8 +2011,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 234,
-              "endLine": 234,
+              "startLine": 271,
+              "endLine": 271,
               "startOffset": 12,
               "endOffset": 14
             },
@@ -1348,8 +2026,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 238,
-              "endLine": 238,
+              "startLine": 275,
+              "endLine": 275,
               "startOffset": 16,
               "endOffset": 18
             },
@@ -1363,8 +2041,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 238,
-              "endLine": 238,
+              "startLine": 275,
+              "endLine": 275,
               "startOffset": 32,
               "endOffset": 34
             },
@@ -1405,31 +2083,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 160,
+        "line": 197,
         "code": "        throw new RuntimeException(\"El agente de scoping no devolvi\u00f3 ning\u00fan mensaje en el thread \" + threadId);"
       },
       {
-        "line": 161,
+        "line": 198,
         "code": "    }"
       },
       {
-        "line": 162,
+        "line": 199,
         "code": ""
       },
       {
-        "line": 163,
+        "line": 200,
         "code": "    private ScopingTurnResponse parseAssistantResponse(String assistantText, String threadId) {"
       },
       {
-        "line": 164,
+        "line": 201,
         "code": "        // Limpiar wrappers comunes (markdown ```json, fences, etc.)"
       },
       {
-        "line": 165,
+        "line": 202,
         "code": "        String cleaned = assistantText.trim();"
       },
       {
-        "line": 166,
+        "line": 203,
         "code": "        if (cleaned.startsWith(\"```\")) {"
       }
     ]
@@ -1440,11 +2118,11 @@
     "severity": "MINOR",
     "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
     "project": "levo-backend",
-    "line": 200,
+    "line": 237,
     "hash": "5a83860169a7adee4f7388a1784cb99d",
     "textRange": {
-      "startLine": 200,
-      "endLine": 200,
+      "startLine": 237,
+      "endLine": 237,
       "startOffset": 12,
       "endOffset": 15
     },
@@ -1454,8 +2132,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 203,
-              "endLine": 203,
+              "startLine": 240,
+              "endLine": 240,
               "startOffset": 20,
               "endOffset": 29
             },
@@ -1469,8 +2147,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 206,
-              "endLine": 206,
+              "startLine": 243,
+              "endLine": 243,
               "startOffset": 16,
               "endOffset": 22
             },
@@ -1511,31 +2189,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 197,
+        "line": 234,
         "code": "        }"
       },
       {
-        "line": 198,
+        "line": 235,
         "code": "        if (node == null) {"
       },
       {
-        "line": 199,
+        "line": 236,
         "code": "            // Filtrar JSONs que sean solo eco del input (action=INICIAR_SCOPING) \u2014 no son respuestas reales"
       },
       {
-        "line": 200,
+        "line": 237,
         "code": "            for (int i = allNodes.size() - 1; i &gt;= 0; i--) {"
       },
       {
-        "line": 201,
+        "line": 238,
         "code": "                JsonNode candidate = allNodes.get(i);"
       },
       {
-        "line": 202,
+        "line": 239,
         "code": "                if (candidate.has(\"action\") &amp;&amp; !candidate.has(\"agentMessage\") &amp;&amp; !candidate.has(\"question\")) {"
       },
       {
-        "line": 203,
+        "line": 240,
         "code": "                    continue; // ignorar eco del JSON de input"
       }
     ]
@@ -1546,11 +2224,11 @@
     "severity": "CRITICAL",
     "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
     "project": "levo-backend",
-    "line": 252,
+    "line": 289,
     "hash": "30fd64240ecab399f4de32e75d3cf7c3",
     "textRange": {
-      "startLine": 252,
-      "endLine": 252,
+      "startLine": 289,
+      "endLine": 289,
       "startOffset": 27,
       "endOffset": 48
     },
@@ -1560,8 +2238,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 256,
-              "endLine": 256,
+              "startLine": 293,
+              "endLine": 293,
               "startOffset": 8,
               "endOffset": 13
             },
@@ -1575,8 +2253,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 258,
-              "endLine": 258,
+              "startLine": 295,
+              "endLine": 295,
               "startOffset": 12,
               "endOffset": 17
             },
@@ -1590,8 +2268,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 258,
-              "endLine": 258,
+              "startLine": 295,
+              "endLine": 295,
               "startOffset": 25,
               "endOffset": 27
             },
@@ -1605,8 +2283,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 259,
-              "endLine": 259,
+              "startLine": 296,
+              "endLine": 296,
               "startOffset": 12,
               "endOffset": 14
             },
@@ -1620,8 +2298,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 259,
-              "endLine": 259,
+              "startLine": 296,
+              "endLine": 296,
               "startOffset": 23,
               "endOffset": 25
             },
@@ -1635,8 +2313,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 266,
-              "endLine": 266,
+              "startLine": 303,
+              "endLine": 303,
               "startOffset": 12,
               "endOffset": 15
             },
@@ -1650,8 +2328,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 268,
-              "endLine": 268,
+              "startLine": 305,
+              "endLine": 305,
               "startOffset": 16,
               "endOffset": 18
             },
@@ -1665,8 +2343,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 269,
-              "endLine": 269,
+              "startLine": 306,
+              "endLine": 306,
               "startOffset": 16,
               "endOffset": 18
             },
@@ -1680,8 +2358,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 270,
-              "endLine": 270,
+              "startLine": 307,
+              "endLine": 307,
               "startOffset": 16,
               "endOffset": 18
             },
@@ -1695,8 +2373,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 271,
-              "endLine": 271,
+              "startLine": 308,
+              "endLine": 308,
               "startOffset": 16,
               "endOffset": 18
             },
@@ -1710,8 +2388,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 272,
-              "endLine": 272,
+              "startLine": 309,
+              "endLine": 309,
               "startOffset": 16,
               "endOffset": 18
             },
@@ -1725,8 +2403,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 273,
-              "endLine": 273,
+              "startLine": 310,
+              "endLine": 310,
               "startOffset": 21,
               "endOffset": 23
             },
@@ -1740,8 +2418,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 275,
-              "endLine": 275,
+              "startLine": 312,
+              "endLine": 312,
               "startOffset": 20,
               "endOffset": 22
             },
@@ -1755,8 +2433,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 278,
-              "endLine": 278,
+              "startLine": 315,
+              "endLine": 315,
               "startOffset": 12,
               "endOffset": 14
             },
@@ -1770,8 +2448,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 283,
-              "endLine": 283,
+              "startLine": 320,
+              "endLine": 320,
               "startOffset": 14,
               "endOffset": 19
             },
@@ -1812,31 +2490,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 249,
+        "line": 286,
         "code": "     * m\u00faltiples objetos concatenados como \"{...}{...}{...}\"."
       },
       {
-        "line": 250,
+        "line": 287,
         "code": "     * Usa balance de braces (respetando strings y escapes) para detectar l\u00edmites."
       },
       {
-        "line": 251,
+        "line": 288,
         "code": "     */"
       },
       {
-        "line": 252,
+        "line": 289,
         "code": "    private List&lt;JsonNode&gt; extractAllJsonObjects(String text) {"
       },
       {
-        "line": 253,
+        "line": 290,
         "code": "        List&lt;JsonNode&gt; out = new ArrayList&lt;&gt;();"
       },
       {
-        "line": 254,
+        "line": 291,
         "code": "        int i = 0;"
       },
       {
-        "line": 255,
+        "line": 292,
         "code": "        int n = text.length();"
       }
     ]
@@ -1847,11 +2525,11 @@
     "severity": "MINOR",
     "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
     "project": "levo-backend",
-    "line": 256,
+    "line": 293,
     "hash": "bb5f681a2f747fd0b01a7befca2f542b",
     "textRange": {
-      "startLine": 256,
-      "endLine": 256,
+      "startLine": 293,
+      "endLine": 293,
       "startOffset": 8,
       "endOffset": 13
     },
@@ -1861,8 +2539,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 259,
-              "endLine": 259,
+              "startLine": 296,
+              "endLine": 296,
               "startOffset": 49,
               "endOffset": 55
             },
@@ -1876,8 +2554,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 278,
-              "endLine": 278,
+              "startLine": 315,
+              "endLine": 315,
               "startOffset": 25,
               "endOffset": 31
             },
@@ -1918,31 +2596,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 253,
+        "line": 290,
         "code": "        List&lt;JsonNode&gt; out = new ArrayList&lt;&gt;();"
       },
       {
-        "line": 254,
+        "line": 291,
         "code": "        int i = 0;"
       },
       {
-        "line": 255,
+        "line": 292,
         "code": "        int n = text.length();"
       },
       {
-        "line": 256,
+        "line": 293,
         "code": "        while (i &lt; n) {"
       },
       {
-        "line": 257,
+        "line": 294,
         "code": "            // Saltar whitespace y separadores"
       },
       {
-        "line": 258,
+        "line": 295,
         "code": "            while (i &lt; n &amp;&amp; Character.isWhitespace(text.charAt(i))) i++;"
       },
       {
-        "line": 259,
+        "line": 296,
         "code": "            if (i &gt;= n || text.charAt(i) != '{') break;"
       }
     ]
@@ -1953,11 +2631,11 @@
     "severity": "MINOR",
     "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
     "project": "levo-backend",
-    "line": 266,
+    "line": 303,
     "hash": "aa800f01d66a1d8db706b6e46cf9bac7",
     "textRange": {
-      "startLine": 266,
-      "endLine": 266,
+      "startLine": 303,
+      "endLine": 303,
       "startOffset": 12,
       "endOffset": 15
     },
@@ -1967,8 +2645,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 268,
-              "endLine": 268,
+              "startLine": 305,
+              "endLine": 305,
               "startOffset": 46,
               "endOffset": 55
             },
@@ -1982,8 +2660,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 269,
-              "endLine": 269,
+              "startLine": 306,
+              "endLine": 306,
               "startOffset": 48,
               "endOffset": 57
             },
@@ -1997,8 +2675,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 270,
-              "endLine": 270,
+              "startLine": 307,
+              "endLine": 307,
               "startOffset": 54,
               "endOffset": 63
             },
@@ -2012,8 +2690,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 271,
-              "endLine": 271,
+              "startLine": 308,
+              "endLine": 308,
               "startOffset": 30,
               "endOffset": 39
             },
@@ -2027,8 +2705,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolScopingService.java",
             "textRange": {
-              "startLine": 275,
-              "endLine": 275,
+              "startLine": 312,
+              "endLine": 312,
               "startOffset": 47,
               "endOffset": 53
             },
@@ -2069,31 +2747,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 263,
+        "line": 300,
         "code": "            boolean inString = false;"
       },
       {
-        "line": 264,
+        "line": 301,
         "code": "            boolean escape = false;"
       },
       {
-        "line": 265,
+        "line": 302,
         "code": "            int end = -1;"
       },
       {
-        "line": 266,
+        "line": 303,
         "code": "            for (int j = i; j &lt; n; j++) {"
       },
       {
-        "line": 267,
+        "line": 304,
         "code": "                char c = text.charAt(j);"
       },
       {
-        "line": 268,
+        "line": 305,
         "code": "                if (escape) { escape = false; continue; }"
       },
       {
-        "line": 269,
+        "line": 306,
         "code": "                if (c == '\\\\') { escape = true; continue; }"
       }
     ]
@@ -2179,11 +2857,11 @@
     "severity": "CRITICAL",
     "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
     "project": "levo-backend",
-    "line": 576,
+    "line": 617,
     "hash": "144653068d912fd2fbb6cd0824d7de7f",
     "textRange": {
-      "startLine": 576,
-      "endLine": 576,
+      "startLine": 617,
+      "endLine": 617,
       "startOffset": 31,
       "endOffset": 70
     },
@@ -2193,8 +2871,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 576,
-              "endLine": 576,
+              "startLine": 617,
+              "endLine": 617,
               "startOffset": 31,
               "endOffset": 70
             },
@@ -2208,8 +2886,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 581,
-              "endLine": 581,
+              "startLine": 622,
+              "endLine": 622,
               "startOffset": 31,
               "endOffset": 70
             },
@@ -2223,8 +2901,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 586,
-              "endLine": 586,
+              "startLine": 627,
+              "endLine": 627,
               "startOffset": 72,
               "endOffset": 111
             },
@@ -2265,31 +2943,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 573,
+        "line": 614,
         "code": "        if (reset) {"
       },
       {
-        "line": 574,
+        "line": 615,
         "code": "            for(Idol a : analyzing) {"
       },
       {
-        "line": 575,
+        "line": 616,
         "code": "                a.setStatus(Idol.Status.BAJA_VIABILIDAD.name());"
       },
       {
-        "line": 576,
+        "line": 617,
         "code": "                a.setAiSummary(\"Forced reset manual por administrador\");"
       },
       {
-        "line": 577,
+        "line": 618,
         "code": "                idolRepository.save(a);"
       },
       {
-        "line": 578,
+        "line": 619,
         "code": "            }"
       },
       {
-        "line": 579,
+        "line": 620,
         "code": "            for(Idol q : queued) {"
       }
     ]
@@ -3464,11 +4142,11 @@
     "severity": "CRITICAL",
     "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
     "project": "levo-backend",
-    "line": 611,
+    "line": 652,
     "hash": "86a273316cf94893f66bd360153f3858",
     "textRange": {
-      "startLine": 611,
-      "endLine": 611,
+      "startLine": 652,
+      "endLine": 652,
       "startOffset": 16,
       "endOffset": 37
     },
@@ -3478,8 +4156,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 616,
-              "endLine": 616,
+              "startLine": 657,
+              "endLine": 657,
               "startOffset": 8,
               "endOffset": 10
             },
@@ -3493,8 +4171,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 616,
-              "endLine": 616,
+              "startLine": 657,
+              "endLine": 657,
               "startOffset": 27,
               "endOffset": 29
             },
@@ -3508,8 +4186,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 619,
-              "endLine": 619,
+              "startLine": 660,
+              "endLine": 660,
               "startOffset": 8,
               "endOffset": 10
             },
@@ -3523,8 +4201,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 638,
-              "endLine": 638,
+              "startLine": 679,
+              "endLine": 679,
               "startOffset": 8,
               "endOffset": 10
             },
@@ -3538,8 +4216,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 646,
-              "endLine": 646,
+              "startLine": 687,
+              "endLine": 687,
               "startOffset": 8,
               "endOffset": 10
             },
@@ -3553,83 +4231,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 647,
-              "endLine": 647,
-              "startOffset": 12,
-              "endOffset": 15
-            },
-            "msg": "+2 (incl 1 for nesting)",
-            "msgFormattings": []
-          }
-        ]
-      },
-      {
-        "locations": [
-          {
-            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
-            "textRange": {
-              "startLine": 649,
-              "endLine": 649,
-              "startOffset": 16,
-              "endOffset": 18
-            },
-            "msg": "+3 (incl 2 for nesting)",
-            "msgFormattings": []
-          }
-        ]
-      },
-      {
-        "locations": [
-          {
-            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
-            "textRange": {
-              "startLine": 652,
-              "endLine": 652,
-              "startOffset": 16,
-              "endOffset": 22
-            },
-            "msg": "+3 (incl 2 for nesting)",
-            "msgFormattings": []
-          }
-        ]
-      },
-      {
-        "locations": [
-          {
-            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
-            "textRange": {
-              "startLine": 667,
-              "endLine": 667,
-              "startOffset": 8,
-              "endOffset": 10
-            },
-            "msg": "+1",
-            "msgFormattings": []
-          }
-        ]
-      },
-      {
-        "locations": [
-          {
-            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
-            "textRange": {
-              "startLine": 681,
-              "endLine": 681,
-              "startOffset": 8,
-              "endOffset": 10
-            },
-            "msg": "+1",
-            "msgFormattings": []
-          }
-        ]
-      },
-      {
-        "locations": [
-          {
-            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
-            "textRange": {
-              "startLine": 682,
-              "endLine": 682,
+              "startLine": 688,
+              "endLine": 688,
               "startOffset": 12,
               "endOffset": 15
             },
@@ -3658,8 +4261,83 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 692,
-              "endLine": 692,
+              "startLine": 693,
+              "endLine": 693,
+              "startOffset": 16,
+              "endOffset": 22
+            },
+            "msg": "+3 (incl 2 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 708,
+              "endLine": 708,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 722,
+              "endLine": 722,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 723,
+              "endLine": 723,
+              "startOffset": 12,
+              "endOffset": 15
+            },
+            "msg": "+2 (incl 1 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 731,
+              "endLine": 731,
+              "startOffset": 16,
+              "endOffset": 18
+            },
+            "msg": "+3 (incl 2 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 733,
+              "endLine": 733,
               "startOffset": 16,
               "endOffset": 19
             },
@@ -3700,31 +4378,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 608,
+        "line": 649,
         "code": "     * evidence/analysis/conclusion/sources/flags)."
       },
       {
-        "line": 609,
+        "line": 650,
         "code": "     */"
       },
       {
-        "line": 610,
+        "line": 651,
         "code": "    @Transactional"
       },
       {
-        "line": 611,
+        "line": 652,
         "code": "    public Idol processIdolReportV1_1(String reportJsonRaw, Long productId) throws Exception {"
       },
       {
-        "line": 612,
+        "line": 653,
         "code": "        Products product = productsRepository.findById(productId)"
       },
       {
-        "line": 613,
+        "line": 654,
         "code": "                .orElseThrow(() -&gt; new IllegalArgumentException(\"Product not found with ID: \" + productId));"
       },
       {
-        "line": 614,
+        "line": 655,
         "code": ""
       }
     ]
@@ -3735,11 +4413,11 @@
     "severity": "MINOR",
     "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
     "project": "levo-backend",
-    "line": 611,
+    "line": 652,
     "hash": "86a273316cf94893f66bd360153f3858",
     "textRange": {
-      "startLine": 611,
-      "endLine": 611,
+      "startLine": 652,
+      "endLine": 652,
       "startOffset": 16,
       "endOffset": 37
     },
@@ -3775,31 +4453,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 608,
+        "line": 649,
         "code": "     * evidence/analysis/conclusion/sources/flags)."
       },
       {
-        "line": 609,
+        "line": 650,
         "code": "     */"
       },
       {
-        "line": 610,
+        "line": 651,
         "code": "    @Transactional"
       },
       {
-        "line": 611,
+        "line": 652,
         "code": "    public Idol processIdolReportV1_1(String reportJsonRaw, Long productId) throws Exception {"
       },
       {
-        "line": 612,
+        "line": 653,
         "code": "        Products product = productsRepository.findById(productId)"
       },
       {
-        "line": 613,
+        "line": 654,
         "code": "                .orElseThrow(() -&gt; new IllegalArgumentException(\"Product not found with ID: \" + productId));"
       },
       {
-        "line": 614,
+        "line": 655,
         "code": ""
       }
     ]
@@ -3810,11 +4488,11 @@
     "severity": "INFO",
     "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
     "project": "levo-backend",
-    "line": 611,
+    "line": 652,
     "hash": "86a273316cf94893f66bd360153f3858",
     "textRange": {
-      "startLine": 611,
-      "endLine": 611,
+      "startLine": 652,
+      "endLine": 652,
       "startOffset": 16,
       "endOffset": 37
     },
@@ -3850,31 +4528,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 608,
+        "line": 649,
         "code": "     * evidence/analysis/conclusion/sources/flags)."
       },
       {
-        "line": 609,
+        "line": 650,
         "code": "     */"
       },
       {
-        "line": 610,
+        "line": 651,
         "code": "    @Transactional"
       },
       {
-        "line": 611,
+        "line": 652,
         "code": "    public Idol processIdolReportV1_1(String reportJsonRaw, Long productId) throws Exception {"
       },
       {
-        "line": 612,
+        "line": 653,
         "code": "        Products product = productsRepository.findById(productId)"
       },
       {
-        "line": 613,
+        "line": 654,
         "code": "                .orElseThrow(() -&gt; new IllegalArgumentException(\"Product not found with ID: \" + productId));"
       },
       {
-        "line": 614,
+        "line": 655,
         "code": ""
       }
     ]
@@ -3885,11 +4563,11 @@
     "severity": "CRITICAL",
     "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
     "project": "levo-backend",
-    "line": 638,
+    "line": 679,
     "hash": "a7b3e378de4a09af330bdf9c74b1369c",
     "textRange": {
-      "startLine": 638,
-      "endLine": 638,
+      "startLine": 679,
+      "endLine": 679,
       "startOffset": 31,
       "endOffset": 41
     },
@@ -3899,8 +4577,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 638,
-              "endLine": 638,
+              "startLine": 679,
+              "endLine": 679,
               "startOffset": 31,
               "endOffset": 41
             },
@@ -3914,8 +4592,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 639,
-              "endLine": 639,
+              "startLine": 680,
+              "endLine": 680,
               "startOffset": 62,
               "endOffset": 72
             },
@@ -3929,8 +4607,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 643,
-              "endLine": 643,
+              "startLine": 684,
+              "endLine": 684,
               "startOffset": 70,
               "endOffset": 80
             },
@@ -3944,8 +4622,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 649,
-              "endLine": 649,
+              "startLine": 690,
+              "endLine": 690,
               "startOffset": 35,
               "endOffset": 45
             },
@@ -3959,8 +4637,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 650,
-              "endLine": 650,
+              "startLine": 691,
+              "endLine": 691,
               "startOffset": 57,
               "endOffset": 67
             },
@@ -4001,31 +4679,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 635,
+        "line": 676,
         "code": "        // --- Scorecard (general + pillars) ---"
       },
       {
-        "line": 636,
+        "line": 677,
         "code": "        JsonNode scorecard = root.path(\"scorecard\");"
       },
       {
-        "line": 637,
+        "line": 678,
         "code": "        JsonNode general = scorecard.path(\"general\");"
       },
       {
-        "line": 638,
+        "line": 679,
         "code": "        if (general.hasNonNull(\"score100\")) {"
       },
       {
-        "line": 639,
+        "line": 680,
         "code": "            idol.setFinalScore(BigDecimal.valueOf(general.get(\"score100\").asDouble())"
       },
       {
-        "line": 640,
+        "line": 681,
         "code": "                    .setScale(2, RoundingMode.HALF_UP));"
       },
       {
-        "line": 641,
+        "line": 682,
         "code": "        }"
       }
     ]
@@ -4036,11 +4714,11 @@
     "severity": "CRITICAL",
     "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
     "project": "levo-backend",
-    "line": 642,
+    "line": 683,
     "hash": "a31d205ded15e5af6072e588b6286047",
     "textRange": {
-      "startLine": 642,
-      "endLine": 642,
+      "startLine": 683,
+      "endLine": 683,
       "startOffset": 41,
       "endOffset": 53
     },
@@ -4050,8 +4728,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 642,
-              "endLine": 642,
+              "startLine": 683,
+              "endLine": 683,
               "startOffset": 41,
               "endOffset": 53
             },
@@ -4065,8 +4743,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 749,
-              "endLine": 749,
+              "startLine": 790,
+              "endLine": 790,
               "startOffset": 25,
               "endOffset": 37
             },
@@ -4080,8 +4758,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 749,
-              "endLine": 749,
+              "startLine": 790,
+              "endLine": 790,
               "startOffset": 67,
               "endOffset": 79
             },
@@ -4122,31 +4800,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 639,
+        "line": 680,
         "code": "            idol.setFinalScore(BigDecimal.valueOf(general.get(\"score100\").asDouble())"
       },
       {
-        "line": 640,
+        "line": 681,
         "code": "                    .setScale(2, RoundingMode.HALF_UP));"
       },
       {
-        "line": 641,
+        "line": 682,
         "code": "        }"
       },
       {
-        "line": 642,
+        "line": 683,
         "code": "        String evaluation = general.path(\"evaluation\").asText(\"\");"
       },
       {
-        "line": 643,
+        "line": 684,
         "code": "        idol.setStatus(mapEvaluationToStatus(evaluation, general.path(\"score100\").asDouble(0)));"
       },
       {
-        "line": 644,
+        "line": 685,
         "code": ""
       },
       {
-        "line": 645,
+        "line": 686,
         "code": "        // Pillars del scorecard"
       }
     ]
@@ -4157,11 +4835,11 @@
     "severity": "CRITICAL",
     "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
     "project": "levo-backend",
-    "line": 646,
+    "line": 687,
     "hash": "670a1755bb8185e4ab8267a454051181",
     "textRange": {
-      "startLine": 646,
-      "endLine": 646,
+      "startLine": 687,
+      "endLine": 687,
       "startOffset": 27,
       "endOffset": 36
     },
@@ -4171,8 +4849,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 646,
-              "endLine": 646,
+              "startLine": 687,
+              "endLine": 687,
               "startOffset": 27,
               "endOffset": 36
             },
@@ -4186,8 +4864,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 647,
-              "endLine": 647,
+              "startLine": 688,
+              "endLine": 688,
               "startOffset": 46,
               "endOffset": 55
             },
@@ -4201,8 +4879,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 681,
-              "endLine": 681,
+              "startLine": 722,
+              "endLine": 722,
               "startOffset": 22,
               "endOffset": 31
             },
@@ -4216,8 +4894,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 682,
-              "endLine": 682,
+              "startLine": 723,
+              "endLine": 723,
               "startOffset": 49,
               "endOffset": 58
             },
@@ -4258,31 +4936,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 643,
+        "line": 684,
         "code": "        idol.setStatus(mapEvaluationToStatus(evaluation, general.path(\"score100\").asDouble(0)));"
       },
       {
-        "line": 644,
+        "line": 685,
         "code": ""
       },
       {
-        "line": 645,
+        "line": 686,
         "code": "        // Pillars del scorecard"
       },
       {
-        "line": 646,
+        "line": 687,
         "code": "        if (scorecard.path(\"pillars\").isArray()) {"
       },
       {
-        "line": 647,
+        "line": 688,
         "code": "            for (JsonNode sp : scorecard.path(\"pillars\")) {"
       },
       {
-        "line": 648,
+        "line": 689,
         "code": "                String code = sp.path(\"code\").asText(\"\");"
       },
       {
-        "line": 649,
+        "line": 690,
         "code": "                if (!sp.hasNonNull(\"score100\")) continue;"
       }
     ]
@@ -4293,11 +4971,11 @@
     "severity": "MINOR",
     "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
     "project": "levo-backend",
-    "line": 702,
+    "line": 743,
     "hash": "14925d7ece288d1bc8c04dd99f5ea37f",
     "textRange": {
-      "startLine": 702,
-      "endLine": 702,
+      "startLine": 743,
+      "endLine": 743,
       "startOffset": 17,
       "endOffset": 34
     },
@@ -4333,31 +5011,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 699,
+        "line": 740,
         "code": "        return idol;"
       },
       {
-        "line": 700,
+        "line": 741,
         "code": "    }"
       },
       {
-        "line": 701,
+        "line": 742,
         "code": ""
       },
       {
-        "line": 702,
+        "line": 743,
         "code": "    private void persistDetailV1_1(Idol idol, IdolPillars pillarRow, JsonNode v,"
       },
       {
-        "line": 703,
+        "line": 744,
         "code": "                                    List&lt;IdolVariables&gt; allVariables,"
       },
       {
-        "line": 704,
+        "line": 745,
         "code": "                                    List&lt;IdolCertaintyLevels&gt; allCertainties,"
       },
       {
-        "line": 705,
+        "line": 746,
         "code": "                                    List&lt;IdolDetail&gt; existingDetails) {"
       }
     ]
@@ -4368,135 +5046,15 @@
     "severity": "CRITICAL",
     "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
     "project": "levo-backend",
-    "line": 702,
+    "line": 743,
     "hash": "14925d7ece288d1bc8c04dd99f5ea37f",
     "textRange": {
-      "startLine": 702,
-      "endLine": 702,
+      "startLine": 743,
+      "endLine": 743,
       "startOffset": 17,
       "endOffset": 34
     },
     "flows": [
-      {
-        "locations": [
-          {
-            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
-            "textRange": {
-              "startLine": 707,
-              "endLine": 707,
-              "startOffset": 8,
-              "endOffset": 10
-            },
-            "msg": "+1",
-            "msgFormattings": []
-          }
-        ]
-      },
-      {
-        "locations": [
-          {
-            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
-            "textRange": {
-              "startLine": 718,
-              "endLine": 718,
-              "startOffset": 8,
-              "endOffset": 10
-            },
-            "msg": "+1",
-            "msgFormattings": []
-          }
-        ]
-      },
-      {
-        "locations": [
-          {
-            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
-            "textRange": {
-              "startLine": 721,
-              "endLine": 721,
-              "startOffset": 50,
-              "endOffset": 51
-            },
-            "msg": "+2 (incl 1 for nesting)",
-            "msgFormattings": []
-          }
-        ]
-      },
-      {
-        "locations": [
-          {
-            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
-            "textRange": {
-              "startLine": 728,
-              "endLine": 728,
-              "startOffset": 8,
-              "endOffset": 10
-            },
-            "msg": "+1",
-            "msgFormattings": []
-          }
-        ]
-      },
-      {
-        "locations": [
-          {
-            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
-            "textRange": {
-              "startLine": 730,
-              "endLine": 730,
-              "startOffset": 57,
-              "endOffset": 59
-            },
-            "msg": "+1",
-            "msgFormattings": []
-          }
-        ]
-      },
-      {
-        "locations": [
-          {
-            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
-            "textRange": {
-              "startLine": 734,
-              "endLine": 734,
-              "startOffset": 8,
-              "endOffset": 10
-            },
-            "msg": "+1",
-            "msgFormattings": []
-          }
-        ]
-      },
-      {
-        "locations": [
-          {
-            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
-            "textRange": {
-              "startLine": 740,
-              "endLine": 740,
-              "startOffset": 8,
-              "endOffset": 10
-            },
-            "msg": "+1",
-            "msgFormattings": []
-          }
-        ]
-      },
-      {
-        "locations": [
-          {
-            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
-            "textRange": {
-              "startLine": 747,
-              "endLine": 747,
-              "startOffset": 8,
-              "endOffset": 10
-            },
-            "msg": "+1",
-            "msgFormattings": []
-          }
-        ]
-      },
       {
         "locations": [
           {
@@ -4517,8 +5075,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 749,
-              "endLine": 749,
+              "startLine": 759,
+              "endLine": 759,
               "startOffset": 8,
               "endOffset": 10
             },
@@ -4532,87 +5090,12 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 750,
-              "endLine": 750,
-              "startOffset": 8,
-              "endOffset": 10
+              "startLine": 762,
+              "endLine": 762,
+              "startOffset": 50,
+              "endOffset": 51
             },
-            "msg": "+1",
-            "msgFormattings": []
-          }
-        ]
-      },
-      {
-        "locations": [
-          {
-            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
-            "textRange": {
-              "startLine": 751,
-              "endLine": 751,
-              "startOffset": 8,
-              "endOffset": 10
-            },
-            "msg": "+1",
-            "msgFormattings": []
-          }
-        ]
-      },
-      {
-        "locations": [
-          {
-            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
-            "textRange": {
-              "startLine": 752,
-              "endLine": 752,
-              "startOffset": 8,
-              "endOffset": 10
-            },
-            "msg": "+1",
-            "msgFormattings": []
-          }
-        ]
-      },
-      {
-        "locations": [
-          {
-            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
-            "textRange": {
-              "startLine": 755,
-              "endLine": 755,
-              "startOffset": 8,
-              "endOffset": 10
-            },
-            "msg": "+1",
-            "msgFormattings": []
-          }
-        ]
-      },
-      {
-        "locations": [
-          {
-            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
-            "textRange": {
-              "startLine": 758,
-              "endLine": 758,
-              "startOffset": 61,
-              "endOffset": 63
-            },
-            "msg": "+1",
-            "msgFormattings": []
-          }
-        ]
-      },
-      {
-        "locations": [
-          {
-            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
-            "textRange": {
-              "startLine": 766,
-              "endLine": 766,
-              "startOffset": 12,
-              "endOffset": 14
-            },
-            "msg": "+1",
+            "msg": "+2 (incl 1 for nesting)",
             "msgFormattings": []
           }
         ]
@@ -4624,36 +5107,6 @@
             "textRange": {
               "startLine": 769,
               "endLine": 769,
-              "startOffset": 12,
-              "endOffset": 14
-            },
-            "msg": "+1",
-            "msgFormattings": []
-          }
-        ]
-      },
-      {
-        "locations": [
-          {
-            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
-            "textRange": {
-              "startLine": 772,
-              "endLine": 772,
-              "startOffset": 10,
-              "endOffset": 15
-            },
-            "msg": "+1",
-            "msgFormattings": []
-          }
-        ]
-      },
-      {
-        "locations": [
-          {
-            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
-            "textRange": {
-              "startLine": 776,
-              "endLine": 776,
               "startOffset": 8,
               "endOffset": 10
             },
@@ -4667,10 +5120,10 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 777,
-              "endLine": 777,
-              "startOffset": 8,
-              "endOffset": 10
+              "startLine": 771,
+              "endLine": 771,
+              "startOffset": 57,
+              "endOffset": 59
             },
             "msg": "+1",
             "msgFormattings": []
@@ -4682,12 +5135,12 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 778,
-              "endLine": 778,
-              "startOffset": 12,
-              "endOffset": 14
+              "startLine": 775,
+              "endLine": 775,
+              "startOffset": 8,
+              "endOffset": 10
             },
-            "msg": "+2 (incl 1 for nesting)",
+            "msg": "+1",
             "msgFormattings": []
           }
         ]
@@ -4699,36 +5152,6 @@
             "textRange": {
               "startLine": 781,
               "endLine": 781,
-              "startOffset": 8,
-              "endOffset": 10
-            },
-            "msg": "+1",
-            "msgFormattings": []
-          }
-        ]
-      },
-      {
-        "locations": [
-          {
-            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
-            "textRange": {
-              "startLine": 782,
-              "endLine": 782,
-              "startOffset": 12,
-              "endOffset": 14
-            },
-            "msg": "+2 (incl 1 for nesting)",
-            "msgFormattings": []
-          }
-        ]
-      },
-      {
-        "locations": [
-          {
-            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
-            "textRange": {
-              "startLine": 785,
-              "endLine": 785,
               "startOffset": 8,
               "endOffset": 10
             },
@@ -4757,23 +5180,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 791,
-              "endLine": 791,
-              "startOffset": 15,
-              "endOffset": 17
-            },
-            "msg": "+1",
-            "msgFormattings": []
-          }
-        ]
-      },
-      {
-        "locations": [
-          {
-            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
-            "textRange": {
-              "startLine": 794,
-              "endLine": 794,
+              "startLine": 789,
+              "endLine": 789,
               "startOffset": 8,
               "endOffset": 10
             },
@@ -4787,8 +5195,278 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 797,
-              "endLine": 797,
+              "startLine": 790,
+              "endLine": 790,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 791,
+              "endLine": 791,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 792,
+              "endLine": 792,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 793,
+              "endLine": 793,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 796,
+              "endLine": 796,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 799,
+              "endLine": 799,
+              "startOffset": 61,
+              "endOffset": 63
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 807,
+              "endLine": 807,
+              "startOffset": 12,
+              "endOffset": 14
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 810,
+              "endLine": 810,
+              "startOffset": 12,
+              "endOffset": 14
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 813,
+              "endLine": 813,
+              "startOffset": 10,
+              "endOffset": 15
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 817,
+              "endLine": 817,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 818,
+              "endLine": 818,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 819,
+              "endLine": 819,
+              "startOffset": 12,
+              "endOffset": 14
+            },
+            "msg": "+2 (incl 1 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 822,
+              "endLine": 822,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 823,
+              "endLine": 823,
+              "startOffset": 12,
+              "endOffset": 14
+            },
+            "msg": "+2 (incl 1 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 826,
+              "endLine": 826,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 829,
+              "endLine": 829,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 832,
+              "endLine": 832,
+              "startOffset": 15,
+              "endOffset": 17
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 835,
+              "endLine": 835,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 838,
+              "endLine": 838,
               "startOffset": 10,
               "endOffset": 14
             },
@@ -4829,31 +5507,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 699,
+        "line": 740,
         "code": "        return idol;"
       },
       {
-        "line": 700,
+        "line": 741,
         "code": "    }"
       },
       {
-        "line": 701,
+        "line": 742,
         "code": ""
       },
       {
-        "line": 702,
+        "line": 743,
         "code": "    private void persistDetailV1_1(Idol idol, IdolPillars pillarRow, JsonNode v,"
       },
       {
-        "line": 703,
+        "line": 744,
         "code": "                                    List&lt;IdolVariables&gt; allVariables,"
       },
       {
-        "line": 704,
+        "line": 745,
         "code": "                                    List&lt;IdolCertaintyLevels&gt; allCertainties,"
       },
       {
-        "line": 705,
+        "line": 746,
         "code": "                                    List&lt;IdolDetail&gt; existingDetails) {"
       }
     ]
@@ -6969,11 +7647,11 @@
     "severity": "CRITICAL",
     "component": "levo-backend:src/main/java/com/levo/security/insights/service/ProductsService.java",
     "project": "levo-backend",
-    "line": 132,
+    "line": 147,
     "hash": "3cd849f3d1738c407d43a5239a165366",
     "textRange": {
-      "startLine": 132,
-      "endLine": 132,
+      "startLine": 147,
+      "endLine": 147,
       "startOffset": 101,
       "endOffset": 162
     },
@@ -6983,8 +7661,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/service/ProductsService.java",
             "textRange": {
-              "startLine": 132,
-              "endLine": 132,
+              "startLine": 147,
+              "endLine": 147,
               "startOffset": 101,
               "endOffset": 162
             },
@@ -6998,8 +7676,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/service/ProductsService.java",
             "textRange": {
-              "startLine": 215,
-              "endLine": 215,
+              "startLine": 230,
+              "endLine": 230,
               "startOffset": 112,
               "endOffset": 173
             },
@@ -7013,8 +7691,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/service/ProductsService.java",
             "textRange": {
-              "startLine": 246,
-              "endLine": 246,
+              "startLine": 261,
+              "endLine": 261,
               "startOffset": 107,
               "endOffset": 168
             },
@@ -7055,31 +7733,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 129,
+        "line": 144,
         "code": "            return;"
       },
       {
-        "line": 130,
+        "line": 145,
         "code": ""
       },
       {
-        "line": 131,
+        "line": 146,
         "code": "        InsightsStatus newStatus = insightsStatusRepository.findByStatus(statusName)"
       },
       {
-        "line": 132,
+        "line": 147,
         "code": "                .orElseThrow(() -&gt; new RuntimeException(\"Error: Estado de Producto '\" + statusName + \"' no esta registrado en la base de datos (insights_status).\"));"
       },
       {
-        "line": 133,
+        "line": 148,
         "code": ""
       },
       {
-        "line": 134,
+        "line": 149,
         "code": "        Optional&lt;UserSec&gt; optUser = userRepository.findUserEntityByUsername(username);"
       },
       {
-        "line": 135,
+        "line": 150,
         "code": "        if (optUser.isEmpty()) {"
       }
     ]
@@ -7997,11 +8675,11 @@
     "severity": "CRITICAL",
     "component": "levo-backend:src/main/java/com/levo/security/insights/service/ProductsService.java",
     "project": "levo-backend",
-    "line": 187,
+    "line": 202,
     "hash": "a28b7fec500e3131d291fb8e7d4e4fe7",
     "textRange": {
-      "startLine": 187,
-      "endLine": 187,
+      "startLine": 202,
+      "endLine": 202,
       "startOffset": 54,
       "endOffset": 74
     },
@@ -8011,8 +8689,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/service/ProductsService.java",
             "textRange": {
-              "startLine": 187,
-              "endLine": 187,
+              "startLine": 202,
+              "endLine": 202,
               "startOffset": 54,
               "endOffset": 74
             },
@@ -8026,8 +8704,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/service/ProductsService.java",
             "textRange": {
-              "startLine": 199,
-              "endLine": 199,
+              "startLine": 214,
+              "endLine": 214,
               "startOffset": 54,
               "endOffset": 74
             },
@@ -8041,8 +8719,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/service/ProductsService.java",
             "textRange": {
-              "startLine": 241,
-              "endLine": 241,
+              "startLine": 256,
+              "endLine": 256,
               "startOffset": 51,
               "endOffset": 71
             },
@@ -8083,31 +8761,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 184,
+        "line": 199,
         "code": "            updateProductsStatus(ids, statusName, username, comment);"
       },
       {
-        "line": 185,
+        "line": 200,
         "code": ""
       },
       {
-        "line": 186,
+        "line": 201,
         "code": "        // Also update Category entity"
       },
       {
-        "line": 187,
+        "line": 202,
         "code": "        String categoryStatusName = statusName.equals(\"Producto Eliminado\") ? \"Descartar Categoria\""
       },
       {
-        "line": 188,
+        "line": 203,
         "code": "                : \"Restaurar Categoria\";"
       },
       {
-        "line": 189,
+        "line": 204,
         "code": "        updateCategoryEntityStatus(name, categoryStatusName, username, comment);"
       },
       {
-        "line": 190,
+        "line": 205,
         "code": "    }"
       }
     ]
@@ -9054,11 +9732,11 @@
     "severity": "MAJOR",
     "component": "levo-backend:src/main/java/com/levo/security/insights/service/ProductsService.java",
     "project": "levo-backend",
-    "line": 136,
+    "line": 151,
     "hash": "7acb3f691b41fa2c109519c209dc0f5f",
     "textRange": {
-      "startLine": 136,
-      "endLine": 136,
+      "startLine": 151,
+      "endLine": 151,
       "startOffset": 22,
       "endOffset": 38
     },
@@ -9096,31 +9774,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 133,
+        "line": 148,
         "code": ""
       },
       {
-        "line": 134,
+        "line": 149,
         "code": "        Optional&lt;UserSec&gt; optUser = userRepository.findUserEntityByUsername(username);"
       },
       {
-        "line": 135,
+        "line": 150,
         "code": "        if (optUser.isEmpty()) {"
       },
       {
-        "line": 136,
+        "line": 151,
         "code": "            throw new RuntimeException(\"Usuario no encontrado: \" + username);"
       },
       {
-        "line": 137,
+        "line": 152,
         "code": "        }"
       },
       {
-        "line": 138,
+        "line": 153,
         "code": "        UserSec user = optUser.get();"
       },
       {
-        "line": 139,
+        "line": 154,
         "code": ""
       }
     ]
@@ -9131,11 +9809,11 @@
     "severity": "CRITICAL",
     "component": "levo-backend:src/main/java/com/levo/security/insights/service/ProductsService.java",
     "project": "levo-backend",
-    "line": 145,
+    "line": 160,
     "hash": "6f7bb21585194a1a074f40dce2fc2c0b",
     "textRange": {
-      "startLine": 145,
-      "endLine": 145,
+      "startLine": 160,
+      "endLine": 160,
       "startOffset": 83,
       "endOffset": 92
     },
@@ -9145,8 +9823,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/service/ProductsService.java",
             "textRange": {
-              "startLine": 145,
-              "endLine": 145,
+              "startLine": 160,
+              "endLine": 160,
               "startOffset": 83,
               "endOffset": 92
             },
@@ -9160,8 +9838,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/service/ProductsService.java",
             "textRange": {
-              "startLine": 157,
-              "endLine": 157,
+              "startLine": 172,
+              "endLine": 172,
               "startOffset": 34,
               "endOffset": 43
             },
@@ -9175,8 +9853,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/service/ProductsService.java",
             "textRange": {
-              "startLine": 165,
-              "endLine": 165,
+              "startLine": 180,
+              "endLine": 180,
               "startOffset": 30,
               "endOffset": 39
             },
@@ -9217,31 +9895,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 142,
+        "line": 157,
         "code": "        for (Long productId : ids) {"
       },
       {
-        "line": 143,
+        "line": 158,
         "code": "            // Find existing user entity status"
       },
       {
-        "line": 144,
+        "line": 159,
         "code": "            Optional&lt;UserEntityStatus&gt; currentOpt = userEntityStatusRepository"
       },
       {
-        "line": 145,
+        "line": 160,
         "code": "                    .findByUserIdAndEntityIdAndEntityType(user.getId(), productId, \"PRODUCT\");"
       },
       {
-        "line": 146,
+        "line": 161,
         "code": "            UserEntityStatus ues;"
       },
       {
-        "line": 147,
+        "line": 162,
         "code": "            Integer statusFrom = null;"
       },
       {
-        "line": 148,
+        "line": 163,
         "code": ""
       }
     ]
@@ -9524,90 +10202,15 @@
     "severity": "CRITICAL",
     "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
     "project": "levo-backend",
-    "line": 371,
+    "line": 383,
     "hash": "17d7cd5934f9ef9a2fb99c0c08c60a3b",
     "textRange": {
-      "startLine": 371,
-      "endLine": 371,
+      "startLine": 383,
+      "endLine": 383,
       "startOffset": 22,
       "endOffset": 33
     },
     "flows": [
-      {
-        "locations": [
-          {
-            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
-            "textRange": {
-              "startLine": 375,
-              "endLine": 375,
-              "startOffset": 8,
-              "endOffset": 10
-            },
-            "msg": "+1",
-            "msgFormattings": []
-          }
-        ]
-      },
-      {
-        "locations": [
-          {
-            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
-            "textRange": {
-              "startLine": 378,
-              "endLine": 378,
-              "startOffset": 12,
-              "endOffset": 14
-            },
-            "msg": "+2 (incl 1 for nesting)",
-            "msgFormattings": []
-          }
-        ]
-      },
-      {
-        "locations": [
-          {
-            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
-            "textRange": {
-              "startLine": 379,
-              "endLine": 379,
-              "startOffset": 68,
-              "endOffset": 69
-            },
-            "msg": "+3 (incl 2 for nesting)",
-            "msgFormattings": []
-          }
-        ]
-      },
-      {
-        "locations": [
-          {
-            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
-            "textRange": {
-              "startLine": 381,
-              "endLine": 381,
-              "startOffset": 12,
-              "endOffset": 14
-            },
-            "msg": "+2 (incl 1 for nesting)",
-            "msgFormattings": []
-          }
-        ]
-      },
-      {
-        "locations": [
-          {
-            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
-            "textRange": {
-              "startLine": 383,
-              "endLine": 383,
-              "startOffset": 62,
-              "endOffset": 63
-            },
-            "msg": "+3 (incl 2 for nesting)",
-            "msgFormattings": []
-          }
-        ]
-      },
       {
         "locations": [
           {
@@ -9628,8 +10231,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 394,
-              "endLine": 394,
+              "startLine": 390,
+              "endLine": 390,
               "startOffset": 12,
               "endOffset": 14
             },
@@ -9643,8 +10246,83 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 396,
-              "endLine": 396,
+              "startLine": 391,
+              "endLine": 391,
+              "startOffset": 68,
+              "endOffset": 69
+            },
+            "msg": "+3 (incl 2 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 393,
+              "endLine": 393,
+              "startOffset": 12,
+              "endOffset": 14
+            },
+            "msg": "+2 (incl 1 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 395,
+              "endLine": 395,
+              "startOffset": 62,
+              "endOffset": 63
+            },
+            "msg": "+3 (incl 2 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 399,
+              "endLine": 399,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 406,
+              "endLine": 406,
+              "startOffset": 12,
+              "endOffset": 14
+            },
+            "msg": "+2 (incl 1 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 408,
+              "endLine": 408,
               "startOffset": 59,
               "endOffset": 60
             },
@@ -9658,8 +10336,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 398,
-              "endLine": 398,
+              "startLine": 410,
+              "endLine": 410,
               "startOffset": 12,
               "endOffset": 14
             },
@@ -9673,8 +10351,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 400,
-              "endLine": 400,
+              "startLine": 412,
+              "endLine": 412,
               "startOffset": 66,
               "endOffset": 67
             },
@@ -9688,8 +10366,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 406,
-              "endLine": 406,
+              "startLine": 418,
+              "endLine": 418,
               "startOffset": 8,
               "endOffset": 10
             },
@@ -9703,8 +10381,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 407,
-              "endLine": 407,
+              "startLine": 419,
+              "endLine": 419,
               "startOffset": 54,
               "endOffset": 55
             },
@@ -9718,38 +10396,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 410,
-              "endLine": 410,
-              "startOffset": 8,
-              "endOffset": 10
-            },
-            "msg": "+1",
-            "msgFormattings": []
-          }
-        ]
-      },
-      {
-        "locations": [
-          {
-            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
-            "textRange": {
-              "startLine": 411,
-              "endLine": 411,
-              "startOffset": 68,
-              "endOffset": 69
-            },
-            "msg": "+2 (incl 1 for nesting)",
-            "msgFormattings": []
-          }
-        ]
-      },
-      {
-        "locations": [
-          {
-            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
-            "textRange": {
-              "startLine": 415,
-              "endLine": 415,
+              "startLine": 422,
+              "endLine": 422,
               "startOffset": 8,
               "endOffset": 10
             },
@@ -9765,6 +10413,36 @@
             "textRange": {
               "startLine": 423,
               "endLine": 423,
+              "startOffset": 68,
+              "endOffset": 69
+            },
+            "msg": "+2 (incl 1 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 427,
+              "endLine": 427,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
+            "textRange": {
+              "startLine": 435,
+              "endLine": 435,
               "startOffset": 8,
               "endOffset": 10
             },
@@ -9805,31 +10483,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 368,
+        "line": 380,
         "code": "     * and used to look up their DB id, which is stored in updated_by."
       },
       {
-        "line": 369,
+        "line": 381,
         "code": "     */"
       },
       {
-        "line": 370,
+        "line": 382,
         "code": "    @Transactional"
       },
       {
-        "line": 371,
+        "line": 383,
         "code": "    public IdolDetail patchDetail(Integer detailId, Map&lt;String, Object&gt; body, String username) {"
       },
       {
-        "line": 372,
+        "line": 384,
         "code": "        IdolDetail detail = idolDetailRepository.findById(detailId)"
       },
       {
-        "line": 373,
+        "line": 385,
         "code": "                .orElseThrow(() -&gt; new RuntimeException(\"IdolDetail not found: \" + detailId));"
       },
       {
-        "line": 374,
+        "line": 386,
         "code": ""
       }
     ]
@@ -9840,11 +10518,11 @@
     "severity": "CRITICAL",
     "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
     "project": "levo-backend",
-    "line": 431,
+    "line": 443,
     "hash": "856f15e91bf521199345a212da4439c9",
     "textRange": {
-      "startLine": 431,
-      "endLine": 431,
+      "startLine": 443,
+      "endLine": 443,
       "startOffset": 16,
       "endOffset": 36
     },
@@ -9854,8 +10532,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 442,
-              "endLine": 442,
+              "startLine": 454,
+              "endLine": 454,
               "startOffset": 8,
               "endOffset": 11
             },
@@ -9869,8 +10547,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 445,
-              "endLine": 445,
+              "startLine": 457,
+              "endLine": 457,
               "startOffset": 12,
               "endOffset": 14
             },
@@ -9884,8 +10562,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 445,
-              "endLine": 445,
+              "startLine": 457,
+              "endLine": 457,
               "startOffset": 35,
               "endOffset": 37
             },
@@ -9899,8 +10577,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 449,
-              "endLine": 449,
+              "startLine": 461,
+              "endLine": 461,
               "startOffset": 73,
               "endOffset": 74
             },
@@ -9914,8 +10592,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 452,
-              "endLine": 452,
+              "startLine": 464,
+              "endLine": 464,
               "startOffset": 48,
               "endOffset": 49
             },
@@ -9929,8 +10607,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 453,
-              "endLine": 453,
+              "startLine": 465,
+              "endLine": 465,
               "startOffset": 56,
               "endOffset": 57
             },
@@ -9944,8 +10622,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 463,
-              "endLine": 463,
+              "startLine": 475,
+              "endLine": 475,
               "startOffset": 12,
               "endOffset": 14
             },
@@ -9959,8 +10637,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 465,
-              "endLine": 465,
+              "startLine": 477,
+              "endLine": 477,
               "startOffset": 19,
               "endOffset": 21
             },
@@ -9974,8 +10652,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 467,
-              "endLine": 467,
+              "startLine": 479,
+              "endLine": 479,
               "startOffset": 19,
               "endOffset": 21
             },
@@ -9989,8 +10667,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 469,
-              "endLine": 469,
+              "startLine": 481,
+              "endLine": 481,
               "startOffset": 19,
               "endOffset": 21
             },
@@ -10004,8 +10682,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 469,
-              "endLine": 469,
+              "startLine": 481,
+              "endLine": 481,
               "startOffset": 62,
               "endOffset": 64
             },
@@ -10019,8 +10697,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 483,
-              "endLine": 483,
+              "startLine": 495,
+              "endLine": 495,
               "startOffset": 8,
               "endOffset": 10
             },
@@ -10034,8 +10712,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 485,
-              "endLine": 485,
+              "startLine": 497,
+              "endLine": 497,
               "startOffset": 15,
               "endOffset": 17
             },
@@ -10049,8 +10727,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 487,
-              "endLine": 487,
+              "startLine": 499,
+              "endLine": 499,
               "startOffset": 10,
               "endOffset": 14
             },
@@ -10091,31 +10769,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 428,
+        "line": 440,
         "code": "    }"
       },
       {
-        "line": 429,
+        "line": 441,
         "code": ""
       },
       {
-        "line": 430,
+        "line": 442,
         "code": "    @Transactional"
       },
       {
-        "line": 431,
+        "line": 443,
         "code": "    public void recalculateIdolScore(Idol idol) {"
       },
       {
-        "line": 432,
+        "line": 444,
         "code": "        List&lt;IdolDetail&gt; details = idolDetailRepository.findByIdolId(idol.getId());"
       },
       {
-        "line": 433,
+        "line": 445,
         "code": "        List&lt;IdolPillars&gt; allPillars = pillarsRepository.findAll();"
       },
       {
-        "line": 434,
+        "line": 446,
         "code": "        java.util.Map&lt;Integer, BigDecimal&gt; pillarWeightMap = allPillars.stream()"
       }
     ]
@@ -10126,11 +10804,11 @@
     "severity": "CRITICAL",
     "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
     "project": "levo-backend",
-    "line": 378,
+    "line": 390,
     "hash": "e6516502280bab398c88973b969726dd",
     "textRange": {
-      "startLine": 378,
-      "endLine": 378,
+      "startLine": 390,
+      "endLine": 390,
       "startOffset": 33,
       "endOffset": 45
     },
@@ -10140,8 +10818,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 378,
-              "endLine": 378,
+              "startLine": 390,
+              "endLine": 390,
               "startOffset": 33,
               "endOffset": 45
             },
@@ -10155,8 +10833,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 379,
-              "endLine": 379,
+              "startLine": 391,
+              "endLine": 391,
               "startOffset": 46,
               "endOffset": 58
             },
@@ -10170,8 +10848,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 379,
-              "endLine": 379,
+              "startLine": 391,
+              "endLine": 391,
               "startOffset": 79,
               "endOffset": 91
             },
@@ -10212,31 +10890,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 375,
+        "line": 387,
         "code": "        if (body.containsKey(\"score\")) {"
       },
       {
-        "line": 376,
+        "line": 388,
         "code": "            detail.setScore(Integer.parseInt(body.get(\"score\").toString()));"
       },
       {
-        "line": 377,
+        "line": 389,
         "code": "            // Save notes/evidences specifically for Score"
       },
       {
-        "line": 378,
+        "line": 390,
         "code": "            if (body.containsKey(\"scoreNotes\")) {"
       },
       {
-        "line": 379,
+        "line": 391,
         "code": "                detail.setScoreNotes(body.get(\"scoreNotes\") != null ? body.get(\"scoreNotes\").toString() : null);"
       },
       {
-        "line": 380,
+        "line": 392,
         "code": "            }"
       },
       {
-        "line": 381,
+        "line": 393,
         "code": "            if (body.containsKey(\"scoreEvidenceUrls\")) {"
       }
     ]
@@ -10247,11 +10925,11 @@
     "severity": "CRITICAL",
     "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
     "project": "levo-backend",
-    "line": 381,
+    "line": 393,
     "hash": "9a3f80b42ce455d36575c5c9d068bb6e",
     "textRange": {
-      "startLine": 381,
-      "endLine": 381,
+      "startLine": 393,
+      "endLine": 393,
       "startOffset": 33,
       "endOffset": 52
     },
@@ -10261,8 +10939,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 381,
-              "endLine": 381,
+              "startLine": 393,
+              "endLine": 393,
               "startOffset": 33,
               "endOffset": 52
             },
@@ -10276,8 +10954,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 383,
-              "endLine": 383,
+              "startLine": 395,
+              "endLine": 395,
               "startOffset": 33,
               "endOffset": 52
             },
@@ -10291,8 +10969,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 383,
-              "endLine": 383,
+              "startLine": 395,
+              "endLine": 395,
               "startOffset": 73,
               "endOffset": 92
             },
@@ -10333,31 +11011,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 378,
+        "line": 390,
         "code": "            if (body.containsKey(\"scoreNotes\")) {"
       },
       {
-        "line": 379,
+        "line": 391,
         "code": "                detail.setScoreNotes(body.get(\"scoreNotes\") != null ? body.get(\"scoreNotes\").toString() : null);"
       },
       {
-        "line": 380,
+        "line": 392,
         "code": "            }"
       },
       {
-        "line": 381,
+        "line": 393,
         "code": "            if (body.containsKey(\"scoreEvidenceUrls\")) {"
       },
       {
-        "line": 382,
+        "line": 394,
         "code": "                detail.setScoreEvidenceUrls("
       },
       {
-        "line": 383,
+        "line": 395,
         "code": "                        body.get(\"scoreEvidenceUrls\") != null ? body.get(\"scoreEvidenceUrls\").toString() : null);"
       },
       {
-        "line": 384,
+        "line": 396,
         "code": "            }"
       }
     ]
@@ -10368,11 +11046,11 @@
     "severity": "CRITICAL",
     "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
     "project": "levo-backend",
-    "line": 394,
+    "line": 406,
     "hash": "12cc4d4d73726fde4369771712fdd074",
     "textRange": {
-      "startLine": 394,
-      "endLine": 394,
+      "startLine": 406,
+      "endLine": 406,
       "startOffset": 33,
       "endOffset": 49
     },
@@ -10382,8 +11060,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 394,
-              "endLine": 394,
+              "startLine": 406,
+              "endLine": 406,
               "startOffset": 33,
               "endOffset": 49
             },
@@ -10397,8 +11075,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 396,
-              "endLine": 396,
+              "startLine": 408,
+              "endLine": 408,
               "startOffset": 33,
               "endOffset": 49
             },
@@ -10412,8 +11090,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 396,
-              "endLine": 396,
+              "startLine": 408,
+              "endLine": 408,
               "startOffset": 70,
               "endOffset": 86
             },
@@ -10454,31 +11132,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 391,
+        "line": 403,
         "code": "            detail.setCertaintyLevel(cert);"
       },
       {
-        "line": 392,
+        "line": 404,
         "code": ""
       },
       {
-        "line": 393,
+        "line": 405,
         "code": "            // Save notes/evidences specifically for Certainty"
       },
       {
-        "line": 394,
+        "line": 406,
         "code": "            if (body.containsKey(\"certaintyNotes\")) {"
       },
       {
-        "line": 395,
+        "line": 407,
         "code": "                detail.setCertaintyNotes("
       },
       {
-        "line": 396,
+        "line": 408,
         "code": "                        body.get(\"certaintyNotes\") != null ? body.get(\"certaintyNotes\").toString() : null);"
       },
       {
-        "line": 397,
+        "line": 409,
         "code": "            }"
       }
     ]
@@ -10489,11 +11167,11 @@
     "severity": "CRITICAL",
     "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
     "project": "levo-backend",
-    "line": 398,
+    "line": 410,
     "hash": "1adffa380f60f3bebfa6dd4811bf95df",
     "textRange": {
-      "startLine": 398,
-      "endLine": 398,
+      "startLine": 410,
+      "endLine": 410,
       "startOffset": 33,
       "endOffset": 56
     },
@@ -10503,8 +11181,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 398,
-              "endLine": 398,
+              "startLine": 410,
+              "endLine": 410,
               "startOffset": 33,
               "endOffset": 56
             },
@@ -10518,8 +11196,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 400,
-              "endLine": 400,
+              "startLine": 412,
+              "endLine": 412,
               "startOffset": 33,
               "endOffset": 56
             },
@@ -10533,8 +11211,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 400,
-              "endLine": 400,
+              "startLine": 412,
+              "endLine": 412,
               "startOffset": 77,
               "endOffset": 100
             },
@@ -10575,31 +11253,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 395,
+        "line": 407,
         "code": "                detail.setCertaintyNotes("
       },
       {
-        "line": 396,
+        "line": 408,
         "code": "                        body.get(\"certaintyNotes\") != null ? body.get(\"certaintyNotes\").toString() : null);"
       },
       {
-        "line": 397,
+        "line": 409,
         "code": "            }"
       },
       {
-        "line": 398,
+        "line": 410,
         "code": "            if (body.containsKey(\"certaintyEvidenceUrls\")) {"
       },
       {
-        "line": 399,
+        "line": 411,
         "code": "                detail.setCertaintyEvidenceUrls("
       },
       {
-        "line": 400,
+        "line": 412,
         "code": "                        body.get(\"certaintyEvidenceUrls\") != null ? body.get(\"certaintyEvidenceUrls\").toString()"
       },
       {
-        "line": 401,
+        "line": 413,
         "code": "                                : null);"
       }
     ]
@@ -10610,11 +11288,11 @@
     "severity": "MINOR",
     "component": "levo-backend:src/main/java/com/levo/security/insights_idol/controller/IdolController.java",
     "project": "levo-backend",
-    "line": 136,
+    "line": 149,
     "hash": "3099b1679ebc29378fe0423726e24023",
     "textRange": {
-      "startLine": 136,
-      "endLine": 136,
+      "startLine": 149,
+      "endLine": 149,
       "startOffset": 80,
       "endOffset": 91
     },
@@ -10651,31 +11329,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 133,
+        "line": 146,
         "code": "            Path base = Paths.get(\"uploads\", \"evidence\");"
       },
       {
-        "line": 134,
+        "line": 147,
         "code": "            Files.createDirectories(base);"
       },
       {
-        "line": 135,
+        "line": 148,
         "code": ""
       },
       {
-        "line": 136,
+        "line": 149,
         "code": "            String fileName = \"ev_\" + System.currentTimeMillis() + \"_\" + (int) (Math.random() * 1000) + \".\""
       },
       {
-        "line": 137,
+        "line": 150,
         "code": "                    + ext.toLowerCase();"
       },
       {
-        "line": 138,
+        "line": 151,
         "code": "            Path path = base.resolve(fileName);"
       },
       {
-        "line": 139,
+        "line": 152,
         "code": ""
       }
     ]
@@ -11213,8 +11891,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 375,
-              "endLine": 375,
+              "startLine": 387,
+              "endLine": 387,
               "startOffset": 29,
               "endOffset": 36
             },
@@ -11228,8 +11906,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 376,
-              "endLine": 376,
+              "startLine": 388,
+              "endLine": 388,
               "startOffset": 54,
               "endOffset": 61
             },
@@ -11243,8 +11921,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 747,
-              "endLine": 747,
+              "startLine": 788,
+              "endLine": 788,
               "startOffset": 25,
               "endOffset": 32
             },
@@ -11258,8 +11936,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 747,
-              "endLine": 747,
+              "startLine": 788,
+              "endLine": 788,
               "startOffset": 57,
               "endOffset": 64
             },
@@ -11487,11 +12165,11 @@
     "severity": "CRITICAL",
     "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
     "project": "levo-backend",
-    "line": 406,
+    "line": 418,
     "hash": "dbbb69363f0b242d585d3b0ff908eaab",
     "textRange": {
-      "startLine": 406,
-      "endLine": 406,
+      "startLine": 418,
+      "endLine": 418,
       "startOffset": 29,
       "endOffset": 36
     },
@@ -11501,8 +12179,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 406,
-              "endLine": 406,
+              "startLine": 418,
+              "endLine": 418,
               "startOffset": 29,
               "endOffset": 36
             },
@@ -11516,8 +12194,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 407,
-              "endLine": 407,
+              "startLine": 419,
+              "endLine": 419,
               "startOffset": 37,
               "endOffset": 44
             },
@@ -11531,8 +12209,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 407,
-              "endLine": 407,
+              "startLine": 419,
+              "endLine": 419,
               "startOffset": 65,
               "endOffset": 72
             },
@@ -11573,31 +12251,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 403,
+        "line": 415,
         "code": "        }"
       },
       {
-        "line": 404,
+        "line": 416,
         "code": ""
       },
       {
-        "line": 405,
+        "line": 417,
         "code": "        // Keep legacy fields handling just in case"
       },
       {
-        "line": 406,
+        "line": 418,
         "code": "        if (body.containsKey(\"notes\")) {"
       },
       {
-        "line": 407,
+        "line": 419,
         "code": "            detail.setNotes(body.get(\"notes\") != null ? body.get(\"notes\").toString() : null);"
       },
       {
-        "line": 408,
+        "line": 420,
         "code": "        }"
       },
       {
-        "line": 409,
+        "line": 421,
         "code": ""
       }
     ]
@@ -11608,11 +12286,11 @@
     "severity": "CRITICAL",
     "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
     "project": "levo-backend",
-    "line": 410,
+    "line": 422,
     "hash": "21d7b222f338d7b900846dc6b94eed63",
     "textRange": {
-      "startLine": 410,
-      "endLine": 410,
+      "startLine": 422,
+      "endLine": 422,
       "startOffset": 29,
       "endOffset": 43
     },
@@ -11622,8 +12300,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 410,
-              "endLine": 410,
+              "startLine": 422,
+              "endLine": 422,
               "startOffset": 29,
               "endOffset": 43
             },
@@ -11637,8 +12315,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 411,
-              "endLine": 411,
+              "startLine": 423,
+              "endLine": 423,
               "startOffset": 44,
               "endOffset": 58
             },
@@ -11652,8 +12330,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 411,
-              "endLine": 411,
+              "startLine": 423,
+              "endLine": 423,
               "startOffset": 79,
               "endOffset": 93
             },
@@ -11694,31 +12372,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 407,
+        "line": 419,
         "code": "            detail.setNotes(body.get(\"notes\") != null ? body.get(\"notes\").toString() : null);"
       },
       {
-        "line": 408,
+        "line": 420,
         "code": "        }"
       },
       {
-        "line": 409,
+        "line": 421,
         "code": ""
       },
       {
-        "line": 410,
+        "line": 422,
         "code": "        if (body.containsKey(\"evidenceUrls\")) {"
       },
       {
-        "line": 411,
+        "line": 423,
         "code": "            detail.setEvidenceUrls(body.get(\"evidenceUrls\") != null ? body.get(\"evidenceUrls\").toString() : null);"
       },
       {
-        "line": 412,
+        "line": 424,
         "code": "        }"
       },
       {
-        "line": 413,
+        "line": 425,
         "code": ""
       }
     ]
@@ -12271,8 +12949,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights_idol/service/IdolService.java",
             "textRange": {
-              "startLine": 689,
-              "endLine": 689,
+              "startLine": 730,
+              "endLine": 730,
               "startOffset": 53,
               "endOffset": 64
             },
@@ -24633,11 +25311,11 @@
     "severity": "MAJOR",
     "component": "levo-backend:src/main/java/com/levo/security/insights/service/ProductsService.java",
     "project": "levo-backend",
-    "line": 114,
+    "line": 129,
     "hash": "ff0eb76b04430f8d7d205037ae754b5a",
     "textRange": {
-      "startLine": 114,
-      "endLine": 114,
+      "startLine": 129,
+      "endLine": 129,
       "startOffset": 22,
       "endOffset": 38
     },
@@ -24675,31 +25353,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 111,
+        "line": 126,
         "code": ""
       },
       {
-        "line": 112,
+        "line": 127,
         "code": "    public Products update(Long id, Products products) {"
       },
       {
-        "line": 113,
+        "line": 128,
         "code": "        if (!productsRepository.existsById(id)) {"
       },
       {
-        "line": 114,
+        "line": 129,
         "code": "            throw new RuntimeException(\"Products not found with id: \" + id);"
       },
       {
-        "line": 115,
+        "line": 130,
         "code": "        }"
       },
       {
-        "line": 116,
+        "line": 131,
         "code": "        products.setId(id);"
       },
       {
-        "line": 117,
+        "line": 132,
         "code": "        return productsRepository.save(products);"
       }
     ]
@@ -24710,11 +25388,11 @@
     "severity": "MAJOR",
     "component": "levo-backend:src/main/java/com/levo/security/insights/service/ProductsService.java",
     "project": "levo-backend",
-    "line": 122,
+    "line": 137,
     "hash": "ff0eb76b04430f8d7d205037ae754b5a",
     "textRange": {
-      "startLine": 122,
-      "endLine": 122,
+      "startLine": 137,
+      "endLine": 137,
       "startOffset": 22,
       "endOffset": 38
     },
@@ -24752,31 +25430,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 119,
+        "line": 134,
         "code": ""
       },
       {
-        "line": 120,
+        "line": 135,
         "code": "    public void delete(Long id) {"
       },
       {
-        "line": 121,
+        "line": 136,
         "code": "        if (!productsRepository.existsById(id)) {"
       },
       {
-        "line": 122,
+        "line": 137,
         "code": "            throw new RuntimeException(\"Products not found with id: \" + id);"
       },
       {
-        "line": 123,
+        "line": 138,
         "code": "        }"
       },
       {
-        "line": 124,
+        "line": 139,
         "code": "        productsRepository.deleteById(id);"
       },
       {
-        "line": 125,
+        "line": 140,
         "code": "    }"
       }
     ]

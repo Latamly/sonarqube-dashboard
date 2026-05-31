@@ -1,4 +1,18 @@
 {
+  "java:S3776": {
+    "name": "Cognitive Complexity of methods should not be too high",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "CRITICAL",
+    "type": "CODE_SMELL"
+  },
+  "java:S1192": {
+    "name": "String literals should not be duplicated",
+    "htmlDesc": "",
+    "remFnBaseEffort": "2min",
+    "severity": "CRITICAL",
+    "type": "CODE_SMELL"
+  },
   "java:S1135": {
     "name": "Track uses of \"TODO\" tags",
     "htmlDesc": "",
@@ -18,20 +32,6 @@
     "htmlDesc": "",
     "remFnBaseEffort": "0min",
     "severity": "INFO",
-    "type": "CODE_SMELL"
-  },
-  "java:S3776": {
-    "name": "Cognitive Complexity of methods should not be too high",
-    "htmlDesc": "",
-    "remFnBaseEffort": "5min",
-    "severity": "CRITICAL",
-    "type": "CODE_SMELL"
-  },
-  "java:S1192": {
-    "name": "String literals should not be duplicated",
-    "htmlDesc": "",
-    "remFnBaseEffort": "2min",
-    "severity": "CRITICAL",
     "type": "CODE_SMELL"
   },
   "java:S112": {
@@ -174,6 +174,41 @@
     "severity": "CRITICAL",
     "type": "CODE_SMELL"
   },
+  "typescript:S4624": {
+    "name": "Template literals should not be nested",
+    "htmlDesc": "",
+    "remFnBaseEffort": "10min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S6582": {
+    "name": "Optional chaining should be preferred",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S2004": {
+    "name": "Functions should not be nested too deeply",
+    "htmlDesc": "",
+    "remFnBaseEffort": "20min",
+    "severity": "CRITICAL",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S7764": {
+    "name": "Use \"globalThis\" instead of \"window\", \"self\", or \"global\"",
+    "htmlDesc": "",
+    "remFnBaseEffort": "2min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S3358": {
+    "name": "Ternary operators should not be nested",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
   "typescript:S6479": {
     "name": "JSX list components should not use array indexes as key",
     "htmlDesc": "",
@@ -244,20 +279,6 @@
     "severity": "MINOR",
     "type": "BUG"
   },
-  "typescript:S4624": {
-    "name": "Template literals should not be nested",
-    "htmlDesc": "",
-    "remFnBaseEffort": "10min",
-    "severity": "MAJOR",
-    "type": "CODE_SMELL"
-  },
-  "typescript:S3358": {
-    "name": "Ternary operators should not be nested",
-    "htmlDesc": "",
-    "remFnBaseEffort": "5min",
-    "severity": "MAJOR",
-    "type": "CODE_SMELL"
-  },
   "typescript:S7735": {
     "name": "Negated conditions should be avoided when an else clause is present",
     "htmlDesc": "",
@@ -269,13 +290,6 @@
     "name": "Media elements should have captions",
     "htmlDesc": "",
     "remFnBaseEffort": "5min",
-    "severity": "MINOR",
-    "type": "CODE_SMELL"
-  },
-  "typescript:S7764": {
-    "name": "Use \"globalThis\" instead of \"window\", \"self\", or \"global\"",
-    "htmlDesc": "",
-    "remFnBaseEffort": "2min",
     "severity": "MINOR",
     "type": "CODE_SMELL"
   },
@@ -307,13 +321,6 @@
     "severity": "MINOR",
     "type": "CODE_SMELL"
   },
-  "typescript:S6582": {
-    "name": "Optional chaining should be preferred",
-    "htmlDesc": "",
-    "remFnBaseEffort": "5min",
-    "severity": "MAJOR",
-    "type": "CODE_SMELL"
-  },
   "typescript:S1854": {
     "name": "Unused assignments should be removed",
     "htmlDesc": "",
@@ -333,13 +340,6 @@
     "htmlDesc": "",
     "remFnBaseEffort": "5min",
     "severity": "MAJOR",
-    "type": "CODE_SMELL"
-  },
-  "typescript:S2004": {
-    "name": "Functions should not be nested too deeply",
-    "htmlDesc": "",
-    "remFnBaseEffort": "20min",
-    "severity": "CRITICAL",
     "type": "CODE_SMELL"
   },
   "typescript:S125": {
