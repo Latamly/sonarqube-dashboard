@@ -188,6 +188,20 @@
     "severity": "CRITICAL",
     "type": "CODE_SMELL"
   },
+  "typescript:S6759": {
+    "name": "React props should be read-only",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S7773": {
+    "name": "Number static methods and properties should be preferred over global equivalents",
+    "htmlDesc": "",
+    "remFnBaseEffort": "2min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
   "typescript:S7735": {
     "name": "Negated conditions should be avoided when an else clause is present",
     "htmlDesc": "",
@@ -235,13 +249,6 @@
     "htmlDesc": "",
     "remFnBaseEffort": "5min",
     "severity": "MAJOR",
-    "type": "CODE_SMELL"
-  },
-  "typescript:S6759": {
-    "name": "React props should be read-only",
-    "htmlDesc": "",
-    "remFnBaseEffort": "5min",
-    "severity": "MINOR",
     "type": "CODE_SMELL"
   },
   "typescript:S4325": {
@@ -326,13 +333,6 @@
     "htmlDesc": "",
     "remFnBaseEffort": "5min",
     "severity": "MAJOR",
-    "type": "CODE_SMELL"
-  },
-  "typescript:S7773": {
-    "name": "Number static methods and properties should be preferred over global equivalents",
-    "htmlDesc": "",
-    "remFnBaseEffort": "2min",
-    "severity": "MINOR",
     "type": "CODE_SMELL"
   },
   "typescript:S1854": {
