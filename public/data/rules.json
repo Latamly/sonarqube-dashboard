@@ -1,9 +1,9 @@
 {
-  "java:S3776": {
-    "name": "Cognitive Complexity of methods should not be too high",
+  "java:S1141": {
+    "name": "Try-catch blocks should not be nested",
     "htmlDesc": "",
-    "remFnBaseEffort": "5min",
-    "severity": "CRITICAL",
+    "remFnBaseEffort": "20min",
+    "severity": "MAJOR",
     "type": "CODE_SMELL"
   },
   "java:S1192": {
@@ -11,6 +11,20 @@
     "htmlDesc": "",
     "remFnBaseEffort": "2min",
     "severity": "CRITICAL",
+    "type": "CODE_SMELL"
+  },
+  "java:S3776": {
+    "name": "Cognitive Complexity of methods should not be too high",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "CRITICAL",
+    "type": "CODE_SMELL"
+  },
+  "java:S1659": {
+    "name": "Multiple variables should not be declared on the same line",
+    "htmlDesc": "",
+    "remFnBaseEffort": "2min",
+    "severity": "MINOR",
     "type": "CODE_SMELL"
   },
   "java:S1135": {
@@ -174,6 +188,13 @@
     "severity": "CRITICAL",
     "type": "CODE_SMELL"
   },
+  "typescript:S4325": {
+    "name": "Redundant casts and non-null assertions should be avoided",
+    "htmlDesc": "",
+    "remFnBaseEffort": "1min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
   "typescript:S2004": {
     "name": "Functions should not be nested too deeply",
     "htmlDesc": "",
@@ -248,13 +269,6 @@
     "name": "Type constituents of unions and intersections should not be redundant",
     "htmlDesc": "",
     "remFnBaseEffort": "5min",
-    "severity": "MINOR",
-    "type": "CODE_SMELL"
-  },
-  "typescript:S4325": {
-    "name": "Redundant casts and non-null assertions should be avoided",
-    "htmlDesc": "",
-    "remFnBaseEffort": "1min",
     "severity": "MINOR",
     "type": "CODE_SMELL"
   },

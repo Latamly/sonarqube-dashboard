@@ -1,5 +1,1215 @@
 [
   {
+    "key": "0c06eb5f-e286-4683-a9d8-c6fe9c25953d",
+    "rule": "java:S1141",
+    "severity": "MAJOR",
+    "component": "levo-backend:src/main/java/com/levo/security/controller/N8nJsonController.java",
+    "project": "levo-backend",
+    "line": 84,
+    "hash": "80d5b17efc16ace990c07580fc3e85eb",
+    "textRange": {
+      "startLine": 84,
+      "endLine": 84,
+      "startOffset": 16,
+      "endOffset": 19
+    },
+    "flows": [
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/controller/N8nJsonController.java",
+            "textRange": {
+              "startLine": 72,
+              "endLine": 72,
+              "startOffset": 8,
+              "endOffset": 11
+            },
+            "msg": "Nesting + 1",
+            "msgFormattings": []
+          }
+        ]
+      }
+    ],
+    "status": "OPEN",
+    "message": "Extract this nested try block into a separate method.",
+    "effort": "20min",
+    "debt": "20min",
+    "author": "emmanuelbotta007@gmail.com",
+    "tags": [
+      "error-handling",
+      "confusing"
+    ],
+    "comments": [],
+    "creationDate": "2026-06-05T02:33:38+0000",
+    "updateDate": "2026-06-05T02:33:38+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CLEAR",
+    "cleanCodeAttributeCategory": "INTENTIONAL",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "MEDIUM"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 81,
+        "code": "            if (pid != null &amp;&amp; !pid.toString().isBlank()) {"
+      },
+      {
+        "line": 82,
+        "code": "                // En an\u00e1lisis de MARCA no viene productId (n8n puede mandarlo vac\u00edo o \"undefined\")."
+      },
+      {
+        "line": 83,
+        "code": "                // No rompemos el callback: el match se hace por request_id."
+      },
+      {
+        "line": 84,
+        "code": "                try {"
+      },
+      {
+        "line": 85,
+        "code": "                    productId = Long.valueOf(pid.toString().trim());"
+      },
+      {
+        "line": 86,
+        "code": "                } catch (NumberFormatException ignore) {"
+      },
+      {
+        "line": 87,
+        "code": "                    productId = null;"
+      }
+    ]
+  },
+  {
+    "key": "b565f0a0-378a-4288-a13b-b7d90da166a8",
+    "rule": "java:S1192",
+    "severity": "CRITICAL",
+    "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+    "project": "levo-backend",
+    "line": 244,
+    "hash": "23c0aa1b346ea7ab5421173f0d19bad5",
+    "textRange": {
+      "startLine": 244,
+      "endLine": 244,
+      "startOffset": 22,
+      "endOffset": 31
+    },
+    "flows": [
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+            "textRange": {
+              "startLine": 244,
+              "endLine": 244,
+              "startOffset": 22,
+              "endOffset": 31
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+            "textRange": {
+              "startLine": 246,
+              "endLine": 246,
+              "startOffset": 26,
+              "endOffset": 35
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+            "textRange": {
+              "startLine": 313,
+              "endLine": 313,
+              "startOffset": 22,
+              "endOffset": 31
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      }
+    ],
+    "status": "OPEN",
+    "message": "Define a constant instead of duplicating this literal \"Dominio\" 3 times.",
+    "effort": "8min",
+    "debt": "8min",
+    "author": "emmanuelbotta007@gmail.com",
+    "tags": [
+      "design"
+    ],
+    "comments": [],
+    "creationDate": "2026-06-05T02:33:38+0000",
+    "updateDate": "2026-06-05T02:33:38+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "DISTINCT",
+    "cleanCodeAttributeCategory": "ADAPTABLE",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "HIGH"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 241,
+        "code": "        putString(keepa, \"Titulo\", product.getTitle());"
+      },
+      {
+        "line": 242,
+        "code": "        putString(keepa, \"ASIN\", product.getAsin());"
+      },
+      {
+        "line": 243,
+        "code": "        if (product.getDomain() != null) {"
+      },
+      {
+        "line": 244,
+        "code": "            keepa.put(\"Dominio\", product.getDomain().getId());"
+      },
+      {
+        "line": 245,
+        "code": "        } else {"
+      },
+      {
+        "line": 246,
+        "code": "            keepa.putNull(\"Dominio\");"
+      },
+      {
+        "line": 247,
+        "code": "        }"
+      }
+    ]
+  },
+  {
+    "key": "9e4bb11b-9cf7-43e8-8ed1-004b1980a8ea",
+    "rule": "java:S1192",
+    "severity": "CRITICAL",
+    "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+    "project": "levo-backend",
+    "line": 254,
+    "hash": "b4c34a36bb0e04cd7b811c9b567853d5",
+    "textRange": {
+      "startLine": 254,
+      "endLine": 254,
+      "startOffset": 22,
+      "endOffset": 36
+    },
+    "flows": [
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+            "textRange": {
+              "startLine": 254,
+              "endLine": 254,
+              "startOffset": 22,
+              "endOffset": 36
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+            "textRange": {
+              "startLine": 256,
+              "endLine": 256,
+              "startOffset": 26,
+              "endOffset": 40
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+            "textRange": {
+              "startLine": 319,
+              "endLine": 319,
+              "startOffset": 25,
+              "endOffset": 39
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      }
+    ],
+    "status": "OPEN",
+    "message": "Define a constant instead of duplicating this literal \"rootCategory\" 3 times.",
+    "effort": "8min",
+    "debt": "8min",
+    "author": "emmanuelbotta007@gmail.com",
+    "tags": [
+      "design"
+    ],
+    "comments": [],
+    "creationDate": "2026-06-05T02:33:38+0000",
+    "updateDate": "2026-06-05T02:33:38+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "DISTINCT",
+    "cleanCodeAttributeCategory": "ADAPTABLE",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "HIGH"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 251,
+        "code": "        putString(keepa, \"productGroup\", product.getProductGroup());"
+      },
+      {
+        "line": 252,
+        "code": "        putString(keepa, \"productType\", product.getProductType() != null ? product.getProductType().name() : null);"
+      },
+      {
+        "line": 253,
+        "code": "        if (product.getRootCategory() != null) {"
+      },
+      {
+        "line": 254,
+        "code": "            keepa.put(\"rootCategory\", product.getRootCategory().getId());"
+      },
+      {
+        "line": 255,
+        "code": "        } else {"
+      },
+      {
+        "line": 256,
+        "code": "            keepa.putNull(\"rootCategory\");"
+      },
+      {
+        "line": 257,
+        "code": "        }"
+      }
+    ]
+  },
+  {
+    "key": "858a6bc1-ba5e-4933-934c-e0e9d4baeaf5",
+    "rule": "java:S1192",
+    "severity": "CRITICAL",
+    "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+    "project": "levo-backend",
+    "line": 258,
+    "hash": "e27affb671f457f27ebb7766a79857b5",
+    "textRange": {
+      "startLine": 258,
+      "endLine": 258,
+      "startOffset": 24,
+      "endOffset": 42
+    },
+    "flows": [
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+            "textRange": {
+              "startLine": 258,
+              "endLine": 258,
+              "startOffset": 24,
+              "endOffset": 42
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+            "textRange": {
+              "startLine": 322,
+              "endLine": 322,
+              "startOffset": 42,
+              "endOffset": 60
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+            "textRange": {
+              "startLine": 322,
+              "endLine": 322,
+              "startOffset": 98,
+              "endOffset": 116
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      }
+    ],
+    "status": "OPEN",
+    "message": "Define a constant instead of duplicating this literal \"Ventas_Mensuales\" 3 times.",
+    "effort": "8min",
+    "debt": "8min",
+    "author": "emmanuelbotta007@gmail.com",
+    "tags": [
+      "design"
+    ],
+    "comments": [],
+    "creationDate": "2026-06-05T02:33:38+0000",
+    "updateDate": "2026-06-05T02:33:38+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "DISTINCT",
+    "cleanCodeAttributeCategory": "ADAPTABLE",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "HIGH"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 255,
+        "code": "        } else {"
+      },
+      {
+        "line": 256,
+        "code": "            keepa.putNull(\"rootCategory\");"
+      },
+      {
+        "line": 257,
+        "code": "        }"
+      },
+      {
+        "line": 258,
+        "code": "        putFloat(keepa, \"Ventas_Mensuales\", product.getMonthlySold());"
+      },
+      {
+        "line": 259,
+        "code": "        putFloat(keepa, \"monthly_sold_delta_pct_90d\", product.getDay90ChangeMonthlySold());"
+      },
+      {
+        "line": 260,
+        "code": "        putFloat(keepa, \"Current_price\", product.getPrice());"
+      },
+      {
+        "line": 261,
+        "code": "        putFloat(keepa, \"Current_rating\", product.getRating());"
+      }
+    ]
+  },
+  {
+    "key": "54448285-58dc-42ef-92b0-7c61f643d465",
+    "rule": "java:S1192",
+    "severity": "CRITICAL",
+    "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+    "project": "levo-backend",
+    "line": 260,
+    "hash": "2bce1c225562ec5911b7319fc0cf36b4",
+    "textRange": {
+      "startLine": 260,
+      "endLine": 260,
+      "startOffset": 24,
+      "endOffset": 39
+    },
+    "flows": [
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+            "textRange": {
+              "startLine": 260,
+              "endLine": 260,
+              "startOffset": 24,
+              "endOffset": 39
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+            "textRange": {
+              "startLine": 324,
+              "endLine": 324,
+              "startOffset": 34,
+              "endOffset": 49
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+            "textRange": {
+              "startLine": 324,
+              "endLine": 324,
+              "startOffset": 120,
+              "endOffset": 135
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      }
+    ],
+    "status": "OPEN",
+    "message": "Define a constant instead of duplicating this literal \"Current_price\" 3 times.",
+    "effort": "8min",
+    "debt": "8min",
+    "author": "emmanuelbotta007@gmail.com",
+    "tags": [
+      "design"
+    ],
+    "comments": [],
+    "creationDate": "2026-06-05T02:33:38+0000",
+    "updateDate": "2026-06-05T02:33:38+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "DISTINCT",
+    "cleanCodeAttributeCategory": "ADAPTABLE",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "HIGH"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 257,
+        "code": "        }"
+      },
+      {
+        "line": 258,
+        "code": "        putFloat(keepa, \"Ventas_Mensuales\", product.getMonthlySold());"
+      },
+      {
+        "line": 259,
+        "code": "        putFloat(keepa, \"monthly_sold_delta_pct_90d\", product.getDay90ChangeMonthlySold());"
+      },
+      {
+        "line": 260,
+        "code": "        putFloat(keepa, \"Current_price\", product.getPrice());"
+      },
+      {
+        "line": 261,
+        "code": "        putFloat(keepa, \"Current_rating\", product.getRating());"
+      },
+      {
+        "line": 262,
+        "code": "        putInteger(keepa, \"review_count_current\", product.getRatingCount());"
+      },
+      {
+        "line": 263,
+        "code": "        putInteger(keepa, \"current_sales_rank\", product.getLastSaleRank());"
+      }
+    ]
+  },
+  {
+    "key": "47385622-42d2-4669-ac56-5e303966a7a1",
+    "rule": "java:S1192",
+    "severity": "CRITICAL",
+    "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+    "project": "levo-backend",
+    "line": 261,
+    "hash": "fa768555329ad71d6010ac0a0fb5b980",
+    "textRange": {
+      "startLine": 261,
+      "endLine": 261,
+      "startOffset": 24,
+      "endOffset": 40
+    },
+    "flows": [
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+            "textRange": {
+              "startLine": 261,
+              "endLine": 261,
+              "startOffset": 24,
+              "endOffset": 40
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+            "textRange": {
+              "startLine": 325,
+              "endLine": 325,
+              "startOffset": 35,
+              "endOffset": 51
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+            "textRange": {
+              "startLine": 325,
+              "endLine": 325,
+              "startOffset": 124,
+              "endOffset": 140
+            },
+            "msg": "Duplication",
+            "msgFormattings": []
+          }
+        ]
+      }
+    ],
+    "status": "OPEN",
+    "message": "Define a constant instead of duplicating this literal \"Current_rating\" 3 times.",
+    "effort": "8min",
+    "debt": "8min",
+    "author": "emmanuelbotta007@gmail.com",
+    "tags": [
+      "design"
+    ],
+    "comments": [],
+    "creationDate": "2026-06-05T02:33:38+0000",
+    "updateDate": "2026-06-05T02:33:38+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "DISTINCT",
+    "cleanCodeAttributeCategory": "ADAPTABLE",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "HIGH"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 258,
+        "code": "        putFloat(keepa, \"Ventas_Mensuales\", product.getMonthlySold());"
+      },
+      {
+        "line": 259,
+        "code": "        putFloat(keepa, \"monthly_sold_delta_pct_90d\", product.getDay90ChangeMonthlySold());"
+      },
+      {
+        "line": 260,
+        "code": "        putFloat(keepa, \"Current_price\", product.getPrice());"
+      },
+      {
+        "line": 261,
+        "code": "        putFloat(keepa, \"Current_rating\", product.getRating());"
+      },
+      {
+        "line": 262,
+        "code": "        putInteger(keepa, \"review_count_current\", product.getRatingCount());"
+      },
+      {
+        "line": 263,
+        "code": "        putInteger(keepa, \"current_sales_rank\", product.getLastSaleRank());"
+      },
+      {
+        "line": 264,
+        "code": "        putInteger(keepa, \"avg90_sales_rank\", product.getAvg90SaleRank());"
+      }
+    ]
+  },
+  {
+    "key": "1d3c9b95-457a-4b5d-87ec-188cdb85985d",
+    "rule": "java:S3776",
+    "severity": "CRITICAL",
+    "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+    "project": "levo-backend",
+    "line": 279,
+    "hash": "8483026c81daf491fa7f50a9d657f65b",
+    "textRange": {
+      "startLine": 279,
+      "endLine": 279,
+      "startOffset": 23,
+      "endOffset": 44
+    },
+    "flows": [
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+            "textRange": {
+              "startLine": 285,
+              "endLine": 285,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+            "textRange": {
+              "startLine": 285,
+              "endLine": 285,
+              "startOffset": 36,
+              "endOffset": 38
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+            "textRange": {
+              "startLine": 287,
+              "endLine": 287,
+              "startOffset": 20,
+              "endOffset": 21
+            },
+            "msg": "+2 (incl 1 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+            "textRange": {
+              "startLine": 300,
+              "endLine": 300,
+              "startOffset": 8,
+              "endOffset": 11
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+            "textRange": {
+              "startLine": 302,
+              "endLine": 302,
+              "startOffset": 12,
+              "endOffset": 14
+            },
+            "msg": "+2 (incl 1 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+            "textRange": {
+              "startLine": 302,
+              "endLine": 302,
+              "startOffset": 40,
+              "endOffset": 42
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+            "textRange": {
+              "startLine": 303,
+              "endLine": 303,
+              "startOffset": 12,
+              "endOffset": 14
+            },
+            "msg": "+2 (incl 1 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+            "textRange": {
+              "startLine": 303,
+              "endLine": 303,
+              "startOffset": 44,
+              "endOffset": 46
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+            "textRange": {
+              "startLine": 304,
+              "endLine": 304,
+              "startOffset": 12,
+              "endOffset": 14
+            },
+            "msg": "+2 (incl 1 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+            "textRange": {
+              "startLine": 305,
+              "endLine": 305,
+              "startOffset": 12,
+              "endOffset": 14
+            },
+            "msg": "+2 (incl 1 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+            "textRange": {
+              "startLine": 306,
+              "endLine": 306,
+              "startOffset": 12,
+              "endOffset": 14
+            },
+            "msg": "+2 (incl 1 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+            "textRange": {
+              "startLine": 319,
+              "endLine": 319,
+              "startOffset": 66,
+              "endOffset": 67
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+            "textRange": {
+              "startLine": 322,
+              "endLine": 322,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+            "textRange": {
+              "startLine": 322,
+              "endLine": 322,
+              "startOffset": 79,
+              "endOffset": 83
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+            "textRange": {
+              "startLine": 324,
+              "endLine": 324,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+            "textRange": {
+              "startLine": 324,
+              "endLine": 324,
+              "startOffset": 101,
+              "endOffset": 105
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+            "textRange": {
+              "startLine": 325,
+              "endLine": 325,
+              "startOffset": 8,
+              "endOffset": 10
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+            "textRange": {
+              "startLine": 325,
+              "endLine": 325,
+              "startOffset": 105,
+              "endOffset": 109
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+            "textRange": {
+              "startLine": 332,
+              "endLine": 332,
+              "startOffset": 43,
+              "endOffset": 44
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      }
+    ],
+    "status": "OPEN",
+    "message": "Refactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.",
+    "effort": "15min",
+    "debt": "15min",
+    "author": "emmanuelbotta007@gmail.com",
+    "tags": [
+      "brain-overload"
+    ],
+    "comments": [],
+    "creationDate": "2026-06-05T02:33:38+0000",
+    "updateDate": "2026-06-05T02:33:38+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "FOCUSED",
+    "cleanCodeAttributeCategory": "ADAPTABLE",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "HIGH"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 276,
+        "code": "     * ASIN ni Titulo: se mandan las columnas Keepa que el prompt conoce, pobladas"
+      },
+      {
+        "line": 277,
+        "code": "     * a nivel marca (Marca, categor\u00edas agregadas y comportamiento del cat\u00e1logo)."
+      },
+      {
+        "line": 278,
+        "code": "     */"
+      },
+      {
+        "line": 279,
+        "code": "    private ObjectNode buildBrandRequestBody(QuickAnalysis qa, Brand brand) {"
+      },
+      {
+        "line": 280,
+        "code": "        ObjectNode body = objectMapper.createObjectNode();"
+      },
+      {
+        "line": 281,
+        "code": "        body.put(\"request_id\", qa.getRequestId());"
+      },
+      {
+        "line": 282,
+        "code": "        body.put(\"analysis_type\", \"brand\");"
+      }
+    ]
+  },
+  {
+    "key": "7582e257-2d75-4217-a77a-8677e061464e",
+    "rule": "java:S1659",
+    "severity": "MINOR",
+    "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+    "project": "levo-backend",
+    "line": 297,
+    "hash": "afd8d17cb0cea7cd1271ee108bf6f13e",
+    "textRange": {
+      "startLine": 297,
+      "endLine": 297,
+      "startOffset": 34,
+      "endOffset": 41
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Declare \"ratingN\" on a separate line.",
+    "effort": "2min",
+    "debt": "2min",
+    "author": "emmanuelbotta007@gmail.com",
+    "tags": [
+      "convention",
+      "cert"
+    ],
+    "comments": [],
+    "creationDate": "2026-06-05T02:33:38+0000",
+    "updateDate": "2026-06-05T02:33:38+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": true,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "FORMATTED",
+    "cleanCodeAttributeCategory": "CONSISTENT",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 294,
+        "code": "        Set&lt;String&gt; categories = new LinkedHashSet&lt;&gt;();"
+      },
+      {
+        "line": 295,
+        "code": "        Set&lt;String&gt; rootCategories = new LinkedHashSet&lt;&gt;();"
+      },
+      {
+        "line": 296,
+        "code": "        int count = 0;"
+      },
+      {
+        "line": 297,
+        "code": "        double sumRating = 0; int ratingN = 0;"
+      },
+      {
+        "line": 298,
+        "code": "        double sumMonthlySold = 0;"
+      },
+      {
+        "line": 299,
+        "code": "        double sumPrice = 0; int priceN = 0;"
+      },
+      {
+        "line": 300,
+        "code": "        for (Products p : products) {"
+      }
+    ]
+  },
+  {
+    "key": "66135e05-fd25-4ba7-83d9-ce95905e4b90",
+    "rule": "java:S1659",
+    "severity": "MINOR",
+    "component": "levo-backend:src/main/java/com/levo/security/quick_analysis/service/QuickAnalysisService.java",
+    "project": "levo-backend",
+    "line": 299,
+    "hash": "066fb95b0106ac13be3fb8e122fb887e",
+    "textRange": {
+      "startLine": 299,
+      "endLine": 299,
+      "startOffset": 33,
+      "endOffset": 39
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Declare \"priceN\" on a separate line.",
+    "effort": "2min",
+    "debt": "2min",
+    "author": "emmanuelbotta007@gmail.com",
+    "tags": [
+      "convention",
+      "cert"
+    ],
+    "comments": [],
+    "creationDate": "2026-06-05T02:33:38+0000",
+    "updateDate": "2026-06-05T02:33:38+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": true,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "FORMATTED",
+    "cleanCodeAttributeCategory": "CONSISTENT",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 296,
+        "code": "        int count = 0;"
+      },
+      {
+        "line": 297,
+        "code": "        double sumRating = 0; int ratingN = 0;"
+      },
+      {
+        "line": 298,
+        "code": "        double sumMonthlySold = 0;"
+      },
+      {
+        "line": 299,
+        "code": "        double sumPrice = 0; int priceN = 0;"
+      },
+      {
+        "line": 300,
+        "code": "        for (Products p : products) {"
+      },
+      {
+        "line": 301,
+        "code": "            count++;"
+      },
+      {
+        "line": 302,
+        "code": "            if (p.getCategory() != null &amp;&amp; p.getCategory().getName() != null) categories.add(p.getCategory().getName());"
+      }
+    ]
+  },
+  {
     "key": "e16f332b-98ba-41e6-97ae-5aebcfdd3c3d",
     "rule": "java:S3776",
     "severity": "CRITICAL",
@@ -3007,8 +4217,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/controller/N8nJsonController.java",
             "textRange": {
-              "startLine": 105,
-              "endLine": 105,
+              "startLine": 111,
+              "endLine": 111,
               "startOffset": 44,
               "endOffset": 53
             },
@@ -3022,8 +4232,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/controller/N8nJsonController.java",
             "textRange": {
-              "startLine": 152,
-              "endLine": 152,
+              "startLine": 158,
+              "endLine": 158,
               "startOffset": 20,
               "endOffset": 29
             },
@@ -3128,8 +4338,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/controller/N8nJsonController.java",
             "textRange": {
-              "startLine": 100,
-              "endLine": 100,
+              "startLine": 106,
+              "endLine": 106,
               "startOffset": 24,
               "endOffset": 31
             },
@@ -3143,8 +4353,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/controller/N8nJsonController.java",
             "textRange": {
-              "startLine": 108,
-              "endLine": 108,
+              "startLine": 114,
+              "endLine": 114,
               "startOffset": 68,
               "endOffset": 75
             },
@@ -3158,8 +4368,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/controller/N8nJsonController.java",
             "textRange": {
-              "startLine": 135,
-              "endLine": 135,
+              "startLine": 141,
+              "endLine": 141,
               "startOffset": 24,
               "endOffset": 31
             },
@@ -3173,8 +4383,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/controller/N8nJsonController.java",
             "textRange": {
-              "startLine": 144,
-              "endLine": 144,
+              "startLine": 150,
+              "endLine": 150,
               "startOffset": 24,
               "endOffset": 31
             },
@@ -3188,8 +4398,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/controller/N8nJsonController.java",
             "textRange": {
-              "startLine": 158,
-              "endLine": 158,
+              "startLine": 164,
+              "endLine": 164,
               "startOffset": 20,
               "endOffset": 27
             },
@@ -5571,8 +6781,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/controller/N8nJsonController.java",
             "textRange": {
-              "startLine": 108,
-              "endLine": 108,
+              "startLine": 114,
+              "endLine": 114,
               "startOffset": 106,
               "endOffset": 115
             },
@@ -5586,8 +6796,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/controller/N8nJsonController.java",
             "textRange": {
-              "startLine": 159,
-              "endLine": 159,
+              "startLine": 165,
+              "endLine": 165,
               "startOffset": 20,
               "endOffset": 29
             },
@@ -13175,8 +14385,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/controller/N8nJsonController.java",
             "textRange": {
-              "startLine": 101,
-              "endLine": 101,
+              "startLine": 107,
+              "endLine": 107,
               "startOffset": 24,
               "endOffset": 35
             },
@@ -13190,8 +14400,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/controller/N8nJsonController.java",
             "textRange": {
-              "startLine": 139,
-              "endLine": 139,
+              "startLine": 145,
+              "endLine": 145,
               "startOffset": 32,
               "endOffset": 43
             },
@@ -13205,8 +14415,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/controller/N8nJsonController.java",
             "textRange": {
-              "startLine": 140,
-              "endLine": 140,
+              "startLine": 146,
+              "endLine": 146,
               "startOffset": 37,
               "endOffset": 48
             },
@@ -13220,8 +14430,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/controller/N8nJsonController.java",
             "textRange": {
-              "startLine": 153,
-              "endLine": 153,
+              "startLine": 159,
+              "endLine": 159,
               "startOffset": 20,
               "endOffset": 31
             },
