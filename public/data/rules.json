@@ -1,4 +1,18 @@
 {
+  "java:S1659": {
+    "name": "Multiple variables should not be declared on the same line",
+    "htmlDesc": "",
+    "remFnBaseEffort": "2min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
+  "java:S106": {
+    "name": "Standard outputs should not be used directly to log anything",
+    "htmlDesc": "",
+    "remFnBaseEffort": "10min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
   "java:S1141": {
     "name": "Try-catch blocks should not be nested",
     "htmlDesc": "",
@@ -20,25 +34,11 @@
     "severity": "CRITICAL",
     "type": "CODE_SMELL"
   },
-  "java:S1659": {
-    "name": "Multiple variables should not be declared on the same line",
-    "htmlDesc": "",
-    "remFnBaseEffort": "2min",
-    "severity": "MINOR",
-    "type": "CODE_SMELL"
-  },
   "java:S1135": {
     "name": "Track uses of \"TODO\" tags",
     "htmlDesc": "",
     "remFnBaseEffort": "0min",
     "severity": "INFO",
-    "type": "CODE_SMELL"
-  },
-  "java:S106": {
-    "name": "Standard outputs should not be used directly to log anything",
-    "htmlDesc": "",
-    "remFnBaseEffort": "10min",
-    "severity": "MAJOR",
     "type": "CODE_SMELL"
   },
   "java:S6541": {
@@ -188,6 +188,34 @@
     "severity": "CRITICAL",
     "type": "CODE_SMELL"
   },
+  "typescript:S6853": {
+    "name": "Label elements should have a text label and an associated control",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S7735": {
+    "name": "Negated conditions should be avoided when an else clause is present",
+    "htmlDesc": "",
+    "remFnBaseEffort": "2min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S6759": {
+    "name": "React props should be read-only",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S6582": {
+    "name": "Optional chaining should be preferred",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
   "typescript:S4325": {
     "name": "Redundant casts and non-null assertions should be avoided",
     "htmlDesc": "",
@@ -206,13 +234,6 @@
     "name": "Template literals should not be nested",
     "htmlDesc": "",
     "remFnBaseEffort": "10min",
-    "severity": "MAJOR",
-    "type": "CODE_SMELL"
-  },
-  "typescript:S6582": {
-    "name": "Optional chaining should be preferred",
-    "htmlDesc": "",
-    "remFnBaseEffort": "5min",
     "severity": "MAJOR",
     "type": "CODE_SMELL"
   },
@@ -237,25 +258,11 @@
     "severity": "MAJOR",
     "type": "CODE_SMELL"
   },
-  "typescript:S6759": {
-    "name": "React props should be read-only",
-    "htmlDesc": "",
-    "remFnBaseEffort": "5min",
-    "severity": "MINOR",
-    "type": "CODE_SMELL"
-  },
   "typescript:S3776": {
     "name": "Cognitive Complexity of functions should not be too high",
     "htmlDesc": "",
     "remFnBaseEffort": "5min",
     "severity": "CRITICAL",
-    "type": "CODE_SMELL"
-  },
-  "typescript:S6853": {
-    "name": "Label elements should have a text label and an associated control",
-    "htmlDesc": "",
-    "remFnBaseEffort": "5min",
-    "severity": "MAJOR",
     "type": "CODE_SMELL"
   },
   "typescript:S1128": {
@@ -292,13 +299,6 @@
     "remFnBaseEffort": "5min",
     "severity": "MINOR",
     "type": "BUG"
-  },
-  "typescript:S7735": {
-    "name": "Negated conditions should be avoided when an else clause is present",
-    "htmlDesc": "",
-    "remFnBaseEffort": "2min",
-    "severity": "MINOR",
-    "type": "CODE_SMELL"
   },
   "typescript:S4084": {
     "name": "Media elements should have captions",
