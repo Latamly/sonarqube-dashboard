@@ -188,6 +188,20 @@
     "severity": "CRITICAL",
     "type": "CODE_SMELL"
   },
+  "typescript:S3776": {
+    "name": "Cognitive Complexity of functions should not be too high",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "CRITICAL",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S3358": {
+    "name": "Ternary operators should not be nested",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
   "typescript:S6853": {
     "name": "Label elements should have a text label and an associated control",
     "htmlDesc": "",
@@ -244,25 +258,11 @@
     "severity": "MINOR",
     "type": "CODE_SMELL"
   },
-  "typescript:S3358": {
-    "name": "Ternary operators should not be nested",
-    "htmlDesc": "",
-    "remFnBaseEffort": "5min",
-    "severity": "MAJOR",
-    "type": "CODE_SMELL"
-  },
   "typescript:S6479": {
     "name": "JSX list components should not use array indexes as key",
     "htmlDesc": "",
     "remFnBaseEffort": "5min",
     "severity": "MAJOR",
-    "type": "CODE_SMELL"
-  },
-  "typescript:S3776": {
-    "name": "Cognitive Complexity of functions should not be too high",
-    "htmlDesc": "",
-    "remFnBaseEffort": "5min",
-    "severity": "CRITICAL",
     "type": "CODE_SMELL"
   },
   "typescript:S1128": {
