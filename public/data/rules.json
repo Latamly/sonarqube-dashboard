@@ -188,6 +188,34 @@
     "severity": "CRITICAL",
     "type": "CODE_SMELL"
   },
+  "typescript:S7735": {
+    "name": "Negated conditions should be avoided when an else clause is present",
+    "htmlDesc": "",
+    "remFnBaseEffort": "2min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S2004": {
+    "name": "Functions should not be nested too deeply",
+    "htmlDesc": "",
+    "remFnBaseEffort": "20min",
+    "severity": "CRITICAL",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S6582": {
+    "name": "Optional chaining should be preferred",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S7764": {
+    "name": "Use \"globalThis\" instead of \"window\", \"self\", or \"global\"",
+    "htmlDesc": "",
+    "remFnBaseEffort": "2min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
   "typescript:S3776": {
     "name": "Cognitive Complexity of functions should not be too high",
     "htmlDesc": "",
@@ -209,25 +237,11 @@
     "severity": "MAJOR",
     "type": "CODE_SMELL"
   },
-  "typescript:S7735": {
-    "name": "Negated conditions should be avoided when an else clause is present",
-    "htmlDesc": "",
-    "remFnBaseEffort": "2min",
-    "severity": "MINOR",
-    "type": "CODE_SMELL"
-  },
   "typescript:S6759": {
     "name": "React props should be read-only",
     "htmlDesc": "",
     "remFnBaseEffort": "5min",
     "severity": "MINOR",
-    "type": "CODE_SMELL"
-  },
-  "typescript:S6582": {
-    "name": "Optional chaining should be preferred",
-    "htmlDesc": "",
-    "remFnBaseEffort": "5min",
-    "severity": "MAJOR",
     "type": "CODE_SMELL"
   },
   "typescript:S4325": {
@@ -237,25 +251,11 @@
     "severity": "MINOR",
     "type": "CODE_SMELL"
   },
-  "typescript:S2004": {
-    "name": "Functions should not be nested too deeply",
-    "htmlDesc": "",
-    "remFnBaseEffort": "20min",
-    "severity": "CRITICAL",
-    "type": "CODE_SMELL"
-  },
   "typescript:S4624": {
     "name": "Template literals should not be nested",
     "htmlDesc": "",
     "remFnBaseEffort": "10min",
     "severity": "MAJOR",
-    "type": "CODE_SMELL"
-  },
-  "typescript:S7764": {
-    "name": "Use \"globalThis\" instead of \"window\", \"self\", or \"global\"",
-    "htmlDesc": "",
-    "remFnBaseEffort": "2min",
-    "severity": "MINOR",
     "type": "CODE_SMELL"
   },
   "typescript:S6479": {
