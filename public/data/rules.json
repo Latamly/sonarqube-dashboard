@@ -188,6 +188,13 @@
     "severity": "CRITICAL",
     "type": "CODE_SMELL"
   },
+  "typescript:S4325": {
+    "name": "Redundant casts and non-null assertions should be avoided",
+    "htmlDesc": "",
+    "remFnBaseEffort": "1min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
   "typescript:S6759": {
     "name": "React props should be read-only",
     "htmlDesc": "",
@@ -249,13 +256,6 @@
     "htmlDesc": "",
     "remFnBaseEffort": "5min",
     "severity": "MAJOR",
-    "type": "CODE_SMELL"
-  },
-  "typescript:S4325": {
-    "name": "Redundant casts and non-null assertions should be avoided",
-    "htmlDesc": "",
-    "remFnBaseEffort": "1min",
-    "severity": "MINOR",
     "type": "CODE_SMELL"
   },
   "typescript:S4624": {
