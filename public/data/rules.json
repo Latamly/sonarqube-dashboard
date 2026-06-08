@@ -188,10 +188,10 @@
     "severity": "CRITICAL",
     "type": "CODE_SMELL"
   },
-  "typescript:S4325": {
-    "name": "Redundant casts and non-null assertions should be avoided",
+  "typescript:S7770": {
+    "name": "Wrapper functions around built-in type conversion functions should be avoided",
     "htmlDesc": "",
-    "remFnBaseEffort": "1min",
+    "remFnBaseEffort": "5min",
     "severity": "MINOR",
     "type": "CODE_SMELL"
   },
@@ -200,6 +200,27 @@
     "htmlDesc": "",
     "remFnBaseEffort": "5min",
     "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S6479": {
+    "name": "JSX list components should not use array indexes as key",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S4325": {
+    "name": "Redundant casts and non-null assertions should be avoided",
+    "htmlDesc": "",
+    "remFnBaseEffort": "1min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S3358": {
+    "name": "Ternary operators should not be nested",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MAJOR",
     "type": "CODE_SMELL"
   },
   "typescript:S7773": {
@@ -244,13 +265,6 @@
     "severity": "CRITICAL",
     "type": "CODE_SMELL"
   },
-  "typescript:S3358": {
-    "name": "Ternary operators should not be nested",
-    "htmlDesc": "",
-    "remFnBaseEffort": "5min",
-    "severity": "MAJOR",
-    "type": "CODE_SMELL"
-  },
   "typescript:S6853": {
     "name": "Label elements should have a text label and an associated control",
     "htmlDesc": "",
@@ -262,13 +276,6 @@
     "name": "Template literals should not be nested",
     "htmlDesc": "",
     "remFnBaseEffort": "10min",
-    "severity": "MAJOR",
-    "type": "CODE_SMELL"
-  },
-  "typescript:S6479": {
-    "name": "JSX list components should not use array indexes as key",
-    "htmlDesc": "",
-    "remFnBaseEffort": "5min",
     "severity": "MAJOR",
     "type": "CODE_SMELL"
   },

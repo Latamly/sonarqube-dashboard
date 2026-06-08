@@ -1,15 +1,623 @@
 [
   {
+    "key": "d3ac87c7-bfdd-48e0-add6-e6ea7e8c8dcf",
+    "rule": "typescript:S7770",
+    "severity": "MINOR",
+    "component": "levo-frontend:src/app/insights/components/ScopingParamsCard.tsx",
+    "project": "levo-frontend",
+    "line": 34,
+    "hash": "b2a4d71eb594ff298f9658059fa7718f",
+    "textRange": {
+      "startLine": 34,
+      "endLine": 34,
+      "startOffset": 41,
+      "endOffset": 43
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "arrow function is equivalent to `String`. Use `String` directly.",
+    "effort": "5min",
+    "debt": "5min",
+    "author": "emmanuelbotta007@gmail.com",
+    "tags": [
+      "performance",
+      "unnecessary"
+    ],
+    "comments": [],
+    "creationDate": "2026-06-08T01:06:46+0000",
+    "updateDate": "2026-06-08T02:07:19+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": true,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CLEAR",
+    "cleanCodeAttributeCategory": "INTENTIONAL",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 31,
+        "code": "};"
+      },
+      {
+        "line": 32,
+        "code": ""
+      },
+      {
+        "line": 33,
+        "code": "function toList(v: unknown): string[] {"
+      },
+      {
+        "line": 34,
+        "code": "    if (Array.isArray(v)) return v.map(x =&gt; String(x)).filter(s =&gt; s.trim().length &gt; 0);"
+      },
+      {
+        "line": 35,
+        "code": "    if (typeof v === \"string\" &amp;&amp; v.trim()) return [v.trim()];"
+      },
+      {
+        "line": 36,
+        "code": "    return [];"
+      },
+      {
+        "line": 37,
+        "code": "}"
+      }
+    ]
+  },
+  {
+    "key": "ec63a849-c737-454b-a5d6-849b4b13f411",
+    "rule": "typescript:S6759",
+    "severity": "MINOR",
+    "component": "levo-frontend:src/app/insights/components/ScopingParamsCard.tsx",
+    "project": "levo-frontend",
+    "line": 45,
+    "hash": "dd7331edbd85719f1fc5daf914f2dd6e",
+    "textRange": {
+      "startLine": 45,
+      "endLine": 45,
+      "startOffset": 15,
+      "endOffset": 84
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Mark the props of the component as read-only.",
+    "effort": "5min",
+    "debt": "5min",
+    "author": "emmanuelbotta007@gmail.com",
+    "tags": [
+      "type-dependent",
+      "react"
+    ],
+    "comments": [],
+    "creationDate": "2026-06-08T01:06:46+0000",
+    "updateDate": "2026-06-08T02:07:19+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": true,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CONVENTIONAL",
+    "cleanCodeAttributeCategory": "CONSISTENT",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 42,
+        "code": "    return \"bg-zinc-500/15 text-zinc-300 border-zinc-500/30\"; // ambiguous / otros"
+      },
+      {
+        "line": 43,
+        "code": "}"
+      },
+      {
+        "line": 44,
+        "code": ""
+      },
+      {
+        "line": 45,
+        "code": "function Chips({ items, tone = \"zinc\" }: { items: string[]; tone?: \"zinc\" | \"blue\" }) {"
+      },
+      {
+        "line": 46,
+        "code": "    const cls = tone === \"blue\""
+      },
+      {
+        "line": 47,
+        "code": "        ? \"bg-blue-500/15 text-blue-300 border-blue-500/30\""
+      },
+      {
+        "line": 48,
+        "code": "        : \"bg-zinc-700/50 text-zinc-200 border-zinc-600/50\";"
+      }
+    ]
+  },
+  {
+    "key": "ddc7d735-6061-4afa-8279-0b69d46ac153",
+    "rule": "typescript:S6479",
+    "severity": "MAJOR",
+    "component": "levo-frontend:src/app/insights/components/ScopingParamsCard.tsx",
+    "project": "levo-frontend",
+    "line": 52,
+    "hash": "efba7923e8c86acabe1fdc1e1e3162d7",
+    "textRange": {
+      "startLine": 52,
+      "endLine": 52,
+      "startOffset": 27,
+      "endOffset": 28
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Do not use Array index in keys",
+    "effort": "5min",
+    "debt": "5min",
+    "author": "emmanuelbotta007@gmail.com",
+    "tags": [
+      "performance",
+      "react",
+      "jsx"
+    ],
+    "comments": [],
+    "creationDate": "2026-06-08T01:06:46+0000",
+    "updateDate": "2026-06-08T02:07:19+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "LOGICAL",
+    "cleanCodeAttributeCategory": "INTENTIONAL",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "MEDIUM"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 49,
+        "code": "    return ("
+      },
+      {
+        "line": 50,
+        "code": "        &lt;div className=\"flex flex-wrap gap-1.5\"&gt;"
+      },
+      {
+        "line": 51,
+        "code": "            {items.map((it, i) =&gt; ("
+      },
+      {
+        "line": 52,
+        "code": "                &lt;span key={i} className={`text-[11px] px-2 py-0.5 rounded border ${cls}`}&gt;{it}&lt;/span&gt;"
+      },
+      {
+        "line": 53,
+        "code": "            ))}"
+      },
+      {
+        "line": 54,
+        "code": "        &lt;/div&gt;"
+      },
+      {
+        "line": 55,
+        "code": "    );"
+      }
+    ]
+  },
+  {
+    "key": "070ee99d-1172-43a4-959d-2a254dc3cf6d",
+    "rule": "typescript:S6759",
+    "severity": "MINOR",
+    "component": "levo-frontend:src/app/insights/components/ScopingParamsCard.tsx",
+    "project": "levo-frontend",
+    "line": 58,
+    "hash": "73971d27a2b17b6945873df4cde4396a",
+    "textRange": {
+      "startLine": 58,
+      "endLine": 58,
+      "startOffset": 15,
+      "endOffset": 80
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Mark the props of the component as read-only.",
+    "effort": "5min",
+    "debt": "5min",
+    "author": "emmanuelbotta007@gmail.com",
+    "tags": [
+      "type-dependent",
+      "react"
+    ],
+    "comments": [],
+    "creationDate": "2026-06-08T01:06:46+0000",
+    "updateDate": "2026-06-08T02:07:19+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": true,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CONVENTIONAL",
+    "cleanCodeAttributeCategory": "CONSISTENT",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 55,
+        "code": "    );"
+      },
+      {
+        "line": 56,
+        "code": "}"
+      },
+      {
+        "line": 57,
+        "code": ""
+      },
+      {
+        "line": 58,
+        "code": "function Field({ label, children }: { label: string; children: React.ReactNode }) {"
+      },
+      {
+        "line": 59,
+        "code": "    return ("
+      },
+      {
+        "line": 60,
+        "code": "        &lt;div className=\"flex flex-col gap-1 min-w-0\"&gt;"
+      },
+      {
+        "line": 61,
+        "code": "            &lt;span className=\"text-[10px] uppercase tracking-wider font-semibold text-zinc-500\"&gt;{label}&lt;/span&gt;"
+      }
+    ]
+  },
+  {
+    "key": "bf3c92e7-b71e-4b0a-b3cc-afbed55bc937",
+    "rule": "typescript:S6759",
+    "severity": "MINOR",
+    "component": "levo-frontend:src/app/insights/components/ScopingParamsCard.tsx",
+    "project": "levo-frontend",
+    "line": 67,
+    "hash": "3472d8f7d2c421b70aca9f073ab4595f",
+    "textRange": {
+      "startLine": 67,
+      "endLine": 67,
+      "startOffset": 42,
+      "endOffset": 60
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Mark the props of the component as read-only.",
+    "effort": "5min",
+    "debt": "5min",
+    "author": "emmanuelbotta007@gmail.com",
+    "tags": [
+      "type-dependent",
+      "react"
+    ],
+    "comments": [],
+    "creationDate": "2026-06-08T01:06:46+0000",
+    "updateDate": "2026-06-08T02:07:19+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": true,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CONVENTIONAL",
+    "cleanCodeAttributeCategory": "CONSISTENT",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 64,
+        "code": "    );"
+      },
+      {
+        "line": 65,
+        "code": "}"
+      },
+      {
+        "line": 66,
+        "code": ""
+      },
+      {
+        "line": 67,
+        "code": "export default function ScopingParamsCard({ scoping }: Props) {"
+      },
+      {
+        "line": 68,
+        "code": "    const s = parse(scoping);"
+      },
+      {
+        "line": 69,
+        "code": "    if (!s) return null;"
+      },
+      {
+        "line": 70,
+        "code": ""
+      }
+    ]
+  },
+  {
+    "key": "51263730-1f00-4638-8a1d-2f0cffe63022",
+    "rule": "typescript:S4325",
+    "severity": "MINOR",
+    "component": "levo-frontend:src/app/insights/components/ScopingParamsCard.tsx",
+    "project": "levo-frontend",
+    "line": 72,
+    "hash": "2aa563e281210e9c352e0c9cab520109",
+    "textRange": {
+      "startLine": 72,
+      "endLine": 72,
+      "startOffset": 67,
+      "endOffset": 99
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "This assertion is unnecessary since it does not change the type of the expression.",
+    "effort": "1min",
+    "debt": "1min",
+    "author": "emmanuelbotta007@gmail.com",
+    "tags": [
+      "type-dependent",
+      "redundant"
+    ],
+    "comments": [],
+    "creationDate": "2026-06-08T01:06:46+0000",
+    "updateDate": "2026-06-08T02:07:19+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": true,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CLEAR",
+    "cleanCodeAttributeCategory": "INTENTIONAL",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 69,
+        "code": "    if (!s) return null;"
+      },
+      {
+        "line": 70,
+        "code": ""
+      },
+      {
+        "line": 71,
+        "code": "    const objType = typeof s.analysis_object_type === \"string\""
+      },
+      {
+        "line": 72,
+        "code": "        ? (OBJECT_TYPE_LABEL[s.analysis_object_type as string] ?? (s.analysis_object_type as string))"
+      },
+      {
+        "line": 73,
+        "code": "        : null;"
+      },
+      {
+        "line": 74,
+        "code": "    const objName = typeof s.analysis_object_name === \"string\" ? s.analysis_object_name : null;"
+      },
+      {
+        "line": 75,
+        "code": "    const markets = toList(s.target_markets);"
+      }
+    ]
+  },
+  {
+    "key": "e12d47dc-5e2e-4177-b9a6-efe7d940cc8d",
+    "rule": "typescript:S4325",
+    "severity": "MINOR",
+    "component": "levo-frontend:src/app/insights/components/ScopingParamsCard.tsx",
+    "project": "levo-frontend",
+    "line": 72,
+    "hash": "2aa563e281210e9c352e0c9cab520109",
+    "textRange": {
+      "startLine": 72,
+      "endLine": 72,
+      "startOffset": 29,
+      "endOffset": 61
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "This assertion is unnecessary since it does not change the type of the expression.",
+    "effort": "1min",
+    "debt": "1min",
+    "author": "emmanuelbotta007@gmail.com",
+    "tags": [
+      "type-dependent",
+      "redundant"
+    ],
+    "comments": [],
+    "creationDate": "2026-06-08T01:06:46+0000",
+    "updateDate": "2026-06-08T02:07:19+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": true,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CLEAR",
+    "cleanCodeAttributeCategory": "INTENTIONAL",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 69,
+        "code": "    if (!s) return null;"
+      },
+      {
+        "line": 70,
+        "code": ""
+      },
+      {
+        "line": 71,
+        "code": "    const objType = typeof s.analysis_object_type === \"string\""
+      },
+      {
+        "line": 72,
+        "code": "        ? (OBJECT_TYPE_LABEL[s.analysis_object_type as string] ?? (s.analysis_object_type as string))"
+      },
+      {
+        "line": 73,
+        "code": "        : null;"
+      },
+      {
+        "line": 74,
+        "code": "    const objName = typeof s.analysis_object_name === \"string\" ? s.analysis_object_name : null;"
+      },
+      {
+        "line": 75,
+        "code": "    const markets = toList(s.target_markets);"
+      }
+    ]
+  },
+  {
+    "key": "cb40aace-1607-4870-92c6-25862b9b1660",
+    "rule": "typescript:S3358",
+    "severity": "MAJOR",
+    "component": "levo-frontend:src/app/insights/components/ScopingParamsCard.tsx",
+    "project": "levo-frontend",
+    "line": 96,
+    "hash": "def64039ee18484110c81290af2c9c45",
+    "textRange": {
+      "startLine": 96,
+      "endLine": 96,
+      "startOffset": 64,
+      "endOffset": 110
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Extract this nested ternary operation into an independent statement.",
+    "effort": "5min",
+    "debt": "5min",
+    "author": "emmanuelbotta007@gmail.com",
+    "tags": [
+      "confusing"
+    ],
+    "comments": [],
+    "creationDate": "2026-06-08T01:06:46+0000",
+    "updateDate": "2026-06-08T02:07:19+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CLEAR",
+    "cleanCodeAttributeCategory": "INTENTIONAL",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "MEDIUM"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 93,
+        "code": "                &lt;h3 className=\"text-xs font-bold uppercase tracking-wider text-zinc-300\"&gt;Par\u00e1metros del an\u00e1lisis&lt;/h3&gt;"
+      },
+      {
+        "line": 94,
+        "code": "                {scopeStatus &amp;&amp; ("
+      },
+      {
+        "line": 95,
+        "code": "                    &lt;span className={`ml-auto text-[10px] uppercase tracking-wider font-semibold px-2 py-0.5 rounded border ${scopeStatusTone(scopeStatus)}`}&gt;"
+      },
+      {
+        "line": 96,
+        "code": "                        {scopeStatus === \"clear\" ? \"Definido\" : scopeStatus === \"broad\" ? \"Amplio\" : \"Ambiguo\"}"
+      },
+      {
+        "line": 97,
+        "code": "                    &lt;/span&gt;"
+      },
+      {
+        "line": 98,
+        "code": "                )}"
+      },
+      {
+        "line": 99,
+        "code": "            &lt;/div&gt;"
+      }
+    ]
+  },
+  {
     "key": "9fe2e40a-e6d8-4a3d-90c8-1fedbfcac0bd",
     "rule": "typescript:S4325",
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
     "project": "levo-frontend",
-    "line": 139,
+    "line": 141,
     "hash": "3045638466a546e852c720805af9f6c1",
     "textRange": {
-      "startLine": 139,
-      "endLine": 139,
+      "startLine": 141,
+      "endLine": 141,
       "startOffset": 29,
       "endOffset": 43
     },
@@ -46,31 +654,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 136,
+        "line": 138,
         "code": "    const [isModalOpen, setIsModalOpen] = useState(false);"
       },
       {
-        "line": 137,
+        "line": 139,
         "code": ""
       },
       {
-        "line": 138,
+        "line": 140,
         "code": "    // Subida de foto para an\u00e1lisis manuales (no traen imagen de Keepa)."
       },
       {
-        "line": 139,
+        "line": 141,
         "code": "    const isManualProduct = (product as any)?.source === \"MANUAL\";"
       },
       {
-        "line": 140,
+        "line": 142,
         "code": "    const photoInputRef = useRef&lt;HTMLInputElement | null&gt;(null);"
       },
       {
-        "line": 141,
+        "line": 143,
         "code": "    const [localImageUrl, setLocalImageUrl] = useState&lt;string | null&gt;(null);"
       },
       {
-        "line": 142,
+        "line": 144,
         "code": "    const [isUploadingPhoto, setIsUploadingPhoto] = useState(false);"
       }
     ]
@@ -81,11 +689,11 @@
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/AnalyzedProductsView.tsx",
     "project": "levo-frontend",
-    "line": 56,
+    "line": 58,
     "hash": "385af67efa48d35babc14789bf8d5a13",
     "textRange": {
-      "startLine": 56,
-      "endLine": 62,
+      "startLine": 58,
+      "endLine": 64,
       "startOffset": 45,
       "endOffset": 1
     },
@@ -122,31 +730,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 53,
-        "code": ""
-      },
-      {
-        "line": 54,
-        "code": "const BACKEND_ORIGIN = process.env.NEXT_PUBLIC_API_BASE ?? \"https://api.latamly.com.ar\";"
-      },
-      {
         "line": 55,
         "code": ""
       },
       {
         "line": 56,
-        "code": "export default function AnalyzedProductsView({ onAnalyze, source, onNewManual }: {"
+        "code": "const BACKEND_ORIGIN = process.env.NEXT_PUBLIC_API_BASE ?? \"https://api.latamly.com.ar\";"
       },
       {
         "line": 57,
-        "code": "    onAnalyze?: (product: Product) =&gt; void,"
+        "code": ""
       },
       {
         "line": 58,
-        "code": "    /** \"MANUAL\" \u2192 lista solo oportunidades manuales. Por defecto lista las Keepa. */"
+        "code": "export default function AnalyzedProductsView({ onAnalyze, source, onNewManual }: {"
       },
       {
         "line": 59,
+        "code": "    onAnalyze?: (product: Product) =&gt; void,"
+      },
+      {
+        "line": 60,
+        "code": "    /** \"MANUAL\" \u2192 lista solo oportunidades manuales. Por defecto lista las Keepa. */"
+      },
+      {
+        "line": 61,
         "code": "    source?: string,"
       }
     ]
@@ -157,11 +765,11 @@
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/AnalyzedProductsView.tsx",
     "project": "levo-frontend",
-    "line": 108,
+    "line": 110,
     "hash": "b20b0b1957e5194cb7bec63ef86b7e30",
     "textRange": {
-      "startLine": 108,
-      "endLine": 108,
+      "startLine": 110,
+      "endLine": 110,
       "startOffset": 12,
       "endOffset": 17
     },
@@ -202,31 +810,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 105,
+        "line": 107,
         "code": "        const raw = idol.completedAt ?? idol.updatedAt ?? idol.createdAt;"
       },
       {
-        "line": 106,
+        "line": 108,
         "code": "        if (!raw) return null;"
       },
       {
-        "line": 107,
+        "line": 109,
         "code": "        const d = new Date(raw);"
       },
       {
-        "line": 108,
+        "line": 110,
         "code": "        if (isNaN(d.getTime())) return null;"
       },
       {
-        "line": 109,
+        "line": 111,
         "code": "        return d.toLocaleString(\"es-AR\", { day: \"2-digit\", month: \"2-digit\", year: \"numeric\", hour: \"2-digit\", minute: \"2-digit\" });"
       },
       {
-        "line": 110,
+        "line": 112,
         "code": "    };"
       },
       {
-        "line": 111,
+        "line": 113,
         "code": ""
       }
     ]
@@ -237,11 +845,11 @@
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/AnalyzedProductsView.tsx",
     "project": "levo-frontend",
-    "line": 496,
+    "line": 502,
     "hash": "22121616a0e4ccb814d1ec935af631fc",
     "textRange": {
-      "startLine": 496,
-      "endLine": 496,
+      "startLine": 502,
+      "endLine": 502,
       "startOffset": 206,
       "endOffset": 215
     },
@@ -277,31 +885,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 493,
+        "line": 499,
         "code": "                                                    &lt;button"
       },
       {
-        "line": 494,
+        "line": 500,
         "code": "                                                        onClick={(e) =&gt; openDeleteModal(e, idol)}"
       },
       {
-        "line": 495,
+        "line": 501,
         "code": "                                                        disabled={!canClick || isDeleting === idol.id}"
       },
       {
-        "line": 496,
+        "line": 502,
         "code": "                                                        className={`p-2.5 bg-[#111] border border-[#222] rounded-lg transition-all flex items-center justify-center group/btn shadow-md disabled:opacity-50 ${!canClick ? 'text-gray-600 cursor-not-allowed' : 'text-gray-500 hover:bg-red-900/30 hover:border-red-600/50 hover:text-red-500'}`}"
       },
       {
-        "line": 497,
+        "line": 503,
         "code": "                                                        title={!canClick ? \"No tienes permisos\" : \"Eliminar an\u00e1lisis\"}"
       },
       {
-        "line": 498,
+        "line": 504,
         "code": "                                                    &gt;"
       },
       {
-        "line": 499,
+        "line": 505,
         "code": "                                                        {isDeleting === idol.id ? ("
       }
     ]
@@ -2675,11 +3283,11 @@
     "severity": "MAJOR",
     "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
     "project": "levo-frontend",
-    "line": 956,
+    "line": 958,
     "hash": "bfab80fe88d16f7b035e7e0efc50dc35",
     "textRange": {
-      "startLine": 956,
-      "endLine": 956,
+      "startLine": 958,
+      "endLine": 958,
       "startOffset": 57,
       "endOffset": 62
     },
@@ -2716,31 +3324,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 953,
+        "line": 955,
         "code": "                                                        Escala invertida igual que el score: displayOrder 1 = Muy alto (verde),"
       },
       {
-        "line": 954,
+        "line": 956,
         "code": "                                                        5 = Muy bajo (rojo). El valor inicial viene de la IA (confidence). */}"
       },
       {
-        "line": 955,
+        "line": 957,
         "code": "                                                    &lt;div&gt;"
       },
       {
-        "line": 956,
+        "line": 958,
         "code": "                                                        &lt;label className=\"text-xs text-gray-400 mb-2 block\"&gt;Grado de evidencia&lt;/label&gt;"
       },
       {
-        "line": 957,
+        "line": 959,
         "code": "                                                        &lt;div className=\"flex items-center gap-2\"&gt;"
       },
       {
-        "line": 958,
+        "line": 960,
         "code": "                                                            &lt;div className=\"flex gap-1.5 mb-1\"&gt;"
       },
       {
-        "line": 959,
+        "line": 961,
         "code": "                                                                {EVIDENCE_LEVELS.map(lvl =&gt; {"
       }
     ]
@@ -2751,11 +3359,11 @@
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
     "project": "levo-frontend",
-    "line": 972,
+    "line": 974,
     "hash": "28edf6af2ee9175fb3e42142f59451ee",
     "textRange": {
-      "startLine": 972,
-      "endLine": 972,
+      "startLine": 974,
+      "endLine": 974,
       "startOffset": 84,
       "endOffset": 90
     },
@@ -2791,31 +3399,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 969,
+        "line": 971,
         "code": "                                                                            className={`h-9 px-2.5 rounded-md text-[11px] font-bold transition-colors whitespace-nowrap ${isActive"
       },
       {
-        "line": 970,
+        "line": 972,
         "code": "                                                                                ? `${lvl.activeClass} text-white`"
       },
       {
-        "line": 971,
+        "line": 973,
         "code": "                                                                                : 'bg-[#333] text-gray-400 hover:bg-[#444] hover:text-white'"
       },
       {
-        "line": 972,
+        "line": 974,
         "code": "                                                                                } ${!level ? 'opacity-40 cursor-not-allowed' : ''}`}"
       },
       {
-        "line": 973,
+        "line": 975,
         "code": "                                                                        &gt;"
       },
       {
-        "line": 974,
+        "line": 976,
         "code": "                                                                            {lvl.label}"
       },
       {
-        "line": 975,
+        "line": 977,
         "code": "                                                                        &lt;/button&gt;"
       }
     ]
@@ -3325,11 +3933,11 @@
     "severity": "MAJOR",
     "component": "levo-frontend:src/app/insights/components/AnalyzedProductsView.tsx",
     "project": "levo-frontend",
-    "line": 123,
+    "line": 125,
     "hash": "c29217f57b97995b7637f8af0567a1fb",
     "textRange": {
-      "startLine": 123,
-      "endLine": 123,
+      "startLine": 125,
+      "endLine": 125,
       "startOffset": 70,
       "endOffset": 109
     },
@@ -3367,31 +3975,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 120,
+        "line": 122,
         "code": "    useEffect(() =&gt; {"
       },
       {
-        "line": 121,
+        "line": 123,
         "code": "        const fetchIdols = async () =&gt; {"
       },
       {
-        "line": 122,
+        "line": 124,
         "code": "            try {"
       },
       {
-        "line": 123,
+        "line": 125,
         "code": "                const res = await fetch(`/api/insights/idol${source ? `?source=${encodeURIComponent(source)}` : ''}`);"
       },
       {
-        "line": 124,
+        "line": 126,
         "code": "                if (!res.ok) throw new Error('Error al cargar productos analizados');"
       },
       {
-        "line": 125,
+        "line": 127,
         "code": "                const data = await res.json();"
       },
       {
-        "line": 126,
+        "line": 128,
         "code": "                setIdols(data);"
       }
     ]
@@ -4069,11 +4677,11 @@
     "severity": "CRITICAL",
     "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
     "project": "levo-frontend",
-    "line": 859,
+    "line": 861,
     "hash": "7f26e60160f85f459508d87ac4fa6d72",
     "textRange": {
-      "startLine": 859,
-      "endLine": 859,
+      "startLine": 861,
+      "endLine": 861,
       "startOffset": 72,
       "endOffset": 74
     },
@@ -4083,8 +4691,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 861,
-              "endLine": 861,
+              "startLine": 863,
+              "endLine": 863,
               "startOffset": 76,
               "endOffset": 77
             },
@@ -4098,8 +4706,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 863,
-              "endLine": 863,
+              "startLine": 865,
+              "endLine": 865,
               "startOffset": 59,
               "endOffset": 60
             },
@@ -4113,8 +4721,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 864,
-              "endLine": 864,
+              "startLine": 866,
+              "endLine": 866,
               "startOffset": 65,
               "endOffset": 66
             },
@@ -4128,8 +4736,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 866,
-              "endLine": 866,
+              "startLine": 868,
+              "endLine": 868,
               "startOffset": 44,
               "endOffset": 45
             },
@@ -4143,8 +4751,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 868,
-              "endLine": 868,
+              "startLine": 870,
+              "endLine": 870,
               "startOffset": 81,
               "endOffset": 82
             },
@@ -4158,8 +4766,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 871,
-              "endLine": 871,
+              "startLine": 873,
+              "endLine": 873,
               "startOffset": 44,
               "endOffset": 45
             },
@@ -4173,8 +4781,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 877,
-              "endLine": 877,
+              "startLine": 879,
+              "endLine": 879,
               "startOffset": 123,
               "endOffset": 124
             },
@@ -4188,8 +4796,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 898,
-              "endLine": 898,
+              "startLine": 900,
+              "endLine": 900,
               "startOffset": 73,
               "endOffset": 74
             },
@@ -4203,8 +4811,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 902,
-              "endLine": 902,
+              "startLine": 904,
+              "endLine": 904,
               "startOffset": 78,
               "endOffset": 79
             },
@@ -4218,8 +4826,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 916,
-              "endLine": 916,
+              "startLine": 918,
+              "endLine": 918,
               "startOffset": 116,
               "endOffset": 117
             },
@@ -4233,8 +4841,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 992,
-              "endLine": 992,
+              "startLine": 994,
+              "endLine": 994,
               "startOffset": 121,
               "endOffset": 122
             },
@@ -4248,8 +4856,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 999,
-              "endLine": 999,
+              "startLine": 1001,
+              "endLine": 1001,
               "startOffset": 82,
               "endOffset": 83
             },
@@ -4263,8 +4871,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 1002,
-              "endLine": 1002,
+              "startLine": 1004,
+              "endLine": 1004,
               "startOffset": 186,
               "endOffset": 187
             },
@@ -4278,8 +4886,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 1002,
-              "endLine": 1002,
+              "startLine": 1004,
+              "endLine": 1004,
               "startOffset": 141,
               "endOffset": 143
             },
@@ -4293,8 +4901,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 1016,
-              "endLine": 1016,
+              "startLine": 1018,
+              "endLine": 1018,
               "startOffset": 115,
               "endOffset": 116
             },
@@ -4335,31 +4943,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 856,
+        "line": 858,
         "code": "                                &lt;/div&gt;"
       },
       {
-        "line": 857,
+        "line": 859,
         "code": "                            ) : ("
       },
       {
-        "line": 858,
+        "line": 860,
         "code": "                                &lt;div className=\"bg-[#252525] rounded-xl\"&gt;"
       },
       {
-        "line": 859,
+        "line": 861,
         "code": "                                    {activePillarVars.map((detail, idx) =&gt; {"
       },
       {
-        "line": 860,
+        "line": 862,
         "code": "                                        // Resolve modifier: prefer local cache, then userMap (for records loaded from server)"
       },
       {
-        "line": 861,
+        "line": 863,
         "code": "                                        const serverUser = detail.updatedBy ? userMap[detail.updatedBy] : null;"
       },
       {
-        "line": 862,
+        "line": 864,
         "code": "                                        const modUserName = detail.updatedByName"
       }
     ]
@@ -4370,11 +4978,11 @@
     "severity": "MAJOR",
     "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
     "project": "levo-frontend",
-    "line": 997,
+    "line": 999,
     "hash": "c27f15260e2237921a9d0f3f5ead90d2",
     "textRange": {
-      "startLine": 997,
-      "endLine": 997,
+      "startLine": 999,
+      "endLine": 999,
       "startOffset": 57,
       "endOffset": 62
     },
@@ -4411,31 +5019,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 994,
+        "line": 996,
         "code": ""
       },
       {
-        "line": 995,
+        "line": 997,
         "code": "                                                    {/* Justificaci\u00f3n \u2014 ocupa ambas columnas, full width */}"
       },
       {
-        "line": 996,
+        "line": 998,
         "code": "                                                    &lt;div className=\"md:col-span-2\"&gt;"
       },
       {
-        "line": 997,
+        "line": 999,
         "code": "                                                        &lt;label className=\"text-xs text-gray-400 mb-2 block\"&gt;Justificaci\u00f3n del an\u00e1lisis&lt;/label&gt;"
       },
       {
-        "line": 998,
+        "line": 1000,
         "code": "                                                        &lt;div className=\"bg-[#1a1a1a] text-gray-300 text-xs p-3 rounded-lg border border-[#333]\"&gt;"
       },
       {
-        "line": 999,
+        "line": 1001,
         "code": "                                                            {detail.justificacion ? ("
       },
       {
-        "line": 1000,
+        "line": 1002,
         "code": "                                                                &lt;&gt;"
       }
     ]
@@ -11514,11 +12122,11 @@
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
     "project": "levo-frontend",
-    "line": 647,
+    "line": 649,
     "hash": "3cc41f15152ab25905dcd7bc2f36b007",
     "textRange": {
-      "startLine": 647,
-      "endLine": 661,
+      "startLine": 649,
+      "endLine": 663,
       "startOffset": 12,
       "endOffset": 13
     },
@@ -11554,31 +12162,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 644,
+        "line": 646,
         "code": "            const bodyLines = doc.splitTextToSize(rawText, bodyWidth);"
       },
       {
-        "line": 645,
+        "line": 647,
         "code": "            "
       },
       {
-        "line": 646,
+        "line": 648,
         "code": "            // Loop para paginaci\u00f3n autom\u00e1tica (salto de hoja) con interlineado din\u00e1mico"
       },
       {
-        "line": 647,
+        "line": 649,
         "code": "            for (let i = 0; i &lt; bodyLines.length; i++) {"
       },
       {
-        "line": 648,
+        "line": 650,
         "code": "                if (currentY &gt; pageHeight - 20) {"
       },
       {
-        "line": 649,
+        "line": 651,
         "code": "                    doc.addPage();"
       },
       {
-        "line": 650,
+        "line": 652,
         "code": "                    currentY = marginTop;"
       }
     ]
@@ -11589,11 +12197,11 @@
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
     "project": "levo-frontend",
-    "line": 747,
+    "line": 749,
     "hash": "d287f923ae85941916c97b4913804dcd",
     "textRange": {
-      "startLine": 747,
-      "endLine": 755,
+      "startLine": 749,
+      "endLine": 757,
       "startOffset": 24,
       "endOffset": 25
     },
@@ -11630,31 +12238,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 744,
+        "line": 746,
         "code": "                        )}"
       },
       {
-        "line": 745,
+        "line": 747,
         "code": "                    &lt;/div&gt;"
       },
       {
-        "line": 746,
+        "line": 748,
         "code": "                    &lt;div&gt;"
       },
       {
-        "line": 747,
+        "line": 749,
         "code": "                        &lt;h1 "
       },
       {
-        "line": 748,
+        "line": 750,
         "code": "                            className=\"text-lg font-bold max-w-2xl leading-snug cursor-pointer hover:text-red-500 transition-colors\""
       },
       {
-        "line": 749,
+        "line": 751,
         "code": "                            onClick={() =&gt; {"
       },
       {
-        "line": 750,
+        "line": 752,
         "code": "                                const state = { view: \"product\", product };"
       }
     ]
@@ -11665,11 +12273,11 @@
     "severity": "MAJOR",
     "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
     "project": "levo-frontend",
-    "line": 747,
+    "line": 749,
     "hash": "d287f923ae85941916c97b4913804dcd",
     "textRange": {
-      "startLine": 747,
-      "endLine": 755,
+      "startLine": 749,
+      "endLine": 757,
       "startOffset": 24,
       "endOffset": 25
     },
@@ -11710,31 +12318,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 744,
+        "line": 746,
         "code": "                        )}"
       },
       {
-        "line": 745,
+        "line": 747,
         "code": "                    &lt;/div&gt;"
       },
       {
-        "line": 746,
+        "line": 748,
         "code": "                    &lt;div&gt;"
       },
       {
-        "line": 747,
+        "line": 749,
         "code": "                        &lt;h1 "
       },
       {
-        "line": 748,
+        "line": 750,
         "code": "                            className=\"text-lg font-bold max-w-2xl leading-snug cursor-pointer hover:text-red-500 transition-colors\""
       },
       {
-        "line": 749,
+        "line": 751,
         "code": "                            onClick={() =&gt; {"
       },
       {
-        "line": 750,
+        "line": 752,
         "code": "                                const state = { view: \"product\", product };"
       }
     ]
@@ -11745,11 +12353,11 @@
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
     "project": "levo-frontend",
-    "line": 751,
+    "line": 753,
     "hash": "b3ffec436872276c58ed0c0e1897160a",
     "textRange": {
-      "startLine": 751,
-      "endLine": 751,
+      "startLine": 753,
+      "endLine": 753,
       "startOffset": 32,
       "endOffset": 38
     },
@@ -11786,31 +12394,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 748,
+        "line": 750,
         "code": "                            className=\"text-lg font-bold max-w-2xl leading-snug cursor-pointer hover:text-red-500 transition-colors\""
       },
       {
-        "line": 749,
+        "line": 751,
         "code": "                            onClick={() =&gt; {"
       },
       {
-        "line": 750,
+        "line": 752,
         "code": "                                const state = { view: \"product\", product };"
       },
       {
-        "line": 751,
+        "line": 753,
         "code": "                                window.history.pushState(state, \"\", \"\");"
       },
       {
-        "line": 752,
+        "line": 754,
         "code": "                                window.dispatchEvent(new PopStateEvent(\"popstate\", { state }));"
       },
       {
-        "line": 753,
+        "line": 755,
         "code": "                            }}"
       },
       {
-        "line": 754,
+        "line": 756,
         "code": "                            title=\"Ver detalles del producto\""
       }
     ]
@@ -11821,11 +12429,11 @@
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
     "project": "levo-frontend",
-    "line": 752,
+    "line": 754,
     "hash": "63cef75f49679580aef68b857b376274",
     "textRange": {
-      "startLine": 752,
-      "endLine": 752,
+      "startLine": 754,
+      "endLine": 754,
       "startOffset": 32,
       "endOffset": 38
     },
@@ -11862,31 +12470,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 749,
+        "line": 751,
         "code": "                            onClick={() =&gt; {"
       },
       {
-        "line": 750,
+        "line": 752,
         "code": "                                const state = { view: \"product\", product };"
       },
       {
-        "line": 751,
+        "line": 753,
         "code": "                                window.history.pushState(state, \"\", \"\");"
       },
       {
-        "line": 752,
+        "line": 754,
         "code": "                                window.dispatchEvent(new PopStateEvent(\"popstate\", { state }));"
       },
       {
-        "line": 753,
+        "line": 755,
         "code": "                            }}"
       },
       {
-        "line": 754,
+        "line": 756,
         "code": "                            title=\"Ver detalles del producto\""
       },
       {
-        "line": 755,
+        "line": 757,
         "code": "                        &gt;"
       }
     ]
@@ -14840,11 +15448,11 @@
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/AnalyzedProductsView.tsx",
     "project": "levo-frontend",
-    "line": 497,
+    "line": 503,
     "hash": "f6f967b3206fd9b6d0320d25039d371b",
     "textRange": {
-      "startLine": 497,
-      "endLine": 497,
+      "startLine": 503,
+      "endLine": 503,
       "startOffset": 63,
       "endOffset": 72
     },
@@ -14880,31 +15488,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 494,
+        "line": 500,
         "code": "                                                        onClick={(e) =&gt; openDeleteModal(e, idol)}"
       },
       {
-        "line": 495,
+        "line": 501,
         "code": "                                                        disabled={!canClick || isDeleting === idol.id}"
       },
       {
-        "line": 496,
+        "line": 502,
         "code": "                                                        className={`p-2.5 bg-[#111] border border-[#222] rounded-lg transition-all flex items-center justify-center group/btn shadow-md disabled:opacity-50 ${!canClick ? 'text-gray-600 cursor-not-allowed' : 'text-gray-500 hover:bg-red-900/30 hover:border-red-600/50 hover:text-red-500'}`}"
       },
       {
-        "line": 497,
+        "line": 503,
         "code": "                                                        title={!canClick ? \"No tienes permisos\" : \"Eliminar an\u00e1lisis\"}"
       },
       {
-        "line": 498,
+        "line": 504,
         "code": "                                                    &gt;"
       },
       {
-        "line": 499,
+        "line": 505,
         "code": "                                                        {isDeleting === idol.id ? ("
       },
       {
-        "line": 500,
+        "line": 506,
         "code": "                                                            &lt;div className=\"w-4 h-4 border-2 border-red-500/30 border-t-red-500 rounded-full animate-spin\" /&gt;"
       }
     ]
@@ -15337,11 +15945,11 @@
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/AnalyzedProductsView.tsx",
     "project": "levo-frontend",
-    "line": 448,
+    "line": 454,
     "hash": "4b963ea1814bbf2a53d0c1b45b217947",
     "textRange": {
-      "startLine": 448,
-      "endLine": 448,
+      "startLine": 454,
+      "endLine": 454,
       "startOffset": 49,
       "endOffset": 73
     },
@@ -15377,31 +15985,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 445,
+        "line": 451,
         "code": "                                        &lt;/td&gt;"
       },
       {
-        "line": 446,
+        "line": 452,
         "code": "                                        &lt;td className=\"p-4 text-center\"&gt;"
       },
       {
-        "line": 447,
+        "line": 453,
         "code": "                                            &lt;span className=\"text-white font-black text-lg tabular-nums\"&gt;"
       },
       {
-        "line": 448,
+        "line": 454,
         "code": "                                                {idol.finalScore !== null ? idol.finalScore.toFixed(1) : \"-\"}"
       },
       {
-        "line": 449,
+        "line": 455,
         "code": "                                            &lt;/span&gt;"
       },
       {
-        "line": 450,
+        "line": 456,
         "code": "                                        &lt;/td&gt;"
       },
       {
-        "line": 451,
+        "line": 457,
         "code": "                                        &lt;td className=\"p-4\"&gt;"
       }
     ]
@@ -15412,11 +16020,11 @@
     "severity": "CRITICAL",
     "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
     "project": "levo-frontend",
-    "line": 127,
+    "line": 129,
     "hash": "94494a6f7fec393616c3aa9d91585dcd",
     "textRange": {
-      "startLine": 127,
-      "endLine": 127,
+      "startLine": 129,
+      "endLine": 129,
       "startOffset": 24,
       "endOffset": 37
     },
@@ -15426,8 +16034,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 672,
-              "endLine": 672,
+              "startLine": 674,
+              "endLine": 674,
               "startOffset": 30,
               "endOffset": 31
             },
@@ -15441,8 +16049,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 729,
-              "endLine": 729,
+              "startLine": 731,
+              "endLine": 731,
               "startOffset": 109,
               "endOffset": 110
             },
@@ -15456,8 +16064,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 733,
-              "endLine": 733,
+              "startLine": 735,
+              "endLine": 735,
               "startOffset": 40,
               "endOffset": 41
             },
@@ -15471,8 +16079,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 760,
-              "endLine": 760,
+              "startLine": 762,
+              "endLine": 762,
               "startOffset": 63,
               "endOffset": 64
             },
@@ -15486,8 +16094,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 781,
-              "endLine": 781,
+              "startLine": 783,
+              "endLine": 783,
               "startOffset": 135,
               "endOffset": 136
             },
@@ -15501,8 +16109,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 783,
-              "endLine": 783,
+              "startLine": 785,
+              "endLine": 785,
               "startOffset": 52,
               "endOffset": 53
             },
@@ -15516,8 +16124,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 784,
-              "endLine": 784,
+              "startLine": 786,
+              "endLine": 786,
               "startOffset": 55,
               "endOffset": 56
             },
@@ -15531,8 +16139,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 793,
-              "endLine": 793,
+              "startLine": 795,
+              "endLine": 795,
               "startOffset": 46,
               "endOffset": 47
             },
@@ -15546,8 +16154,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 806,
-              "endLine": 806,
+              "startLine": 808,
+              "endLine": 808,
               "startOffset": 121,
               "endOffset": 122
             },
@@ -15561,8 +16169,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 847,
-              "endLine": 847,
+              "startLine": 849,
+              "endLine": 849,
               "startOffset": 30,
               "endOffset": 31
             },
@@ -15576,8 +16184,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 853,
-              "endLine": 853,
+              "startLine": 855,
+              "endLine": 855,
               "startOffset": 59,
               "endOffset": 60
             },
@@ -15591,8 +16199,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 1056,
-              "endLine": 1056,
+              "startLine": 1058,
+              "endLine": 1058,
               "startOffset": 54,
               "endOffset": 55
             },
@@ -15606,8 +16214,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 1096,
-              "endLine": 1096,
+              "startLine": 1100,
+              "endLine": 1100,
               "startOffset": 50,
               "endOffset": 51
             },
@@ -15621,8 +16229,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 1102,
-              "endLine": 1102,
+              "startLine": 1106,
+              "endLine": 1106,
               "startOffset": 65,
               "endOffset": 66
             },
@@ -15636,8 +16244,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 1172,
-              "endLine": 1172,
+              "startLine": 1176,
+              "endLine": 1176,
               "startOffset": 112,
               "endOffset": 113
             },
@@ -15651,8 +16259,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 1203,
-              "endLine": 1203,
+              "startLine": 1207,
+              "endLine": 1207,
               "startOffset": 58,
               "endOffset": 59
             },
@@ -15666,8 +16274,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 1219,
-              "endLine": 1219,
+              "startLine": 1223,
+              "endLine": 1223,
               "startOffset": 165,
               "endOffset": 166
             },
@@ -15681,8 +16289,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 1221,
-              "endLine": 1221,
+              "startLine": 1225,
+              "endLine": 1225,
               "startOffset": 49,
               "endOffset": 50
             },
@@ -15696,8 +16304,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 1242,
-              "endLine": 1242,
+              "startLine": 1246,
+              "endLine": 1246,
               "startOffset": 75,
               "endOffset": 76
             },
@@ -15711,8 +16319,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 1259,
-              "endLine": 1259,
+              "startLine": 1263,
+              "endLine": 1263,
               "startOffset": 135,
               "endOffset": 136
             },
@@ -15726,8 +16334,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 1259,
-              "endLine": 1259,
+              "startLine": 1263,
+              "endLine": 1263,
               "startOffset": 97,
               "endOffset": 99
             },
@@ -15741,8 +16349,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 1266,
-              "endLine": 1266,
+              "startLine": 1270,
+              "endLine": 1270,
               "startOffset": 117,
               "endOffset": 118
             },
@@ -15756,8 +16364,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 1270,
-              "endLine": 1270,
+              "startLine": 1274,
+              "endLine": 1274,
               "startOffset": 60,
               "endOffset": 61
             },
@@ -15771,8 +16379,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 1291,
-              "endLine": 1291,
+              "startLine": 1295,
+              "endLine": 1295,
               "startOffset": 71,
               "endOffset": 72
             },
@@ -15786,8 +16394,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 1302,
-              "endLine": 1302,
+              "startLine": 1306,
+              "endLine": 1306,
               "startOffset": 60,
               "endOffset": 61
             },
@@ -15828,31 +16436,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 124,
+        "line": 126,
         "code": "    return sorted[idx] ?? null;"
       },
       {
-        "line": 125,
+        "line": 127,
         "code": "}"
       },
       {
-        "line": 126,
+        "line": 128,
         "code": ""
       },
       {
-        "line": 127,
+        "line": 129,
         "code": "export default function WorkspaceView({ product, origin = 'ProductDetailView', onBack }: WorkspaceViewProps) {"
       },
       {
-        "line": 128,
+        "line": 130,
         "code": "    const [status, setStatus] = useState&lt;'idle' | 'analyzing' | 'completed' | 'error'&gt;('idle');"
       },
       {
-        "line": 129,
+        "line": 131,
         "code": "    const [error, setError] = useState&lt;string | null&gt;(null);"
       },
       {
-        "line": 130,
+        "line": 132,
         "code": "    const [idolData, setIdolData] = useState&lt;IdolData | null&gt;(null);"
       }
     ]
@@ -15863,11 +16471,11 @@
     "severity": "CRITICAL",
     "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
     "project": "levo-frontend",
-    "line": 411,
+    "line": 413,
     "hash": "789ea8313f3de43009be6e2a32f31e72",
     "textRange": {
-      "startLine": 411,
-      "endLine": 411,
+      "startLine": 413,
+      "endLine": 413,
       "startOffset": 6,
       "endOffset": 8
     },
@@ -15877,8 +16485,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 416,
-              "endLine": 416,
+              "startLine": 418,
+              "endLine": 418,
               "startOffset": 43,
               "endOffset": 44
             },
@@ -15892,8 +16500,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 441,
-              "endLine": 441,
+              "startLine": 443,
+              "endLine": 443,
               "startOffset": 12,
               "endOffset": 14
             },
@@ -15907,42 +16515,12 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 442,
-              "endLine": 442,
-              "startOffset": 16,
-              "endOffset": 18
-            },
-            "msg": "+2 (incl. 1 for nesting)",
-            "msgFormattings": []
-          }
-        ]
-      },
-      {
-        "locations": [
-          {
-            "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
-            "textRange": {
-              "startLine": 443,
-              "endLine": 443,
-              "startOffset": 16,
-              "endOffset": 18
-            },
-            "msg": "+2 (incl. 1 for nesting)",
-            "msgFormattings": []
-          }
-        ]
-      },
-      {
-        "locations": [
-          {
-            "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
-            "textRange": {
               "startLine": 444,
               "endLine": 444,
-              "startOffset": 19,
-              "endOffset": 21
+              "startOffset": 16,
+              "endOffset": 18
             },
-            "msg": "+1",
+            "msg": "+2 (incl. 1 for nesting)",
             "msgFormattings": []
           }
         ]
@@ -15969,6 +16547,21 @@
             "textRange": {
               "startLine": 446,
               "endLine": 446,
+              "startOffset": 19,
+              "endOffset": 21
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
+            "textRange": {
+              "startLine": 447,
+              "endLine": 447,
               "startOffset": 16,
               "endOffset": 18
             },
@@ -15982,8 +16575,23 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 454,
-              "endLine": 454,
+              "startLine": 448,
+              "endLine": 448,
+              "startOffset": 16,
+              "endOffset": 18
+            },
+            "msg": "+2 (incl. 1 for nesting)",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
+            "textRange": {
+              "startLine": 456,
+              "endLine": 456,
               "startOffset": 12,
               "endOffset": 14
             },
@@ -15997,8 +16605,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 457,
-              "endLine": 457,
+              "startLine": 459,
+              "endLine": 459,
               "startOffset": 50,
               "endOffset": 51
             },
@@ -16012,8 +16620,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 459,
-              "endLine": 459,
+              "startLine": 461,
+              "endLine": 461,
               "startOffset": 20,
               "endOffset": 21
             },
@@ -16027,8 +16635,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 460,
-              "endLine": 460,
+              "startLine": 462,
+              "endLine": 462,
               "startOffset": 35,
               "endOffset": 36
             },
@@ -16042,8 +16650,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 467,
-              "endLine": 467,
+              "startLine": 469,
+              "endLine": 469,
               "startOffset": 16,
               "endOffset": 18
             },
@@ -16057,8 +16665,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 477,
-              "endLine": 477,
+              "startLine": 479,
+              "endLine": 479,
               "startOffset": 10,
               "endOffset": 15
             },
@@ -16099,31 +16707,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 408,
+        "line": 410,
         "code": "        value: number,"
       },
       {
-        "line": 409,
+        "line": 411,
         "code": "        notes: string,"
       },
       {
-        "line": 410,
+        "line": 412,
         "code": "        evidenceUrl: string | null"
       },
       {
-        "line": 411,
+        "line": 413,
         "code": "    ) =&gt; {"
       },
       {
-        "line": 412,
+        "line": 414,
         "code": "        setSavingId(detailId);"
       },
       {
-        "line": 413,
+        "line": 415,
         "code": "        setSavedId(null);"
       },
       {
-        "line": 414,
+        "line": 416,
         "code": ""
       }
     ]
@@ -16134,11 +16742,11 @@
     "severity": "MAJOR",
     "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
     "project": "levo-frontend",
-    "line": 979,
+    "line": 981,
     "hash": "940c06317926be955d888b8d198a1764",
     "textRange": {
-      "startLine": 979,
-      "endLine": 990,
+      "startLine": 981,
+      "endLine": 992,
       "startOffset": 61,
       "endOffset": 72
     },
@@ -16174,31 +16782,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 976,
+        "line": 978,
         "code": "                                                                    );"
       },
       {
-        "line": 977,
+        "line": 979,
         "code": "                                                                })}"
       },
       {
-        "line": 978,
+        "line": 980,
         "code": "                                                            &lt;/div&gt;"
       },
       {
-        "line": 979,
+        "line": 981,
         "code": "                                                            {/* &lt;button"
       },
       {
-        "line": 980,
+        "line": 982,
         "code": "                                                                className={`p-2 rounded-lg transition-colors border ${detail.evidenceUrls ? \"bg-blue-900 border-blue-700 text-blue-300 hover:text-white cursor-pointer\" : \"bg-[#333] border-[#444] text-gray-500 cursor-not-allowed\"}`}"
       },
       {
-        "line": 981,
+        "line": 983,
         "code": "                                                                title=\"Archivo adjunto\""
       },
       {
-        "line": 982,
+        "line": 984,
         "code": "                                                                disabled={!detail.evidenceUrls}"
       }
     ]
@@ -16209,11 +16817,11 @@
     "severity": "MAJOR",
     "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
     "project": "levo-frontend",
-    "line": 1176,
+    "line": 1180,
     "hash": "741926d20825d1220bd77b9a13c7da80",
     "textRange": {
-      "startLine": 1176,
-      "endLine": 1176,
+      "startLine": 1180,
+      "endLine": 1180,
       "startOffset": 37,
       "endOffset": 42
     },
@@ -16250,31 +16858,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 1173,
+        "line": 1177,
         "code": "                                &lt;/p&gt;"
       },
       {
-        "line": 1174,
+        "line": 1178,
         "code": ""
       },
       {
-        "line": 1175,
+        "line": 1179,
         "code": "                                &lt;div&gt;"
       },
       {
-        "line": 1176,
+        "line": 1180,
         "code": "                                    &lt;label className=\"text-sm font-semibold mb-1 block\"&gt;Comentario (Obligatorio)&lt;/label&gt;"
       },
       {
-        "line": 1177,
+        "line": 1181,
         "code": "                                    &lt;textarea"
       },
       {
-        "line": 1178,
+        "line": 1182,
         "code": "                                        className=\"w-full bg-[#111] border border-[#333] rounded-lg p-3 text-sm text-white placeholder-gray-600 outline-none focus:border-red-600 transition-colors resize-none\""
       },
       {
-        "line": 1179,
+        "line": 1183,
         "code": "                                        placeholder=\"Explica qu\u00e9 te llev\u00f3 a sobreescribir este valor...\""
       }
     ]
@@ -16285,11 +16893,11 @@
     "severity": "MAJOR",
     "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
     "project": "levo-frontend",
-    "line": 1187,
+    "line": 1191,
     "hash": "3004b772500270908d4757d97c09223b",
     "textRange": {
-      "startLine": 1187,
-      "endLine": 1187,
+      "startLine": 1191,
+      "endLine": 1191,
       "startOffset": 37,
       "endOffset": 42
     },
@@ -16326,31 +16934,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 1184,
+        "line": 1188,
         "code": "                                &lt;/div&gt;"
       },
       {
-        "line": 1185,
+        "line": 1189,
         "code": ""
       },
       {
-        "line": 1186,
+        "line": 1190,
         "code": "                                &lt;div&gt;"
       },
       {
-        "line": 1187,
+        "line": 1191,
         "code": "                                    &lt;label className=\"text-sm font-semibold mb-1 block\"&gt;Evidencia Adicional (Opcional)&lt;/label&gt;"
       },
       {
-        "line": 1188,
+        "line": 1192,
         "code": "                                    &lt;div className=\"flex items-center gap-3\"&gt;"
       },
       {
-        "line": 1189,
+        "line": 1193,
         "code": "                                        &lt;input"
       },
       {
-        "line": 1190,
+        "line": 1194,
         "code": "                                            type=\"file\""
       }
     ]
@@ -17028,11 +17636,11 @@
     "severity": "MAJOR",
     "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
     "project": "levo-frontend",
-    "line": 707,
+    "line": 709,
     "hash": "cef84ddb4aa8bc5869b073714327bc56",
     "textRange": {
-      "startLine": 707,
-      "endLine": 707,
+      "startLine": 709,
+      "endLine": 709,
       "startOffset": 10,
       "endOffset": 18
     },
@@ -17069,31 +17677,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 704,
+        "line": 706,
         "code": "    const activePillarVars = varsForPillar(activePillar);"
       },
       {
-        "line": 705,
-        "code": ""
-      },
-      {
-        "line": 706,
-        "code": "    const canView = isViewAllowed(\"Analizar y Re-Analizar oportunidad\");"
-      },
-      {
         "line": 707,
-        "code": "    const canClick = isActionAllowed(\"Analizar y Re-Analizar oportunidad\");"
+        "code": ""
       },
       {
         "line": 708,
-        "code": ""
+        "code": "    const canView = isViewAllowed(\"Analizar y Re-Analizar oportunidad\");"
       },
       {
         "line": 709,
-        "code": "    return ("
+        "code": "    const canClick = isActionAllowed(\"Analizar y Re-Analizar oportunidad\");"
       },
       {
         "line": 710,
+        "code": ""
+      },
+      {
+        "line": 711,
+        "code": "    return ("
+      },
+      {
+        "line": 712,
         "code": "        &lt;div className=\"h-full w-full bg-[#1E1E1E] text-white overflow-y-auto p-6 font-raleway\"&gt;"
       }
     ]
@@ -20740,11 +21348,11 @@
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/AnalyzedProductsView.tsx",
     "project": "levo-frontend",
-    "line": 587,
+    "line": 595,
     "hash": "a44c438bb4a4491449dbff4a07848159",
     "textRange": {
-      "startLine": 587,
-      "endLine": 587,
+      "startLine": 595,
+      "endLine": 595,
       "startOffset": 79,
       "endOffset": 86
     },
@@ -20785,31 +21393,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 584,
+        "line": 592,
         "code": "                                    &lt;div className=\"prose prose-invert max-w-none text-gray-300 whitespace-pre-wrap\"&gt;"
       },
       {
-        "line": 585,
+        "line": 593,
         "code": "                                        {selectedIdol?.aiSummary ? ("
       },
       {
-        "line": 586,
+        "line": 594,
         "code": "                                            &lt;div dangerouslySetInnerHTML={{"
       },
       {
-        "line": 587,
+        "line": 595,
         "code": "                                                __html: selectedIdol.aiSummary.replace(/&lt;a\\b([^&gt;]*)&gt;/gi, (match, p1) =&gt; {"
       },
       {
-        "line": 588,
+        "line": 596,
         "code": "                                                    if (p1.includes('target=')) return match;"
       },
       {
-        "line": 589,
+        "line": 597,
         "code": "                                                    return `&lt;a target=\"_blank\" rel=\"noopener noreferrer\"${p1}&gt;`;"
       },
       {
-        "line": 590,
+        "line": 598,
         "code": "                                                })"
       }
     ]
@@ -20820,11 +21428,11 @@
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
     "project": "levo-frontend",
-    "line": 1004,
+    "line": 1006,
     "hash": "f318d7d8fd3ec56e6a1a785d091142e5",
     "textRange": {
-      "startLine": 1004,
-      "endLine": 1004,
+      "startLine": 1006,
+      "endLine": 1006,
       "startOffset": 105,
       "endOffset": 112
     },
@@ -20865,31 +21473,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 1001,
+        "line": 1003,
         "code": "                                                                    &lt;p"
       },
       {
-        "line": 1002,
+        "line": 1004,
         "code": "                                                                        className={`leading-relaxed ${!expandedJustifications.has(detail.id) &amp;&amp; (detail.justificacion?.length ?? 0) &gt; 500 ? 'line-clamp-6' : ''}`}"
       },
       {
-        "line": 1003,
+        "line": 1005,
         "code": "                                                                        dangerouslySetInnerHTML={{"
       },
       {
-        "line": 1004,
+        "line": 1006,
         "code": "                                                                            __html: detail.justificacion.replace("
       },
       {
-        "line": 1005,
+        "line": 1007,
         "code": "                                                                                /(https?:\\/\\/[^\\s()]+)/g,"
       },
       {
-        "line": 1006,
+        "line": 1008,
         "code": "                                                                                '&lt;a href=\"$1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-400 hover:text-blue-300 underline break-all\"&gt;$1&lt;/a&gt;'"
       },
       {
-        "line": 1007,
+        "line": 1009,
         "code": "                                                                            )"
       }
     ]
@@ -20900,11 +21508,11 @@
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
     "project": "levo-frontend",
-    "line": 1104,
+    "line": 1108,
     "hash": "e8b4e1b0bf944ad3f1a02c2839fabe1a",
     "textRange": {
-      "startLine": 1104,
-      "endLine": 1104,
+      "startLine": 1108,
+      "endLine": 1108,
       "startOffset": 79,
       "endOffset": 86
     },
@@ -20945,31 +21553,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 1101,
+        "line": 1105,
         "code": "                                        &lt;div data-pdf-body className=\"prose prose-invert max-w-none text-gray-300 whitespace-pre-wrap\"&gt;"
       },
       {
-        "line": 1102,
+        "line": 1106,
         "code": "                                            {idolData?.aiSummary ? ("
       },
       {
-        "line": 1103,
+        "line": 1107,
         "code": "                                                &lt;div dangerouslySetInnerHTML={{"
       },
       {
-        "line": 1104,
+        "line": 1108,
         "code": "                                                    __html: idolData.aiSummary.replace(/&lt;a\\b([^&gt;]*)&gt;/gi, (match, p1) =&gt; {"
       },
       {
-        "line": 1105,
+        "line": 1109,
         "code": "                                                        if (p1.includes('target=')) return match;"
       },
       {
-        "line": 1106,
+        "line": 1110,
         "code": "                                                        return `&lt;a target=\"_blank\" rel=\"noopener noreferrer\"${p1}&gt;`;"
       },
       {
-        "line": 1107,
+        "line": 1111,
         "code": "                                                    })"
       }
     ]
@@ -20980,11 +21588,11 @@
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/AnalyzedProductsView.tsx",
     "project": "levo-frontend",
-    "line": 192,
+    "line": 194,
     "hash": "b747738570dab1215420b829fae3db88",
     "textRange": {
-      "startLine": 192,
-      "endLine": 192,
+      "startLine": 194,
+      "endLine": 194,
       "startOffset": 19,
       "endOffset": 25
     },
@@ -21021,31 +21629,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 189,
+        "line": 191,
         "code": "    );"
       },
       {
-        "line": 190,
+        "line": 192,
         "code": ""
       },
       {
-        "line": 191,
+        "line": 193,
         "code": "    const handleDownloadPdf = async () =&gt; {"
       },
       {
-        "line": 192,
+        "line": 194,
         "code": "        if (typeof window === \"undefined\" || !summaryRef.current || !selectedIdol || isPdfLoading) return;"
       },
       {
-        "line": 193,
+        "line": 195,
         "code": "        setIsPdfLoading(true);"
       },
       {
-        "line": 194,
+        "line": 196,
         "code": "        try {"
       },
       {
-        "line": 195,
+        "line": 197,
         "code": "            // Reporte nuevo \u2192 mismo PDF estilizado que el WorkspaceView."
       }
     ]
@@ -21056,11 +21664,11 @@
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
     "project": "levo-frontend",
-    "line": 127,
+    "line": 129,
     "hash": "94494a6f7fec393616c3aa9d91585dcd",
     "textRange": {
-      "startLine": 127,
-      "endLine": 127,
+      "startLine": 129,
+      "endLine": 129,
       "startOffset": 38,
       "endOffset": 107
     },
@@ -21097,31 +21705,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 124,
+        "line": 126,
         "code": "    return sorted[idx] ?? null;"
       },
       {
-        "line": 125,
+        "line": 127,
         "code": "}"
       },
       {
-        "line": 126,
+        "line": 128,
         "code": ""
       },
       {
-        "line": 127,
+        "line": 129,
         "code": "export default function WorkspaceView({ product, origin = 'ProductDetailView', onBack }: WorkspaceViewProps) {"
       },
       {
-        "line": 128,
+        "line": 130,
         "code": "    const [status, setStatus] = useState&lt;'idle' | 'analyzing' | 'completed' | 'error'&gt;('idle');"
       },
       {
-        "line": 129,
+        "line": 131,
         "code": "    const [error, setError] = useState&lt;string | null&gt;(null);"
       },
       {
-        "line": 130,
+        "line": 132,
         "code": "    const [idolData, setIdolData] = useState&lt;IdolData | null&gt;(null);"
       }
     ]
@@ -21132,11 +21740,11 @@
     "severity": "CRITICAL",
     "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
     "project": "levo-frontend",
-    "line": 425,
+    "line": 427,
     "hash": "2df89d4b7ec28470f6c41b600dcb435b",
     "textRange": {
-      "startLine": 425,
-      "endLine": 425,
+      "startLine": 427,
+      "endLine": 427,
       "startOffset": 52,
       "endOffset": 54
     },
@@ -21146,8 +21754,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 127,
-              "endLine": 127,
+              "startLine": 129,
+              "endLine": 129,
               "startOffset": 24,
               "endOffset": 37
             },
@@ -21161,8 +21769,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 411,
-              "endLine": 411,
+              "startLine": 413,
+              "endLine": 413,
               "startOffset": 6,
               "endOffset": 8
             },
@@ -21176,8 +21784,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 418,
-              "endLine": 418,
+              "startLine": 420,
+              "endLine": 420,
               "startOffset": 28,
               "endOffset": 30
             },
@@ -21191,8 +21799,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
             "textRange": {
-              "startLine": 418,
-              "endLine": 418,
+              "startLine": 420,
+              "endLine": 420,
               "startOffset": 42,
               "endOffset": 44
             },
@@ -21233,31 +21841,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 422,
+        "line": 424,
         "code": "                : { ...d };"
       },
       {
-        "line": 423,
+        "line": 425,
         "code": "            if (field === \"score\") return { ...base, score: value, scoreNotes: notes || base.scoreNotes, scoreEvidenceUrls: evidenceUrl || base.scoreEvidenceUrls };"
       },
       {
-        "line": 424,
+        "line": 426,
         "code": "            if (field === \"certaintyLevelId\") {"
       },
       {
-        "line": 425,
+        "line": 427,
         "code": "                const cert = certaintyLevels.find(c =&gt; c.id === value);"
       },
       {
-        "line": 426,
+        "line": 428,
         "code": "                return {"
       },
       {
-        "line": 427,
+        "line": 429,
         "code": "                    ...base,"
       },
       {
-        "line": 428,
+        "line": 430,
         "code": "                    certaintyNotes: notes || base.certaintyNotes,"
       }
     ]
@@ -21496,11 +22104,11 @@
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
     "project": "levo-frontend",
-    "line": 533,
+    "line": 535,
     "hash": "a1a4ed833880d74abea04bd29f13a910",
     "textRange": {
-      "startLine": 533,
-      "endLine": 533,
+      "startLine": 535,
+      "endLine": 535,
       "startOffset": 19,
       "endOffset": 25
     },
@@ -21537,31 +22145,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 530,
+        "line": 532,
         "code": "    };"
       },
       {
-        "line": 531,
+        "line": 533,
         "code": ""
       },
       {
-        "line": 532,
+        "line": 534,
         "code": "    const handleDownloadPdf = async () =&gt; {"
       },
       {
-        "line": 533,
+        "line": 535,
         "code": "        if (typeof window === \"undefined\" || !summaryRef.current || isPdfLoading) return;"
       },
       {
-        "line": 534,
+        "line": 536,
         "code": "        setIsPdfLoading(true);"
       },
       {
-        "line": 535,
+        "line": 537,
         "code": "        try {"
       },
       {
-        "line": 536,
+        "line": 538,
         "code": "            // Reporte nuevo (IDOL_OUTPUT_V1_1) \u2192 PDF estilizado como la UI"
       }
     ]
@@ -21647,11 +22255,11 @@
     "severity": "MAJOR",
     "component": "levo-frontend:src/app/insights/components/AnalyzedProductsView.tsx",
     "project": "levo-frontend",
-    "line": 395,
+    "line": 397,
     "hash": "7ee2c2b8c86ff080dfda61341d4d7b82",
     "textRange": {
-      "startLine": 395,
-      "endLine": 395,
+      "startLine": 397,
+      "endLine": 397,
       "startOffset": 55,
       "endOffset": 91
     },
@@ -21687,31 +22295,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 392,
+        "line": 394,
         "code": "                                return ("
       },
       {
-        "line": 393,
+        "line": 395,
         "code": "                                    &lt;tr"
       },
       {
-        "line": 394,
+        "line": 396,
         "code": "                                        key={idol.id}"
       },
       {
-        "line": 395,
+        "line": 397,
         "code": "                                        onClick={() =&gt; onAnalyze &amp;&amp; onAnalyze(idol.product)}"
       },
       {
-        "line": 396,
+        "line": 398,
         "code": "                                        className={`border-b border-white/[0.02] hover:bg-white/[0.04] transition-colors group ${onAnalyze ? \"cursor-pointer\" : \"\"}`}"
       },
       {
-        "line": 397,
+        "line": 399,
         "code": "                                    &gt;"
       },
       {
-        "line": 398,
+        "line": 400,
         "code": "                                        &lt;td className=\"p-5\"&gt;"
       }
     ]
@@ -23686,11 +24294,11 @@
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/AnalyzedProductsView.tsx",
     "project": "levo-frontend",
-    "line": 435,
+    "line": 441,
     "hash": "11c40b2871cdd080d74c7cf344aeee24",
     "textRange": {
-      "startLine": 435,
-      "endLine": 435,
+      "startLine": 441,
+      "endLine": 441,
       "startOffset": 45,
       "endOffset": 68
     },
@@ -23726,97 +24334,10 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 432,
+        "line": 438,
         "code": "                                            &lt;/div&gt;"
       },
       {
-        "line": 433,
-        "code": "                                        &lt;/td&gt;"
-      },
-      {
-        "line": 434,
-        "code": "                                        &lt;td className=\"p-4 text-center font-bold text-gray-300\"&gt;"
-      },
-      {
-        "line": 435,
-        "code": "                                            {idol.ideaScore !== null ? `${idol.ideaScore}%` : \"-\"}"
-      },
-      {
-        "line": 436,
-        "code": "                                        &lt;/td&gt;"
-      },
-      {
-        "line": 437,
-        "code": "                                        &lt;td className=\"p-4 text-center font-bold text-gray-300\"&gt;"
-      },
-      {
-        "line": 438,
-        "code": "                                            {idol.demandaScore !== null ? `${idol.demandaScore}%` : \"-\"}"
-      }
-    ]
-  },
-  {
-    "key": "e9a16e4b-0d15-416b-afca-a44accd4e659",
-    "rule": "typescript:S7735",
-    "severity": "MINOR",
-    "component": "levo-frontend:src/app/insights/components/AnalyzedProductsView.tsx",
-    "project": "levo-frontend",
-    "line": 438,
-    "hash": "1e7fc2d0c2a986885c7b5d79d8f50303",
-    "textRange": {
-      "startLine": 438,
-      "endLine": 438,
-      "startOffset": 45,
-      "endOffset": 71
-    },
-    "flows": [],
-    "status": "OPEN",
-    "message": "Unexpected negated condition.",
-    "effort": "2min",
-    "debt": "2min",
-    "author": "pablitto18@gmail.com",
-    "tags": [
-      "readability"
-    ],
-    "comments": [],
-    "creationDate": "2026-02-22T04:38:22+0000",
-    "updateDate": "2026-05-08T14:10:14+0000",
-    "type": "CODE_SMELL",
-    "scope": "MAIN",
-    "quickFixAvailable": true,
-    "messageFormattings": [],
-    "codeVariants": [],
-    "cleanCodeAttribute": "CLEAR",
-    "cleanCodeAttributeCategory": "INTENTIONAL",
-    "impacts": [
-      {
-        "softwareQuality": "MAINTAINABILITY",
-        "severity": "LOW"
-      }
-    ],
-    "issueStatus": "OPEN",
-    "prioritizedRule": false,
-    "fromSonarQubeUpdate": false,
-    "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED",
-    "codeSnippet": [
-      {
-        "line": 435,
-        "code": "                                            {idol.ideaScore !== null ? `${idol.ideaScore}%` : \"-\"}"
-      },
-      {
-        "line": 436,
-        "code": "                                        &lt;/td&gt;"
-      },
-      {
-        "line": 437,
-        "code": "                                        &lt;td className=\"p-4 text-center font-bold text-gray-300\"&gt;"
-      },
-      {
-        "line": 438,
-        "code": "                                            {idol.demandaScore !== null ? `${idol.demandaScore}%` : \"-\"}"
-      },
-      {
         "line": 439,
         "code": "                                        &lt;/td&gt;"
       },
@@ -23826,70 +24347,7 @@
       },
       {
         "line": 441,
-        "code": "                                            {idol.ofertaScore !== null ? `${idol.ofertaScore}%` : \"-\"}"
-      }
-    ]
-  },
-  {
-    "key": "e474d83b-25bd-4d58-90d4-daef29302301",
-    "rule": "typescript:S7735",
-    "severity": "MINOR",
-    "component": "levo-frontend:src/app/insights/components/AnalyzedProductsView.tsx",
-    "project": "levo-frontend",
-    "line": 441,
-    "hash": "056bf6999604a2fed9fc611333e79285",
-    "textRange": {
-      "startLine": 441,
-      "endLine": 441,
-      "startOffset": 45,
-      "endOffset": 70
-    },
-    "flows": [],
-    "status": "OPEN",
-    "message": "Unexpected negated condition.",
-    "effort": "2min",
-    "debt": "2min",
-    "author": "pablitto18@gmail.com",
-    "tags": [
-      "readability"
-    ],
-    "comments": [],
-    "creationDate": "2026-02-22T04:38:22+0000",
-    "updateDate": "2026-05-08T14:10:14+0000",
-    "type": "CODE_SMELL",
-    "scope": "MAIN",
-    "quickFixAvailable": true,
-    "messageFormattings": [],
-    "codeVariants": [],
-    "cleanCodeAttribute": "CLEAR",
-    "cleanCodeAttributeCategory": "INTENTIONAL",
-    "impacts": [
-      {
-        "softwareQuality": "MAINTAINABILITY",
-        "severity": "LOW"
-      }
-    ],
-    "issueStatus": "OPEN",
-    "prioritizedRule": false,
-    "fromSonarQubeUpdate": false,
-    "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED",
-    "codeSnippet": [
-      {
-        "line": 438,
-        "code": "                                            {idol.demandaScore !== null ? `${idol.demandaScore}%` : \"-\"}"
-      },
-      {
-        "line": 439,
-        "code": "                                        &lt;/td&gt;"
-      },
-      {
-        "line": 440,
-        "code": "                                        &lt;td className=\"p-4 text-center font-bold text-gray-300\"&gt;"
-      },
-      {
-        "line": 441,
-        "code": "                                            {idol.ofertaScore !== null ? `${idol.ofertaScore}%` : \"-\"}"
+        "code": "                                            {idol.ideaScore !== null ? `${idol.ideaScore}%` : \"-\"}"
       },
       {
         "line": 442,
@@ -23901,18 +24359,18 @@
       },
       {
         "line": 444,
-        "code": "                                            {idol.latamlyScore !== null ? `${idol.latamlyScore}%` : \"-\"}"
+        "code": "                                            {idol.demandaScore !== null ? `${idol.demandaScore}%` : \"-\"}"
       }
     ]
   },
   {
-    "key": "29e2ece4-47f1-47fd-bee7-5a2498fc48ee",
+    "key": "e9a16e4b-0d15-416b-afca-a44accd4e659",
     "rule": "typescript:S7735",
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/AnalyzedProductsView.tsx",
     "project": "levo-frontend",
     "line": 444,
-    "hash": "ef703841cd6dce9863b2d79b57512051",
+    "hash": "1e7fc2d0c2a986885c7b5d79d8f50303",
     "textRange": {
       "startLine": 444,
       "endLine": 444,
@@ -23952,7 +24410,7 @@
     "codeSnippet": [
       {
         "line": 441,
-        "code": "                                            {idol.ofertaScore !== null ? `${idol.ofertaScore}%` : \"-\"}"
+        "code": "                                            {idol.ideaScore !== null ? `${idol.ideaScore}%` : \"-\"}"
       },
       {
         "line": 442,
@@ -23964,7 +24422,7 @@
       },
       {
         "line": 444,
-        "code": "                                            {idol.latamlyScore !== null ? `${idol.latamlyScore}%` : \"-\"}"
+        "code": "                                            {idol.demandaScore !== null ? `${idol.demandaScore}%` : \"-\"}"
       },
       {
         "line": 445,
@@ -23972,10 +24430,160 @@
       },
       {
         "line": 446,
-        "code": "                                        &lt;td className=\"p-4 text-center\"&gt;"
+        "code": "                                        &lt;td className=\"p-4 text-center font-bold text-gray-300\"&gt;"
       },
       {
         "line": 447,
+        "code": "                                            {idol.ofertaScore !== null ? `${idol.ofertaScore}%` : \"-\"}"
+      }
+    ]
+  },
+  {
+    "key": "e474d83b-25bd-4d58-90d4-daef29302301",
+    "rule": "typescript:S7735",
+    "severity": "MINOR",
+    "component": "levo-frontend:src/app/insights/components/AnalyzedProductsView.tsx",
+    "project": "levo-frontend",
+    "line": 447,
+    "hash": "056bf6999604a2fed9fc611333e79285",
+    "textRange": {
+      "startLine": 447,
+      "endLine": 447,
+      "startOffset": 45,
+      "endOffset": 70
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Unexpected negated condition.",
+    "effort": "2min",
+    "debt": "2min",
+    "author": "pablitto18@gmail.com",
+    "tags": [
+      "readability"
+    ],
+    "comments": [],
+    "creationDate": "2026-02-22T04:38:22+0000",
+    "updateDate": "2026-05-08T14:10:14+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": true,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CLEAR",
+    "cleanCodeAttributeCategory": "INTENTIONAL",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 444,
+        "code": "                                            {idol.demandaScore !== null ? `${idol.demandaScore}%` : \"-\"}"
+      },
+      {
+        "line": 445,
+        "code": "                                        &lt;/td&gt;"
+      },
+      {
+        "line": 446,
+        "code": "                                        &lt;td className=\"p-4 text-center font-bold text-gray-300\"&gt;"
+      },
+      {
+        "line": 447,
+        "code": "                                            {idol.ofertaScore !== null ? `${idol.ofertaScore}%` : \"-\"}"
+      },
+      {
+        "line": 448,
+        "code": "                                        &lt;/td&gt;"
+      },
+      {
+        "line": 449,
+        "code": "                                        &lt;td className=\"p-4 text-center font-bold text-gray-300\"&gt;"
+      },
+      {
+        "line": 450,
+        "code": "                                            {idol.latamlyScore !== null ? `${idol.latamlyScore}%` : \"-\"}"
+      }
+    ]
+  },
+  {
+    "key": "29e2ece4-47f1-47fd-bee7-5a2498fc48ee",
+    "rule": "typescript:S7735",
+    "severity": "MINOR",
+    "component": "levo-frontend:src/app/insights/components/AnalyzedProductsView.tsx",
+    "project": "levo-frontend",
+    "line": 450,
+    "hash": "ef703841cd6dce9863b2d79b57512051",
+    "textRange": {
+      "startLine": 450,
+      "endLine": 450,
+      "startOffset": 45,
+      "endOffset": 71
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Unexpected negated condition.",
+    "effort": "2min",
+    "debt": "2min",
+    "author": "pablitto18@gmail.com",
+    "tags": [
+      "readability"
+    ],
+    "comments": [],
+    "creationDate": "2026-02-22T04:38:22+0000",
+    "updateDate": "2026-05-08T14:10:14+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": true,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CLEAR",
+    "cleanCodeAttributeCategory": "INTENTIONAL",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "LOW"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 447,
+        "code": "                                            {idol.ofertaScore !== null ? `${idol.ofertaScore}%` : \"-\"}"
+      },
+      {
+        "line": 448,
+        "code": "                                        &lt;/td&gt;"
+      },
+      {
+        "line": 449,
+        "code": "                                        &lt;td className=\"p-4 text-center font-bold text-gray-300\"&gt;"
+      },
+      {
+        "line": 450,
+        "code": "                                            {idol.latamlyScore !== null ? `${idol.latamlyScore}%` : \"-\"}"
+      },
+      {
+        "line": 451,
+        "code": "                                        &lt;/td&gt;"
+      },
+      {
+        "line": 452,
+        "code": "                                        &lt;td className=\"p-4 text-center\"&gt;"
+      },
+      {
+        "line": 453,
         "code": "                                            &lt;span className=\"text-white font-black text-lg tabular-nums\"&gt;"
       }
     ]
@@ -23986,11 +24594,11 @@
     "severity": "MAJOR",
     "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
     "project": "levo-frontend",
-    "line": 240,
+    "line": 242,
     "hash": "81667d3e3e737eff642d1a9dd93b991e",
     "textRange": {
-      "startLine": 240,
-      "endLine": 240,
+      "startLine": 242,
+      "endLine": 242,
       "startOffset": 27,
       "endOffset": 100
     },
@@ -24026,31 +24634,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 237,
+        "line": 239,
         "code": "                const map: Record&lt;number, UserInfo&gt; = {};"
       },
       {
-        "line": 238,
+        "line": 240,
         "code": "                users.forEach(u =&gt; {"
       },
       {
-        "line": 239,
+        "line": 241,
         "code": "                    const avatarUrl = u.avatarUrl"
       },
       {
-        "line": 240,
+        "line": 242,
         "code": "                        ? (u.avatarUrl.startsWith(\"http\") ? u.avatarUrl : `${BACKEND}${u.avatarUrl}`)"
       },
       {
-        "line": 241,
+        "line": 243,
         "code": "                        : null;"
       },
       {
-        "line": 242,
+        "line": 244,
         "code": "                    map[Number(u.id)] = { ...u, avatarUrl };"
       },
       {
-        "line": 243,
+        "line": 245,
         "code": "                });"
       }
     ]
@@ -24061,11 +24669,11 @@
     "severity": "MAJOR",
     "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
     "project": "levo-frontend",
-    "line": 255,
+    "line": 257,
     "hash": "81667d3e3e737eff642d1a9dd93b991e",
     "textRange": {
-      "startLine": 255,
-      "endLine": 255,
+      "startLine": 257,
+      "endLine": 257,
       "startOffset": 27,
       "endOffset": 100
     },
@@ -24101,31 +24709,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 252,
+        "line": 254,
         "code": "                const u = data?.user;"
       },
       {
-        "line": 253,
+        "line": 255,
         "code": "                if (u) {"
       },
       {
-        "line": 254,
+        "line": 256,
         "code": "                    const avatarUrl = u.avatarUrl"
       },
       {
-        "line": 255,
+        "line": 257,
         "code": "                        ? (u.avatarUrl.startsWith(\"http\") ? u.avatarUrl : `${BACKEND}${u.avatarUrl}`)"
       },
       {
-        "line": 256,
+        "line": 258,
         "code": "                        : null;"
       },
       {
-        "line": 257,
+        "line": 259,
         "code": "                    setCurrentUser({"
       },
       {
-        "line": 258,
+        "line": 260,
         "code": "                        id: Number(u.id),"
       }
     ]
@@ -24136,11 +24744,11 @@
     "severity": "MAJOR",
     "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
     "project": "levo-frontend",
-    "line": 460,
+    "line": 462,
     "hash": "6a41183fa6597db6b478e6259461ecf6",
     "textRange": {
-      "startLine": 460,
-      "endLine": 460,
+      "startLine": 462,
+      "endLine": 462,
       "startOffset": 23,
       "endOffset": 125
     },
@@ -24176,31 +24784,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 457,
+        "line": 459,
         "code": "                const savedUser = saved.updatedBy ? userMap[saved.updatedBy] : null;"
       },
       {
-        "line": 458,
+        "line": 460,
         "code": "                const displayName = savedUser"
       },
       {
-        "line": 459,
+        "line": 461,
         "code": "                    ? `${savedUser.firstName} ${savedUser.lastName}`.trim() || savedUser.username"
       },
       {
-        "line": 460,
+        "line": 462,
         "code": "                    : (currentUser ? `${currentUser.firstName} ${currentUser.lastName}`.trim() || currentUser.username : 'IA');"
       },
       {
-        "line": 461,
+        "line": 463,
         "code": "                const displayAvatar = savedUser?.avatarUrl ?? currentUser?.avatarUrl ?? null;"
       },
       {
-        "line": 462,
+        "line": 464,
         "code": "                setIdolDetails(prev =&gt; prev.map(d =&gt; d.id === detailId"
       },
       {
-        "line": 463,
+        "line": 465,
         "code": "                    ? { ...d, updatedAt: saved.updatedAt, updatedBy: saved.updatedBy, updatedByName: displayName, updatedByAvatarUrl: displayAvatar }"
       }
     ]
@@ -24211,11 +24819,11 @@
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
     "project": "levo-frontend",
-    "line": 865,
+    "line": 867,
     "hash": "0d3309e23c2c34dab7e85b5c5d777c13",
     "textRange": {
-      "startLine": 865,
-      "endLine": 865,
+      "startLine": 867,
+      "endLine": 867,
       "startOffset": 76,
       "endOffset": 115
     },
@@ -24251,31 +24859,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 862,
+        "line": 864,
         "code": "                                        const modUserName = detail.updatedByName"
       },
       {
-        "line": 863,
+        "line": 865,
         "code": "                                            ?? (serverUser ? `${serverUser.firstName} ${serverUser.lastName}`.trim() || serverUser.username : null)"
       },
       {
-        "line": 864,
+        "line": 866,
         "code": "                                            ?? (detail.updatedBy ? `Usuario #${detail.updatedBy}` : 'IA');"
       },
       {
-        "line": 865,
+        "line": 867,
         "code": "                                        const modAvatarUrl: string | null = detail.updatedByAvatarUrl !== undefined"
       },
       {
-        "line": 866,
+        "line": 868,
         "code": "                                            ? detail.updatedByAvatarUrl"
       },
       {
-        "line": 867,
+        "line": 869,
         "code": "                                            : serverUser?.avatarUrl ?? null;"
       },
       {
-        "line": 868,
+        "line": 870,
         "code": "                                        const modInitials = modUserName === 'IA' ? 'IA'"
       }
     ]
@@ -24286,11 +24894,11 @@
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
     "project": "levo-frontend",
-    "line": 898,
+    "line": 900,
     "hash": "623ba7ba7ac3a40037988b9b84a212cf",
     "textRange": {
-      "startLine": 898,
-      "endLine": 898,
+      "startLine": 900,
+      "endLine": 900,
       "startOffset": 65,
       "endOffset": 96
     },
@@ -24324,31 +24932,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 895,
+        "line": 897,
         "code": "                                                        &lt;div className=\"flex items-center gap-1.5 group/user relative\"&gt;"
       },
       {
-        "line": 896,
+        "line": 898,
         "code": "                                                            &lt;span className=\"text-xs text-gray-500 flex items-center gap-1\"&gt;"
       },
       {
-        "line": 897,
+        "line": 899,
         "code": "                                                                &lt;Clock size={11} /&gt;"
       },
       {
-        "line": 898,
+        "line": 900,
         "code": "                                                                {modDate ? modDate : 'Sin datos'}"
       },
       {
-        "line": 899,
+        "line": 901,
         "code": "                                                            &lt;/span&gt;"
       },
       {
-        "line": 900,
+        "line": 902,
         "code": "                                                            {/* Avatar circle \u2014 photo if available, else initials */}"
       },
       {
-        "line": 901,
+        "line": 903,
         "code": "                                                            &lt;div className=\"w-7 h-7 rounded-full border border-[#555] flex items-center justify-center overflow-hidden cursor-default shrink-0\"&gt;"
       }
     ]
@@ -24359,11 +24967,11 @@
     "severity": "MAJOR",
     "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
     "project": "levo-frontend",
-    "line": 784,
+    "line": 786,
     "hash": "1e6e583c04b1e8360ae8ccb9c6f748dc",
     "textRange": {
-      "startLine": 784,
-      "endLine": 784,
+      "startLine": 786,
+      "endLine": 786,
       "startOffset": 32,
       "endOffset": 107
     },
@@ -24399,31 +25007,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 781,
+        "line": 783,
         "code": "                            className={`px-6 py-3 rounded-lg font-bold flex items-center gap-2 transition-all ${status === 'analyzing' ? 'bg-[#333] text-gray-400 cursor-not-allowed' : 'bg-red-600 hover:bg-red-700 text-white'}`}"
       },
       {
-        "line": 782,
+        "line": 784,
         "code": "                        &gt;"
       },
       {
-        "line": 783,
+        "line": 785,
         "code": "                            {status === 'analyzing' ? &lt;&gt;&lt;Clock className=\"w-5 h-5 animate-spin\" /&gt; Analizando...&lt;/&gt; :"
       },
       {
-        "line": 784,
+        "line": 786,
         "code": "                                status === 'completed' ? 'Re-analizar oportunidad' : 'Analizar oportunidad'}"
       },
       {
-        "line": 785,
+        "line": 787,
         "code": "                        &lt;/button&gt;"
       },
       {
-        "line": 786,
+        "line": 788,
         "code": "                        {status === 'analyzing' &amp;&amp; ("
       },
       {
-        "line": 787,
+        "line": 789,
         "code": "                            &lt;button"
       }
     ]
@@ -24434,11 +25042,11 @@
     "severity": "MAJOR",
     "component": "levo-frontend:src/app/insights/components/WorkspaceView.tsx",
     "project": "levo-frontend",
-    "line": 931,
+    "line": 933,
     "hash": "c9004f31bcf45ba1ee0552b097ac229e",
     "textRange": {
-      "startLine": 931,
-      "endLine": 931,
+      "startLine": 933,
+      "endLine": 933,
       "startOffset": 57,
       "endOffset": 62
     },
@@ -24475,31 +25083,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 928,
+        "line": 930,
         "code": "                                                &lt;div className=\"grid grid-cols-1 md:grid-cols-2 gap-5\"&gt;"
       },
       {
-        "line": 929,
+        "line": 931,
         "code": "                                                    {/* Valoraci\u00f3n */}"
       },
       {
-        "line": 930,
+        "line": 932,
         "code": "                                                    &lt;div&gt;"
       },
       {
-        "line": 931,
+        "line": 933,
         "code": "                                                        &lt;label className=\"text-xs text-gray-400 mb-2 block\"&gt;Valoraci\u00f3n&lt;/label&gt;"
       },
       {
-        "line": 932,
+        "line": 934,
         "code": "                                                        &lt;div className=\"flex gap-1.5 mb-1\"&gt;"
       },
       {
-        "line": 933,
+        "line": 935,
         "code": "                                                            {[5, 4, 3, 2, 1].map(val =&gt; ("
       },
       {
-        "line": 934,
+        "line": 936,
         "code": "                                                                &lt;button"
       }
     ]
@@ -24577,7 +25185,7 @@
       },
       {
         "line": 9,
-        "code": "import IdolScopingModal from \"./IdolScopingModal\";"
+        "code": "import ScopingParamsCard from \"./ScopingParamsCard\";"
       }
     ]
   },
