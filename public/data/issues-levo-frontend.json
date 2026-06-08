@@ -391,8 +391,8 @@
     "textRange": {
       "startLine": 72,
       "endLine": 72,
-      "startOffset": 67,
-      "endOffset": 99
+      "startOffset": 29,
+      "endOffset": 61
     },
     "flows": [],
     "status": "OPEN",
@@ -467,8 +467,8 @@
     "textRange": {
       "startLine": 72,
       "endLine": 72,
-      "startOffset": 29,
-      "endOffset": 61
+      "startOffset": 67,
+      "endOffset": 99
     },
     "flows": [],
     "status": "OPEN",
@@ -845,11 +845,11 @@
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/AnalyzedProductsView.tsx",
     "project": "levo-frontend",
-    "line": 502,
+    "line": 517,
     "hash": "22121616a0e4ccb814d1ec935af631fc",
     "textRange": {
-      "startLine": 502,
-      "endLine": 502,
+      "startLine": 517,
+      "endLine": 517,
       "startOffset": 206,
       "endOffset": 215
     },
@@ -885,31 +885,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 499,
+        "line": 514,
         "code": "                                                    &lt;button"
       },
       {
-        "line": 500,
+        "line": 515,
         "code": "                                                        onClick={(e) =&gt; openDeleteModal(e, idol)}"
       },
       {
-        "line": 501,
+        "line": 516,
         "code": "                                                        disabled={!canClick || isDeleting === idol.id}"
       },
       {
-        "line": 502,
+        "line": 517,
         "code": "                                                        className={`p-2.5 bg-[#111] border border-[#222] rounded-lg transition-all flex items-center justify-center group/btn shadow-md disabled:opacity-50 ${!canClick ? 'text-gray-600 cursor-not-allowed' : 'text-gray-500 hover:bg-red-900/30 hover:border-red-600/50 hover:text-red-500'}`}"
       },
       {
-        "line": 503,
+        "line": 518,
         "code": "                                                        title={!canClick ? \"No tienes permisos\" : \"Eliminar an\u00e1lisis\"}"
       },
       {
-        "line": 504,
+        "line": 519,
         "code": "                                                    &gt;"
       },
       {
-        "line": 505,
+        "line": 520,
         "code": "                                                        {isDeleting === idol.id ? ("
       }
     ]
@@ -3933,11 +3933,11 @@
     "severity": "MAJOR",
     "component": "levo-frontend:src/app/insights/components/AnalyzedProductsView.tsx",
     "project": "levo-frontend",
-    "line": 125,
+    "line": 140,
     "hash": "c29217f57b97995b7637f8af0567a1fb",
     "textRange": {
-      "startLine": 125,
-      "endLine": 125,
+      "startLine": 140,
+      "endLine": 140,
       "startOffset": 70,
       "endOffset": 109
     },
@@ -3975,31 +3975,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 122,
+        "line": 137,
         "code": "    useEffect(() =&gt; {"
       },
       {
-        "line": 123,
+        "line": 138,
         "code": "        const fetchIdols = async () =&gt; {"
       },
       {
-        "line": 124,
+        "line": 139,
         "code": "            try {"
       },
       {
-        "line": 125,
+        "line": 140,
         "code": "                const res = await fetch(`/api/insights/idol${source ? `?source=${encodeURIComponent(source)}` : ''}`);"
       },
       {
-        "line": 126,
+        "line": 141,
         "code": "                if (!res.ok) throw new Error('Error al cargar productos analizados');"
       },
       {
-        "line": 127,
+        "line": 142,
         "code": "                const data = await res.json();"
       },
       {
-        "line": 128,
+        "line": 143,
         "code": "                setIdols(data);"
       }
     ]
@@ -15448,11 +15448,11 @@
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/AnalyzedProductsView.tsx",
     "project": "levo-frontend",
-    "line": 503,
+    "line": 518,
     "hash": "f6f967b3206fd9b6d0320d25039d371b",
     "textRange": {
-      "startLine": 503,
-      "endLine": 503,
+      "startLine": 518,
+      "endLine": 518,
       "startOffset": 63,
       "endOffset": 72
     },
@@ -15488,31 +15488,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 500,
+        "line": 515,
         "code": "                                                        onClick={(e) =&gt; openDeleteModal(e, idol)}"
       },
       {
-        "line": 501,
+        "line": 516,
         "code": "                                                        disabled={!canClick || isDeleting === idol.id}"
       },
       {
-        "line": 502,
+        "line": 517,
         "code": "                                                        className={`p-2.5 bg-[#111] border border-[#222] rounded-lg transition-all flex items-center justify-center group/btn shadow-md disabled:opacity-50 ${!canClick ? 'text-gray-600 cursor-not-allowed' : 'text-gray-500 hover:bg-red-900/30 hover:border-red-600/50 hover:text-red-500'}`}"
       },
       {
-        "line": 503,
+        "line": 518,
         "code": "                                                        title={!canClick ? \"No tienes permisos\" : \"Eliminar an\u00e1lisis\"}"
       },
       {
-        "line": 504,
+        "line": 519,
         "code": "                                                    &gt;"
       },
       {
-        "line": 505,
+        "line": 520,
         "code": "                                                        {isDeleting === idol.id ? ("
       },
       {
-        "line": 506,
+        "line": 521,
         "code": "                                                            &lt;div className=\"w-4 h-4 border-2 border-red-500/30 border-t-red-500 rounded-full animate-spin\" /&gt;"
       }
     ]
@@ -15945,11 +15945,11 @@
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/AnalyzedProductsView.tsx",
     "project": "levo-frontend",
-    "line": 454,
+    "line": 469,
     "hash": "4b963ea1814bbf2a53d0c1b45b217947",
     "textRange": {
-      "startLine": 454,
-      "endLine": 454,
+      "startLine": 469,
+      "endLine": 469,
       "startOffset": 49,
       "endOffset": 73
     },
@@ -15985,31 +15985,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 451,
+        "line": 466,
         "code": "                                        &lt;/td&gt;"
       },
       {
-        "line": 452,
+        "line": 467,
         "code": "                                        &lt;td className=\"p-4 text-center\"&gt;"
       },
       {
-        "line": 453,
+        "line": 468,
         "code": "                                            &lt;span className=\"text-white font-black text-lg tabular-nums\"&gt;"
       },
       {
-        "line": 454,
+        "line": 469,
         "code": "                                                {idol.finalScore !== null ? idol.finalScore.toFixed(1) : \"-\"}"
       },
       {
-        "line": 455,
+        "line": 470,
         "code": "                                            &lt;/span&gt;"
       },
       {
-        "line": 456,
+        "line": 471,
         "code": "                                        &lt;/td&gt;"
       },
       {
-        "line": 457,
+        "line": 472,
         "code": "                                        &lt;td className=\"p-4\"&gt;"
       }
     ]
@@ -21348,11 +21348,11 @@
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/AnalyzedProductsView.tsx",
     "project": "levo-frontend",
-    "line": 595,
+    "line": 610,
     "hash": "a44c438bb4a4491449dbff4a07848159",
     "textRange": {
-      "startLine": 595,
-      "endLine": 595,
+      "startLine": 610,
+      "endLine": 610,
       "startOffset": 79,
       "endOffset": 86
     },
@@ -21393,31 +21393,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 592,
+        "line": 607,
         "code": "                                    &lt;div className=\"prose prose-invert max-w-none text-gray-300 whitespace-pre-wrap\"&gt;"
       },
       {
-        "line": 593,
+        "line": 608,
         "code": "                                        {selectedIdol?.aiSummary ? ("
       },
       {
-        "line": 594,
+        "line": 609,
         "code": "                                            &lt;div dangerouslySetInnerHTML={{"
       },
       {
-        "line": 595,
+        "line": 610,
         "code": "                                                __html: selectedIdol.aiSummary.replace(/&lt;a\\b([^&gt;]*)&gt;/gi, (match, p1) =&gt; {"
       },
       {
-        "line": 596,
+        "line": 611,
         "code": "                                                    if (p1.includes('target=')) return match;"
       },
       {
-        "line": 597,
+        "line": 612,
         "code": "                                                    return `&lt;a target=\"_blank\" rel=\"noopener noreferrer\"${p1}&gt;`;"
       },
       {
-        "line": 598,
+        "line": 613,
         "code": "                                                })"
       }
     ]
@@ -21588,11 +21588,11 @@
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/AnalyzedProductsView.tsx",
     "project": "levo-frontend",
-    "line": 194,
+    "line": 209,
     "hash": "b747738570dab1215420b829fae3db88",
     "textRange": {
-      "startLine": 194,
-      "endLine": 194,
+      "startLine": 209,
+      "endLine": 209,
       "startOffset": 19,
       "endOffset": 25
     },
@@ -21629,31 +21629,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 191,
+        "line": 206,
         "code": "    );"
       },
       {
-        "line": 192,
+        "line": 207,
         "code": ""
       },
       {
-        "line": 193,
+        "line": 208,
         "code": "    const handleDownloadPdf = async () =&gt; {"
       },
       {
-        "line": 194,
+        "line": 209,
         "code": "        if (typeof window === \"undefined\" || !summaryRef.current || !selectedIdol || isPdfLoading) return;"
       },
       {
-        "line": 195,
+        "line": 210,
         "code": "        setIsPdfLoading(true);"
       },
       {
-        "line": 196,
+        "line": 211,
         "code": "        try {"
       },
       {
-        "line": 197,
+        "line": 212,
         "code": "            // Reporte nuevo \u2192 mismo PDF estilizado que el WorkspaceView."
       }
     ]
@@ -22255,11 +22255,11 @@
     "severity": "MAJOR",
     "component": "levo-frontend:src/app/insights/components/AnalyzedProductsView.tsx",
     "project": "levo-frontend",
-    "line": 397,
+    "line": 412,
     "hash": "7ee2c2b8c86ff080dfda61341d4d7b82",
     "textRange": {
-      "startLine": 397,
-      "endLine": 397,
+      "startLine": 412,
+      "endLine": 412,
       "startOffset": 55,
       "endOffset": 91
     },
@@ -22295,31 +22295,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 394,
+        "line": 409,
         "code": "                                return ("
       },
       {
-        "line": 395,
+        "line": 410,
         "code": "                                    &lt;tr"
       },
       {
-        "line": 396,
+        "line": 411,
         "code": "                                        key={idol.id}"
       },
       {
-        "line": 397,
+        "line": 412,
         "code": "                                        onClick={() =&gt; onAnalyze &amp;&amp; onAnalyze(idol.product)}"
       },
       {
-        "line": 398,
+        "line": 413,
         "code": "                                        className={`border-b border-white/[0.02] hover:bg-white/[0.04] transition-colors group ${onAnalyze ? \"cursor-pointer\" : \"\"}`}"
       },
       {
-        "line": 399,
+        "line": 414,
         "code": "                                    &gt;"
       },
       {
-        "line": 400,
+        "line": 415,
         "code": "                                        &lt;td className=\"p-5\"&gt;"
       }
     ]
@@ -24294,11 +24294,11 @@
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/AnalyzedProductsView.tsx",
     "project": "levo-frontend",
-    "line": 441,
+    "line": 456,
     "hash": "11c40b2871cdd080d74c7cf344aeee24",
     "textRange": {
-      "startLine": 441,
-      "endLine": 441,
+      "startLine": 456,
+      "endLine": 456,
       "startOffset": 45,
       "endOffset": 68
     },
@@ -24334,31 +24334,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 438,
+        "line": 453,
         "code": "                                            &lt;/div&gt;"
       },
       {
-        "line": 439,
+        "line": 454,
         "code": "                                        &lt;/td&gt;"
       },
       {
-        "line": 440,
+        "line": 455,
         "code": "                                        &lt;td className=\"p-4 text-center font-bold text-gray-300\"&gt;"
       },
       {
-        "line": 441,
+        "line": 456,
         "code": "                                            {idol.ideaScore !== null ? `${idol.ideaScore}%` : \"-\"}"
       },
       {
-        "line": 442,
+        "line": 457,
         "code": "                                        &lt;/td&gt;"
       },
       {
-        "line": 443,
+        "line": 458,
         "code": "                                        &lt;td className=\"p-4 text-center font-bold text-gray-300\"&gt;"
       },
       {
-        "line": 444,
+        "line": 459,
         "code": "                                            {idol.demandaScore !== null ? `${idol.demandaScore}%` : \"-\"}"
       }
     ]
@@ -24369,11 +24369,11 @@
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/AnalyzedProductsView.tsx",
     "project": "levo-frontend",
-    "line": 444,
+    "line": 459,
     "hash": "1e7fc2d0c2a986885c7b5d79d8f50303",
     "textRange": {
-      "startLine": 444,
-      "endLine": 444,
+      "startLine": 459,
+      "endLine": 459,
       "startOffset": 45,
       "endOffset": 71
     },
@@ -24409,31 +24409,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 441,
+        "line": 456,
         "code": "                                            {idol.ideaScore !== null ? `${idol.ideaScore}%` : \"-\"}"
       },
       {
-        "line": 442,
+        "line": 457,
         "code": "                                        &lt;/td&gt;"
       },
       {
-        "line": 443,
+        "line": 458,
         "code": "                                        &lt;td className=\"p-4 text-center font-bold text-gray-300\"&gt;"
       },
       {
-        "line": 444,
+        "line": 459,
         "code": "                                            {idol.demandaScore !== null ? `${idol.demandaScore}%` : \"-\"}"
       },
       {
-        "line": 445,
+        "line": 460,
         "code": "                                        &lt;/td&gt;"
       },
       {
-        "line": 446,
+        "line": 461,
         "code": "                                        &lt;td className=\"p-4 text-center font-bold text-gray-300\"&gt;"
       },
       {
-        "line": 447,
+        "line": 462,
         "code": "                                            {idol.ofertaScore !== null ? `${idol.ofertaScore}%` : \"-\"}"
       }
     ]
@@ -24444,11 +24444,11 @@
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/AnalyzedProductsView.tsx",
     "project": "levo-frontend",
-    "line": 447,
+    "line": 462,
     "hash": "056bf6999604a2fed9fc611333e79285",
     "textRange": {
-      "startLine": 447,
-      "endLine": 447,
+      "startLine": 462,
+      "endLine": 462,
       "startOffset": 45,
       "endOffset": 70
     },
@@ -24484,31 +24484,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 444,
+        "line": 459,
         "code": "                                            {idol.demandaScore !== null ? `${idol.demandaScore}%` : \"-\"}"
       },
       {
-        "line": 445,
+        "line": 460,
         "code": "                                        &lt;/td&gt;"
       },
       {
-        "line": 446,
+        "line": 461,
         "code": "                                        &lt;td className=\"p-4 text-center font-bold text-gray-300\"&gt;"
       },
       {
-        "line": 447,
+        "line": 462,
         "code": "                                            {idol.ofertaScore !== null ? `${idol.ofertaScore}%` : \"-\"}"
       },
       {
-        "line": 448,
+        "line": 463,
         "code": "                                        &lt;/td&gt;"
       },
       {
-        "line": 449,
+        "line": 464,
         "code": "                                        &lt;td className=\"p-4 text-center font-bold text-gray-300\"&gt;"
       },
       {
-        "line": 450,
+        "line": 465,
         "code": "                                            {idol.latamlyScore !== null ? `${idol.latamlyScore}%` : \"-\"}"
       }
     ]
@@ -24519,11 +24519,11 @@
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/AnalyzedProductsView.tsx",
     "project": "levo-frontend",
-    "line": 450,
+    "line": 465,
     "hash": "ef703841cd6dce9863b2d79b57512051",
     "textRange": {
-      "startLine": 450,
-      "endLine": 450,
+      "startLine": 465,
+      "endLine": 465,
       "startOffset": 45,
       "endOffset": 71
     },
@@ -24559,31 +24559,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 447,
+        "line": 462,
         "code": "                                            {idol.ofertaScore !== null ? `${idol.ofertaScore}%` : \"-\"}"
       },
       {
-        "line": 448,
+        "line": 463,
         "code": "                                        &lt;/td&gt;"
       },
       {
-        "line": 449,
+        "line": 464,
         "code": "                                        &lt;td className=\"p-4 text-center font-bold text-gray-300\"&gt;"
       },
       {
-        "line": 450,
+        "line": 465,
         "code": "                                            {idol.latamlyScore !== null ? `${idol.latamlyScore}%` : \"-\"}"
       },
       {
-        "line": 451,
+        "line": 466,
         "code": "                                        &lt;/td&gt;"
       },
       {
-        "line": 452,
+        "line": 467,
         "code": "                                        &lt;td className=\"p-4 text-center\"&gt;"
       },
       {
-        "line": 453,
+        "line": 468,
         "code": "                                            &lt;span className=\"text-white font-black text-lg tabular-nums\"&gt;"
       }
     ]
