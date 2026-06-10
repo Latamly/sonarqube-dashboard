@@ -40,11 +40,11 @@
       "bugs": "19",
       "reliability_rating": "3.0",
       "duplicated_lines_density": "11.5",
-      "code_smells": "424",
+      "code_smells": "420",
       "security_rating": "3.0",
       "vulnerabilities": "1",
       "security_hotspots": "10",
-      "quality_gate_details": "{\"level\":\"ERROR\",\"conditions\":[{\"metric\":\"new_coverage\",\"op\":\"LT\",\"period\":1,\"error\":\"80\",\"actual\":\"0.0\",\"level\":\"ERROR\"},{\"metric\":\"new_duplicated_lines_density\",\"op\":\"GT\",\"period\":1,\"error\":\"3\",\"actual\":\"1.34346\",\"level\":\"OK\"},{\"metric\":\"new_violations\",\"op\":\"GT\",\"period\":1,\"error\":\"0\",\"actual\":\"88\",\"level\":\"ERROR\"}],\"ignoredConditions\":false}",
+      "quality_gate_details": "{\"level\":\"ERROR\",\"conditions\":[{\"metric\":\"new_coverage\",\"op\":\"LT\",\"period\":1,\"error\":\"80\",\"actual\":\"0.0\",\"level\":\"ERROR\"},{\"metric\":\"new_duplicated_lines_density\",\"op\":\"GT\",\"period\":1,\"error\":\"3\",\"actual\":\"1.2976\",\"level\":\"OK\"},{\"metric\":\"new_violations\",\"op\":\"GT\",\"period\":1,\"error\":\"0\",\"actual\":\"90\",\"level\":\"ERROR\"}],\"ignoredConditions\":false}",
       "sqale_rating": "1.0"
     },
     "quality_gate": "ERROR"

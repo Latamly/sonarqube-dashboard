@@ -7431,11 +7431,11 @@
     "severity": "CRITICAL",
     "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
     "project": "levo-backend",
-    "line": 62,
+    "line": 78,
     "hash": "bf230722d65a5a8f386f3b5d9ac3dd3d",
     "textRange": {
-      "startLine": 62,
-      "endLine": 62,
+      "startLine": 78,
+      "endLine": 78,
       "startOffset": 74,
       "endOffset": 88
     },
@@ -7445,8 +7445,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 86,
-              "endLine": 86,
+              "startLine": 102,
+              "endLine": 102,
               "startOffset": 8,
               "endOffset": 10
             },
@@ -7460,8 +7460,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 86,
-              "endLine": 86,
+              "startLine": 102,
+              "endLine": 102,
               "startOffset": 25,
               "endOffset": 27
             },
@@ -7475,8 +7475,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 88,
-              "endLine": 88,
+              "startLine": 104,
+              "endLine": 104,
               "startOffset": 12,
               "endOffset": 14
             },
@@ -7490,8 +7490,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 101,
-              "endLine": 101,
+              "startLine": 117,
+              "endLine": 117,
               "startOffset": 50,
               "endOffset": 52
             },
@@ -7505,8 +7505,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 101,
-              "endLine": 101,
+              "startLine": 117,
+              "endLine": 117,
               "startOffset": 77,
               "endOffset": 79
             },
@@ -7520,8 +7520,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 102,
-              "endLine": 102,
+              "startLine": 118,
+              "endLine": 118,
               "startOffset": 34,
               "endOffset": 36
             },
@@ -7535,8 +7535,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 102,
-              "endLine": 102,
+              "startLine": 118,
+              "endLine": 118,
               "startOffset": 58,
               "endOffset": 60
             },
@@ -7550,8 +7550,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 103,
-              "endLine": 103,
+              "startLine": 119,
+              "endLine": 119,
               "startOffset": 41,
               "endOffset": 43
             },
@@ -7565,8 +7565,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 103,
-              "endLine": 103,
+              "startLine": 119,
+              "endLine": 119,
               "startOffset": 72,
               "endOffset": 74
             },
@@ -7580,8 +7580,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 104,
-              "endLine": 104,
+              "startLine": 120,
+              "endLine": 120,
               "startOffset": 35,
               "endOffset": 37
             },
@@ -7595,8 +7595,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 104,
-              "endLine": 104,
+              "startLine": 120,
+              "endLine": 120,
               "startOffset": 60,
               "endOffset": 62
             },
@@ -7610,8 +7610,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 105,
-              "endLine": 105,
+              "startLine": 121,
+              "endLine": 121,
               "startOffset": 44,
               "endOffset": 46
             },
@@ -7625,8 +7625,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 105,
-              "endLine": 105,
+              "startLine": 121,
+              "endLine": 121,
               "startOffset": 78,
               "endOffset": 80
             },
@@ -7640,8 +7640,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 107,
-              "endLine": 107,
+              "startLine": 123,
+              "endLine": 123,
               "startOffset": 39,
               "endOffset": 41
             },
@@ -7655,8 +7655,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 107,
-              "endLine": 107,
+              "startLine": 123,
+              "endLine": 123,
               "startOffset": 68,
               "endOffset": 70
             },
@@ -7670,8 +7670,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 108,
-              "endLine": 108,
+              "startLine": 124,
+              "endLine": 124,
               "startOffset": 38,
               "endOffset": 40
             },
@@ -7685,8 +7685,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 108,
-              "endLine": 108,
+              "startLine": 124,
+              "endLine": 124,
               "startOffset": 66,
               "endOffset": 68
             },
@@ -7700,8 +7700,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 109,
-              "endLine": 109,
+              "startLine": 125,
+              "endLine": 125,
               "startOffset": 35,
               "endOffset": 37
             },
@@ -7715,8 +7715,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 109,
-              "endLine": 109,
+              "startLine": 125,
+              "endLine": 125,
               "startOffset": 53,
               "endOffset": 55
             },
@@ -7730,8 +7730,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 109,
-              "endLine": 109,
+              "startLine": 125,
+              "endLine": 125,
               "startOffset": 75,
               "endOffset": 77
             },
@@ -7745,8 +7745,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 109,
-              "endLine": 109,
+              "startLine": 125,
+              "endLine": 125,
               "startOffset": 93,
               "endOffset": 95
             },
@@ -7760,8 +7760,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 112,
-              "endLine": 112,
+              "startLine": 128,
+              "endLine": 128,
               "startOffset": 36,
               "endOffset": 38
             },
@@ -7775,8 +7775,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 112,
-              "endLine": 112,
+              "startLine": 128,
+              "endLine": 128,
               "startOffset": 62,
               "endOffset": 64
             },
@@ -7790,8 +7790,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 113,
-              "endLine": 113,
+              "startLine": 129,
+              "endLine": 129,
               "startOffset": 36,
               "endOffset": 38
             },
@@ -7805,8 +7805,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 115,
-              "endLine": 115,
+              "startLine": 131,
+              "endLine": 131,
               "startOffset": 8,
               "endOffset": 10
             },
@@ -7820,8 +7820,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 124,
-              "endLine": 124,
+              "startLine": 140,
+              "endLine": 140,
               "startOffset": 10,
               "endOffset": 14
             },
@@ -7862,31 +7862,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 59,
+        "line": 75,
         "code": "    }"
       },
       {
-        "line": 60,
+        "line": 76,
         "code": ""
       },
       {
-        "line": 61,
+        "line": 77,
         "code": "    @GetMapping"
       },
       {
-        "line": 62,
+        "line": 78,
         "code": "    public ResponseEntity&lt;org.springframework.data.domain.Page&lt;Products&gt;&gt; getAllProducts("
       },
       {
-        "line": 63,
+        "line": 79,
         "code": "            @RequestParam(defaultValue = \"0\") int page,"
       },
       {
-        "line": 64,
+        "line": 80,
         "code": "            @RequestParam(defaultValue = \"20\") int size,"
       },
       {
-        "line": 65,
+        "line": 81,
         "code": "            @RequestParam(required = false) List&lt;Long&gt; categoryIds,"
       }
     ]
@@ -7897,11 +7897,11 @@
     "severity": "CRITICAL",
     "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
     "project": "levo-backend",
-    "line": 130,
+    "line": 146,
     "hash": "9a42ac0b8f5ca573ce4262b163a252d7",
     "textRange": {
-      "startLine": 130,
-      "endLine": 130,
+      "startLine": 146,
+      "endLine": 146,
       "startOffset": 74,
       "endOffset": 88
     },
@@ -7911,8 +7911,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 137,
-              "endLine": 137,
+              "startLine": 153,
+              "endLine": 153,
               "startOffset": 8,
               "endOffset": 10
             },
@@ -7926,8 +7926,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 137,
-              "endLine": 137,
+              "startLine": 153,
+              "endLine": 153,
               "startOffset": 25,
               "endOffset": 27
             },
@@ -7941,8 +7941,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 139,
-              "endLine": 139,
+              "startLine": 155,
+              "endLine": 155,
               "startOffset": 12,
               "endOffset": 14
             },
@@ -7956,8 +7956,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 152,
-              "endLine": 152,
+              "startLine": 168,
+              "endLine": 168,
               "startOffset": 63,
               "endOffset": 65
             },
@@ -7971,8 +7971,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 152,
-              "endLine": 152,
+              "startLine": 168,
+              "endLine": 168,
               "startOffset": 103,
               "endOffset": 105
             },
@@ -7986,8 +7986,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 153,
-              "endLine": 153,
+              "startLine": 169,
+              "endLine": 169,
               "startOffset": 47,
               "endOffset": 49
             },
@@ -8001,8 +8001,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 153,
-              "endLine": 153,
+              "startLine": 169,
+              "endLine": 169,
               "startOffset": 84,
               "endOffset": 86
             },
@@ -8016,8 +8016,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 154,
-              "endLine": 154,
+              "startLine": 170,
+              "endLine": 170,
               "startOffset": 54,
               "endOffset": 56
             },
@@ -8031,8 +8031,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 154,
-              "endLine": 154,
+              "startLine": 170,
+              "endLine": 170,
               "startOffset": 98,
               "endOffset": 100
             },
@@ -8046,8 +8046,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 155,
-              "endLine": 155,
+              "startLine": 171,
+              "endLine": 171,
               "startOffset": 48,
               "endOffset": 50
             },
@@ -8061,8 +8061,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 155,
-              "endLine": 155,
+              "startLine": 171,
+              "endLine": 171,
               "startOffset": 86,
               "endOffset": 88
             },
@@ -8076,8 +8076,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 156,
-              "endLine": 156,
+              "startLine": 172,
+              "endLine": 172,
               "startOffset": 57,
               "endOffset": 59
             },
@@ -8091,8 +8091,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 156,
-              "endLine": 156,
+              "startLine": 172,
+              "endLine": 172,
               "startOffset": 104,
               "endOffset": 106
             },
@@ -8106,8 +8106,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 158,
-              "endLine": 158,
+              "startLine": 174,
+              "endLine": 174,
               "startOffset": 52,
               "endOffset": 54
             },
@@ -8121,8 +8121,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 158,
-              "endLine": 158,
+              "startLine": 174,
+              "endLine": 174,
               "startOffset": 94,
               "endOffset": 96
             },
@@ -8136,8 +8136,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 159,
-              "endLine": 159,
+              "startLine": 175,
+              "endLine": 175,
               "startOffset": 51,
               "endOffset": 53
             },
@@ -8151,8 +8151,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 159,
-              "endLine": 159,
+              "startLine": 175,
+              "endLine": 175,
               "startOffset": 92,
               "endOffset": 94
             },
@@ -8166,8 +8166,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 160,
-              "endLine": 160,
+              "startLine": 176,
+              "endLine": 176,
               "startOffset": 48,
               "endOffset": 50
             },
@@ -8181,8 +8181,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 161,
-              "endLine": 161,
+              "startLine": 177,
+              "endLine": 177,
               "startOffset": 16,
               "endOffset": 18
             },
@@ -8196,8 +8196,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 161,
-              "endLine": 161,
+              "startLine": 177,
+              "endLine": 177,
               "startOffset": 51,
               "endOffset": 53
             },
@@ -8211,8 +8211,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 161,
-              "endLine": 161,
+              "startLine": 177,
+              "endLine": 177,
               "startOffset": 82,
               "endOffset": 84
             },
@@ -8226,8 +8226,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 164,
-              "endLine": 164,
+              "startLine": 180,
+              "endLine": 180,
               "startOffset": 49,
               "endOffset": 51
             },
@@ -8241,8 +8241,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 164,
-              "endLine": 164,
+              "startLine": 180,
+              "endLine": 180,
               "startOffset": 88,
               "endOffset": 90
             },
@@ -8256,8 +8256,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 165,
-              "endLine": 165,
+              "startLine": 181,
+              "endLine": 181,
               "startOffset": 49,
               "endOffset": 51
             },
@@ -8271,8 +8271,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 167,
-              "endLine": 167,
+              "startLine": 183,
+              "endLine": 183,
               "startOffset": 8,
               "endOffset": 10
             },
@@ -8286,8 +8286,8 @@
           {
             "component": "levo-backend:src/main/java/com/levo/security/insights/controller/ProductsController.java",
             "textRange": {
-              "startLine": 178,
-              "endLine": 178,
+              "startLine": 194,
+              "endLine": 194,
               "startOffset": 10,
               "endOffset": 14
             },
@@ -8328,31 +8328,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 127,
+        "line": 143,
         "code": "    }"
       },
       {
-        "line": 128,
+        "line": 144,
         "code": ""
       },
       {
-        "line": 129,
+        "line": 145,
         "code": "    @PostMapping(\"/search\")"
       },
       {
-        "line": 130,
+        "line": 146,
         "code": "    public ResponseEntity&lt;org.springframework.data.domain.Page&lt;Products&gt;&gt; searchProducts("
       },
       {
-        "line": 131,
+        "line": 147,
         "code": "            @RequestParam(defaultValue = \"0\") int page,"
       },
       {
-        "line": 132,
+        "line": 148,
         "code": "            @RequestParam(defaultValue = \"20\") int size,"
       },
       {
-        "line": 133,
+        "line": 149,
         "code": "            @RequestParam(required = false) String sort,"
       }
     ]
