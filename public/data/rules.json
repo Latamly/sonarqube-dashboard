@@ -188,6 +188,20 @@
     "severity": "CRITICAL",
     "type": "CODE_SMELL"
   },
+  "typescript:S3358": {
+    "name": "Ternary operators should not be nested",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "typescript:S4624": {
+    "name": "Template literals should not be nested",
+    "htmlDesc": "",
+    "remFnBaseEffort": "10min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
   "typescript:S7770": {
     "name": "Wrapper functions around built-in type conversion functions should be avoided",
     "htmlDesc": "",
@@ -214,13 +228,6 @@
     "htmlDesc": "",
     "remFnBaseEffort": "1min",
     "severity": "MINOR",
-    "type": "CODE_SMELL"
-  },
-  "typescript:S3358": {
-    "name": "Ternary operators should not be nested",
-    "htmlDesc": "",
-    "remFnBaseEffort": "5min",
-    "severity": "MAJOR",
     "type": "CODE_SMELL"
   },
   "typescript:S7773": {
@@ -269,13 +276,6 @@
     "name": "Label elements should have a text label and an associated control",
     "htmlDesc": "",
     "remFnBaseEffort": "5min",
-    "severity": "MAJOR",
-    "type": "CODE_SMELL"
-  },
-  "typescript:S4624": {
-    "name": "Template literals should not be nested",
-    "htmlDesc": "",
-    "remFnBaseEffort": "10min",
     "severity": "MAJOR",
     "type": "CODE_SMELL"
   },
@@ -473,13 +473,6 @@
     "htmlDesc": "",
     "remFnBaseEffort": "1min",
     "severity": "MAJOR",
-    "type": "CODE_SMELL"
-  },
-  "typescript:S6606": {
-    "name": "Nullish coalescing should be preferred",
-    "htmlDesc": "",
-    "remFnBaseEffort": "5min",
-    "severity": "MINOR",
     "type": "CODE_SMELL"
   },
   "typescript:S6844": {

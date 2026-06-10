@@ -1,5 +1,157 @@
 [
   {
+    "key": "8d4531bd-0c03-490d-9b62-a1ca93505a25",
+    "rule": "typescript:S3358",
+    "severity": "MAJOR",
+    "component": "levo-frontend:src/app/insights/components/ManufacturerDetailView.tsx",
+    "project": "levo-frontend",
+    "line": 438,
+    "hash": "4a092c26e1f9a6a8be816a95927bae4d",
+    "textRange": {
+      "startLine": 438,
+      "endLine": 438,
+      "startOffset": 85,
+      "endOffset": 138
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Extract this nested ternary operation into an independent statement.",
+    "effort": "5min",
+    "debt": "5min",
+    "author": "pablitto18@gmail.com",
+    "tags": [
+      "confusing"
+    ],
+    "comments": [],
+    "creationDate": "2026-06-10T14:41:51+0000",
+    "updateDate": "2026-06-10T14:41:51+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CLEAR",
+    "cleanCodeAttributeCategory": "INTENTIONAL",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "MEDIUM"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 435,
+        "code": "                        &lt;h3 className=\"text-white font-semibold mb-2\"&gt;Informaci\u00f3n de fabricante&lt;/h3&gt;"
+      },
+      {
+        "line": 436,
+        "code": "                        &lt;span&gt;\u2022 Pais de origen: {manufacturer?.country?.countryName || manufacturer?.pais || \"N/A\"}&lt;/span&gt;"
+      },
+      {
+        "line": 437,
+        "code": "                        &lt;span&gt;\u2022 Cantidad de empleados: {manufacturer?.cantidadEmpleados ?? \"N/A\"}{manufacturer?.empleadosAnio ? ` (${manufacturer.empleadosAnio})` : \"\"}&lt;/span&gt;"
+      },
+      {
+        "line": 438,
+        "code": "                        &lt;span&gt;\u2022 Cotiza en bolsa: {manufacturer?.cotizaEnBolsa ? `S\u00ed${manufacturer?.bolsa ? ` - ${manufacturer.bolsa}` : \"\"}` : \"No cotiza\"}&lt;/span&gt;"
+      },
+      {
+        "line": 439,
+        "code": "                        {manufacturer?.rubroIndustria &amp;&amp; &lt;span&gt;\u2022 Rubro: {manufacturer.rubroIndustria}&lt;/span&gt;}"
+      },
+      {
+        "line": 440,
+        "code": "                        {manufacturer?.contacto &amp;&amp; &lt;span&gt;\u2022 Contacto: {manufacturer.contacto}&lt;/span&gt;}"
+      },
+      {
+        "line": 441,
+        "code": "                    &lt;/div&gt;"
+      }
+    ]
+  },
+  {
+    "key": "f96a12e6-9474-4594-9e49-4a9eb6ea6be1",
+    "rule": "typescript:S4624",
+    "severity": "MAJOR",
+    "component": "levo-frontend:src/app/insights/components/ManufacturerDetailView.tsx",
+    "project": "levo-frontend",
+    "line": 438,
+    "hash": "4a092c26e1f9a6a8be816a95927bae4d",
+    "textRange": {
+      "startLine": 438,
+      "endLine": 438,
+      "startOffset": 107,
+      "endOffset": 133
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Refactor this code to not use nested template literals.",
+    "effort": "10min",
+    "debt": "10min",
+    "author": "pablitto18@gmail.com",
+    "tags": [
+      "es2015",
+      "brain-overload",
+      "confusing"
+    ],
+    "comments": [],
+    "creationDate": "2026-06-10T14:41:51+0000",
+    "updateDate": "2026-06-10T14:41:51+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CLEAR",
+    "cleanCodeAttributeCategory": "INTENTIONAL",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "MEDIUM"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED",
+    "codeSnippet": [
+      {
+        "line": 435,
+        "code": "                        &lt;h3 className=\"text-white font-semibold mb-2\"&gt;Informaci\u00f3n de fabricante&lt;/h3&gt;"
+      },
+      {
+        "line": 436,
+        "code": "                        &lt;span&gt;\u2022 Pais de origen: {manufacturer?.country?.countryName || manufacturer?.pais || \"N/A\"}&lt;/span&gt;"
+      },
+      {
+        "line": 437,
+        "code": "                        &lt;span&gt;\u2022 Cantidad de empleados: {manufacturer?.cantidadEmpleados ?? \"N/A\"}{manufacturer?.empleadosAnio ? ` (${manufacturer.empleadosAnio})` : \"\"}&lt;/span&gt;"
+      },
+      {
+        "line": 438,
+        "code": "                        &lt;span&gt;\u2022 Cotiza en bolsa: {manufacturer?.cotizaEnBolsa ? `S\u00ed${manufacturer?.bolsa ? ` - ${manufacturer.bolsa}` : \"\"}` : \"No cotiza\"}&lt;/span&gt;"
+      },
+      {
+        "line": 439,
+        "code": "                        {manufacturer?.rubroIndustria &amp;&amp; &lt;span&gt;\u2022 Rubro: {manufacturer.rubroIndustria}&lt;/span&gt;}"
+      },
+      {
+        "line": 440,
+        "code": "                        {manufacturer?.contacto &amp;&amp; &lt;span&gt;\u2022 Contacto: {manufacturer.contacto}&lt;/span&gt;}"
+      },
+      {
+        "line": 441,
+        "code": "                    &lt;/div&gt;"
+      }
+    ]
+  },
+  {
     "key": "d3ac87c7-bfdd-48e0-add6-e6ea7e8c8dcf",
     "rule": "typescript:S7770",
     "severity": "MINOR",
@@ -920,11 +1072,11 @@
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
     "project": "levo-frontend",
-    "line": 905,
+    "line": 884,
     "hash": "b0479578762f31d7788e3ee80ade6cfc",
     "textRange": {
-      "startLine": 905,
-      "endLine": 905,
+      "startLine": 884,
+      "endLine": 884,
       "startOffset": 130,
       "endOffset": 143
     },
@@ -960,31 +1112,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 902,
+        "line": 881,
         "code": "                                            onClick={toggleSave}"
       },
       {
-        "line": 903,
+        "line": 882,
         "code": "                                            disabled={!canClickSave || isSavingStatus}"
       },
       {
-        "line": 904,
+        "line": 883,
         "code": "                                            title={isSaved ? \"Quitar de guardados\" : \"Guardar producto\"}"
       },
       {
-        "line": 905,
+        "line": 884,
         "code": "                                            className={`p-2 hover:bg-[var(--background-secondary)] rounded-lg transition-colors ${!canClickSave ? \"opacity-50 cursor-not-allowed\" : \"\"}`}"
       },
       {
-        "line": 906,
+        "line": 885,
         "code": "                                        &gt;"
       },
       {
-        "line": 907,
+        "line": 886,
         "code": "                                            &lt;Bookmark"
       },
       {
-        "line": 908,
+        "line": 887,
         "code": "                                                size={24}"
       }
     ]
@@ -3585,11 +3737,11 @@
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/BrandDetailView.tsx",
     "project": "levo-frontend",
-    "line": 550,
+    "line": 540,
     "hash": "d818e3f07febf7a6f13935b13b49d5fe",
     "textRange": {
-      "startLine": 550,
-      "endLine": 550,
+      "startLine": 540,
+      "endLine": 540,
       "startOffset": 35,
       "endOffset": 60
     },
@@ -3626,31 +3778,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 547,
+        "line": 537,
         "code": "                                ? (payload.card as Record&lt;string, unknown&gt;)"
       },
       {
-        "line": 548,
+        "line": 538,
         "code": "                                : null;"
       },
       {
-        "line": 549,
+        "line": 539,
         "code": "                            const conclusion = card &amp;&amp; typeof card.conclusion === \"string\""
       },
       {
-        "line": 550,
+        "line": 540,
         "code": "                                ? (card.conclusion as string).trim()"
       },
       {
-        "line": 551,
+        "line": 541,
         "code": "                                : null;"
       },
       {
-        "line": 552,
+        "line": 542,
         "code": "                            if (conclusion) {"
       },
       {
-        "line": 553,
+        "line": 543,
         "code": "                                return ("
       }
     ]
@@ -7115,11 +7267,11 @@
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
     "project": "levo-frontend",
-    "line": 766,
+    "line": 745,
     "hash": "d818e3f07febf7a6f13935b13b49d5fe",
     "textRange": {
-      "startLine": 766,
-      "endLine": 766,
+      "startLine": 745,
+      "endLine": 745,
       "startOffset": 47,
       "endOffset": 72
     },
@@ -7156,31 +7308,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 763,
+        "line": 742,
         "code": "                                            ? (payload.card as Record&lt;string, unknown&gt;)"
       },
       {
-        "line": 764,
+        "line": 743,
         "code": "                                            : null;"
       },
       {
-        "line": 765,
+        "line": 744,
         "code": "                                        const conclusion = card &amp;&amp; typeof card.conclusion === \"string\""
       },
       {
-        "line": 766,
+        "line": 745,
         "code": "                                            ? (card.conclusion as string).trim()"
       },
       {
-        "line": 767,
+        "line": 746,
         "code": "                                            : null;"
       },
       {
-        "line": 768,
+        "line": 747,
         "code": "                                        return ("
       },
       {
-        "line": 769,
+        "line": 748,
         "code": "                                            &lt;&gt;"
       }
     ]
@@ -8294,8 +8446,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/ManufacturerDetailView.tsx",
             "textRange": {
-              "startLine": 438,
-              "endLine": 438,
+              "startLine": 437,
+              "endLine": 437,
               "startOffset": 126,
               "endOffset": 127
             },
@@ -8309,8 +8461,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/ManufacturerDetailView.tsx",
             "textRange": {
-              "startLine": 440,
-              "endLine": 440,
+              "startLine": 438,
+              "endLine": 438,
               "startOffset": 78,
               "endOffset": 79
             },
@@ -8324,8 +8476,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/ManufacturerDetailView.tsx",
             "textRange": {
-              "startLine": 440,
-              "endLine": 440,
+              "startLine": 438,
+              "endLine": 438,
               "startOffset": 105,
               "endOffset": 106
             },
@@ -8339,8 +8491,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/ManufacturerDetailView.tsx",
             "textRange": {
-              "startLine": 446,
-              "endLine": 446,
+              "startLine": 444,
+              "endLine": 444,
               "startOffset": 46,
               "endOffset": 47
             },
@@ -8354,8 +8506,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/ManufacturerDetailView.tsx",
             "textRange": {
-              "startLine": 455,
-              "endLine": 455,
+              "startLine": 453,
+              "endLine": 453,
               "startOffset": 52,
               "endOffset": 53
             },
@@ -8369,8 +8521,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/ManufacturerDetailView.tsx",
             "textRange": {
-              "startLine": 513,
-              "endLine": 513,
+              "startLine": 511,
+              "endLine": 511,
               "startOffset": 53,
               "endOffset": 54
             },
@@ -8384,8 +8536,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/ManufacturerDetailView.tsx",
             "textRange": {
-              "startLine": 519,
-              "endLine": 519,
+              "startLine": 517,
+              "endLine": 517,
               "startOffset": 62,
               "endOffset": 63
             },
@@ -8399,8 +8551,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/ManufacturerDetailView.tsx",
             "textRange": {
-              "startLine": 655,
-              "endLine": 655,
+              "startLine": 653,
+              "endLine": 653,
               "startOffset": 137,
               "endOffset": 138
             },
@@ -8414,8 +8566,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/ManufacturerDetailView.tsx",
             "textRange": {
-              "startLine": 735,
-              "endLine": 735,
+              "startLine": 733,
+              "endLine": 733,
               "startOffset": 36,
               "endOffset": 37
             },
@@ -8429,8 +8581,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/ManufacturerDetailView.tsx",
             "textRange": {
-              "startLine": 738,
-              "endLine": 738,
+              "startLine": 736,
+              "endLine": 736,
               "startOffset": 101,
               "endOffset": 102
             },
@@ -8444,8 +8596,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/ManufacturerDetailView.tsx",
             "textRange": {
-              "startLine": 749,
-              "endLine": 749,
+              "startLine": 747,
+              "endLine": 747,
               "startOffset": 84,
               "endOffset": 85
             },
@@ -8459,8 +8611,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/ManufacturerDetailView.tsx",
             "textRange": {
-              "startLine": 749,
-              "endLine": 749,
+              "startLine": 747,
+              "endLine": 747,
               "startOffset": 57,
               "endOffset": 59
             },
@@ -8474,8 +8626,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/ManufacturerDetailView.tsx",
             "textRange": {
-              "startLine": 782,
-              "endLine": 782,
+              "startLine": 780,
+              "endLine": 780,
               "startOffset": 40,
               "endOffset": 41
             },
@@ -8489,8 +8641,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/ManufacturerDetailView.tsx",
             "textRange": {
-              "startLine": 787,
-              "endLine": 787,
+              "startLine": 785,
+              "endLine": 785,
               "startOffset": 59,
               "endOffset": 60
             },
@@ -8504,8 +8656,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/ManufacturerDetailView.tsx",
             "textRange": {
-              "startLine": 814,
-              "endLine": 814,
+              "startLine": 812,
+              "endLine": 812,
               "startOffset": 194,
               "endOffset": 195
             },
@@ -8519,8 +8671,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/ManufacturerDetailView.tsx",
             "textRange": {
-              "startLine": 819,
-              "endLine": 819,
+              "startLine": 817,
+              "endLine": 817,
               "startOffset": 61,
               "endOffset": 62
             },
@@ -8591,168 +8743,16 @@
     ]
   },
   {
-    "key": "022c8f5e-47cc-4202-bcc2-d07bb28d5a5e",
-    "rule": "typescript:S4624",
-    "severity": "MAJOR",
-    "component": "levo-frontend:src/app/insights/components/ManufacturerDetailView.tsx",
-    "project": "levo-frontend",
-    "line": 440,
-    "hash": "046e5aa7efc496d3c2b31bab9a6b67e0",
-    "textRange": {
-      "startLine": 440,
-      "endLine": 440,
-      "startOffset": 107,
-      "endOffset": 133
-    },
-    "flows": [],
-    "status": "OPEN",
-    "message": "Refactor this code to not use nested template literals.",
-    "effort": "10min",
-    "debt": "10min",
-    "author": "pablitto18@gmail.com",
-    "tags": [
-      "es2015",
-      "brain-overload",
-      "confusing"
-    ],
-    "comments": [],
-    "creationDate": "2026-05-08T12:30:47+0000",
-    "updateDate": "2026-05-08T14:10:14+0000",
-    "type": "CODE_SMELL",
-    "scope": "MAIN",
-    "quickFixAvailable": false,
-    "messageFormattings": [],
-    "codeVariants": [],
-    "cleanCodeAttribute": "CLEAR",
-    "cleanCodeAttributeCategory": "INTENTIONAL",
-    "impacts": [
-      {
-        "softwareQuality": "MAINTAINABILITY",
-        "severity": "MEDIUM"
-      }
-    ],
-    "issueStatus": "OPEN",
-    "prioritizedRule": false,
-    "fromSonarQubeUpdate": false,
-    "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED",
-    "codeSnippet": [
-      {
-        "line": 437,
-        "code": "                        &lt;span&gt;\u2022 Pais de origen: {manufacturer?.country?.countryName || manufacturer?.pais || \"N/A\"}&lt;/span&gt;"
-      },
-      {
-        "line": 438,
-        "code": "                        &lt;span&gt;\u2022 Cantidad de empleados: {manufacturer?.cantidadEmpleados ?? \"N/A\"}{manufacturer?.empleadosAnio ? ` (${manufacturer.empleadosAnio})` : \"\"}&lt;/span&gt;"
-      },
-      {
-        "line": 439,
-        "code": "                        &lt;span&gt;\u2022 Cantidad de productos: {manufacturer?.cantidadProductos ?? \"N/A\"}&lt;/span&gt;"
-      },
-      {
-        "line": 440,
-        "code": "                        &lt;span&gt;\u2022 Cotiza en bolsa: {manufacturer?.cotizaEnBolsa ? `S\u00ed${manufacturer?.bolsa ? ` (${manufacturer.bolsa})` : \"\"}` : \"No\"}&lt;/span&gt;"
-      },
-      {
-        "line": 441,
-        "code": "                        {manufacturer?.rubroIndustria &amp;&amp; &lt;span&gt;\u2022 Rubro: {manufacturer.rubroIndustria}&lt;/span&gt;}"
-      },
-      {
-        "line": 442,
-        "code": "                        {manufacturer?.contacto &amp;&amp; &lt;span&gt;\u2022 Contacto: {manufacturer.contacto}&lt;/span&gt;}"
-      },
-      {
-        "line": 443,
-        "code": "                    &lt;/div&gt;"
-      }
-    ]
-  },
-  {
-    "key": "5e9dd0da-e636-4354-ba1d-2405d0d3dc96",
-    "rule": "typescript:S3358",
-    "severity": "MAJOR",
-    "component": "levo-frontend:src/app/insights/components/ManufacturerDetailView.tsx",
-    "project": "levo-frontend",
-    "line": 440,
-    "hash": "046e5aa7efc496d3c2b31bab9a6b67e0",
-    "textRange": {
-      "startLine": 440,
-      "endLine": 440,
-      "startOffset": 85,
-      "endOffset": 138
-    },
-    "flows": [],
-    "status": "OPEN",
-    "message": "Extract this nested ternary operation into an independent statement.",
-    "effort": "5min",
-    "debt": "5min",
-    "author": "pablitto18@gmail.com",
-    "tags": [
-      "confusing"
-    ],
-    "comments": [],
-    "creationDate": "2026-05-08T12:30:47+0000",
-    "updateDate": "2026-05-08T14:10:14+0000",
-    "type": "CODE_SMELL",
-    "scope": "MAIN",
-    "quickFixAvailable": false,
-    "messageFormattings": [],
-    "codeVariants": [],
-    "cleanCodeAttribute": "CLEAR",
-    "cleanCodeAttributeCategory": "INTENTIONAL",
-    "impacts": [
-      {
-        "softwareQuality": "MAINTAINABILITY",
-        "severity": "MEDIUM"
-      }
-    ],
-    "issueStatus": "OPEN",
-    "prioritizedRule": false,
-    "fromSonarQubeUpdate": false,
-    "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED",
-    "codeSnippet": [
-      {
-        "line": 437,
-        "code": "                        &lt;span&gt;\u2022 Pais de origen: {manufacturer?.country?.countryName || manufacturer?.pais || \"N/A\"}&lt;/span&gt;"
-      },
-      {
-        "line": 438,
-        "code": "                        &lt;span&gt;\u2022 Cantidad de empleados: {manufacturer?.cantidadEmpleados ?? \"N/A\"}{manufacturer?.empleadosAnio ? ` (${manufacturer.empleadosAnio})` : \"\"}&lt;/span&gt;"
-      },
-      {
-        "line": 439,
-        "code": "                        &lt;span&gt;\u2022 Cantidad de productos: {manufacturer?.cantidadProductos ?? \"N/A\"}&lt;/span&gt;"
-      },
-      {
-        "line": 440,
-        "code": "                        &lt;span&gt;\u2022 Cotiza en bolsa: {manufacturer?.cotizaEnBolsa ? `S\u00ed${manufacturer?.bolsa ? ` (${manufacturer.bolsa})` : \"\"}` : \"No\"}&lt;/span&gt;"
-      },
-      {
-        "line": 441,
-        "code": "                        {manufacturer?.rubroIndustria &amp;&amp; &lt;span&gt;\u2022 Rubro: {manufacturer.rubroIndustria}&lt;/span&gt;}"
-      },
-      {
-        "line": 442,
-        "code": "                        {manufacturer?.contacto &amp;&amp; &lt;span&gt;\u2022 Contacto: {manufacturer.contacto}&lt;/span&gt;}"
-      },
-      {
-        "line": 443,
-        "code": "                    &lt;/div&gt;"
-      }
-    ]
-  },
-  {
     "key": "8f728394-be71-44e0-9e6e-31de6fe81ec5",
     "rule": "typescript:S3358",
     "severity": "MAJOR",
     "component": "levo-frontend:src/app/insights/components/ManufacturerDetailView.tsx",
     "project": "levo-frontend",
-    "line": 455,
+    "line": 453,
     "hash": "2dd6dad7f73025f108afdab0cbbe22f9",
     "textRange": {
-      "startLine": 455,
-      "endLine": 459,
+      "startLine": 453,
+      "endLine": 457,
       "startOffset": 24,
       "endOffset": 28
     },
@@ -8788,31 +8788,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 452,
+        "line": 450,
         "code": "                        &gt;"
       },
       {
-        "line": 453,
+        "line": 451,
         "code": "                            {manufacturer.urlOficial}"
       },
       {
-        "line": 454,
+        "line": 452,
         "code": "                        &lt;/a&gt;"
       },
       {
-        "line": 455,
+        "line": 453,
         "code": "                    ) : manufacturer?.observaciones ? ("
       },
       {
-        "line": 456,
+        "line": 454,
         "code": "                        &lt;p className=\"text-[var(--text-secondary)] text-sm pl-2 block\"&gt;"
       },
       {
-        "line": 457,
+        "line": 455,
         "code": "                            {manufacturer.observaciones}"
       },
       {
-        "line": 458,
+        "line": 456,
         "code": "                        &lt;/p&gt;"
       }
     ]
@@ -10857,8 +10857,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
             "textRange": {
-              "startLine": 383,
-              "endLine": 383,
+              "startLine": 384,
+              "endLine": 384,
               "startOffset": 8,
               "endOffset": 9
             },
@@ -10872,8 +10872,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
             "textRange": {
-              "startLine": 490,
-              "endLine": 490,
+              "startLine": 469,
+              "endLine": 469,
               "startOffset": 77,
               "endOffset": 78
             },
@@ -10887,8 +10887,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
             "textRange": {
-              "startLine": 490,
-              "endLine": 490,
+              "startLine": 469,
+              "endLine": 469,
               "startOffset": 42,
               "endOffset": 44
             },
@@ -10902,8 +10902,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
             "textRange": {
-              "startLine": 584,
-              "endLine": 584,
+              "startLine": 563,
+              "endLine": 563,
               "startOffset": 36,
               "endOffset": 37
             },
@@ -10917,8 +10917,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
             "textRange": {
-              "startLine": 589,
-              "endLine": 589,
+              "startLine": 568,
+              "endLine": 568,
               "startOffset": 63,
               "endOffset": 64
             },
@@ -10932,8 +10932,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
             "textRange": {
-              "startLine": 591,
-              "endLine": 591,
+              "startLine": 570,
+              "endLine": 570,
               "startOffset": 52,
               "endOffset": 53
             },
@@ -10947,8 +10947,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
             "textRange": {
-              "startLine": 656,
-              "endLine": 656,
+              "startLine": 635,
+              "endLine": 635,
               "startOffset": 80,
               "endOffset": 81
             },
@@ -10962,8 +10962,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
             "textRange": {
-              "startLine": 673,
-              "endLine": 673,
+              "startLine": 652,
+              "endLine": 652,
               "startOffset": 117,
               "endOffset": 118
             },
@@ -10977,8 +10977,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
             "textRange": {
-              "startLine": 673,
-              "endLine": 673,
+              "startLine": 652,
+              "endLine": 652,
               "startOffset": 80,
               "endOffset": 82
             },
@@ -10992,8 +10992,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
             "textRange": {
-              "startLine": 674,
-              "endLine": 674,
+              "startLine": 653,
+              "endLine": 653,
               "startOffset": 120,
               "endOffset": 121
             },
@@ -11007,8 +11007,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
             "textRange": {
-              "startLine": 677,
-              "endLine": 677,
+              "startLine": 656,
+              "endLine": 656,
               "startOffset": 84,
               "endOffset": 85
             },
@@ -11022,8 +11022,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
             "textRange": {
-              "startLine": 689,
-              "endLine": 689,
+              "startLine": 668,
+              "endLine": 668,
               "startOffset": 81,
               "endOffset": 82
             },
@@ -11037,8 +11037,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
             "textRange": {
-              "startLine": 833,
-              "endLine": 833,
+              "startLine": 812,
+              "endLine": 812,
               "startOffset": 83,
               "endOffset": 84
             },
@@ -11052,8 +11052,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
             "textRange": {
-              "startLine": 835,
-              "endLine": 835,
+              "startLine": 814,
+              "endLine": 814,
               "startOffset": 87,
               "endOffset": 88
             },
@@ -11067,8 +11067,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
             "textRange": {
-              "startLine": 865,
-              "endLine": 865,
+              "startLine": 844,
+              "endLine": 844,
               "startOffset": 71,
               "endOffset": 72
             },
@@ -11082,8 +11082,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
             "textRange": {
-              "startLine": 904,
-              "endLine": 904,
+              "startLine": 883,
+              "endLine": 883,
               "startOffset": 59,
               "endOffset": 60
             },
@@ -11097,8 +11097,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
             "textRange": {
-              "startLine": 905,
-              "endLine": 905,
+              "startLine": 884,
+              "endLine": 884,
               "startOffset": 144,
               "endOffset": 145
             },
@@ -11112,8 +11112,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
             "textRange": {
-              "startLine": 909,
-              "endLine": 909,
+              "startLine": 888,
+              "endLine": 888,
               "startOffset": 62,
               "endOffset": 63
             },
@@ -11127,8 +11127,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
             "textRange": {
-              "startLine": 911,
-              "endLine": 911,
+              "startLine": 890,
+              "endLine": 890,
               "startOffset": 52,
               "endOffset": 53
             },
@@ -11142,8 +11142,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
             "textRange": {
-              "startLine": 990,
-              "endLine": 990,
+              "startLine": 966,
+              "endLine": 966,
               "startOffset": 88,
               "endOffset": 89
             },
@@ -11157,8 +11157,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
             "textRange": {
-              "startLine": 1017,
-              "endLine": 1017,
+              "startLine": 993,
+              "endLine": 993,
               "startOffset": 83,
               "endOffset": 84
             },
@@ -11172,8 +11172,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
             "textRange": {
-              "startLine": 1047,
-              "endLine": 1047,
+              "startLine": 1023,
+              "endLine": 1023,
               "startOffset": 84,
               "endOffset": 85
             },
@@ -11187,8 +11187,8 @@
           {
             "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
             "textRange": {
-              "startLine": 1078,
-              "endLine": 1078,
+              "startLine": 1054,
+              "endLine": 1054,
               "startOffset": 82,
               "endOffset": 83
             },
@@ -11202,8 +11202,23 @@
           {
             "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
             "textRange": {
-              "startLine": 1254,
-              "endLine": 1254,
+              "startLine": 1087,
+              "endLine": 1087,
+              "startOffset": 87,
+              "endOffset": 88
+            },
+            "msg": "+1",
+            "msgFormattings": []
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
+            "textRange": {
+              "startLine": 1262,
+              "endLine": 1262,
               "startOffset": 44,
               "endOffset": 45
             },
@@ -11214,16 +11229,16 @@
       }
     ],
     "status": "OPEN",
-    "message": "Refactor this function to reduce its Cognitive Complexity from 27 to the 15 allowed.",
-    "effort": "17min",
-    "debt": "17min",
+    "message": "Refactor this function to reduce its Cognitive Complexity from 28 to the 15 allowed.",
+    "effort": "18min",
+    "debt": "18min",
     "author": "pablitto18@gmail.com",
     "tags": [
       "brain-overload"
     ],
     "comments": [],
     "creationDate": "2026-04-08T20:26:08+0000",
-    "updateDate": "2026-06-05T14:56:44+0000",
+    "updateDate": "2026-06-10T14:41:51+0000",
     "type": "CODE_SMELL",
     "scope": "MAIN",
     "quickFixAvailable": false,
@@ -11279,11 +11294,11 @@
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
     "project": "levo-frontend",
-    "line": 320,
+    "line": 321,
     "hash": "56b852c682415055d9825d81afadfacc",
     "textRange": {
-      "startLine": 320,
-      "endLine": 320,
+      "startLine": 321,
+      "endLine": 321,
       "startOffset": 12,
       "endOffset": 18
     },
@@ -11320,31 +11335,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 317,
+        "line": 318,
         "code": "        };"
       },
       {
-        "line": 318,
-        "code": ""
-      },
-      {
         "line": 319,
-        "code": "        if (isImageModalOpen) {"
+        "code": ""
       },
       {
         "line": 320,
-        "code": "            window.addEventListener('keydown', handleKeyDown);"
+        "code": "        if (isImageModalOpen) {"
       },
       {
         "line": 321,
-        "code": "        }"
+        "code": "            window.addEventListener('keydown', handleKeyDown);"
       },
       {
         "line": 322,
-        "code": ""
+        "code": "        }"
       },
       {
         "line": 323,
+        "code": ""
+      },
+      {
+        "line": 324,
         "code": "        return () =&gt; {"
       }
     ]
@@ -11355,11 +11370,11 @@
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
     "project": "levo-frontend",
-    "line": 324,
+    "line": 325,
     "hash": "574001101cc42eb19ccc9da020d3f065",
     "textRange": {
-      "startLine": 324,
-      "endLine": 324,
+      "startLine": 325,
+      "endLine": 325,
       "startOffset": 12,
       "endOffset": 18
     },
@@ -11396,31 +11411,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 321,
+        "line": 322,
         "code": "        }"
       },
       {
-        "line": 322,
+        "line": 323,
         "code": ""
       },
       {
-        "line": 323,
+        "line": 324,
         "code": "        return () =&gt; {"
       },
       {
-        "line": 324,
+        "line": 325,
         "code": "            window.removeEventListener('keydown', handleKeyDown);"
       },
       {
-        "line": 325,
+        "line": 326,
         "code": "        };"
       },
       {
-        "line": 326,
+        "line": 327,
         "code": "    }, [isImageModalOpen]);"
       },
       {
-        "line": 327,
+        "line": 328,
         "code": ""
       }
     ]
@@ -11431,11 +11446,11 @@
     "severity": "MAJOR",
     "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
     "project": "levo-frontend",
-    "line": 494,
+    "line": 473,
     "hash": "07b699399f378807615a45dc5ccb6c7c",
     "textRange": {
-      "startLine": 494,
-      "endLine": 494,
+      "startLine": 473,
+      "endLine": 473,
       "startOffset": 49,
       "endOffset": 70
     },
@@ -11469,31 +11484,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 491,
+        "line": 470,
         "code": "                        product.categoryPath.map((cat, index) =&gt; ("
       },
       {
-        "line": 492,
+        "line": 471,
         "code": "                            &lt;div key={cat.id} className=\"flex items-center gap-4 shrink-0\"&gt;"
       },
       {
-        "line": 493,
+        "line": 472,
         "code": "                                &lt;span&gt;|&lt;/span&gt;"
       },
       {
-        "line": 494,
+        "line": 473,
         "code": "                                &lt;span className={index === 0 ? \"\" : \"\"}&gt;{cat.name}&lt;/span&gt;"
       },
       {
-        "line": 495,
+        "line": 474,
         "code": "                            &lt;/div&gt;"
       },
       {
-        "line": 496,
+        "line": 475,
         "code": "                        ))"
       },
       {
-        "line": 497,
+        "line": 476,
         "code": "                    ) : ("
       }
     ]
@@ -11504,11 +11519,11 @@
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
     "project": "levo-frontend",
-    "line": 582,
+    "line": 561,
     "hash": "d90c26198ff23a5c54f81269ceed5c01",
     "textRange": {
-      "startLine": 582,
-      "endLine": 588,
+      "startLine": 561,
+      "endLine": 567,
       "startOffset": 28,
       "endOffset": 29
     },
@@ -11545,31 +11560,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 579,
+        "line": 558,
         "code": "                            })()}"
       },
       {
-        "line": 580,
+        "line": 559,
         "code": ""
       },
       {
-        "line": 581,
+        "line": 560,
         "code": "                            {/* Main Media Viewer */}"
       },
       {
-        "line": 582,
+        "line": 561,
         "code": "                            &lt;div"
       },
       {
-        "line": 583,
+        "line": 562,
         "code": "                                className={`flex-1 aspect-square rounded-2xl overflow-hidden shadow-sm transition-shadow relative group ${currentMedia.type === 'VIDEO'"
       },
       {
-        "line": 584,
+        "line": 563,
         "code": "                                    ? \"bg-black cursor-default\""
       },
       {
-        "line": 585,
+        "line": 564,
         "code": "                                    : \"bg-white cursor-pointer hover:shadow-md\""
       }
     ]
@@ -11580,11 +11595,11 @@
     "severity": "MAJOR",
     "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
     "project": "levo-frontend",
-    "line": 582,
+    "line": 561,
     "hash": "d90c26198ff23a5c54f81269ceed5c01",
     "textRange": {
-      "startLine": 582,
-      "endLine": 588,
+      "startLine": 561,
+      "endLine": 567,
       "startOffset": 28,
       "endOffset": 29
     },
@@ -11625,31 +11640,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 579,
+        "line": 558,
         "code": "                            })()}"
       },
       {
-        "line": 580,
+        "line": 559,
         "code": ""
       },
       {
-        "line": 581,
+        "line": 560,
         "code": "                            {/* Main Media Viewer */}"
       },
       {
-        "line": 582,
+        "line": 561,
         "code": "                            &lt;div"
       },
       {
-        "line": 583,
+        "line": 562,
         "code": "                                className={`flex-1 aspect-square rounded-2xl overflow-hidden shadow-sm transition-shadow relative group ${currentMedia.type === 'VIDEO'"
       },
       {
-        "line": 584,
+        "line": 563,
         "code": "                                    ? \"bg-black cursor-default\""
       },
       {
-        "line": 585,
+        "line": 564,
         "code": "                                    : \"bg-white cursor-pointer hover:shadow-md\""
       }
     ]
@@ -11660,11 +11675,11 @@
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
     "project": "levo-frontend",
-    "line": 1149,
+    "line": 1157,
     "hash": "d90c26198ff23a5c54f81269ceed5c01",
     "textRange": {
-      "startLine": 1149,
-      "endLine": 1152,
+      "startLine": 1157,
+      "endLine": 1160,
       "startOffset": 16,
       "endOffset": 17
     },
@@ -11701,31 +11716,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 1146,
+        "line": 1154,
         "code": "            )}"
       },
       {
-        "line": 1147,
+        "line": 1155,
         "code": "            {/* Media Fullscreen Modal \u2014 only opens for images */}"
       },
       {
-        "line": 1148,
+        "line": 1156,
         "code": "            {isImageModalOpen &amp;&amp; mediaItems.length &gt; 0 &amp;&amp; currentMedia.type === 'IMAGE' &amp;&amp; ("
       },
       {
-        "line": 1149,
+        "line": 1157,
         "code": "                &lt;div"
       },
       {
-        "line": 1150,
+        "line": 1158,
         "code": "                    className=\"fixed inset-0 z-[110] flex items-center justify-center bg-black/80 backdrop-blur-md p-4 animate-in fade-in duration-200\""
       },
       {
-        "line": 1151,
+        "line": 1159,
         "code": "                    onClick={() =&gt; setIsImageModalOpen(false)}"
       },
       {
-        "line": 1152,
+        "line": 1160,
         "code": "                &gt;"
       }
     ]
@@ -11736,11 +11751,11 @@
     "severity": "MAJOR",
     "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
     "project": "levo-frontend",
-    "line": 1149,
+    "line": 1157,
     "hash": "d90c26198ff23a5c54f81269ceed5c01",
     "textRange": {
-      "startLine": 1149,
-      "endLine": 1152,
+      "startLine": 1157,
+      "endLine": 1160,
       "startOffset": 16,
       "endOffset": 17
     },
@@ -11781,31 +11796,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 1146,
+        "line": 1154,
         "code": "            )}"
       },
       {
-        "line": 1147,
+        "line": 1155,
         "code": "            {/* Media Fullscreen Modal \u2014 only opens for images */}"
       },
       {
-        "line": 1148,
+        "line": 1156,
         "code": "            {isImageModalOpen &amp;&amp; mediaItems.length &gt; 0 &amp;&amp; currentMedia.type === 'IMAGE' &amp;&amp; ("
       },
       {
-        "line": 1149,
+        "line": 1157,
         "code": "                &lt;div"
       },
       {
-        "line": 1150,
+        "line": 1158,
         "code": "                    className=\"fixed inset-0 z-[110] flex items-center justify-center bg-black/80 backdrop-blur-md p-4 animate-in fade-in duration-200\""
       },
       {
-        "line": 1151,
+        "line": 1159,
         "code": "                    onClick={() =&gt; setIsImageModalOpen(false)}"
       },
       {
-        "line": 1152,
+        "line": 1160,
         "code": "                &gt;"
       }
     ]
@@ -11816,11 +11831,11 @@
     "severity": "MAJOR",
     "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
     "project": "levo-frontend",
-    "line": 1162,
+    "line": 1170,
     "hash": "d90c26198ff23a5c54f81269ceed5c01",
     "textRange": {
-      "startLine": 1162,
-      "endLine": 1165,
+      "startLine": 1170,
+      "endLine": 1173,
       "startOffset": 20,
       "endOffset": 21
     },
@@ -11861,31 +11876,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 1159,
+        "line": 1167,
         "code": "                    &lt;/button&gt;"
       },
       {
-        "line": 1160,
+        "line": 1168,
         "code": ""
       },
       {
-        "line": 1161,
+        "line": 1169,
         "code": "                    {/* Media Container */}"
       },
       {
-        "line": 1162,
+        "line": 1170,
         "code": "                    &lt;div"
       },
       {
-        "line": 1163,
+        "line": 1171,
         "code": "                        className=\"relative w-full max-w-[90vw] h-[90vh] flex items-center justify-center animate-in zoom-in-95 duration-200\""
       },
       {
-        "line": 1164,
+        "line": 1172,
         "code": "                        onClick={(e) =&gt; e.stopPropagation()}"
       },
       {
-        "line": 1165,
+        "line": 1173,
         "code": "                    &gt;"
       }
     ]
@@ -11896,11 +11911,11 @@
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
     "project": "levo-frontend",
-    "line": 1162,
+    "line": 1170,
     "hash": "d90c26198ff23a5c54f81269ceed5c01",
     "textRange": {
-      "startLine": 1162,
-      "endLine": 1165,
+      "startLine": 1170,
+      "endLine": 1173,
       "startOffset": 20,
       "endOffset": 21
     },
@@ -11937,31 +11952,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 1159,
+        "line": 1167,
         "code": "                    &lt;/button&gt;"
       },
       {
-        "line": 1160,
+        "line": 1168,
         "code": ""
       },
       {
-        "line": 1161,
+        "line": 1169,
         "code": "                    {/* Media Container */}"
       },
       {
-        "line": 1162,
+        "line": 1170,
         "code": "                    &lt;div"
       },
       {
-        "line": 1163,
+        "line": 1171,
         "code": "                        className=\"relative w-full max-w-[90vw] h-[90vh] flex items-center justify-center animate-in zoom-in-95 duration-200\""
       },
       {
-        "line": 1164,
+        "line": 1172,
         "code": "                        onClick={(e) =&gt; e.stopPropagation()}"
       },
       {
-        "line": 1165,
+        "line": 1173,
         "code": "                    &gt;"
       }
     ]
@@ -12047,11 +12062,11 @@
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
     "project": "levo-frontend",
-    "line": 833,
+    "line": 812,
     "hash": "fe11ecdc164be97bc22f2d7559da0c55",
     "textRange": {
-      "startLine": 833,
-      "endLine": 833,
+      "startLine": 812,
+      "endLine": 812,
       "startOffset": 50,
       "endOffset": 82
     },
@@ -12087,31 +12102,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 830,
+        "line": 809,
         "code": "                        &lt;div className=\"bg-[var(--card-bg)] border border-[var(--border-color)] rounded-xl p-4\"&gt;"
       },
       {
-        "line": 831,
+        "line": 810,
         "code": "                            &lt;h3 className=\"text-sm font-semibold mb-3\"&gt;{`Importaciones de ${product.brand?.name} de los ultimos 365 d\u00edas`}&lt;/h3&gt;"
       },
       {
-        "line": 832,
+        "line": 811,
         "code": "                            &lt;ul className=\"space-y-2 text-sm text-[var(--text-secondary)]\"&gt;"
       },
       {
-        "line": 833,
+        "line": 812,
         "code": "                                &lt;li&gt;\u2022 Monto FOB: {product.montoFobUsdArgLy != null ? `$${product.montoFobUsdArgLy.toLocaleString(\"es-AR\")}` : \"N/A\"}&lt;/li&gt;"
       },
       {
-        "line": 834,
+        "line": 813,
         "code": "                                &lt;li&gt;\u2022 Importaciones: {product.itemsArgLy || \"N/A\"}&lt;/li&gt;"
       },
       {
-        "line": 835,
+        "line": 814,
         "code": "                                {(product.URLsARG || product.urlsARG || product.urlsarg) &amp;&amp; ("
       },
       {
-        "line": 836,
+        "line": 815,
         "code": "                                    &lt;li&gt;"
       }
     ]
@@ -14079,11 +14094,11 @@
     "severity": "MAJOR",
     "component": "levo-frontend:src/app/insights/components/ManufacturerDetailView.tsx",
     "project": "levo-frontend",
-    "line": 519,
+    "line": 517,
     "hash": "98eb065fd6a076109ae26d48be36c767",
     "textRange": {
-      "startLine": 519,
-      "endLine": 619,
+      "startLine": 517,
+      "endLine": 617,
       "startOffset": 40,
       "endOffset": 37
     },
@@ -14119,31 +14134,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 516,
+        "line": 514,
         "code": "                                                Cargando productos..."
       },
       {
-        "line": 517,
+        "line": 515,
         "code": "                                            &lt;/td&gt;"
       },
       {
-        "line": 518,
+        "line": 516,
         "code": "                                        &lt;/tr&gt;"
       },
       {
-        "line": 519,
+        "line": 517,
         "code": "                                    ) : products.length === 0 ? ("
       },
       {
-        "line": 520,
+        "line": 518,
         "code": "                                        &lt;tr&gt;"
       },
       {
-        "line": 521,
+        "line": 519,
         "code": "                                            &lt;td colSpan={9} className=\"px-4 py-8 text-center text-[var(--text-secondary)]\"&gt;"
       },
       {
-        "line": 522,
+        "line": 520,
         "code": "                                                No hay productos disponibles para este fabricante."
       }
     ]
@@ -14154,11 +14169,11 @@
     "severity": "MAJOR",
     "component": "levo-frontend:src/app/insights/components/ManufacturerDetailView.tsx",
     "project": "levo-frontend",
-    "line": 529,
+    "line": 527,
     "hash": "47e4dd282070c42872c0ae672c2d2065",
     "textRange": {
-      "startLine": 529,
-      "endLine": 529,
+      "startLine": 527,
+      "endLine": 527,
       "startOffset": 63,
       "endOffset": 104
     },
@@ -14194,31 +14209,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 526,
+        "line": 524,
         "code": "                                        products.map((product) =&gt; ("
       },
       {
-        "line": 527,
+        "line": 525,
         "code": "                                            &lt;tr"
       },
       {
-        "line": 528,
+        "line": 526,
         "code": "                                                key={product.id}"
       },
       {
-        "line": 529,
+        "line": 527,
         "code": "                                                onClick={() =&gt; onProductClick &amp;&amp; onProductClick(product)}"
       },
       {
-        "line": 530,
+        "line": 528,
         "code": "                                                className={`hover:bg-[var(--background-secondary)] transition-colors group ${onProductClick ? \"cursor-pointer\" : \"\"}`}"
       },
       {
-        "line": 531,
+        "line": 529,
         "code": "                                            &gt;"
       },
       {
-        "line": 532,
+        "line": 530,
         "code": "                                                &lt;td className=\"px-4 py-3\"&gt;"
       }
     ]
@@ -14229,11 +14244,11 @@
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/ManufacturerDetailView.tsx",
     "project": "levo-frontend",
-    "line": 655,
+    "line": 653,
     "hash": "da6fbaafe964db8c604b132aef781eaa",
     "textRange": {
-      "startLine": 655,
-      "endLine": 655,
+      "startLine": 653,
+      "endLine": 653,
       "startOffset": 105,
       "endOffset": 136
     },
@@ -14269,31 +14284,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 652,
+        "line": 650,
         "code": "                                &lt;line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"&gt;&lt;/line&gt;"
       },
       {
-        "line": 653,
+        "line": 651,
         "code": "                            &lt;/svg&gt;"
       },
       {
-        "line": 654,
+        "line": 652,
         "code": "                        &lt;/button&gt;"
       },
       {
-        "line": 655,
+        "line": 653,
         "code": "                        &lt;span className=\"font-semibold text-sm\"&gt;{selectedProductIds.length} seleccionado{selectedProductIds.length !== 1 ? 's' : ''}&lt;/span&gt;"
       },
       {
-        "line": 656,
+        "line": 654,
         "code": "                    &lt;/div&gt;"
       },
       {
-        "line": 657,
+        "line": 655,
         "code": ""
       },
       {
-        "line": 658,
+        "line": 656,
         "code": "                    &lt;div className=\"flex items-center gap-2\"&gt;"
       }
     ]
@@ -14304,11 +14319,11 @@
     "severity": "MAJOR",
     "component": "levo-frontend:src/app/insights/components/ManufacturerDetailView.tsx",
     "project": "levo-frontend",
-    "line": 752,
+    "line": 750,
     "hash": "892641a40202452ebbcd2a939dc3a5a0",
     "textRange": {
-      "startLine": 752,
-      "endLine": 752,
+      "startLine": 750,
+      "endLine": 750,
       "startOffset": 0,
       "endOffset": 79
     },
@@ -14348,31 +14363,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 749,
+        "line": 747,
         "code": "                                {actionModal.count === 1 &amp;&amp; actionModal.productName ? ("
       },
       {
-        "line": 750,
+        "line": 748,
         "code": "                                    &lt;p&gt;"
       },
       {
-        "line": 751,
+        "line": 749,
         "code": "                                        El producto &lt;span className=\"font-bold text-white\"&gt;\"{actionModal.productName}\"&lt;/span&gt; se mover\u00e1 a"
       },
       {
-        "line": 752,
+        "line": 750,
         "code": "                                        &lt;span className=\"font-bold text-white\"&gt;"
       },
       {
-        "line": 753,
+        "line": 751,
         "code": "                                            {actionModal.type === 'save' &amp;&amp; \" Productos Guardados\"}"
       },
       {
-        "line": 754,
+        "line": 752,
         "code": "                                            {actionModal.type === 'unsave' &amp;&amp; \"l listado general\"}"
       },
       {
-        "line": 755,
+        "line": 753,
         "code": "                                            {actionModal.type === 'delete' &amp;&amp; \" Productos Eliminados\"}"
       }
     ]
@@ -14459,11 +14474,11 @@
     "severity": "MAJOR",
     "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
     "project": "levo-frontend",
-    "line": 647,
+    "line": 626,
     "hash": "8a6c065819987cf2b44de8c2f5493486",
     "textRange": {
-      "startLine": 647,
-      "endLine": 651,
+      "startLine": 626,
+      "endLine": 630,
       "startOffset": 36,
       "endOffset": 37
     },
@@ -14504,31 +14519,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 644,
+        "line": 623,
         "code": "                                &lt;li&gt;\u2022 Category tree: {product.categoryTree || \"N/A\"}&lt;/li&gt;"
       },
       {
-        "line": 645,
+        "line": 624,
         "code": "                                &lt;li&gt;"
       },
       {
-        "line": 646,
+        "line": 625,
         "code": "                                    \u2022 Marca:{\" \"}"
       },
       {
-        "line": 647,
+        "line": 626,
         "code": "                                    &lt;span"
       },
       {
-        "line": 648,
+        "line": 627,
         "code": "                                        onClick={() =&gt; product.brand?.id &amp;&amp; onShowBrand?.(product.brand.id)}"
       },
       {
-        "line": 649,
+        "line": 628,
         "code": "                                        className=\"text-blue-400 hover:underline cursor-pointer\""
       },
       {
-        "line": 650,
+        "line": 629,
         "code": "                                        title=\"Ver m\u00e1s productos marca\""
       }
     ]
@@ -14539,11 +14554,11 @@
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
     "project": "levo-frontend",
-    "line": 647,
+    "line": 626,
     "hash": "8a6c065819987cf2b44de8c2f5493486",
     "textRange": {
-      "startLine": 647,
-      "endLine": 651,
+      "startLine": 626,
+      "endLine": 630,
       "startOffset": 36,
       "endOffset": 37
     },
@@ -14580,31 +14595,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 644,
+        "line": 623,
         "code": "                                &lt;li&gt;\u2022 Category tree: {product.categoryTree || \"N/A\"}&lt;/li&gt;"
       },
       {
-        "line": 645,
+        "line": 624,
         "code": "                                &lt;li&gt;"
       },
       {
-        "line": 646,
+        "line": 625,
         "code": "                                    \u2022 Marca:{\" \"}"
       },
       {
-        "line": 647,
+        "line": 626,
         "code": "                                    &lt;span"
       },
       {
-        "line": 648,
+        "line": 627,
         "code": "                                        onClick={() =&gt; product.brand?.id &amp;&amp; onShowBrand?.(product.brand.id)}"
       },
       {
-        "line": 649,
+        "line": 628,
         "code": "                                        className=\"text-blue-400 hover:underline cursor-pointer\""
       },
       {
-        "line": 650,
+        "line": 629,
         "code": "                                        title=\"Ver m\u00e1s productos marca\""
       }
     ]
@@ -14615,11 +14630,11 @@
     "severity": "MAJOR",
     "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
     "project": "levo-frontend",
-    "line": 659,
+    "line": 638,
     "hash": "8a6c065819987cf2b44de8c2f5493486",
     "textRange": {
-      "startLine": 659,
-      "endLine": 663,
+      "startLine": 638,
+      "endLine": 642,
       "startOffset": 36,
       "endOffset": 37
     },
@@ -14660,31 +14675,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 656,
+        "line": 635,
         "code": "                                &lt;li&gt;\u2022 Precio Actualizado: {product.priceChanges ? formatDate(product.priceChanges) : \"N/A\"}&lt;/li&gt;"
       },
       {
-        "line": 657,
+        "line": 636,
         "code": "                                &lt;li&gt;"
       },
       {
-        "line": 658,
+        "line": 637,
         "code": "                                    \u2022 Fabricante:{\" \"}"
       },
       {
-        "line": 659,
+        "line": 638,
         "code": "                                    &lt;span"
       },
       {
-        "line": 660,
+        "line": 639,
         "code": "                                        onClick={() =&gt; product.manufacturer?.id &amp;&amp; onShowManufacturer?.(product.manufacturer.id)}"
       },
       {
-        "line": 661,
+        "line": 640,
         "code": "                                        className=\"text-blue-400 hover:underline cursor-pointer\""
       },
       {
-        "line": 662,
+        "line": 641,
         "code": "                                        title=\"Ver m\u00e1s productos del fabricante\""
       }
     ]
@@ -14695,11 +14710,11 @@
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
     "project": "levo-frontend",
-    "line": 659,
+    "line": 638,
     "hash": "8a6c065819987cf2b44de8c2f5493486",
     "textRange": {
-      "startLine": 659,
-      "endLine": 663,
+      "startLine": 638,
+      "endLine": 642,
       "startOffset": 36,
       "endOffset": 37
     },
@@ -14736,31 +14751,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 656,
+        "line": 635,
         "code": "                                &lt;li&gt;\u2022 Precio Actualizado: {product.priceChanges ? formatDate(product.priceChanges) : \"N/A\"}&lt;/li&gt;"
       },
       {
-        "line": 657,
+        "line": 636,
         "code": "                                &lt;li&gt;"
       },
       {
-        "line": 658,
+        "line": 637,
         "code": "                                    \u2022 Fabricante:{\" \"}"
       },
       {
-        "line": 659,
+        "line": 638,
         "code": "                                    &lt;span"
       },
       {
-        "line": 660,
+        "line": 639,
         "code": "                                        onClick={() =&gt; product.manufacturer?.id &amp;&amp; onShowManufacturer?.(product.manufacturer.id)}"
       },
       {
-        "line": 661,
+        "line": 640,
         "code": "                                        className=\"text-blue-400 hover:underline cursor-pointer\""
       },
       {
-        "line": 662,
+        "line": 641,
         "code": "                                        title=\"Ver m\u00e1s productos del fabricante\""
       }
     ]
@@ -17560,11 +17575,11 @@
     "severity": "MAJOR",
     "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
     "project": "levo-frontend",
-    "line": 469,
+    "line": 448,
     "hash": "95f20db7def16bd43977171072c8934f",
     "textRange": {
-      "startLine": 469,
-      "endLine": 469,
+      "startLine": 448,
+      "endLine": 448,
       "startOffset": 10,
       "endOffset": 18
     },
@@ -17601,31 +17616,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 466,
+        "line": 445,
         "code": ""
       },
       {
-        "line": 467,
+        "line": 446,
         "code": "    // 1. Guardamos los resultados"
       },
       {
-        "line": 468,
+        "line": 447,
         "code": "    const canView = isViewAllowed(\"Barra Inferior Analizar Oportunidad\");"
       },
       {
-        "line": 469,
+        "line": 448,
         "code": "    const canClick = isActionAllowed(\"Barra Inferior Analizar Oportunidad\");"
       },
       {
-        "line": 470,
+        "line": 449,
         "code": ""
       },
       {
-        "line": 471,
+        "line": 450,
         "code": "    const canViewAnalisisRapido = isViewAllowed(\"An\u00e1lisis R\u00e1pido\");"
       },
       {
-        "line": 472,
+        "line": 451,
         "code": "    const canClickAnalisisRapido = isActionAllowed(\"An\u00e1lisis R\u00e1pido\");"
       }
     ]
@@ -22180,11 +22195,11 @@
     "severity": "MAJOR",
     "component": "levo-frontend:src/app/insights/components/BrandDetailView.tsx",
     "project": "levo-frontend",
-    "line": 654,
+    "line": 644,
     "hash": "98eb065fd6a076109ae26d48be36c767",
     "textRange": {
-      "startLine": 654,
-      "endLine": 754,
+      "startLine": 644,
+      "endLine": 744,
       "startOffset": 40,
       "endOffset": 37
     },
@@ -22220,31 +22235,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 651,
+        "line": 641,
         "code": "                                                Cargando productos..."
       },
       {
-        "line": 652,
+        "line": 642,
         "code": "                                            &lt;/td&gt;"
       },
       {
-        "line": 653,
+        "line": 643,
         "code": "                                        &lt;/tr&gt;"
       },
       {
-        "line": 654,
+        "line": 644,
         "code": "                                    ) : products.length === 0 ? ("
       },
       {
-        "line": 655,
+        "line": 645,
         "code": "                                        &lt;tr&gt;"
       },
       {
-        "line": 656,
+        "line": 646,
         "code": "                                            &lt;td colSpan={9} className=\"px-4 py-8 text-center text-[var(--text-secondary)]\"&gt;"
       },
       {
-        "line": 657,
+        "line": 647,
         "code": "                                                No hay productos disponibles para esta marca."
       }
     ]
@@ -23127,11 +23142,11 @@
     "severity": "MAJOR",
     "component": "levo-frontend:src/app/insights/components/BrandDetailView.tsx",
     "project": "levo-frontend",
-    "line": 664,
+    "line": 654,
     "hash": "47e4dd282070c42872c0ae672c2d2065",
     "textRange": {
-      "startLine": 664,
-      "endLine": 664,
+      "startLine": 654,
+      "endLine": 654,
       "startOffset": 63,
       "endOffset": 104
     },
@@ -23167,31 +23182,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 661,
+        "line": 651,
         "code": "                                        products.map((product) =&gt; ("
       },
       {
-        "line": 662,
+        "line": 652,
         "code": "                                            &lt;tr"
       },
       {
-        "line": 663,
+        "line": 653,
         "code": "                                                key={product.id}"
       },
       {
-        "line": 664,
+        "line": 654,
         "code": "                                                onClick={() =&gt; onProductClick &amp;&amp; onProductClick(product)}"
       },
       {
-        "line": 665,
+        "line": 655,
         "code": "                                                className={`hover:bg-[var(--background-secondary)] transition-colors group ${onProductClick ? \"cursor-pointer\" : \"\"}`}"
       },
       {
-        "line": 666,
+        "line": 656,
         "code": "                                            &gt;"
       },
       {
-        "line": 667,
+        "line": 657,
         "code": "                                                &lt;td className=\"px-4 py-3\"&gt;"
       }
     ]
@@ -23202,11 +23217,11 @@
     "severity": "MAJOR",
     "component": "levo-frontend:src/app/insights/components/BrandDetailView.tsx",
     "project": "levo-frontend",
-    "line": 887,
+    "line": 877,
     "hash": "892641a40202452ebbcd2a939dc3a5a0",
     "textRange": {
-      "startLine": 887,
-      "endLine": 887,
+      "startLine": 877,
+      "endLine": 877,
       "startOffset": 0,
       "endOffset": 79
     },
@@ -23246,31 +23261,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 884,
+        "line": 874,
         "code": "                                {actionModal.count === 1 &amp;&amp; actionModal.productName ? ("
       },
       {
-        "line": 885,
+        "line": 875,
         "code": "                                    &lt;p&gt;"
       },
       {
-        "line": 886,
+        "line": 876,
         "code": "                                        El producto &lt;span className=\"font-bold text-white\"&gt;\"{actionModal.productName}\"&lt;/span&gt; se mover\u00e1 a"
       },
       {
-        "line": 887,
+        "line": 877,
         "code": "                                        &lt;span className=\"font-bold text-white\"&gt;"
       },
       {
-        "line": 888,
+        "line": 878,
         "code": "                                            {actionModal.type === 'save' &amp;&amp; \" Productos Guardados\"}"
       },
       {
-        "line": 889,
+        "line": 879,
         "code": "                                            {actionModal.type === 'unsave' &amp;&amp; \"l listado general\"}"
       },
       {
-        "line": 890,
+        "line": 880,
         "code": "                                            {actionModal.type === 'delete' &amp;&amp; \" Productos Eliminados\"}"
       }
     ]
@@ -23888,11 +23903,11 @@
     "severity": "MAJOR",
     "component": "levo-frontend:src/app/insights/components/ProductDetailView.tsx",
     "project": "levo-frontend",
-    "line": 1131,
+    "line": 1139,
     "hash": "84b34fdc6f182320c4bfffd17668135f",
     "textRange": {
-      "startLine": 1131,
-      "endLine": 1131,
+      "startLine": 1139,
+      "endLine": 1139,
       "startOffset": 45,
       "endOffset": 48
     },
@@ -23930,31 +23945,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 1128,
+        "line": 1136,
         "code": "                        &lt;div className=\"p-6 overflow-y-auto flex-1\"&gt;"
       },
       {
-        "line": 1129,
+        "line": 1137,
         "code": "                            &lt;ul className=\"list-decimal pl-5 space-y-3\"&gt;"
       },
       {
-        "line": 1130,
+        "line": 1138,
         "code": "                                {((product.URLsARG || product.urlsARG || product.urlsarg || \"\").split(' ').filter(url =&gt; url.trim().length &gt; 0)).map((url, idx) =&gt; ("
       },
       {
-        "line": 1131,
+        "line": 1139,
         "code": "                                    &lt;li key={idx} className=\"break-all marker:text-[var(--text-secondary)]\"&gt;"
       },
       {
-        "line": 1132,
+        "line": 1140,
         "code": "                                        &lt;a"
       },
       {
-        "line": 1133,
+        "line": 1141,
         "code": "                                            href={url}"
       },
       {
-        "line": 1134,
+        "line": 1142,
         "code": "                                            target=\"_blank\""
       }
     ]
@@ -29190,15 +29205,15 @@
       },
       {
         "line": 21,
-        "code": "    const [data, setData] = useState&lt;TemporalSeries[]&gt;([]);"
+        "code": "    const [priceData, setPriceData] = useState&lt;TemporalSeries[]&gt;([]);"
       },
       {
         "line": 22,
-        "code": "    const [loading, setLoading] = useState(true);"
+        "code": "    const [marketplaceData, setMarketplaceData] = useState&lt;TemporalSeries[]&gt;([]);"
       },
       {
         "line": 23,
-        "code": "    const [error, setError] = useState&lt;string | null&gt;(null);"
+        "code": "    const [loading, setLoading] = useState(true);"
       }
     ]
   },
@@ -35766,320 +35781,16 @@
     ]
   },
   {
-    "key": "34a20ee5-6a54-465e-ba70-f25e21a492d8",
-    "rule": "typescript:S6606",
-    "severity": "MINOR",
-    "component": "levo-frontend:src/app/insights/components/BrandDetailView.tsx",
-    "project": "levo-frontend",
-    "line": 532,
-    "hash": "31d2bbdac54171dcb696877b53a49b2b",
-    "textRange": {
-      "startLine": 532,
-      "endLine": 532,
-      "startOffset": 56,
-      "endOffset": 128
-    },
-    "flows": [],
-    "status": "OPEN",
-    "message": "Prefer using nullish coalescing operator (`??`) instead of a ternary expression, as it is simpler to read.",
-    "effort": "5min",
-    "debt": "5min",
-    "author": "pablitto18@gmail.com",
-    "tags": [
-      "type-dependent",
-      "nullish-coalescing",
-      "es2020"
-    ],
-    "comments": [],
-    "creationDate": "2026-02-12T18:31:55+0000",
-    "updateDate": "2026-05-08T14:10:14+0000",
-    "type": "CODE_SMELL",
-    "scope": "MAIN",
-    "quickFixAvailable": true,
-    "messageFormattings": [],
-    "codeVariants": [],
-    "cleanCodeAttribute": "CONVENTIONAL",
-    "cleanCodeAttributeCategory": "CONSISTENT",
-    "impacts": [
-      {
-        "softwareQuality": "MAINTAINABILITY",
-        "severity": "LOW"
-      }
-    ],
-    "issueStatus": "OPEN",
-    "prioritizedRule": false,
-    "fromSonarQubeUpdate": false,
-    "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED",
-    "codeSnippet": [
-      {
-        "line": 529,
-        "code": "                        &lt;h3 className=\"text-white font-semibold mb-2\"&gt;Informaci\u00f3n de marca&lt;/h3&gt;"
-      },
-      {
-        "line": 530,
-        "code": "                        &lt;span&gt;\u2022 Tipo de marca: {brand?.brandType?.brandType || \"N/A\"}&lt;/span&gt;"
-      },
-      {
-        "line": 531,
-        "code": "                        &lt;span&gt;\u2022 Pais de origen: {brand?.country?.countryName || \"N/A\"}&lt;/span&gt;"
-      },
-      {
-        "line": 532,
-        "code": "                        &lt;span&gt;\u2022 Cantidad de empleados: {brand?.cantidadEmpleados !== undefined ? brand.cantidadEmpleados : \"N/A\"}&lt;/span&gt;"
-      },
-      {
-        "line": 533,
-        "code": "                        &lt;span&gt;\u2022 Cantidad de productos: {brand?.cantidadProductos !== undefined ? brand.cantidadProductos : \"N/A\"}&lt;/span&gt;"
-      },
-      {
-        "line": 534,
-        "code": "                        &lt;span&gt;\u2022 Cotiza en bolsa: {brand?.cotizaEnBolsa ? \"S\u00ed\" : \"No\"}&lt;/span&gt;"
-      },
-      {
-        "line": 535,
-        "code": "                    &lt;/div&gt;"
-      }
-    ]
-  },
-  {
-    "key": "660e081c-3e6e-445e-9747-c01faa231d60",
-    "rule": "typescript:S7735",
-    "severity": "MINOR",
-    "component": "levo-frontend:src/app/insights/components/BrandDetailView.tsx",
-    "project": "levo-frontend",
-    "line": 532,
-    "hash": "31d2bbdac54171dcb696877b53a49b2b",
-    "textRange": {
-      "startLine": 532,
-      "endLine": 532,
-      "startOffset": 56,
-      "endOffset": 94
-    },
-    "flows": [],
-    "status": "OPEN",
-    "message": "Unexpected negated condition.",
-    "effort": "2min",
-    "debt": "2min",
-    "author": "pablitto18@gmail.com",
-    "tags": [
-      "readability"
-    ],
-    "comments": [],
-    "creationDate": "2026-02-12T18:31:55+0000",
-    "updateDate": "2026-05-08T14:10:14+0000",
-    "type": "CODE_SMELL",
-    "scope": "MAIN",
-    "quickFixAvailable": true,
-    "messageFormattings": [],
-    "codeVariants": [],
-    "cleanCodeAttribute": "CLEAR",
-    "cleanCodeAttributeCategory": "INTENTIONAL",
-    "impacts": [
-      {
-        "softwareQuality": "MAINTAINABILITY",
-        "severity": "LOW"
-      }
-    ],
-    "issueStatus": "OPEN",
-    "prioritizedRule": false,
-    "fromSonarQubeUpdate": false,
-    "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED",
-    "codeSnippet": [
-      {
-        "line": 529,
-        "code": "                        &lt;h3 className=\"text-white font-semibold mb-2\"&gt;Informaci\u00f3n de marca&lt;/h3&gt;"
-      },
-      {
-        "line": 530,
-        "code": "                        &lt;span&gt;\u2022 Tipo de marca: {brand?.brandType?.brandType || \"N/A\"}&lt;/span&gt;"
-      },
-      {
-        "line": 531,
-        "code": "                        &lt;span&gt;\u2022 Pais de origen: {brand?.country?.countryName || \"N/A\"}&lt;/span&gt;"
-      },
-      {
-        "line": 532,
-        "code": "                        &lt;span&gt;\u2022 Cantidad de empleados: {brand?.cantidadEmpleados !== undefined ? brand.cantidadEmpleados : \"N/A\"}&lt;/span&gt;"
-      },
-      {
-        "line": 533,
-        "code": "                        &lt;span&gt;\u2022 Cantidad de productos: {brand?.cantidadProductos !== undefined ? brand.cantidadProductos : \"N/A\"}&lt;/span&gt;"
-      },
-      {
-        "line": 534,
-        "code": "                        &lt;span&gt;\u2022 Cotiza en bolsa: {brand?.cotizaEnBolsa ? \"S\u00ed\" : \"No\"}&lt;/span&gt;"
-      },
-      {
-        "line": 535,
-        "code": "                    &lt;/div&gt;"
-      }
-    ]
-  },
-  {
-    "key": "5418224e-eef5-4543-b771-f1c9badaf782",
-    "rule": "typescript:S7735",
-    "severity": "MINOR",
-    "component": "levo-frontend:src/app/insights/components/BrandDetailView.tsx",
-    "project": "levo-frontend",
-    "line": 533,
-    "hash": "6488490ad71fac4dc186a9d2ba473db2",
-    "textRange": {
-      "startLine": 533,
-      "endLine": 533,
-      "startOffset": 56,
-      "endOffset": 94
-    },
-    "flows": [],
-    "status": "OPEN",
-    "message": "Unexpected negated condition.",
-    "effort": "2min",
-    "debt": "2min",
-    "author": "pablitto18@gmail.com",
-    "tags": [
-      "readability"
-    ],
-    "comments": [],
-    "creationDate": "2026-02-12T18:31:55+0000",
-    "updateDate": "2026-05-08T14:10:14+0000",
-    "type": "CODE_SMELL",
-    "scope": "MAIN",
-    "quickFixAvailable": true,
-    "messageFormattings": [],
-    "codeVariants": [],
-    "cleanCodeAttribute": "CLEAR",
-    "cleanCodeAttributeCategory": "INTENTIONAL",
-    "impacts": [
-      {
-        "softwareQuality": "MAINTAINABILITY",
-        "severity": "LOW"
-      }
-    ],
-    "issueStatus": "OPEN",
-    "prioritizedRule": false,
-    "fromSonarQubeUpdate": false,
-    "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED",
-    "codeSnippet": [
-      {
-        "line": 530,
-        "code": "                        &lt;span&gt;\u2022 Tipo de marca: {brand?.brandType?.brandType || \"N/A\"}&lt;/span&gt;"
-      },
-      {
-        "line": 531,
-        "code": "                        &lt;span&gt;\u2022 Pais de origen: {brand?.country?.countryName || \"N/A\"}&lt;/span&gt;"
-      },
-      {
-        "line": 532,
-        "code": "                        &lt;span&gt;\u2022 Cantidad de empleados: {brand?.cantidadEmpleados !== undefined ? brand.cantidadEmpleados : \"N/A\"}&lt;/span&gt;"
-      },
-      {
-        "line": 533,
-        "code": "                        &lt;span&gt;\u2022 Cantidad de productos: {brand?.cantidadProductos !== undefined ? brand.cantidadProductos : \"N/A\"}&lt;/span&gt;"
-      },
-      {
-        "line": 534,
-        "code": "                        &lt;span&gt;\u2022 Cotiza en bolsa: {brand?.cotizaEnBolsa ? \"S\u00ed\" : \"No\"}&lt;/span&gt;"
-      },
-      {
-        "line": 535,
-        "code": "                    &lt;/div&gt;"
-      },
-      {
-        "line": 536,
-        "code": ""
-      }
-    ]
-  },
-  {
-    "key": "d8e8345e-363c-4e26-be8e-684bb0687936",
-    "rule": "typescript:S6606",
-    "severity": "MINOR",
-    "component": "levo-frontend:src/app/insights/components/BrandDetailView.tsx",
-    "project": "levo-frontend",
-    "line": 533,
-    "hash": "6488490ad71fac4dc186a9d2ba473db2",
-    "textRange": {
-      "startLine": 533,
-      "endLine": 533,
-      "startOffset": 56,
-      "endOffset": 128
-    },
-    "flows": [],
-    "status": "OPEN",
-    "message": "Prefer using nullish coalescing operator (`??`) instead of a ternary expression, as it is simpler to read.",
-    "effort": "5min",
-    "debt": "5min",
-    "author": "pablitto18@gmail.com",
-    "tags": [
-      "type-dependent",
-      "nullish-coalescing",
-      "es2020"
-    ],
-    "comments": [],
-    "creationDate": "2026-02-12T18:31:55+0000",
-    "updateDate": "2026-05-08T14:10:14+0000",
-    "type": "CODE_SMELL",
-    "scope": "MAIN",
-    "quickFixAvailable": true,
-    "messageFormattings": [],
-    "codeVariants": [],
-    "cleanCodeAttribute": "CONVENTIONAL",
-    "cleanCodeAttributeCategory": "CONSISTENT",
-    "impacts": [
-      {
-        "softwareQuality": "MAINTAINABILITY",
-        "severity": "LOW"
-      }
-    ],
-    "issueStatus": "OPEN",
-    "prioritizedRule": false,
-    "fromSonarQubeUpdate": false,
-    "internalTags": [],
-    "linkedTicketStatus": "NOT_LINKED",
-    "codeSnippet": [
-      {
-        "line": 530,
-        "code": "                        &lt;span&gt;\u2022 Tipo de marca: {brand?.brandType?.brandType || \"N/A\"}&lt;/span&gt;"
-      },
-      {
-        "line": 531,
-        "code": "                        &lt;span&gt;\u2022 Pais de origen: {brand?.country?.countryName || \"N/A\"}&lt;/span&gt;"
-      },
-      {
-        "line": 532,
-        "code": "                        &lt;span&gt;\u2022 Cantidad de empleados: {brand?.cantidadEmpleados !== undefined ? brand.cantidadEmpleados : \"N/A\"}&lt;/span&gt;"
-      },
-      {
-        "line": 533,
-        "code": "                        &lt;span&gt;\u2022 Cantidad de productos: {brand?.cantidadProductos !== undefined ? brand.cantidadProductos : \"N/A\"}&lt;/span&gt;"
-      },
-      {
-        "line": 534,
-        "code": "                        &lt;span&gt;\u2022 Cotiza en bolsa: {brand?.cotizaEnBolsa ? \"S\u00ed\" : \"No\"}&lt;/span&gt;"
-      },
-      {
-        "line": 535,
-        "code": "                    &lt;/div&gt;"
-      },
-      {
-        "line": 536,
-        "code": ""
-      }
-    ]
-  },
-  {
     "key": "d90be28c-3cd2-4417-b1ed-0a1d08de890e",
     "rule": "typescript:S6844",
     "severity": "MAJOR",
     "component": "levo-frontend:src/app/insights/components/BrandDetailView.tsx",
     "project": "levo-frontend",
-    "line": 592,
+    "line": 582,
     "hash": "881fa8fcc9e61a21b28e3d4c1e969962",
     "textRange": {
-      "startLine": 592,
-      "endLine": 592,
+      "startLine": 582,
+      "endLine": 582,
       "startOffset": 20,
       "endOffset": 93
     },
@@ -36120,31 +35831,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 589,
+        "line": 579,
         "code": "                    &lt;/div&gt;"
       },
       {
-        "line": 590,
+        "line": 580,
         "code": ""
       },
       {
-        "line": 591,
+        "line": 581,
         "code": "                    {/* Mock URL */}"
       },
       {
-        "line": 592,
+        "line": 582,
         "code": "                    &lt;a href=\"#\" className=\"text-blue-400 text-sm hover:underline pl-2 block\"&gt;"
       },
       {
-        "line": 593,
+        "line": 583,
         "code": "                        {brand?.notes || \"url_interes\"}"
       },
       {
-        "line": 594,
+        "line": 584,
         "code": "                    &lt;/a&gt;"
       },
       {
-        "line": 595,
+        "line": 585,
         "code": ""
       }
     ]
@@ -36155,11 +35866,11 @@
     "severity": "MINOR",
     "component": "levo-frontend:src/app/insights/components/BrandDetailView.tsx",
     "project": "levo-frontend",
-    "line": 790,
+    "line": 780,
     "hash": "da6fbaafe964db8c604b132aef781eaa",
     "textRange": {
-      "startLine": 790,
-      "endLine": 790,
+      "startLine": 780,
+      "endLine": 780,
       "startOffset": 105,
       "endOffset": 136
     },
@@ -36195,31 +35906,31 @@
     "linkedTicketStatus": "NOT_LINKED",
     "codeSnippet": [
       {
-        "line": 787,
+        "line": 777,
         "code": "                                &lt;line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"&gt;&lt;/line&gt;"
       },
       {
-        "line": 788,
+        "line": 778,
         "code": "                            &lt;/svg&gt;"
       },
       {
-        "line": 789,
+        "line": 779,
         "code": "                        &lt;/button&gt;"
       },
       {
-        "line": 790,
+        "line": 780,
         "code": "                        &lt;span className=\"font-semibold text-sm\"&gt;{selectedProductIds.length} seleccionado{selectedProductIds.length !== 1 ? 's' : ''}&lt;/span&gt;"
       },
       {
-        "line": 791,
+        "line": 781,
         "code": "                    &lt;/div&gt;"
       },
       {
-        "line": 792,
+        "line": 782,
         "code": ""
       },
       {
-        "line": 793,
+        "line": 783,
         "code": "                    &lt;div className=\"flex items-center gap-2\"&gt;"
       }
     ]
