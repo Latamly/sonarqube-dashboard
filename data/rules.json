@@ -1,4 +1,18 @@
 {
+  "java:S125": {
+    "name": "Sections of code should not be commented out",
+    "htmlDesc": "",
+    "remFnBaseEffort": "5min",
+    "severity": "MAJOR",
+    "type": "CODE_SMELL"
+  },
+  "java:S1075": {
+    "name": "URIs should not be hardcoded",
+    "htmlDesc": "",
+    "remFnBaseEffort": "20min",
+    "severity": "MINOR",
+    "type": "CODE_SMELL"
+  },
   "java:S1659": {
     "name": "Multiple variables should not be declared on the same line",
     "htmlDesc": "",
@@ -60,13 +74,6 @@
     "htmlDesc": "",
     "remFnBaseEffort": "",
     "severity": "MINOR",
-    "type": "CODE_SMELL"
-  },
-  "java:S125": {
-    "name": "Sections of code should not be commented out",
-    "htmlDesc": "",
-    "remFnBaseEffort": "5min",
-    "severity": "MAJOR",
     "type": "CODE_SMELL"
   },
   "java:S100": {
